@@ -1,6 +1,6 @@
 // ? https://www.codechef.com/problems/SEGM01
 
-// this is simple problem we'll check if 1 appear 1ce and then if it apperas after o agin the ans will be no otherwise yes
+// this is simple problem we'll check if 1 appear 1ce and then if it apperas after o again the ans will be no otherwise yes
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,7 +1,7 @@
 // ? https://www.codechef.com/problems/BLONDIE
 
 // Below are 2 solutions both passes all testcases
-// But Editorials solution 
+// But Editorials solution ....
 
 #include <bits/stdc++.h>
 using namespace std;

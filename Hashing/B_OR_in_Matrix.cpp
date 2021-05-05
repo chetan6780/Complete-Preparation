@@ -35,10 +35,12 @@ int main()
         {
             if (a[i][j] == 0)
             {
+                // make column zero
                 for (int x = 0; x < n; x++)
                 {
                     b[x][j] = 0;
                 }
+                // make row zero
                 for (int x = 0; x < m; x++)
                 {
                     b[i][x] = 0;
@@ -52,6 +54,7 @@ int main()
         for (int j = 0; j < m; j++)
         {
             int c = 0;
+            // if a[i][j]th element is 1 ,sum of row+col should be > 0
             if (a[i][j] == 1)
             {
                 for (int x = 0; x < n; x++)
@@ -62,6 +65,7 @@ int main()
                 {
                     c += b[i][x];
                 }
+                // since this element is 1 if sum is 0 then we print NO and return 
                 if (c == 0)
                 {
                     cout << "NO"
@@ -71,8 +75,8 @@ int main()
             }
         }
     }
-    cout << "YES"
-         << "\n";
+    // if all checks work well we print YES and array 
+    cout << "YES" << "\n";
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
