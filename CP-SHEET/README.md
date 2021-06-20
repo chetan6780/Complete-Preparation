@@ -1,6 +1,7 @@
 # CP-list
 
 Solution and approach for solving CP-list problems.
+click here for the [CP_SHEET](https://docs.google.com/document/d/1vShwt8yXYUOgkF53-iYAuJXWR7Yi5VSJrW2xB49o0PM/edit)
 
 <br/>
 
