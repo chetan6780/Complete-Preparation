@@ -1,6 +1,6 @@
-# cp-list
+# CP-list
 
-Solution and approach for solving cp-list problems.
+Solution and approach for solving CP-list problems.
 
 <br/>
 
