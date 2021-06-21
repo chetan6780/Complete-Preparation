@@ -1,6 +1,6 @@
 # Complete-Preparation
 
-### One stop destination for all you coading round Preparation.
+### One-stop destination for all you coding round Preparation.
 
 1. [CP-SHEET](CP-SHEET)
 
