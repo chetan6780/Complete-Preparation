@@ -8,7 +8,7 @@ click here for the [CP_SHEET](https://docs.google.com/document/d/1vShwt8yXYUOgkF
 ## Linear Search
 
 | Sr. | Problem | solution |
-| :-: | ------- | --------: |
+| :-: | ------- | :-------: |
 |  1  | [Simple Search](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/simple-search-4/) | [Click](LinearSearch/Simple_Search.cpp) |
 |  2  | [Maximum Sum](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/maximum-sum-4-f8d12458/) | [Click](LinearSearch/Maximum_Sum.cpp) |
 |  3  | [Manna's first Name](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/mannas-first-name-4/) | [Click](LinearSearch/Manna_s_First_Name.cpp) |
