@@ -214,6 +214,7 @@ struct Node *sortedInsert(struct Node *head, int data)
 }
 
 // Split a Circular Linked List into two halves -----------------------------------------------------------
+// to avoid some confusion *head1_ref = temp1 ,  head2_ref = temp2
 void splitList(Node *head, Node **head1_ref, Node **head2_ref)
 {
     Node *slow_ptr = head;
@@ -241,3 +242,88 @@ void splitList(Node *head, Node **head1_ref, Node **head2_ref)
 
     slow_ptr->next = head;
 }
+
+// Detect loop in a linked list(Floyd’s Cycle-Finding Algorithm) FASTEST method (O(n),O(1)) ---------------------------------
+bool detectLoop(Node *head)
+{
+    Node *slow_ptr = head;
+    Node *fast_ptr = head;
+
+    while (slow_ptr && fast_ptr && fast_ptr->next)
+    {
+        slow_ptr = slow_ptr->next;
+        fast_ptr = fast_ptr->next->next;
+
+        if (slow_ptr == fast_ptr)
+            return true;
+    }
+    return false;
+}
+
+// using hashing (O(n),O(n))
+bool detectLoop(Node *head)
+{
+    unordered_set<Node *> s;
+
+    while (head != NULL)
+    {
+        if (s.find(head) != s.end())
+            return true;
+        s.insert(head);
+
+        head = head->next;
+    }
+    return false;
+}
+
+// simple approach (O(n),O(1))
+// This is the simplest approach of the given problem, the only thing we have to do is to assign a new value to each data of node in the linked list which is not in the given constrins of data.
+bool detectLoop(Node *head)
+{
+    if (!head)
+        return false;
+
+    while (head != NULL)
+    {
+        if (head->data == -1)
+            return true;
+        else
+        {
+            head->data = -1;
+            head = head->next;
+        }
+    }
+    return false;
+}
+
+// Delete Middle of Linked List ---------------------------------------------------------------------------------------------
+Node *deleteMid(struct Node *head)
+{
+    // Base cases
+    if (head == NULL)
+        return NULL;
+    if (head->next == NULL)
+    {
+        delete head;
+        return NULL;
+    }
+
+    Node *slow_ptr = head;
+    Node *fast_ptr = head;
+
+    Node *prev;
+    while (fast_ptr != NULL && fast_ptr->next != NULL)
+    {
+        prev = slow_ptr;
+        slow_ptr = slow_ptr->next;
+        fast_ptr = fast_ptr->next->next;
+    }
+
+    // Delete the middle node
+    prev->next = slow_ptr->next;
+    delete slow_ptr;
+
+    return head;
+}
+
+// Deletion at different positions in a Circular Linked List
