@@ -326,4 +326,37 @@ Node *deleteMid(struct Node *head)
     return head;
 }
 
-// Deletion at different positions in a Circular Linked List
+// Deletion at different positions in a Circular Linked List ---------------------------------------------------------------
+Node *deleteAtPosition(Node *head, int pos)
+{
+    Node *prev = head;
+    if (pos == 1)
+    {
+        while (prev->next != head)
+            prev = prev->next;
+        Node *temp = head;
+        prev->next = temp->next;
+        head = prev->next;
+        free(temp);
+        return head;
+    }
+
+    for (int i = 1; i < pos - 1; i++)
+        prev = prev->next;
+    Node *temp = prev->next;
+    prev->next = temp->next;
+    free(temp);
+    return head;
+}
+
+// Function to delete a node without any reference to head pointer -------------------------------------------------------
+void deleteNode(Node *pos)
+{
+    Node *temp = pos->next;
+
+    pos->data = pos->next->data;
+
+    pos->next = pos->next->next;
+
+    free(temp);
+}
