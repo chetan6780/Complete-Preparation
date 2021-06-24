@@ -12,6 +12,8 @@ struct Node
     }
 };
 
+// ==================================================================================================================
+
 // Print Linked List elements ------------------------------------------------------------------
 void display(struct Node *head)
 {
@@ -243,7 +245,7 @@ void splitList(Node *head, Node **head1_ref, Node **head2_ref)
     slow_ptr->next = head;
 }
 
-// Detect loop in a linked list(Floyd’s Cycle-Finding Algorithm) FASTEST method (O(n),O(1)) ---------------------------------
+// Detect loop in a linked list(Floyd’s Cycle-Finding Algorithm) FASTEST method (O(n),O(1)) ------------------
 bool detectLoop(Node *head)
 {
     Node *slow_ptr = head;
@@ -326,7 +328,7 @@ Node *deleteMid(struct Node *head)
     return head;
 }
 
-// Deletion at different positions in a Circular Linked List ---------------------------------------------------------------
+// Deletion at different positions in a Circular Linked List ------------------------------------------------
 Node *deleteAtPosition(Node *head, int pos)
 {
     Node *prev = head;
@@ -349,7 +351,7 @@ Node *deleteAtPosition(Node *head, int pos)
     return head;
 }
 
-// Function to delete a node without any reference to head pointer -------------------------------------------------------
+// Function to delete a node without any reference to head pointer -------------------------------------------
 void deleteNode(Node *pos)
 {
     Node *temp = pos->next;
@@ -360,3 +362,368 @@ void deleteNode(Node *pos)
 
     free(temp);
 }
+
+// Reverse a Linked List in groups of given size O(n) & O(n/k)-------------------------------------------------
+Node *reverse(Node *head, int k)
+{
+    if (head == NULL)
+        return NULL;
+
+    Node *curr = head;
+    Node *prev = NULL, *next = NULL;
+
+    int count = 0;
+
+    while (curr != NULL && count < k)
+    {
+        next = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr = next;
+        count++;
+    }
+
+    if (next != NULL)
+        head->next = reverse(next, k);
+
+    return prev;
+}
+
+// Intersection point in y shaped linked list (Below is a link where 8 method are described) ----------------------
+// https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/
+
+// Method 3 (Using difference of node counts) ==== O(m+n), O(1) ====
+int length(Node *head)
+{
+    Node *temp = head;
+    int cnt = 0;
+
+    while (temp != NULL)
+    {
+        cnt++;
+        temp = temp->next;
+    }
+    return cnt;
+}
+
+int getIntersection(Node *head1, Node *head2, int d)
+{
+    Node *curr1 = head1;
+    Node *curr2 = head2;
+
+    for (int i = 0; i < d; i++)
+    {
+        // if there is no intersection then return -1;
+        if (curr1 == NULL)
+            return -1;
+        curr1 = curr1->next;
+    }
+
+    while (curr1 != NULL && curr2 != NULL)
+    {
+        if (curr1 == curr2)
+            return curr1->data;
+
+        curr1 = curr1->next;
+        curr2 = curr2->next;
+    }
+
+    return -1;
+}
+
+int intersectPoint(Node *head1, Node *head2)
+{
+    int l1 = length(head1);
+    int l2 = length(head2);
+    int d;
+
+    if (l1 > l2)
+    {
+        d = l1 - l2;
+        return getIntersection(head1, head2, d);
+    }
+    else
+    {
+        d = l2 - l1;
+        return getIntersection(head2, head1, d);
+    }
+}
+
+// Method 8( 2-pointer technique ) ==== O(m+n), O(1) ====
+
+Node *intersectionPoint(Node *head1, Node *head2)
+{
+    Node *curr1 = head1;
+    Node *curr2 = head2;
+
+    // if there is no intersection point
+    if (curr1 == NULL || curr2 == NULL)
+        return NULL;
+
+    while (curr1 != curr2)
+    {
+        curr1 = curr1->next;
+        curr2 = curr2->next;
+
+        if (curr1 == curr2)
+            return curr1;
+
+        // if they reach to the end of there respective linked list then
+        // assign them alternate heads this time
+        if (curr1 == NULL)
+            curr1 = head2;
+        if (curr2 == NULL)
+            curr2 = head1;
+    }
+    // if first position itself is intersection point then this return statement work
+    return curr1;
+}
+
+// QuickSort on Singly Linked List -----------------------------------------------------------------------------
+
+Node *getTail(Node *cur)
+{
+    while (cur != NULL && cur->next != NULL)
+        cur = cur->next;
+    return cur;
+}
+
+Node *partition(Node *head, Node *end, Node **newHead, Node **newEnd)
+{
+    Node *pivot = end;
+    Node *prev = NULL, *cur = head, *tail = pivot;
+
+    while (cur != pivot)
+    {
+        if (cur->data < pivot->data)
+        {
+            if ((*newHead) == NULL)
+                (*newHead) = cur;
+
+            prev = cur;
+            cur = cur->next;
+        }
+        else
+        {
+            if (prev)
+                prev->next = cur->next;
+            Node *tmp = cur->next;
+            cur->next = NULL;
+            tail->next = cur;
+            tail = cur;
+            cur = tmp;
+        }
+    }
+
+    if ((*newHead) == NULL)
+        (*newHead) = pivot;
+
+    (*newEnd) = tail;
+
+    return pivot;
+}
+
+Node *quickSortRecur(Node *head, Node *end)
+{
+    if (!head || head == end)
+        return head;
+
+    Node *newHead = NULL, *newEnd = NULL;
+
+    Node *pivot = partition(head, end, &newHead, &newEnd);
+
+    if (newHead != pivot)
+    {
+        Node *tmp = newHead;
+        while (tmp->next != pivot)
+            tmp = tmp->next;
+        tmp->next = NULL;
+
+        newHead = quickSortRecur(newHead, tmp);
+
+        tmp = getTail(newHead);
+        tmp->next = pivot;
+    }
+
+    pivot->next = quickSortRecur(pivot->next, newEnd);
+
+    return newHead;
+}
+
+void quickSort(Node **headRef)
+{
+    (*headRef) = quickSortRecur(*headRef, getTail(*headRef));
+    return;
+}
+
+// Clone a linked list with next and random pointer O(n),O(1),modified LL ----------------------------------------------------
+struct Node
+{
+    int data;
+    Node *next;
+    Node *arb;
+
+    Node(int x)
+    {
+        data = x;
+        next = NULL;
+        arb = NULL;
+    }
+};
+
+Node *copyList(Node *start)
+{
+    Node *curr = start, *temp;
+
+    while (curr)
+    {
+        temp = curr->next;
+
+        curr->next = new Node(curr->data);
+        curr->next->next = temp;
+        curr = temp;
+    }
+
+    curr = start;
+
+    while (curr)
+    {
+        if (curr->next)
+            curr->next->arb = curr->arb ? curr->arb->next : curr->arb;
+
+        curr = curr->next ? curr->next->next : curr->next;
+    }
+
+    Node *original = start, *copy = start->next;
+
+    temp = copy;
+
+    while (original && copy)
+    {
+        original->next =
+            original->next ? original->next->next : original->next;
+
+        copy->next = copy->next ? copy->next->next : copy->next;
+        original = original->next;
+        copy = copy->next;
+    }
+
+    return temp;
+}
+
+// merge sort on linked list -------------------------------------------------------------------------------------
+
+// doubly LL
+struct Node
+{
+    int data;
+    struct Node *next, *prev;
+    Node(int x)
+    {
+        data = x;
+        next = prev = NULL;
+    }
+};
+
+Node *split(Node *head)
+{
+    Node *fast = head, *slow = head;
+    while (fast->next && fast->next->next)
+    {
+        fast = fast->next->next;
+        slow = slow->next;
+    }
+    Node *temp = slow->next;
+    slow->next = NULL;
+    return temp;
+}
+
+Node *merge(Node *first, Node *second)
+{
+    if (!first)
+        return second;
+
+    if (!second)
+        return first;
+
+    if (first->data < second->data)
+    {
+        first->next = merge(first->next, second);
+        first->next->prev = first;
+        first->prev = NULL;
+        return first;
+    }
+    else
+    {
+        second->next = merge(first, second->next);
+        second->next->prev = second;
+        second->prev = NULL;
+        return second;
+    }
+}
+
+Node *mergeSort(Node *head)
+{
+    if (!head || !head->next)
+        return head;
+    Node *second = split(head);
+
+    head = mergeSort(head);
+    second = mergeSort(second);
+
+    return merge(head, second);
+}
+
+// QuickSort on Doubly Linked List -------------------------------------------------------------------------
+void swap(int *a, int *b)
+{
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+
+Node *lastNode(Node *root)
+{
+    while (root && root->next)
+        root = root->next;
+    return root;
+}
+
+Node *partition(Node *l, Node *h)
+{
+    int x = h->data;
+
+    Node *i = l->prev;
+
+    for (Node *j = l; j != h; j = j->next)
+    {
+        if (j->data <= x)
+        {
+            i = (i == NULL) ? l : i->next;
+
+            swap(&(i->data), &(j->data));
+        }
+    }
+    i = (i == NULL) ? l : i->next; 
+    swap(&(i->data), &(h->data));
+    return i;
+}
+
+void _quickSort(Node *l, Node *h)
+{
+    if (h != NULL && l != h && l != h->next)
+    {
+        Node *p = partition(l, h);
+        _quickSort(l, p->prev);
+        _quickSort(p->next, h);
+    }
+}
+
+void quickSort(Node *head)
+{
+    Node *h = lastNode(head);
+
+    _quickSort(head, h);
+}
+
+// ================================================== END ===========================================================
