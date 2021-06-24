@@ -57,6 +57,50 @@ struct Node *reverse(struct Node *head)
     return rest;
 }
 
+// Rotate linked list clockwise ---------------------------------------
+
+Node* rightRotate(Node* head, int k)
+{
+ 
+    if (!head)
+        return head;
+ 
+    Node* tmp = head;
+    int len = 1;
+    while (tmp->next != NULL) {
+        tmp = tmp->next;
+        len++;
+    }
+ 
+    if (k > len)
+        k = k % len;
+ 
+    k = len - k;
+ 
+    if (k == 0 || k == len)
+        return head;
+ 
+    Node* current = head;
+    int cnt = 1;
+    while (cnt < k && current != NULL) {
+        current = current->next;
+        cnt++;
+    }
+ 
+    if (current == NULL)
+        return head;
+ 
+    Node* kthnode = current;
+ 
+    tmp->next = head;
+ 
+    head = kthnode->next;
+ 
+    kthnode->next = NULL;
+ 
+    return head;
+}
+
 // Occurence of an integer in a Linked List (Non-recursive) -------------------------------------------
 int count(struct Node *head, int search_for)
 {
