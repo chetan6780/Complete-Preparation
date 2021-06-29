@@ -26,6 +26,7 @@
 
 // * Strings --------------------------------------------------------------------------------------------
 // temp.find(B) != string::npos , find B is in string or not.
+// s.insert(pos, string) , insert string at pos position
 
 // * vectors --------------------------------------------------------------------------------------------
 // v.erase(iterator) to delete elem while traversing in vector.Rememder to do it--.
