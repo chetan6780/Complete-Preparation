@@ -1,17 +1,23 @@
 # Next Greater Element
 
 ### Statement
-Find next element to the left.
+
+Find next greater element from the **left**.
 
 ### Approach
 
-- **Brute force**: Itterate over each element and for each element Itterate from i+1 to n i.e. right subarray and find greater element.
-- **Efficient Approach(useing Stack)**: Approch is discussed below.
+- **Brute force**: Itterate over each element and for each element Itterate from i to j i.e. left subarray and find greater element.
+- **Efficient Approach(using Stack)**: Approch is same as next greater element (left) we just need to do some changes.
+
+### Changes
+
+1. Traverse from left to right.
+2. Don't reverse the vector.
 
 ### Pseudo code
 
 1. Create a vector to return and stack to find greater element efficiently.
-2. Itterate from last element first in the vector.
+2. Itterate from first element to last in the vector.
    - if stack is empty greater element is -1.
    - else if stack is not empty and top is greater than arr[i], we **found** the greater element.
    - else if stack is not empty and top is less than arr[i], we didn't find the greater element.
@@ -19,8 +25,7 @@ Find next element to the left.
      - if stack is empty there is no greater element.
      - else top is greater element, push it in the vector.
 3. Push element in the stack.
-4. Reverse the vector since we have traversed from back.
-5. Return the ans vector.
+4. Return the ans vector.
 
 ### Code
 
@@ -31,7 +36,7 @@ vector<long long> nextLargerElement(vector<long long> arr, int n)
     vector<long long> v;
     stack<long long> s;
 
-    for (int i = n - 1; i >= 0; i--)
+    for (auto i = 0; i < n; i++)
     {
         // if stack is empty
         if (s.empty())
@@ -67,14 +72,10 @@ vector<long long> nextLargerElement(vector<long long> arr, int n)
         s.push(arr[i]);
     }
 
-    // reverse the vector to get right answers
-    reverse(v.begin(), v.end());
-
     return v;
 }
 ```
 
 ### References
 
-- Youtube: [link](https://www.youtube.com/watch?v=NXOOYYwpbg4&list=PL_z_8CaSLPWdeOezg68SKkeLN4-T_jNHd&index=2)
-- gfg - [link](https://www.geeksforgeeks.org/next-greater-element/)
+- Youtube: [link](https://www.youtube.com/watch?v=T5s96ynzArg&list=PL_z_8CaSLPWdeOezg68SKkeLN4-T_jNHd&index=3)
