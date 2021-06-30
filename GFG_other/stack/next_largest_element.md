@@ -73,6 +73,8 @@ vector<long long> nextLargerElement(vector<long long> arr, int n)
     return v;
 }
 ```
+![carbon (1)](https://user-images.githubusercontent.com/62825092/123962346-fdd4bc80-d9ce-11eb-9eb9-0b9a4163d8d8.png)
+
 
 ### References
 
