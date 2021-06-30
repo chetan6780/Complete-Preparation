@@ -1,3 +1,29 @@
+# Next Greater Element
+
+### Statement
+Find next element to the left.
+
+### Approach
+
+- **Brute force**: Itterate over each element and for each element Itterate from i+1 to n i.e. right subarray and find greater element.
+- **Efficient Approach(useing Stack)**: Approch is discussed below.
+
+### Pseudo code
+
+1. Create a vector to return and stack to find greater element efficiently.
+2. Itterate from last element first in the vector.
+   - if stack is empty greater element is -1.
+   - else if stack is not empty and top is greater than arr[i], we **found** the greater element.
+   - else if stack is not empty and top is less than arr[i], we didn't find the greater element.
+     - pop untill we get greater element than arr[i] or stack is empty.
+     - if stack is empty there is no greater element.
+     - else top is greater element, push it in the vector.
+3. Push element in the stack.
+4. Reverse the vector since we have traversed from back.
+5. Return the ans vector.
+
+### Code
+
 ```cpp
 
 vector<long long> nextLargerElement(vector<long long> arr, int n)
@@ -47,3 +73,8 @@ vector<long long> nextLargerElement(vector<long long> arr, int n)
     return v;
 }
 ```
+
+### References
+
+- Youtube: [link](https://www.youtube.com/watch?v=NXOOYYwpbg4&list=PL_z_8CaSLPWdeOezg68SKkeLN4-T_jNHd&index=2)
+- gfg - [link](https://www.geeksforgeeks.org/next-greater-element/)
