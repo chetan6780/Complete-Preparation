@@ -452,3 +452,9 @@ int maxArea(int M[MAX][MAX], int n, int m)
     }
     return max_area;
 }
+
+// Next greater element
+vector<long long> nextLargerElement(vector<long long> arr, int n)
+{
+    // Your code here
+}
