@@ -7,7 +7,7 @@ Find nearest smaller element from the **right**.
 ### Approach
 
 - **Brute force**: Itterate over each element and for each element Itterate from i to j i.e. left subarray and find smaller element.
-- **Efficient Approach(using Stack)**: Approch is same as next greater element (left), we just need to do some changes.
+- **Efficient Approach(using Stack)**: Approch is same as [next greater element (right)](1_next_greater_element.md), we just need to do some changes.
 
 ### Changes
 
