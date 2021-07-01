@@ -4,6 +4,6 @@
 
 1. [CP-SHEET](CP-SHEET)
 
-2. [GFG Problems/DSA](GFG)
+2. [DSA GFG and Other](GFG_other)
 
 3. [SDE-SHEET](SDE-SHEET)
