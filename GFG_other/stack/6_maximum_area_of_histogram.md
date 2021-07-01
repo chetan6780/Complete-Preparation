@@ -6,7 +6,7 @@ Find the largest rectangular area possible in a given histogram where the larges
 
 ### Prerequisite
 
-1. You should know nearest smaller element to left and right ([NSL](3_nearest_smaller_element) & [NSR](4_nearest_smaller_element)).
+1. You should know nearest smaller element to left and right ([NSL](3_nearest_smaller_element.md) & [NSR](3_nearest_smaller_element.md)).
 2. This problem is based on Stock Span Problem which you can refer [here](5_stock_span_problem.md). The NSL and NSR are modified to get INDEX of smaller element.
 
 ### Pseudo code
