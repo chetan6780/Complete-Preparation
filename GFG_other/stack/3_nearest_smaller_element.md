@@ -80,4 +80,4 @@ vector<long long> nearestSmallerElement(vector<long long> arr, int n)
 ### References
 
 - Youtube: [link](https://www.youtube.com/watch?v=85LWui3FlVk&list=PL_z_8CaSLPWdeOezg68SKkeLN4-T_jNHd&index=4)
-- gfg - [link](https://www.geeksforgeeks.org/find-the-nearest-smaller-numbers-on-left-side-in-an-array/)
+- GFG - [link](https://www.geeksforgeeks.org/find-the-nearest-smaller-numbers-on-left-side-in-an-array/)

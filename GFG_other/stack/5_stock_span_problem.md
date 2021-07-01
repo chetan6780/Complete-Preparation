@@ -3,6 +3,7 @@
 ### Statement
 
 The stock span problem is a financial problem where we have a series of n daily price quotes for a stock and we need to calculate span of stock’s price for all n days. 
+(Find consecutive smaller or equal to element from left i.e. next greater to left)
 
 ### Approach
 
@@ -35,7 +36,7 @@ The stock span problem is a financial problem where we have a series of n daily 
 
 ```cpp
 
-vector<long long> nextLargerElement(vector<long long> arr, int n)
+vector<long long> stockSpan(vector<long long> arr, int n)
 {
     vector<long long> v;
     stack<pair<long long, long long>> s;
@@ -76,6 +77,7 @@ vector<long long> nextLargerElement(vector<long long> arr, int n)
         s.push(make_pair(arr[i], i));
     }
 
+    // vector contains index of greater element to right.
     // update vector with correct values i.e. i - v[i]
     for (auto i = 0; i < n; i++)
     {
