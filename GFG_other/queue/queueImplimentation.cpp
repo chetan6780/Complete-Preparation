@@ -136,3 +136,46 @@ struct Queue
         return x;
     }
 };
+
+// another implementation ----------------------------------------------------------------------
+
+// //Function to push an element in queue by using 2 stacks.
+// void StackQueue :: push(int x)
+// {
+//     // Your Code
+//     s1.push(x);
+// }
+
+// //Function to pop an element from queue by using 2 stacks.
+// int StackQueue ::pop()
+// {
+//     // Your Code
+//     if (s2.empty())
+//     {
+//         if (s1.empty())
+//         {
+//             return -1;
+//         }
+//         else
+//         {
+//             while (!s1.empty())
+//             {
+//                 int ele = s1.top();
+//                 s1.pop();
+//                 s2.push(ele);
+//             }
+//             int ele = s2.top();
+//             s2.pop();
+//             return ele;
+//         }
+//     }
+//     // S2 is not empty so just pop out element from it
+//     else
+//     {
+//         int ele = s2.top();
+//         s2.pop();
+//         return ele;
+//     }
+// }
+
+// -------------------------------------------------------------------------------------------------
