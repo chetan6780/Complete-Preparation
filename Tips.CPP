@@ -6,6 +6,7 @@
 // auto keyword can be used for declaring variables, it automatically set the type of that variable.
 // lower_bound = find >= elem , upper_bound = find > element
 // when we want to find element equal to we use lower_bound else upper_bound
+// is_sorted :  Returns true if the container is sorted else false.
 
 // * Faster operations ---------------------------------------------------------------------------------
 // a>>1 == a//2

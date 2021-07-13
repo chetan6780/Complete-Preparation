@@ -49,3 +49,41 @@ void deleteRoot(int arr[], int &n)
     heapify(arr, n, 0);
 }
 ```
+---
+### Insertion in heap
+
+### Algorithm
+1. Heapify function.
+    - Find parent (i - 1) / 2 .
+    - For Max-Heap If current node is greater than its parent Swap both of them and call heapify again for the parent.
+    - Recursively heapify the parent node.
+2. insert node Function.
+    - Insert the element at end of Heap.
+    - Increase the size of Heap by 1.
+    - Heapify the new node following a Bottom-up approach.
+
+
+### Code
+```cpp
+
+// Bottom-up approach
+void heapify(int arr[], int n, int i)
+{
+    int parent = (i - 1) / 2;
+    if (parent >= 0)
+    {
+        if (arr[i] > arr[parent])
+        {
+            swap(arr[i], arr[parent]);
+            heapify(arr, n, parent);
+        }
+    }
+}
+
+void insertNode(int arr[], int &n, int Key)
+{
+    arr[n] = Key;
+    n = n + 1;
+    heapify(arr, n, n - 1);
+}
+```
