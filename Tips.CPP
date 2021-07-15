@@ -7,6 +7,8 @@
 // lower_bound = find >= elem , upper_bound = find > element
 // when we want to find element equal to we use lower_bound else upper_bound
 // is_sorted :  Returns true if the container is sorted else false.
+// In Global we can detect array of bool upto 10^8 or int array upto 10^7.
+// In Local we can detect array of bool upto 10^7 or int array upto 10^6.
 
 // * Faster operations ---------------------------------------------------------------------------------
 // a>>1 == a//2
