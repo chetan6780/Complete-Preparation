@@ -1,5 +1,10 @@
-// * https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/simple-search-4/
+# Simple search
 
+### Problem link: [Hackerearth-SS04](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/simple-search-4/)
+
+### Code
+
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -24,3 +29,4 @@ int main()
 
     return 0;
 }
+```

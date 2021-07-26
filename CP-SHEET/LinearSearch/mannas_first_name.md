@@ -1,4 +1,14 @@
-// ? https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/mannas-first-name-4/
+# Mannas first name
+
+### Problem Link: [Hackerearth-MFN04](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/mannas-first-name-4/)
+
+### Approach
+
+- We find all substrings with the help of countSuffix() function.
+
+### Code
+
+```cpp
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -34,3 +44,4 @@ int main()
     }
     return 0;
 }
+```

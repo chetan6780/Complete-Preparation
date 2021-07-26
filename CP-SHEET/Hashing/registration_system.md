@@ -1,7 +1,14 @@
-// ? https://codeforces.com/problemset/problem/4/C
+# Registration System
 
-// we will use unordered_map since order does not matter for this problem
+### Problem link: [codeforces-C](https://codeforces.com/problemset/problem/4/C)
 
+### Approach
+
+- We will use unordered_map since order does not matter for this problem
+
+### Code
+
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -28,3 +35,4 @@ int main()
 
     return 0;
 }
+```

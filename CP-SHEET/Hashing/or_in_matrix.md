@@ -1,17 +1,24 @@
-// ? https://codeforces.com/problemset/problem/486/B
+# Or in matrix
 
-/*
-Hint of this problem is presented in its statement. " where  is equal to 1 if some ai = 1, otherwise it is equal to 0."
+### Problem link: [486B](https://codeforces.com/problemset/problem/486/B)
+
+### Approach
+
+Hint of this problem is presented in its statement. " where is equal to 1 if some ai = 1, otherwise it is equal to 0."
 
 To solve this problem, do 3 following steps:
 
-Assign all aij (1 ≤ i ≤ m, 1 ≤ j ≤ n) equals to 1.
-If some bij = 0, then do assignments: aik = atj = 0 (1 ≤ k ≤ n, 1 ≤ t ≤ m) (that means, assign all elements in row i and column j of matrix a to 0).
-Then we have matrix a which need to find. Just check whether from matrix a, can we produce matrix b. If not, the answer is obviously "NO".
+1. Assign all aij (1 ≤ i ≤ m, 1 ≤ j ≤ n) equals to 1.
+2. If some bij = 0, then do assignments: aik = atj = 0 (1 ≤ k ≤ n, 1 ≤ t ≤ m) (that means, assign all elements in row i and column j of matrix a to 0).
+3. Then we have matrix a which need to find. Just check whether from matrix a, can we produce matrix b. If not, the answer is obviously "NO".
 
-Complexity: We can implement this algorithm in O(m * n), but it's not neccesary since 1 ≤ m, n ≤ 100.
-*/
+### Complexity
 
+We can implement this algorithm in **O(m \* n)**, but it's not neccesary since 1 ≤ m, n ≤ 100.
+
+### Code
+
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -65,17 +72,16 @@ int main()
                 {
                     c += b[i][x];
                 }
-                // since this element is 1 if sum is 0 then we print NO and return 
+                // since this element is 1 if sum is 0 then we print NO and return
                 if (c == 0)
                 {
-                    cout << "NO"
-                         << "\n";
+                    cout << "NO" << "\n";
                     return 0;
                 }
             }
         }
     }
-    // if all checks work well we print YES and array 
+    // if all checks work well we print YES and array
     cout << "YES" << "\n";
     for (int i = 0; i < n; i++)
     {
@@ -88,3 +94,5 @@ int main()
 
     return 0;
 }
+
+```

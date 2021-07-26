@@ -1,7 +1,14 @@
-// ? https://www.codechef.com/problems/SEGM01
+# Bear and Segment
 
-// this is simple problem we'll check if 1 appear 1ce and then if it apperas after o again the ans will be no otherwise yes
+### Problem link: [Codechef-SEGM01](https://www.codechef.com/problems/SEGM01)
 
+### Approach
+
+- This is simple problem we will check if 1 appear once and then if it apperas after 0 again the ans will be "NO" otherwise "YES".
+
+### Code
+
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -36,3 +43,4 @@ int main()
 
     return 0;
 }
+```

@@ -1,5 +1,10 @@
-// ? https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/practice-problems/algorithm/perfect-pair-df920e90/
+# Perfect Pair
 
+### Problem link: [hackerearth-PP](https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/practice-problems/algorithm/perfect-pair-df920e90/)
+
+### Code
+
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -43,3 +48,4 @@ int main()
     }
     return 0;
 }
+```
