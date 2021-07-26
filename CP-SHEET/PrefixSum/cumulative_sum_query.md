@@ -1,11 +1,20 @@
-// ? https://www.spoj.com/problems/CSUMQ/
+# Cumulative Sum Query
 
-// simple prifix sum problem
-// Prefix sum: example
-// 3 7 -4 5 -1 -4 7 -->prefix sum array-->add a[i]+a[i-1]
-// 3 10 6 11 10 6 13
-// complexity O(1) for 1d
-// complexity O(n) for 2d
+- Simple **prifix sum** problem
+- Prefix sum: example
+    - 3 7 -4 5 -1 -4 7 -->prefix sum array-->add a[i]+a[i-1]
+- 3 10 6 11 10 6 13
+
+### Complexity
+
+- **O(1)** for 1D
+- **O(n)** for 2D
+
+### Problem Link: [spoj-CSUMQ](https://www.spoj.com/problems/CSUMQ/)
+
+### Code
+
+```cpp
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -36,3 +45,4 @@ int main()
 
     return 0;
 }
+```
