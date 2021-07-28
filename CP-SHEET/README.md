@@ -35,7 +35,7 @@ click here for the [CP_SHEET](https://docs.google.com/document/d/1vShwt8yXYUOgkF
 |  1  | [Cumulative sum query](https://www.spoj.com/problems/CSUMQ/) | [Click](PrefixSum/cumulative_sum_query.md) |
 |  2  | [Man with no name](https://www.codechef.com/problems/BLONDIE) | [Click](PrefixSum/man_with_no_name.md) |
 |  3  | [Digit Prime](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1474) | [Click](PrefixSum/digit_prime.md) |
-|  4  | [KJ and street lights](https://www.hackerrank.com/contests/ab-yeh-kar-ke-dikhao/challenges/kj-and-street-lights/problem) | [Click](PrefixSum/.md) |
+|  4  | [KJ and street lights](https://www.hackerrank.com/contests/ab-yeh-kar-ke-dikhao/challenges/kj-and-street-lights/problem) | [Click](PrefixSum/KJ_and_street_lights.md) |
 |  5  | [SIMPLE MODIFICATION](https://www.codechef.com/COW42020/problems/COW3E/) | [Click](PrefixSum/.md) |
 |  6  | [Pongal Bunk](https://www.codechef.com/problems/COWA19B) | [Click](PrefixSum/.md) |
 |  7  | [Transmutation Diamonds](https://www.codechef.com/problems/MXPOWER) | [Click](PrefixSum/.md) |
