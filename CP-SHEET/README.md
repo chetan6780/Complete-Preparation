@@ -9,11 +9,11 @@ click here for the [CP_SHEET](https://docs.google.com/document/d/1vShwt8yXYUOgkF
 
 | Sr. | Problem | solution |
 | :-: | ------- | :-------: |
-|  1  | [Simple Search](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/simple-search-4/) | [Click](LinearSearch/Simple_Search.cpp) |
-|  2  | [Maximum Sum](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/maximum-sum-4-f8d12458/) | [Click](LinearSearch/Maximum_Sum.cpp) |
-|  3  | [Manna's first Name](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/mannas-first-name-4/) | [Click](LinearSearch/Manna_s_First_Name.cpp) |
-|  4  | [Bear and Segment 01](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/simple-search-4/) | [Click](LinearSearch/Bear_and_Segment_01.cpp) |
-|  5  | [Simple Search](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/rest-in-peace-21-1/) | [Click](LinearSearch/Rest_in_peace_21_1_.cpp) |
+|  1  | [Simple Search](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/simple-search-4/) | [Click](LinearSearch/simple_search.md) |
+|  2  | [Maximum Sum](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/maximum-sum-4-f8d12458/) | [Click](LinearSearch/maximum_sum.md) |
+|  3  | [Manna's first Name](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/mannas-first-name-4/) | [Click](LinearSearch/mannas_first_name.md) |
+|  4  | [Bear and Segment 01](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/simple-search-4/) | [Click](LinearSearch/bear_and_segment.md) |
+|  5  | [Rest in peace](https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/rest-in-peace-21-1/) | [Click](LinearSearch/rest_in_peace_21_1.md) |
 
 <br/>
 
@@ -21,10 +21,10 @@ click here for the [CP_SHEET](https://docs.google.com/document/d/1vShwt8yXYUOgkF
 
 | Sr. | Problem | solution |
 | :-: | ------- | --------: |
-|  1  | [Simple Search](https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/practice-problems/algorithm/maximum-occurrence-9/) | [Click](Hashing/Maximum_occurrence.cpp) |
-|  2  | [Registration System](https://codeforces.com/problemset/problem/4/C) | [Click](LinearSearch/C_Registration_system.cpp) |
-|  3  | [Perfect Pair](https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/practice-problems/algorithm/perfect-pair-df920e90/) | [Click](LinearSearch/Perfect_Pair.cpp) |
-|  4  | [OR in Matrix](https://codeforces.com/problemset/problem/486/B) | [Click](LinearSearch/B_OR_in_Matrix.cpp) |
+|  1  | [Maximum occurance](https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/practice-problems/algorithm/maximum-occurrence-9/) | [Click](Hashing/maximum_occurence.md) |
+|  2  | [Registration System](https://codeforces.com/problemset/problem/4/C) | [Click](LinearSearch/registration_system.md) |
+|  3  | [Perfect Pair](https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/practice-problems/algorithm/perfect-pair-df920e90/) | [Click](LinearSearch/perfect_pair.md) |
+|  4  | [OR in Matrix](https://codeforces.com/problemset/problem/486/B) | [Click](LinearSearch/or_in_matrix.md) |
 
 <br/>
 
@@ -32,13 +32,13 @@ click here for the [CP_SHEET](https://docs.google.com/document/d/1vShwt8yXYUOgkF
 
 | Sr. | Problem | solution |
 | :-: | ------- | --------: |
-|  1  | [Simple Search](https://www.spoj.com/problems/CSUMQ/) | [Click](PrefixSum/Cumulative_Sum_Query.cpp) |
-|  2  | [Man with no name](https://www.codechef.com/problems/BLONDIE) | [Click](PrefixSum/Man_with_No_Name.cpp) |
-|  3  | NA | NA |
-|  4  | [KJ and street lights](https://www.hackerrank.com/contests/ab-yeh-kar-ke-dikhao/challenges/kj-and-street-lights/problem) | [Click](PrefixSum/.cpp) |
-|  5  | [SIMPLE MODIFICATION](https://www.codechef.com/COW42020/problems/COW3E/) | [Click](PrefixSum/.cpp) |
-|  6  | [Pongal Bunk](https://www.codechef.com/problems/COWA19B) | [Click](PrefixSum/.cpp) |
-|  7  | [Transmutation Diamonds](https://www.codechef.com/problems/MXPOWER) | [Click](PrefixSum/.cpp) |
+|  1  | [Cumulative sum query](https://www.spoj.com/problems/CSUMQ/) | [Click](PrefixSum/cumulative_sum_query.md) |
+|  2  | [Man with no name](https://www.codechef.com/problems/BLONDIE) | [Click](PrefixSum/man_with_no_name.md) |
+|  3  | [Digit Prime](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1474) | [Click](PrefixSum/digit_prime.md) |
+|  4  | [KJ and street lights](https://www.hackerrank.com/contests/ab-yeh-kar-ke-dikhao/challenges/kj-and-street-lights/problem) | [Click](PrefixSum/.md) |
+|  5  | [SIMPLE MODIFICATION](https://www.codechef.com/COW42020/problems/COW3E/) | [Click](PrefixSum/.md) |
+|  6  | [Pongal Bunk](https://www.codechef.com/problems/COWA19B) | [Click](PrefixSum/.md) |
+|  7  | [Transmutation Diamonds](https://www.codechef.com/problems/MXPOWER) | [Click](PrefixSum/.md) |
 
 <br/>
 
