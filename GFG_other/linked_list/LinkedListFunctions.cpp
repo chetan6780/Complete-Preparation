@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 struct Node
@@ -59,45 +60,47 @@ struct Node *reverse(struct Node *head)
 
 // Rotate linked list clockwise ---------------------------------------
 
-Node* rightRotate(Node* head, int k)
+Node *rightRotate(Node *head, int k)
 {
- 
+
     if (!head)
         return head;
- 
-    Node* tmp = head;
+
+    Node *tmp = head;
     int len = 1;
-    while (tmp->next != NULL) {
+    while (tmp->next != NULL)
+    {
         tmp = tmp->next;
         len++;
     }
- 
+
     if (k > len)
         k = k % len;
- 
+
     k = len - k;
- 
+
     if (k == 0 || k == len)
         return head;
- 
-    Node* current = head;
+
+    Node *current = head;
     int cnt = 1;
-    while (cnt < k && current != NULL) {
+    while (cnt < k && current != NULL)
+    {
         current = current->next;
         cnt++;
     }
- 
+
     if (current == NULL)
         return head;
- 
-    Node* kthnode = current;
- 
+
+    Node *kthnode = current;
+
     tmp->next = head;
- 
+
     head = kthnode->next;
- 
+
     kthnode->next = NULL;
- 
+
     return head;
 }
 
@@ -748,7 +751,7 @@ Node *partition(Node *l, Node *h)
             swap(&(i->data), &(j->data));
         }
     }
-    i = (i == NULL) ? l : i->next; 
+    i = (i == NULL) ? l : i->next;
     swap(&(i->data), &(h->data));
     return i;
 }
