@@ -1,5 +1,17 @@
 # Adjecency matrix representation of Graph
 
+- Use matric to represent a graph.
+- Initialize it with 0s.
+- Then take u and v , set adj[u][v] = 1 and adj[v][u] = 1.
+
+1. First line contains n and m , n = number of nodes , m = number of edges
+2. Next m lines contains edges between u and v.
+3. In case of directed graph only push back once.
+
+### Disadvantage
+
+- We cannot creaet matrix greater than 10^5.
+
 ### Code
 
 ```cpp
