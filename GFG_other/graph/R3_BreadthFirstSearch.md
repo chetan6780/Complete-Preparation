@@ -1,4 +1,4 @@
-- Traversing the adjecent nodes at first: BFS
+# Traversing the adjecent nodes at first: BFS
 
 ### Code
 

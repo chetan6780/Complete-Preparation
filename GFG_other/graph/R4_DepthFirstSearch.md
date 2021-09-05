@@ -1,4 +1,4 @@
-- Traversing Depth first : DFS
+# Traversing Depth first : DFS
 
 ### Code
 ```cpp
