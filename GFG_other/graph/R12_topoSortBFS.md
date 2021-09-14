@@ -1,6 +1,5 @@
-# Cycle detection in directed graph using BFS (Kahn's Algorithm)
+# Topological sort BFS(Kahn's Algorithm)
 
-Do toposort BFS first.
 ### Code
 
 ```cpp
@@ -10,7 +9,7 @@ using namespace std;
 class Solution
 {
 public:
-    bool isCyclic(int N, vector<int> adj[])
+    vector<int> topo(int N, vector<int> adj[])
     {
         queue<int> q;
         vector<int> indegree(N, 0);
@@ -29,12 +28,12 @@ public:
                 q.push(i);
             }
         }
-        int cnt = 0;
+        vector<int> topo;
         while (!q.empty())
         {
             int node = q.front();
             q.pop();
-            cnt++;
+            topo.push_back(node);
             for (auto it : adj[node])
             {
                 indegree[it]--;
@@ -44,9 +43,7 @@ public:
                 }
             }
         }
-        if (cnt == N)
-            return false;
-        return true;
+        return topo;
     }
 };
 
@@ -75,5 +72,4 @@ int main()
 
     return 0;
 }
-
 ```
