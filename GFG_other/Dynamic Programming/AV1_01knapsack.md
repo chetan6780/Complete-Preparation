@@ -24,7 +24,6 @@ int knapSack(int W, int wt[], int val[], int n)
     // if weight of last item(nth item) is less than or equal to W we can add it else not.
     if (wt[n - 1] <= W)
     {
-
         // Return the maximum of two cases: (1) nth item included (2) not included
         return max(knapSack(W, wt, val, n - 1), val[n - 1] + knapSack(W - wt[n - 1], wt, val, n - 1));
     }
@@ -82,7 +81,6 @@ int knapSackRec(int W, int wt[], int val[], int n)
     // if weight of last item(nth item) is less than or equal to W we can add it else not.
     if (wt[n - 1] <= W)
     {
-
         // Return the maximum of two cases: (1) nth item included (2) not included
         return dp[n][W] = max(knapSackRec(W, wt, val, n - 1), val[n - 1] + knapSackRec(W - wt[n - 1], wt, val, n - 1));
     }
@@ -117,7 +115,7 @@ int knapSack(int W, int wt[], int val[], int n)
     - else we not add weight.
       - store the previous state in dp.
 - TIP: if we start from i=0 and j==0 include this condition.no need to initialize.
-  - if(i\==0 || j\==0) dp[i][j] = 0;
+  - if(i==0 || j==0) dp[i][j] = 0;
 - retrun dp[n][w]
 
 ### Code
