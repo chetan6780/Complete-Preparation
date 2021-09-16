@@ -121,5 +121,5 @@ bool isSubsetSum(int n, int arr[], int sum)
 
 ### References
 
-- GFG: [Subset Sum Problem](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
+- GFG: [Subset Sum Problem](https://www.geeksforgeeks.org/subset-sum-problem-dp-25/)
 - Youtube: [AV - Subset Sum](https://www.youtube.com/watch?v=_gPcYovP7wc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=7)
