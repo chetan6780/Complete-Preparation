@@ -44,7 +44,7 @@ int knapSack(int W, int wt[], int val[], int n)
 
 ## DP APPROACHES
 
-### a) Memorization (Top Down)
+### A) Memorization (Top Down)
 
 - Initialize 2D array with -1.
 - Base case.
@@ -105,7 +105,7 @@ int knapSack(int W, int wt[], int val[], int n)
 
 ---
 
-### b) Tabulation (Bottom Up)
+### B) Tabulation (Bottom Up)
 
 - Declare 2D array dp[n+1][w+1] globally which inititalizes it with 0.
 - for i (1 to n+1)
@@ -186,3 +186,10 @@ int knapSack(int W, int wt[], int val[], int n)
 - Time Complexity: **O(N\*W)** As redundant calculations of states are avoided.
 
 - Auxiliary Space: **O(W)** As we are using 1-D array instead of 2-D array.
+
+---
+
+### References
+
+- GFG: [0-1 Knapsack Problem](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
+- Youtube: [Aditya Verma](https://www.youtube.com/playlist?list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go)
