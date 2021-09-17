@@ -3,6 +3,7 @@
 Given an array arr[] of length N and an integer X, the task is to find the number of subsets with a sum equal to X.
 
 ### Prerequisite: [Subset Sum Problem](./AV2_subSetSum.md)
+
 - We just need to fill with ints instead of bools.
 - Instead of || we have to write +
 
