@@ -135,7 +135,7 @@ int knapSack(int W, int wt[], int val[], int n)
             // if(i==0 || j==0)dp[i][j] = 0; if we start from i=0 and j==0 include this condition.
             if (wt[i - 1] <= j)
             {
-                dp[i][j] = max(dp[i - 1][j], val[i - 1]) + dp[i - 1][j - wt[i - 1]];
+                dp[i][j] = max(dp[i - 1][j], val[i - 1] + dp[i - 1][j - wt[i - 1]]);
             }
             else
             {
