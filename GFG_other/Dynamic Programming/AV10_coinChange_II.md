@@ -29,8 +29,8 @@ int minCoins(int coins[], int M, int V)
 
 ### Complexity Analysis
 
-- Time Complexity: O(M\*N),N = number of coins , M = sum requred
-- Auxiliary Space: O(M\*N),N = number of coins , M = sum requred
+- Time Complexity: **O(M\*N)**,N = number of coins , M = sum requred
+- Auxiliary Space: **O(M\*N)**,N = number of coins , M = sum requred
 - Space optimized 1D dp solution available at gfg.
 
 ### References
