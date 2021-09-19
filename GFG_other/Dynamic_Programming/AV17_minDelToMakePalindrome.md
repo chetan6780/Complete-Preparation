@@ -9,6 +9,10 @@ _Note: The order of characters should be maintained._
 - LPS is inverly proportional to the number of deletions required.
 - If we can find longest palindromic sequence, we can say len_of_string - LPS will be minimum deletions required.
 
+### Mark: This Question is also known - Minimun number of insertion to make palindrome
+
+- minimum number of deletions == minimum number of insertions
+
 ### Code
 
 ```cpp
