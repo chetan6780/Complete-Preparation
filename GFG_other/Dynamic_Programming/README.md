@@ -20,4 +20,4 @@
 | Sr. | Problem                                                          |
 | --- | ---------------------------------------------------------------- |
 | 1   | [Longest Common Subsequence](./AV11_longestCommonSubSequence.md) |
-| 2   | [Longest Common Substrin](./AV12_longestCommonSubstring.md)      |
+| 2   | [Longest Common Substring](./AV12_longestCommonSubstring.md)      |
