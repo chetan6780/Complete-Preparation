@@ -1,7 +1,7 @@
 # GFG and Other Resources
 
 | Sr. | Topic(DSA)                                 |
-| --- | ------------------------------------------ |
+| --- | :----------------------------------------- |
 | 1   | [Linked List](linked_list)                 |
 | 2   | [Stack](stack)                             |
 | 3   | [Queue](queue)                             |
