@@ -6,6 +6,7 @@ The dimensions of the matrices are given in an array arr[] of size N (such that 
 
 ### Method 1: Recursive Approach
 
+- We want to minimize arr[i-1] x arr[i]
 - If we start from i=0 then we will have dimension of resultant array as arr[i-1] x arr[i] where arr[i-1] is negative and not possible, so we start from i=i+1.
 - if j will start from j resulting array will be arr[j-1] x arr[j] which is possible so we can take j.
 - We can recure k as,
