@@ -17,7 +17,14 @@
 
 ### Longest Common Subsequence Problems
 
-| Sr. | Problem                                                          |
-| --- | ---------------------------------------------------------------- |
-| 1   | [Longest Common Subsequence](./AV11_longestCommonSubSequence.md) |
-| 2   | [Longest Common Substring](./AV12_longestCommonSubstring.md)      |
+| Sr. | Problem                                                                          |
+| --- | -------------------------------------------------------------------------------- |
+| 1   | [Longest Common Subsequence](./AV11_longestCommonSubSequence.md)                 |
+| 2   | [Longest Common Substring](./AV12_longestCommonSubstring.md)                     |
+| 3   | [Print Lcs](./AV13_printLCS.md)                                                  |
+| 4   | [Shortest common supersequence(SCS)](./AV14_shortestCommonSupersequence.md)      |
+| 5   | [Minimun deletion and insertion to transform the string](./AV15_minDelAndIns.md) |
+| 6   | [Longest palindromic subsequence](./AV16_longestPalindromicSubsequence.md)       |
+| 7   | [Minimum deletions to make strin palindrome](./AV17_minDelToMakePalindrome.md)   |
+| 8   | [Print SCS](./AV18_printSCS.md)                                                  |
+| 9   | [Longest Repeated Subsequence](./AV19_longestRepeatedSubsequence.md)             |
