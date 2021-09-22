@@ -84,6 +84,8 @@ int countWays(int N, string S)
 }
 ```
 
+---
+
 # DP APPROACHES
 
 ### A) Memoization: Map APPROACHE
@@ -158,6 +160,8 @@ int countWays(int N, string S)
     return solve(S, 0, N - 1, true);
 }
 ```
+
+---
 
 ### 3D DP APPROACHE
 

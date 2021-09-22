@@ -102,7 +102,7 @@ int palindromicPartition(string str)
 ### Complexity Analysis
 
 - Time Complexity: **O(n^3)**
-- O(n^2) Approch at GFG
+- **O(n^2)** Approch at GFG
 
 ### References
 

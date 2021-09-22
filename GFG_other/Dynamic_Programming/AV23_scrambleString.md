@@ -153,8 +153,8 @@ bool isScramble(string a, string b)
 
 ### Complexity Analysis
 
-- Time Complexity: O(N^2), where N is the length of the given strings.
-- Auxiliary Space: O(N^2), As we need to store O(N^2) string in our mp map.
+- Time Complexity: **O(N^2)**, where N is the length of the given strings.
+- Auxiliary Space: **O(N^2)**, As we need to store O(N^2) string in our mp map.
 
 ### References
 
