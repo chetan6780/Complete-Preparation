@@ -1,6 +1,6 @@
 # Dynamic Programming
 
-### Knapsack Problems
+### Knapsack Pattern
 
 | Sr. | Problem                                                                              |
 | --- | ------------------------------------------------------------------------------------ |
@@ -15,7 +15,7 @@
 | 9   | [Coin Change - I](./AV9_coinChange_I.md)                                             |
 | 10  | [Coin change - II](./AV10_coinChange_II.md)                                          |
 
-### Longest Common Subsequence Problems
+### Longest Common Subsequence Pattern
 
 | Sr. | Problem                                                                          |
 | --- | -------------------------------------------------------------------------------- |
@@ -28,3 +28,21 @@
 | 7   | [Minimum deletions to make strin palindrome](./AV17_minDelToMakePalindrome.md)   |
 | 8   | [Print SCS](./AV18_printSCS.md)                                                  |
 | 9   | [Longest Repeated Subsequence](./AV19_longestRepeatedSubsequence.md)             |
+
+### Matrix Chain Multiplication Pattern
+
+| Sr. | Problem                                                            |
+| --- | ------------------------------------------------------------------ |
+| 1   | [Matrix Chain Multiplication](./AV20_matrixChainMultiplication.md) |
+| 2   | [Palindromic Partitioning](./AV21_Palindrome_Partitioning.md)      |
+| 3   | [Boolean Parenthesization](./AV22_booleanParenthesization.md)      |
+| 4   | [Scramble string](./AV23_scrambleString.md)                        |
+| 5   | [Egg Dropping](./AV24_eggDroping.md)                               |
+
+### DP on Trees
+
+| Sr. | Problem                                                                      |
+| --- | ---------------------------------------------------------------------------- |
+| 1   | [Diameter of a Binary Tree](./AV25_diameterOfBinaryTree.md)                  |
+| 2   | [Maximum path sum from any node to any node](./AV26_maximumPathSum.md)       |
+| 3   | [Maximum path sum from leaf node to leaf node](./AV27_maxPathSumLeafNode.md) |
