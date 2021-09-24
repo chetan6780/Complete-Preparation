@@ -1,8 +1,13 @@
 # Leetcode problem hints and solutions
 
+#### Difficulty level:
+- 🌟 **- Easy**
+- 🌟🌟 **- Medium**
+- 🌟🌟🌟 **- Hard**
+
 ---
 
-# <a href="./1920_buildArrayFromPermutation.md" style="color: green">1920 - Build Array from Permutation</a>
+# [1920 - Build Array from Permutation](./1920_buildArrayFromPermutation.md) 🌟
 
 ### O(n) time and O(n) space solution
 
