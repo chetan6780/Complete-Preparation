@@ -17,6 +17,27 @@
 
 ---
 
+# [867. Transpose Matrix](./867_transposeMatrix.md) 🌟
+
+### O(N\*M) Time and O(N\*M) space
+
+- Get no of rows and columns of given matrix.
+- Create a new matrix of with no.rows=no.columns and no.columns=no.rows.
+- Iterate over the matrix and copy the values from the given matrix to the new matrix `ans[j][i]=matrix[i][j]`;
+- Space can be optimizes in case of square matrix, where we can use in place swapping of rows and columns.
+
+---
+
+# [989. Add to Array-Form of Integer](./989_addToArrayFormOfInteger.md) 🌟
+
+### O(N) Time and O(1) Space
+
+- We use k itself as carry.
+- From last to first we fill array with addition and mod.
+- If after loop, k have some carry we insert k to the start of array untill it becomes 0.
+
+---
+
 # [1295. Find Numbers with Even Number of Digits](./1295_findNumbersWithEvenNumberOfDigits.md`) 🌟
 
 ### O(N\*length(num)) Time and O(1) Space
@@ -134,6 +155,42 @@
 ### O(N) Time O(N) Space Solution
 
 - Create a set and check if its length is exactly 26 or not.
+
+---
+
+# [1854. Maximum Population Year](./1854_maximumPopulationYear.md) 🌟
+
+### O(N) Time and O(N) Space
+
+- We can mark the start and end of each life as +1 and -1 on the timeline.
+- Then, we go through timeline from 1950 to 2050 and accumulate the current population for each year.
+
+---
+
+# [1886. Determine Whether Matrix Can Be Obtained By Rotation](./1886_determineWhetherMatrixCanBeObtainedByRotation.md) 🌟
+
+### O(N^2) Time solution
+
+- Suppose we are at index i, j, let us find a relation of this position with it's position in various rotations. i. e
+
+```
+- 0 deg rotation : i, j will point to i, j
+- 90 deg rotation : i, j will point to j, n - i - 1
+- 180 deg rotation : i, j will point to n - i - 1, n - j - 1
+- 270 deg rotation : i, j will point to n - j - 1, i
+```
+
+- We denote these rotations by boolean variables, initially we assume all these rotations are valid, so we set them all to true. Here
+
+```
+c[0] -> 0 deg rotation,
+c[1] -> 90 deg,
+c[2] -> 180 deg,
+c[3] -> 270 deg
+```
+
+- Then, we loop over all elements and check if that particular rotation is valid or not. If not, we turn it to false.
+- In the end, we simply check if any of the rotations is still possible or not.
 
 ---
 
