@@ -8,7 +8,109 @@
 
 ---
 
-# [832. Flipping an Image](./832_flippingAnImage.md)
+# [1. Two Sum](./1_twoSum.md) 🌟
+
+### O(N^2) Time Constant space
+
+- Brute force - check every pair of numbers.
+
+### O(N) Time and O(N) space
+
+- The basic idea is to maintain a hash table for each element num in nums
+- using num as key and its index (0-based) as value. For each num, search for target - num in the hash table.
+- If it is found and is not the same element as num, then we are done.
+
+---
+
+# [35. Search Insert Position](./searchInsertPosition.md)
+
+### O(log N) Time solution
+
+- Modification of BS.
+- l<r
+  - if target greater than element at mid.
+    - l = mid+1
+  - else
+    - r = mid // not mid-1;
+- return l
+
+---
+
+# [53. Maximum Subarray](./53_maximumSubarray.md) 🌟
+
+### O(N) time constant space(DP)
+
+- We maintain a maximum sum and current sum(if element itself is max)
+- for each i=(0,n)
+  - add current element to current sum
+  - mx = max(current sum , mx);
+  - current sum will be max(0,current sum);
+- finally we return mx
+
+---
+
+# [88. Merge Sorted Array](./88_mergeSortedArray.md) 🌟
+
+### O(M+N) Time and O(M+N) space
+
+- Create new array with m+n elements.
+- Traverse through both the given array, find min and insert in the new array.
+
+### O(M\*N) without using extra Space
+
+- Traverse through both the given array
+- If arr1[i]>arr2[i] then swap the elements and sort the second array.(here sorting means just put swapped element at its right position not real sorting)
+
+### O(M+N) Time and O(1) Space
+
+- Code is self explanetory on leetcode
+
+### Using GAP algorithm(striver)
+
+**Here soon**
+
+## <!-- TODO: Write GAP algo -->
+
+# [217. Contains Duplicate](./217_containsDuplicate.md) 🌟
+
+### O(N^2) Time and constant space
+
+- Cheak for every element, if it is present in the array using 2 loops.
+
+### O(N log N) Time and constant space
+
+- We can sort the array, so duplicate elements will be next to each other.
+
+### O(N) Time and O(N) Space
+
+- We can use a hash table to store the elements.
+
+---
+
+# [278. First Bad Version](./278_firstBadVersion.md) 🌟
+
+### O(log N) Time solution
+
+- Slight modification of binary search.
+- l=1,r=n;
+
+---
+
+# [704. Binary Search](./704_binarySearch.md) 🌟
+
+### O(log N) Time algorithm
+
+- **NOTE:** _Array must be sorted.if not then sort array first._
+- Point two variables l and r to the first and last position of array.
+- while(l<=r)
+  - if middle element is target then return middle index
+  - if middle element is greater than target then r = middle - 1
+  - if middle element is less than target then l = middle + 1
+- if we cant find element in array, return -1.
+
+---
+
+# [832. Flipping an Image](./832_flippingAnImage.md) 🌟
 
 ### O(N^2) Time and O(1) Space
 
