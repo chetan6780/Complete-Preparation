@@ -71,6 +71,25 @@
 
 ## <!-- TODO: Write GAP algo -->
 
+---
+
+# [189. Rotate Array](./189_rotateArray.md) 🌟
+
+### O(N) Time and O(N) space
+
+- Create new array
+- copy the original array
+- Rotate the array by (i+k)%n.
+
+### O(N) Time and O(1) Space
+
+- k%=nums.size(), because if k>n so we need to do only k%n operations.
+- reverse the array.
+- reverse the first k elements.
+- reverse the rest of the array.
+
+---
+
 # [217. Contains Duplicate](./217_containsDuplicate.md) 🌟
 
 ### O(N^2) Time and constant space
@@ -127,6 +146,23 @@
 - Create a new matrix of with no.rows=no.columns and no.columns=no.rows.
 - Iterate over the matrix and copy the values from the given matrix to the new matrix `ans[j][i]=matrix[i][j]`;
 - Space can be optimizes in case of square matrix, where we can use in place swapping of rows and columns.
+
+---
+
+# [977. Squares of a Sorted Array](./977_squaresOfASortedArray.md) 🌟
+
+### O(NlogN) Time solution
+
+- Create new array and push_back squares of each element in it.
+- Sort the new array.
+- Return the new array.
+
+### O(N) Time solution
+
+- We use two pointer method to solve this problem.
+- set two array l=0 and r=arr.size()-1.
+- traverse throught the array and set max abs values square at last position.
+- return the array.
 
 ---
 
