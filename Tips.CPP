@@ -39,5 +39,29 @@
 // * set -------------------------------------------------------------------------------------------------
 // auto it = s.lower_bound(elem);
 // int elem = *it;
+// s.count() returns 1 if element is present in set else 0.for vec and other containers which contains duplicate elements it returns count of the number.
 
 // * map -------------------------------------------------------------------------------------------------
+// mp.count() returns 1 if element is present in map else 0.for vec and other containers which contains duplicate elements it returns count of the number.
+
+
+// * Other tips
+// 1. We can use dec,hex,oct to print numbers in different bases.
+    // bitset<bitcnt>(num)
+    // cout << bitset<12>(n) << "\n";
+    // cout << oct << n << "\n";
+    // cout << hex << n << "\n";
+    // cout << dec << n << "\n";
+
+// 2. std::minmax_element --> returns pair{minelement, maxelement}
+    // vector<int> x = {1, 2, 3, 4};
+    // auto it = minmax_element(all(x));
+    // cout << *it.first << ' ' << *it.second << endl;
+    // output:
+    // 1 4
+    // std::equal
+
+// 3. is_palindrome function
+// bool is_palindrome(string s) {
+//     return equal(all(s) - s.size() / 2, s.rbegin());
+// }
