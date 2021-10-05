@@ -151,6 +151,10 @@
 
 ---
 
+# [350. Intersection of Two Arrays II](./350_intersectionOfTwoArraysII.md) 🌟
+
+---
+
 # [557. Reverse Words in a String III](./reverseWordsInString.md) 🌟
 
 ### O(N\*M) Time solution
