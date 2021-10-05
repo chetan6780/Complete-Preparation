@@ -73,6 +73,18 @@
 
 ---
 
+# [167. Two Sum II - Input array is sorted](./167_twoSumII_inputArrayIsSorted.md) 🌟
+
+### O(N) Time 2-pointers solution
+
+- We maintain 2 pointers, one at the start and one at the end.
+- We itterate over the array.
+  - If Sum if equal to target, return the indices.
+  - else if sum is greater than target we decrement the end pointer.
+  - else we increment the start pointer.
+
+---
+
 # [189. Rotate Array](./189_rotateArray.md) 🌟
 
 ### O(N) Time and O(N) space
@@ -112,6 +124,39 @@
 
 - Slight modification of binary search.
 - l=1,r=n;
+
+---
+
+# [283. Move Zeroes](./281_moveZeros.md) 🌟
+
+### O(N) Time solution
+
+- We will shift all non zero elements at front
+- Then remaining elements will be filled with zeros
+
+### O(N) Time snowball solution
+
+- The idea is that we go through the array and gather all zeros on our road.
+- If element is 0, increase size of snowball by 1.
+- else we swap it with (i-snowball)th element.
+- **NOTE:** here we used temp variable instead of direct swapping for avoiding unnecessary swapplin. For ex.`[1]` no swap required.
+
+---
+
+# [344. Reverse String](./344_reverseString.md) 🌟
+
+### O(N) Time two pointer solution
+
+- swap start and end pointers.
+
+---
+
+# [557. Reverse Words in a String III](./reverseWordsInString.md) 🌟
+
+### O(N\*M) Time solution
+
+- Where N: lenght of string and M: lenght of substring splited by space.
+- The idea is to reverse the substring splitted by spaces, so the final result will be possible.
 
 ---
 
