@@ -27,12 +27,12 @@
 			"#define sp ' '",
 			"#define yes cout << \"YES\\n\"",
 			"#define no cout << \"NO\\n\"",
-			"#define ANS(cnd) cout << ((cnd) ? \"YES\\n\" : \"NO\\n\");",
-			"#define deb(x) cout << x << nl;",
-			"#define deb2(x, y) cout << #x << \":\" << x << sp << #y << \":\" << y << nl;",
-			"#define deb3(x,y,z)cout<<#x<<\":\"<<x<<sp<<#y<<\":\"<<y<<sp<<#z<<\":\"<<z<< nl;",
+			"#define precision(x) cout << fixed << setprecision(x)",
+			"#define ANS(cnd) cout << ((cnd) ? \"YES\\n\" : \"NO\\n\")",
+			"#define deb(x) cout << (x) << nl",
 			"",
 			"typedef long long ll;",
+			"typedef long double lld;",
 			"typedef vector<int> vi;",
 			"typedef vector<vi> vvi;",
 			"typedef vector<ll> vl;",
@@ -45,14 +45,18 @@
 			"typedef vector<pair<int, int>> vpii;",
 			"typedef vector<pair<ll, ll>> vpll;",
 			"",
+			"void solve()",
+			"{",
+			"    $0",
+			"    return;",
+			"}",
+			"",
 			"int main()",
 			"{",
 			"    ios_base::sync_with_stdio(false);",
 			"    cin.tie(0);",
 			"    cout.tie(0);",
-			"",
-			"    $0",
-			"",
+			"    solve();",
 			"    return 0;",
 			"}",
 			""
@@ -82,12 +86,12 @@
 			"#define sp ' '",
 			"#define yes cout << \"YES\\n\"",
 			"#define no cout << \"NO\\n\"",
-			"#define ANS(cnd) cout << ((cnd) ? \"YES\\n\" : \"NO\\n\");",
-			"#define deb(x) cout << x << nl;",
-			"#define deb2(x, y) cout << #x << \":\" << x << sp << #y << \":\" << y << nl;",
-			"#define deb3(x,y,z)cout<<#x<<\":\"<<x<<sp<<#y<<\":\"<<y<<sp<<#z<<\":\"<<z<< nl;",
+			"#define precision(x) cout << fixed << setprecision(x)",
+			"#define ANS(cnd) cout << ((cnd) ? \"YES\\n\" : \"NO\\n\")",
+			"#define deb(x) cout << (x) << nl",
 			"",
 			"typedef long long ll;",
+			"typedef long double lld;",
 			"typedef vector<int> vi;",
 			"typedef vector<vi> vvi;",
 			"typedef vector<ll> vl;",
@@ -100,24 +104,37 @@
 			"typedef vector<pair<int, int>> vpii;",
 			"typedef vector<pair<ll, ll>> vpll;",
 			"",
+			"void solve()",
+			"{",
+			"    $0",
+			"    return;",
+			"}",
+			"",
 			"int main()",
 			"{",
 			"    ios_base::sync_with_stdio(false);",
 			"    cin.tie(0);",
 			"    cout.tie(0);",
-			"",
 			"    ll t;",
 			"    cin >> t;",
 			"    while (t--)",
 			"    {",
-			"        $0",
+			"        solve();",
 			"    }",
-			"",
 			"    return 0;",
 			"}",
 			""
 		],
 		"description": "snippet for cp with testcases"
+	},
+	//--------------------------------------------------------------
+	"debug import": {
+		"prefix": "debi",
+		"body": [
+			"#define deb2(x, y) cout << #x << \":\" << (x) << sp << #y << \":\" << (y) << nl",
+			"#define deb3(x, y, z) cout << #x << \":\" << (x) << sp << #y << \":\" << (y) << sp << #z << \":\" << (z) << nl"
+		],
+		"description": "debug import"
 	},
 	//--------------------------------------------------------------
 	"simple cpp template": {
@@ -216,6 +233,20 @@
 		"description": "vector input 2"
 	},
 	//--------------------------------------------------------------
+	"vector input integer": {
+		"prefix": "vini",
+		"body": [
+			"int n;",
+			"cin >> n;",
+			"vi a(n);",
+			"for (int i = 0; i < n; i++)",
+			"{",
+			"    cin >> a[i];",
+			"}"
+		],
+		"description": "vector input integer"
+	},
+	//--------------------------------------------------------------
 	"output vector": {
 		"prefix": "vout",
 		"body": [
@@ -305,23 +336,25 @@
 		"description": "isSubsequence"
 	},
 	//--------------------------------------------------------------
-	"sumDigits": {
-		"prefix": "sumDigits",
+	"sum of digits in number": {
+		"prefix": "sumdigits",
 		"body": [
 			"ll sumDigits(ll n)",
 			"{",
-			"    return n == 0 ? 0 : n % 10 + sumDigits(n / 10);",
+			"    ll sum;",
+			"    for (sum = 0; n > 0; sum += n % 10, n /= 10);",
+			"    return sum;",
 			"}"
 		],
-		"description": "sumDigits"
+		"description": "sum of digits in number"
 	},
 	//--------------------------------------------------------------
 	"map output": {
 		"prefix": "mout",
 		"body": [
 			"for (auto x : mp)",
-			"    cout << x.F << ':' << x.S << ' ';",
-			""
+			"    cout << x.ff << ':' << x.ss << ' ';",
+			"cout << nl;"
 		],
 		"description": "map output"
 	},
@@ -343,6 +376,15 @@
 			"template<typename T> T pow(T a,T b,ll m){T ans=1;while(b > 0){if((b&1)==1)ans=(ans*a)%m;b>>=1;a=(a * a)%m;}return ans % m;}",
 		],
 		"description": "fast power"
+	},
+	//--------------------------------------------------------------
+	"fastest gcd alsorithm": {
+		"prefix": "fgcd",
+		"body": [
+			"template <typename T>inline T gcd(T a,T b){T c;while (b){c = b;b = a % b;a = c;}return a;}",
+			""
+		],
+		"description": "fastest gcd alsorithm"
 	},
 	//--------------------------------------------------------------
 	"sieve of Eratosthenes": {
@@ -378,15 +420,6 @@
 		"description": "sort by value in increasing order of values then keys"
 	},
 	//--------------------------------------------------------------
-	"fastest gcd alsorithm": {
-		"prefix": "fgcd",
-		"body": [
-			"template <typename T>inline T gcd(T a,T b){T c;while (b){c = b;b = a % b;a = c;}return a;}",
-			""
-		],
-		"description": "fastest gcd alsorithm"
-	},
-	// --------------------------------------------------------------
 	"Even->odd increasing order comparator function": {
 		"prefix": "eoc",
 		"body": [
@@ -408,7 +441,17 @@
 		"description": "Even->odd increasing order comparator function"
 	},
 	//--------------------------------------------------------------
-	"snippet for google competitions": {
+	"Return true if string is palindrome else false": {
+		"prefix": "ispal",
+		"body": [
+			"bool is_palindrome(string s) {",
+			"    return equal(all(s) - s.size() / 2, s.rbegin());",
+			"}"
+		],
+		"description": "Return true if string is palindrome else false"
+	},
+	//--------------------------------------------------------------
+	"Snippet for google kickstart": {
 		"prefix": "gsn",
 		"body": [
 			"#include <bits/stdc++.h>",
@@ -430,12 +473,12 @@
 			"#define sp ' '",
 			"#define yes cout << \"YES\\n\"",
 			"#define no cout << \"NO\\n\"",
-			"#define ANS(cnd) cout << ((cnd) ? \"YES\\n\" : \"NO\\n\");",
-			"#define deb(x) cout << x << nl;",
-			"#define deb2(x, y) cout << #x << \":\" << x << sp << #y << \":\" << y << nl;",
-			"#define deb3(x,y,z)cout<<#x<<\":\"<<x<<sp<<#y<<\":\"<<y<<sp<<#z<<\":\"<<z<< nl;",
+			"#define precision(x) cout << fixed << setprecision(x)",
+			"#define ANS(cnd) cout << ((cnd) ? \"YES\\n\" : \"NO\\n\")",
+			"#define deb(x) cout << (x) << nl",
 			"",
 			"typedef long long ll;",
+			"typedef long double lld;",
 			"typedef vector<int> vi;",
 			"typedef vector<vi> vvi;",
 			"typedef vector<ll> vl;",
@@ -448,26 +491,30 @@
 			"typedef vector<pair<int, int>> vpii;",
 			"typedef vector<pair<ll, ll>> vpll;",
 			"",
+			"void solve()",
+			"{",
+			"    $0",
+			"    return;",
+			"}",
+			"",
 			"int main()",
 			"{",
 			"    ios_base::sync_with_stdio(false);",
 			"    cin.tie(0);",
 			"    cout.tie(0);",
-			"",
 			"    ll t;",
 			"    ll cnt = 1;",
 			"    cin >> t;",
 			"    while (t--)",
 			"    {",
 			"        cout << \"Case #\" << cnt++ << \": \";",
-			"        $0",
+			"        solve();",
 			"    }",
-			"",
 			"    return 0;",
 			"}",
 			""
 		],
-		"description": "snippet for google competitions"
+		"description": "Snippet for google kickstart"
 	},
 	//--------------------------------------------------------------
 }
