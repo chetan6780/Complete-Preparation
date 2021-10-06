@@ -1,7 +1,5 @@
 # C++ Tips and Tricks 😀
 
----
-
 ## General ⚙️
 
 - `tie(w,x,y,z) = make_tuple(10,20,30,40)` :- w=10,x=20,y=30,z=40
