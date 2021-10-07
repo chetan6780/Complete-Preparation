@@ -22,7 +22,7 @@
 
 ---
 
-# [35. Search Insert Position](./searchInsertPosition.md)
+# [35. Search Insert Position](./35_searchInsertPosition.md)
 
 ### O(log N) Time solution
 
@@ -70,6 +70,39 @@
 **Here soon**
 
 ## <!-- TODO: Write GAP algo -->
+
+---
+
+# [118. Pascal's Triangle](./118_pascalsTriangle.md) 🌟
+
+### Straightforward solution
+
+---
+
+# [121. Best Time to Buy and Sell Stock](./121_bestTimeToBuyAndSellStock.md) 🌟
+
+### O(N^2) Time and O(1) Space
+
+- Brute force:
+- For each day, find the max profit that can be made by buying at that day and selling at the next j days.
+
+### O(N) Time and O(N) Space
+
+- We try to sell stock each day.
+- For each day from last we store maximum stock price that will appeare.
+- then for each day we calculate by selling the stock.
+
+### O(N) Time and O(1) Space
+
+- We try to buy stock each day.
+- For each day we keep track of the minimum price of the stock that appeared before it.
+- if todays stock price is minimum we will update it.
+- return max profit.
+
+### Optimized inner loop : 33% less time.
+
+- If the price of the stock that day less than minimun price so far then there is no chance to get profit so we only update minimum price.
+- else we can get profit, update maxProfit.
 
 ---
 
@@ -153,14 +186,48 @@
 
 # [350. Intersection of Two Arrays II](./350_intersectionOfTwoArraysII.md) 🌟
 
+### O(N\*M) Time and O(N) Space
+
+- Brute force
+- for every element in nums1, check if it exists in nums2
+- if it exists then add it to the ans and set it to -1 and break inner loop, so duplicats will not be included.
+- return ans
+
 ---
 
-# [557. Reverse Words in a String III](./reverseWordsInString.md) 🌟
+# [387. First Unique Character in a String](./387_firstUniqueCharacterInAString.md) 🌟
+
+---
+
+# [557. Reverse Words in a String III](./557_reverseWordsInString.md) 🌟
 
 ### O(N\*M) Time solution
 
 - Where N: lenght of string and M: lenght of substring splited by space.
 - The idea is to reverse the substring splitted by spaces, so the final result will be possible.
+
+---
+
+# [566. Reshape the Matrix](./566_reshapeMatrix.md) 🌟
+
+### O(N\*M) Time and O(N\*M)+O(N\*M) Space
+
+- naive approach
+- store 2D array in 1D temporary array.
+- Create new r\*c matrix and fill it with the values from the temporary array.
+
+### O(N\*M) Time and O(N\*M) Space (Row-First Approach
+
+- M[i] => M[i/n][i%n] it will result in right mapping
+- `i/c` will give us the row number of output matrix. We will move to New row after every c elements and thus dividing by c will give the row number.
+- `i%c` will give us the column number of output matrix. We will be begin from start of new row after every c elements and this the remainder will give column of current row.
+- The same happens in i/n and i%n but for the mat matrix).
+
+### O(N\*M) Time and O(N\*M) Space (Column-First Approach)
+
+### <!-- TODO: (Column-First Approach) -->
+
+soon...
 
 ---
 
