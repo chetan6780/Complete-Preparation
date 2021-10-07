@@ -36,6 +36,12 @@
 
 ---
 
+# [36. Valid Sudoku](./36_validSudoku.md) 🌟🌟
+
+### Implementation
+
+---
+
 # [53. Maximum Subarray](./53_maximumSubarray.md) 🌟
 
 ### O(N) time constant space(DP)
@@ -46,6 +52,26 @@
   - mx = max(current sum , mx);
   - current sum will be max(0,current sum);
 - finally we return mx
+
+---
+
+# [74. Search a 2D Matrix](./74_search2DMatrix.md) 🌟🌟
+
+### O(N\*M) Time and constant space solution
+
+- Brute force.
+- Traverse through the matrix and check for the target.
+- If the target is found, return true.
+- finally return false.
+
+### O(N\*logM) Time and constant space solution
+
+- Search using binary search.
+
+### O(log(N\*M)) Time and O(1) space
+
+- Complete Binary search on matrix.
+- mid/m : row , mid%m : column
 
 ---
 
@@ -151,6 +177,27 @@
 
 ---
 
+# [242. Valid Anagram](./242_validAnagram.md) 🌟
+
+### O(N logN) Time and constant space
+
+- Sort both strings and compare them.
+- if they are equal, return true else false.
+
+### O(N) Time and O(N)=O(26) constant space
+
+- We store frequency of each character in a hash table.
+- Decrement the frequency of each character in hash table which is in the t.
+- If any frequency is not zero, return false.
+
+### Only 2 loops
+
+- First confirm sizes of both strings is same.
+- We can avoid 3rd loop by checking if the frequency of each character less than 0 then return false.
+- return true by default.
+
+---
+
 # [278. First Bad Version](./278_firstBadVersion.md) 🌟
 
 ### O(log N) Time solution
@@ -195,7 +242,29 @@
 
 ---
 
+# [383. Ransom Note](./383_ransomNote.md) 🌟
+
+### same as is_subsequence problem.
+
+### O(N) Time O(N)=O(26) constant space
+
+- calculate frequency of each letter in magazine
+- iterate over ransomNote and decrement frequency of each letter
+- if any letter frequency is less than 0, return false
+
+---
+
 # [387. First Unique Character in a String](./387_firstUniqueCharacterInAString.md) 🌟
+
+### O(N^2) Time and O(1) space
+
+- Brute force
+- For every character check if it appears in the string more than once
+
+### O(N) Time and O(N)=O(26) constant space
+
+- Store frequency of every character in a hash table
+- Iterate through the hash table and check if the character is Unique
 
 ---
 
