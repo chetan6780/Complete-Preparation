@@ -22,6 +22,12 @@
 
 ---
 
+# [21. Merge Two Sorted Lists](./21_mergeTwoSortedList.md) 🌟
+
+
+
+---
+
 # [35. Search Insert Position](./35_searchInsertPosition.md)
 
 ### O(log N) Time solution
@@ -129,6 +135,22 @@
 
 - If the price of the stock that day less than minimun price so far then there is no chance to get profit so we only update minimum price.
 - else we can get profit, update maxProfit.
+
+---
+
+# [141. Linked List Cycle](./141_linkedListCycle.md) 🌟
+
+### O(N) Time and O(N) space
+
+- If there is a cycle in given linked list then same node must appear more than once.
+- so, we create an unordered_set of nodes ands while traversing the list we check if the node is already present in the linked list.
+- if its present we return true else we insert it into the unordered_set.
+- finally after completing loop we return false. because there is no cycle.
+
+### O(N) Time and O(1) space - floyds cycle detection algorithm
+
+- Here fast pointer move 2 steps and slow pointer moves one step.
+- If they meet each other while traversing then loop that means there is a cycle else not.
 
 ---
 
