@@ -24,7 +24,34 @@
 
 # [21. Merge Two Sorted Lists](./21_mergeTwoSortedList.md) 🌟
 
+### O(N+M) Time and O(N+M) space
 
+- If any list is empty, return the other list
+- Create dummy node to store new sorted lists
+- travese until one of the list is empty
+  - if l1 is smaller, add l1 to new list, and move l1 to its next node
+  - if l2 is smaller, add l2 to new list, and move l2 to its next node
+  - move dummy pointer
+- if l2 is empty, add l1 to new list
+- if l1 is empty, add l2 to new list
+- Return next pointer of dummy node
+
+### O(N+M) Time and O(1) space, in-place
+
+- if any list is empty, return the other list
+- l1 will always contain list of smaller value
+  - l1 will contain smaller val always;
+  - store l1 in result;
+- until any list is empty, run loop
+  - Create a temp node which points to nullptr
+  - while l1 has smaller element than l2, add l1 to temp
+  - after loop l2 will have smaller value than l1
+  - by swapping l1 and l2, l1 will contain smaller value
+- return final result which is pointer to l1 list
+
+### O(N+M) Time and O(1) Space, Recursive
+
+- We will recursively join two linked list such that they will be aways sorted.
 
 ---
 
@@ -180,6 +207,23 @@
 - reverse the array.
 - reverse the first k elements.
 - reverse the rest of the array.
+
+---
+
+# [203. Remove Linked List Elements](./203_removeLinkedListElement.md) 🌟
+
+### O(N) Time and O(1) Space
+
+- Implimentation
+
+### O(N) Time and O(1) Space, recursive
+
+- if head is null return null.
+- if value of current node is val we not include it else we include it.
+
+---
+
+# [206. Reverse Linked List](./206_reverseLinkedList.md) 🌟
 
 ---
 
