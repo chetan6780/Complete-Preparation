@@ -210,6 +210,10 @@
 
 ---
 
+# [144. Binary Tree Preorder Traversal](./144_binaryTreePreorderTraversal.md) 🌟
+
+---
+
 # [167. Two Sum II - Input array is sorted](./167_twoSumII_inputArrayIsSorted.md) 🌟
 
 ### O(N) Time 2-pointers solution
@@ -291,6 +295,15 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 ### O(N) Time and O(N) Space
 
 - We can use a hash table to store the elements.
+
+---
+
+# [232. Implement Queue using Stacks](./232_implementQueueUsingStacks.md) 🌟
+
+### O(1) AMORTIZED Time solution
+
+- **AMORTIZED**: Most of the times operations are O(1) time. Sometimes it will be O(n) time. But total time for all the operations will be O(1).
+- Using 2 stacks; one is used for read and another for write.
 
 ---
 
