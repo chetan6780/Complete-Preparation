@@ -161,6 +161,33 @@
 
 ---
 
+# [94. Binary Tree Inorder Traversal](./94_binaryTreeInorderTraversal.md) 🌟
+
+### O(N) Time and O(N) auxillary space, recursive
+
+- if root is null, Return.
+- Traverse Left subtree.
+- Visit the root (store data).
+- Traverse Right subtree.
+
+### O(N) Time and O(N) Space, itterative
+
+- if root is null, Return.
+- while true
+  - if left node present, then traverse all the way left.& push node in the stack.
+  - if stack is empty, break the loop.
+  - get the top in node variable and push it in ans vector.
+  - now move to the right.
+- return inorder(ans) vector.
+
+### O(N) Time and O(1) Space, Morris Traversal
+
+**Soon...**
+
+<!-- TODO: Morris traversal -->
+
+---
+
 # [118. Pascal's Triangle](./118_pascalsTriangle.md) 🌟
 
 ### Straightforward solution
@@ -212,7 +239,51 @@
 
 # [144. Binary Tree Preorder Traversal](./144_binaryTreePreorderTraversal.md) 🌟
 
+### O(N) Time O(N) space (function call stack), Recursive
+
+- if root is null, Return.
+- Visit the root (store data).
+- Traverse Left subtree.
+- Traverse Right subtree.
+
+### O(N) Time and O(N) extra space
+
+- Create a vector to store values and stack for operations
+- if tree is empty, return empty vector
+- else push root into stack
+- while stack is not empty
+  - pop the top element from stack
+  - push the value of the popped element into vector
+  - we want left to the top of stack, so we store it last so it appear on the top of stack
+  - if right node is not empty, push it into stack
+  - if left node is not empty, push it into stack
+
+### Morris traversal - O(N) time and O(N) space.
+
+**Explaination soon...**
+
+## <!-- TODO: morris traversal -->
+
 ---
+
+# [145. Binary Tree Postorder Traversal](./145_binaryTreePostorderTraversal.md) 🌟
+
+### O(N) Time and O(2N) space, Itterative
+
+**NOTE:** _Here instead of ***2 Stack*** I have used ***1 Stack and 1 vector*** and reversed the vector at the end._
+
+More detail explaination watch [this](https://www.youtube.com/watch?v=2YBhNLodD8Q) 4 min video.
+
+### O(N) Time and O(N) Space, Itterative (1 stack)
+
+**This is bit tricky.Dry run 2-3 trees to understand**
+Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
+
+### O(N) Time and O(1) Space, Morris traversal
+
+**soon...**
+
+## <!-- TODO: Morris traversal -->
 
 # [167. Two Sum II - Input array is sorted](./167_twoSumII_inputArrayIsSorted.md) 🌟
 
