@@ -188,6 +188,21 @@
 
 ---
 
+# [102. Binary Tree Level Order Traversal](./102_btLevelOrderTraversal.md) 🌟🌟
+
+### O(2N) Time and O(N) Space
+
+- Create an empty queue q.
+- Push the root node of tree to q.
+- Loop while the queue is not empty:
+  - get all the elements of q.
+  - push thier left and right nodes in the queue.
+  - push_back these elements in the vector.
+  - pus_back this vector in main 2d vector.
+- return 2d vector.
+
+---
+
 # [118. Pascal's Triangle](./118_pascalsTriangle.md) 🌟
 
 ### Straightforward solution
