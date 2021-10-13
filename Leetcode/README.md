@@ -188,6 +188,16 @@
 
 ---
 
+# [101. Symmetric Tree](./101_symmetricTree.md) 🌟
+
+### O(N) Time solution
+
+- we will trverse left and right subtrees of the root with the same type of traversal.
+- we compare the value of left with right or value of right with left , if they are not equal we return false.
+- we recurse for left's left with right's right and left's right with right's left.
+
+---
+
 # [102. Binary Tree Level Order Traversal](./102_btLevelOrderTraversal.md) 🌟🌟
 
 ### O(2N) Time and O(N) Space
@@ -200,6 +210,21 @@
   - push_back these elements in the vector.
   - pus_back this vector in main 2d vector.
 - return 2d vector.
+
+---
+
+# [104. Maximum Depth of Binary Tree](./104_maxDepthBinaryTree.md) 🌟
+
+### O(N) Time and O(H) Space,(DFS) More preffered than itterative
+
+- Worst case, if tree is sqwed then it will take **O(N)** else **O(h)** space, where h is the height of the tree.
+
+- If root is null then return 0.
+- else return 1 + maximum depth of(left subtree, right subtree)
+
+### O(N) Time and O(N) Space (BFS), using level order traversal
+
+- Same like level order traversal, but we need to keep track of the depth.
 
 ---
 
