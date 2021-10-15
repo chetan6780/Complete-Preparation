@@ -25,3 +25,75 @@ public:
     }
 };
 ```
+
+### O(N) Time, using 2 queue, itterative solution
+
+- Same recursive solution can be converted to itterative solution by using queue.
+- Remember while using 2 queue we push `left->left,left->right` in 1st queue and `right->right,right->left` in 2nd queue.
+
+```cpp
+class Solution{
+public:
+    bool isSymmetric(TreeNode *root){
+        if (!root) return true;
+
+        TreeNode *left, *right;
+        queue<TreeNode *> q1, q2;
+        q1.push(root->left);
+        q2.push(root->right);
+
+        while (!q1.empty() && !q2.empty()){
+            left = q1.front();
+            q1.pop();
+            right = q2.front();
+            q2.pop();
+
+            if (left == NULL && right == NULL) continue;
+            if (left == NULL || right == NULL) return false;
+            if (left->val != right->val) return false;
+
+            q1.push(left->left);
+            q1.push(left->right);
+            q2.push(right->right);
+            q2.push(right->left);
+        }
+        return true;
+    }
+};
+```
+
+### O(N) Time, using 1 queue, itterative solution
+
+- We can use 1 queue insteed of 2.
+- remenber that while using 1 queue we do `left->left,right->right,left->right,right->left.`
+
+```cpp
+class Solution{
+public:
+    bool isSymmetric(TreeNode *root){
+        TreeNode *left, *right;
+        if (!root) return true;
+
+        queue<TreeNode *> q;
+        q.push(root->left);
+        q.push(root->right);
+
+        while (!q.empty()){
+            left = q.front();
+            q.pop();
+            right = q.front();
+            q.pop();
+
+            if (left == NULL && right == NULL) continue;
+            if (left == NULL || right == NULL) return false;
+            if (left->val != right->val) return false;
+
+            q.push(left->left);
+            q.push(right->right);
+            q.push(left->right);
+            q.push(right->left);
+        }
+        return true;
+    }
+};
+```

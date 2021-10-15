@@ -188,6 +188,20 @@
 
 ---
 
+# [98. Validate Binary Search Tree](./98_validateBinarySearchTree.md) 🌟🌟
+
+### O(N) Time and O(N) space
+
+- Inorder traversal of the binary tree gives sorted array.
+- we can traverse the tree inorder and check if the array is sorted or not.
+
+### O(N) Time solution
+
+- we will check if value is less than maximum and greater than minimum
+- Refer [This](https://www.youtube.com/watch?v=s6ATEkipzow) , if you are not able to understand.
+
+---
+
 # [101. Symmetric Tree](./101_symmetricTree.md) 🌟
 
 ### O(N) Time solution
@@ -195,6 +209,16 @@
 - we will trverse left and right subtrees of the root with the same type of traversal.
 - we compare the value of left with right or value of right with left , if they are not equal we return false.
 - we recurse for left's left with right's right and left's right with right's left.
+
+### O(N) Time, using 2 queue, itterative solution
+
+- Same recursive solution can be converted to itterative solution by using queue.
+- Remember while using 2 queue we push `left->left,left->right` in 1st queue and `right->right,right->left` in 2nd queue.
+
+### O(N) Time, using 1 queue, itterative solution
+
+- We can use 1 queue insteed of 2.
+- remenber that while using 1 queue we do `left->left,right->right,left->right,right->left.`
 
 ---
 
@@ -225,6 +249,22 @@
 ### O(N) Time and O(N) Space (BFS), using level order traversal
 
 - Same like level order traversal, but we need to keep track of the depth.
+
+---
+
+# [112. Path Sum](./112_pathSum.md) 🌟
+
+### O(N) Time , recursive
+
+- if root is null return false
+- if roots left and right both are null return `root->val==targetSum`.
+- else recursively find `targerSum - root->val` in left and right subtree.
+
+### O(N) Time , iterative
+
+**soon...**
+
+<!-- TODO: itterative solution -->
 
 ---
 
@@ -409,12 +449,43 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 
 ---
 
+# [226. Invert Binary Tree](./226_invertBinaryTree.md) 🌟]
+
+### O(N) Time recursive solution
+
+- if root is null return null
+- we just need to swap the left and right children of each node recursively.we can use inbuilt swap function or impliment our own swap function.
+- We can travel in preorder as well as postorder , both solutions are accepted.(here is preorder solution)
+
+### O(N) Time O(N) stack itterative solution
+
+- We use stack insteed of recursive stack.
+
+---
+
 # [232. Implement Queue using Stacks](./232_implementQueueUsingStacks.md) 🌟
 
 ### O(1) AMORTIZED Time solution
 
 - **AMORTIZED**: Most of the times operations are O(1) time. Sometimes it will be O(n) time. But total time for all the operations will be O(1).
 - Using 2 stacks; one is used for read and another for write.
+
+---
+
+# [236. Lowest Common Ancestor of a Binary Tree](./236_lowestCommonAncestorOfABinaryTree.md) 🌟🌟
+
+### O(N) Time and O(N) Space
+
+- Find the path from the root node to node n1 and store it in a vector or array.
+- Find the path from the root node to node n2 and store it in another vector or array.
+- Traverse both paths untill the values in arrays are same. Return the common element just before the mismatch.
+
+### O(N) Time recursive solution
+
+- we traverse the tree and find p and q;
+- if one of child node is null return another
+- else both are not null return the root(curr node), that means left and right are p and q.
+- Reference: [link](https://www.youtube.com/watch?v=_-QHfMDde90) for recursive solution.
 
 ---
 
@@ -538,6 +609,51 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 ### <!-- TODO: (Column-First Approach) -->
 
 soon...
+
+---
+
+# [653. Two Sum IV - Input is a BST](./653_twoSumIV.md) 🌟
+
+### O(N) Time and O(N) space
+
+- This method also works for those who are not BSTs.
+- The idea is to use a hashtable to save the values of the nodes in the BST. Each time when we insert the value of a new node into the hashtable, we check if the hashtable contains k - node.val.
+
+### O(N) Time and O(N) space
+
+- The idea is to use a sorted array to save the values of the nodes in the BST by using an inorder traversal.
+- Then, we use two pointers which begins from the start and end of the array to find if there is a sum k.
+
+### O(hn) Time and O(h) space
+
+- `h` is the height of the tree, which is `logn` at best case, and `n` at worst case.
+- The idea is to use binary search method.
+- For each node, we check if k - node.val exists in this BST.
+
+---
+
+# [700. Search in a Binary Search Tree](./700_searchInABinarySearchTree.md) 🌟
+
+### O(N) Time, Recursive solution
+
+- if root is null return null.
+- if root's value == val return the root.
+- if required value is less than root's value, recurse on left subtree.
+- else recurse on right subtree.
+
+### O(N) Time, Iterative solution
+
+- Same as recursion.
+
+---
+
+# [701. Insert into a Binary Search Tree](./701_insertIntoABinarySearchTree.md) 🌟🌟
+
+### O(N) Time solution
+
+- We append the new node to leaf node where it can be place without violating the BST property.
+- if value of new node is less than root we try for right child
+- else we try for left child.
 
 ---
 
