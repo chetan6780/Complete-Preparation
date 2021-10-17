@@ -1,12 +1,15 @@
 # Complete-Preparation
 
 ### One-stop destination for all you coding round Preparation.
-1. [Leetcode](Leetcode)
 
-2. [SDE-SHEET](SDE-SHEET) 📄
+1. [Aptitude](Aptitude) 😀
 
-3. [GFG and Other Resources](GFG_other) 🖊️
+2. [Leetcode](Leetcode)
 
-4. [CP-SHEET](CP-SHEET) 📄
+3. [SDE-SHEET](SDE-SHEET) 📄
 
-5. [C++ Tips and Tricks](Tips.md) 😀
+4. [GFG and Other Resources](GFG_other) 🖊️
+
+5. [CP-SHEET](CP-SHEET) 📄
+
+6. [C++ Tips and Tricks](Tips.md) 😀
