@@ -519,7 +519,7 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 
 ---
 
-# [283. Move Zeroes](./281_moveZeros.md) 🌟
+# [283. Move Zeroes](./283_moveZeros.md) 🌟
 
 ### O(N) Time solution
 
@@ -531,11 +531,21 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 - The idea is that we go through the array and gather all zeros on our road.
 - If element is 0, increase size of snowball by 1.
 - else we swap it with (i-snowball)th element.
-- **NOTE:** here we used temp variable instead of direct swapping for avoiding unnecessary swapplin. For ex.`[1]` no swap required.
+- **NOTE:** here we used temp variable instead of direct swapping for avoiding unnecessary swapping. For ex.`[1]` no swap required.
 
 ---
 
 # [344. Reverse String](./344_reverseString.md) 🌟
+
+### O(N) time and O(1) space, using stack
+
+- Using stack we can reverse the string.
+
+### O(N) Time , recursive
+
+- if i is the middle then we can stop (it's base condition)
+- else we swap ith and n-i-1th element
+- we recur for next position of i, i.e i+1.
 
 ### O(N) Time two pointer solution
 
@@ -582,10 +592,11 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 
 # [557. Reverse Words in a String III](./557_reverseWordsInString.md) 🌟
 
-### O(N\*M) Time solution
+### O(N\*M) Time and O(M) Space
 
-- Where N: lenght of string and M: lenght of substring splited by space.
-- The idea is to reverse the substring splitted by spaces, so the final result will be possible.
+- We can use stack to reverse each word.
+- Traverse the string and push each character in the stack until we encounter a space.
+- if space is encountered, empty the stack by popping the top character and append it to the result string.
 
 ---
 

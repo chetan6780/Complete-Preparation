@@ -44,7 +44,7 @@ public:
 };
 ```
 
-### O(N\*M) Time and O(N\*M) Space (Row-First Approach
+### O(N\*M) Time and O(N\*M) Space (Row-First Approach)
 
 - M[i] => M[i/n][i%n] it will result in right mapping
 - `i/c` will give us the row number of output matrix. We will move to New row after every c elements and thus dividing by c will give the row number.
@@ -58,7 +58,7 @@ class Solution{
 public:
     vector<vector<int>> matrixReshape(vector<vector<int>> &mat, int r, int c){
         int m = mat.size(), n = mat[0].size(), total = m * n;
-        if (r * c != total)return mat; // for invalid dimentions
+        if (r * c != total)return mat; // for invalid dimensions
 
         vector<vector<int>> ans(r, vector<int>(c));
         for (int i = 0; i < total; i++){
@@ -70,5 +70,7 @@ public:
 ```
 
 ### O(N\*M) Time and O(N\*M) Space (Column-First Approach)
+
+**soon...**
 
 <!-- TODO: (Column-First Approach) -->

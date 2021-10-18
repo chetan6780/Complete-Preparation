@@ -2,10 +2,16 @@
 
 Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
 
+### O(N\*M) Time and O(M) Space
+
+- We can use stack to reverse each word.
+- Traverse the string and push each character in the stack until we encounter a space.
+- if space is encountered, empty the stack by popping the top character and append it to the result string.
+
 ### O(N\*M) Time solution
 
-- Where N: lenght of string and M: lenght of substring splited by space.
-- The idea is to reverse the substring splitted by spaces, so the final result will be possible.
+- Where N: length of string and M: length of substring split by space.
+- The idea is to reverse the substring split by spaces, so the final result will be possible.
 
 ### Code
 

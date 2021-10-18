@@ -32,7 +32,7 @@ public:
 - The idea is that we go through the array and gather all zeros on our road.
 - If element is 0, increase size of snowball by 1.
 - else we swap it with (i-snowball)th element.
-- **NOTE:** here we used temp variable instead of direct swapping for avoiding unnecessary swapplin. For ex.`[1]` no swap required.
+- **NOTE:** here we used temp variable instead of direct swapping for avoiding unnecessary swapping. For ex.`[1]` no swap required.
 
 ### Code
 
