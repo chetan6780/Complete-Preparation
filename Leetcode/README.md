@@ -22,23 +22,46 @@
 
 ---
 
+# [19. Remove Nth Node From End of List](./19_removeNthNodeFromEndOfList.md) 🌟🌟
+
+### O(N) Time and O(1) Space Complexity
+
+- Get the length of the linked list.
+- if n = length then return head->next
+- n = length - n
+- go to n-1th node then set its next to its next->next.
+- delete the space of removed node, else it will cause memory leak.
+- return head
+
+### O(N) Time and O(1) Space Complexity, two pointers
+
+- We take 2 pointers, fast and slow. (here both move equally i.e. 1 node at a time)
+- move fast pointer n times.
+- if fast is null return head->next
+- now move slow and fast pointers together until fast->next != NULL.
+- slow->next = slow->next->next
+- Delete deleted node.
+- **NOTE:** This method have same complexity as above method.
+
+---
+
 # [20. Valid Parentheses](./20_validParentheses.md) 🌟
 
 ### O(N) Time and O(N) Space, straightforward solution
 
 - if the string is empty, return true
 - if the string has an odd number of characters, return false
-- Create a stack to store paranthesis.
-- if character is any opening paranthesis, push it to the stack
-- after first if, if stack is empty, which means the character is closing paranthesis, return false
+- Create a stack to store parenthesis.
+- if character is any opening parenthesis, push it to the stack
+- after first if, if stack is empty, which means the character is closing parenthesis, return false
 - else
-  - current character is matching paranthesis of top char of stach, pop that opening character from stack.
+  - current character is matching parenthesis of top char of stack, pop that opening character from stack.
   - else push it in the stack.
 - return true if stack is empty else false.
 
-### Some slight simpification
+### Some slight simplification
 
-- we dont need to push extra closing paranthesis in the stak, if extra paranthesis appears return false.
+- we don't need to push extra closing parenthesis in the stack, if extra parenthesis appears return false.
 
 ---
 
@@ -48,7 +71,7 @@
 
 - If any list is empty, return the other list
 - Create dummy node to store new sorted lists
-- travese until one of the list is empty
+- traverse until one of the list is empty
   - if l1 is smaller, add l1 to new list, and move l1 to its next node
   - if l2 is smaller, add l2 to new list, and move l2 to its next node
   - move dummy pointer
@@ -71,7 +94,7 @@
 
 ### O(N+M) Time and O(1) Space, Recursive
 
-- We will recursively join two linked list such that they will be aways sorted.
+- We will recursively join two linked list such that they will be always sorted.
 
 ---
 
@@ -151,13 +174,13 @@
 
 ### O(M+N) Time and O(1) Space
 
-- Code is self explanetory on leetcode
+- Code is self explanatory on leetcode
 
 ### Using GAP algorithm(striver)
 
 **Here soon**
 
-## <!-- TODO: Write GAP algo -->
+## <!-- TODO: Write GAP algorithm -->
 
 ---
 
@@ -170,7 +193,7 @@
 - Visit the root (store data).
 - Traverse Right subtree.
 
-### O(N) Time and O(N) Space, itterative
+### O(N) Time and O(N) Space, iterative
 
 - if root is null, Return.
 - while true
@@ -206,19 +229,19 @@
 
 ### O(N) Time solution
 
-- we will trverse left and right subtrees of the root with the same type of traversal.
+- we will traverse left and right subtrees of the root with the same type of traversal.
 - we compare the value of left with right or value of right with left , if they are not equal we return false.
 - we recurse for left's left with right's right and left's right with right's left.
 
-### O(N) Time, using 2 queue, itterative solution
+### O(N) Time, using 2 queue, iterative solution
 
-- Same recursive solution can be converted to itterative solution by using queue.
+- Same recursive solution can be converted to iterative solution by using queue.
 - Remember while using 2 queue we push `left->left,left->right` in 1st queue and `right->right,right->left` in 2nd queue.
 
-### O(N) Time, using 1 queue, itterative solution
+### O(N) Time, using 1 queue, iterative solution
 
-- We can use 1 queue insteed of 2.
-- remenber that while using 1 queue we do `left->left,right->right,left->right,right->left.`
+- We can use 1 queue instead of 2.
+- remember that while using 1 queue we do `left->left,right->right,left->right,right->left.`
 
 ---
 
@@ -230,7 +253,7 @@
 - Push the root node of tree to q.
 - Loop while the queue is not empty:
   - get all the elements of q.
-  - push thier left and right nodes in the queue.
+  - push their left and right nodes in the queue.
   - push_back these elements in the vector.
   - pus_back this vector in main 2d vector.
 - return 2d vector.
@@ -239,9 +262,9 @@
 
 # [104. Maximum Depth of Binary Tree](./104_maxDepthBinaryTree.md) 🌟
 
-### O(N) Time and O(H) Space,(DFS) More preffered than itterative
+### O(N) Time and O(H) Space,(DFS) More proffered than iterative
 
-- Worst case, if tree is sqwed then it will take **O(N)** else **O(h)** space, where h is the height of the tree.
+- Worst case, if tree is skewed then it will take **O(N)** else **O(h)** space, where h is the height of the tree.
 
 - If root is null then return 0.
 - else return 1 + maximum depth of(left subtree, right subtree)
@@ -258,13 +281,13 @@
 
 - if root is null return false
 - if roots left and right both are null return `root->val==targetSum`.
-- else recursively find `targerSum - root->val` in left and right subtree.
+- else recursively find `targetSum - root->val` in left and right subtree.
 
 ### O(N) Time , iterative
 
 **soon...**
 
-<!-- TODO: itterative solution -->
+<!-- TODO: iterative solution -->
 
 ---
 
@@ -284,7 +307,7 @@
 ### O(N) Time and O(N) Space
 
 - We try to sell stock each day.
-- For each day from last we store maximum stock price that will appeare.
+- For each day from last we store maximum stock price that will appear.
 - then for each day we calculate by selling the stock.
 
 ### O(N) Time and O(1) Space
@@ -296,7 +319,7 @@
 
 ### Optimized inner loop : 33% less time.
 
-- If the price of the stock that day less than minimun price so far then there is no chance to get profit so we only update minimum price.
+- If the price of the stock that day less than minimum price so far then there is no chance to get profit so we only update minimum price.
 - else we can get profit, update maxProfit.
 
 ---
@@ -310,7 +333,7 @@
 - if its present we return true else we insert it into the unordered_set.
 - finally after completing loop we return false. because there is no cycle.
 
-### O(N) Time and O(1) space - floyds cycle detection algorithm
+### O(N) Time and O(1) space - floyd's cycle detection algorithm
 
 - Here fast pointer move 2 steps and slow pointer moves one step.
 - If they meet each other while traversing then loop that means there is a cycle else not.
@@ -340,7 +363,7 @@
 
 ### Morris traversal - O(N) time and O(N) space.
 
-**Explaination soon...**
+**Explanation soon...**
 
 ## <!-- TODO: morris traversal -->
 
@@ -348,13 +371,13 @@
 
 # [145. Binary Tree Postorder Traversal](./145_binaryTreePostorderTraversal.md) 🌟
 
-### O(N) Time and O(2N) space, Itterative
+### O(N) Time and O(2N) space, Iterative
 
 **NOTE:** _Here instead of ***2 Stack*** I have used ***1 Stack and 1 vector*** and reversed the vector at the end._
 
-More detail explaination watch [this](https://www.youtube.com/watch?v=2YBhNLodD8Q) 4 min video.
+More detail explanation watch [this](https://www.youtube.com/watch?v=2YBhNLodD8Q) 4 min video.
 
-### O(N) Time and O(N) Space, Itterative (1 stack)
+### O(N) Time and O(N) Space, Iterative (1 stack)
 
 **This is bit tricky.Dry run 2-3 trees to understand**
 Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
@@ -370,7 +393,7 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 ### O(N) Time 2-pointers solution
 
 - We maintain 2 pointers, one at the start and one at the end.
-- We itterate over the array.
+- We iterate over the array.
   - If Sum if equal to target, return the indices.
   - else if sum is greater than target we decrement the end pointer.
   - else we increment the start pointer.
@@ -398,7 +421,7 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ### O(N) Time and O(1) Space
 
-- Implimentation
+- Implementation
 
 ### O(N) Time and O(1) Space, recursive
 
@@ -409,7 +432,7 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 # [206. Reverse Linked List](./206_reverseLinkedList.md) 🌟
 
-### O(N) Time and O(1) space, itterative
+### O(N) Time and O(1) space, iterative
 
 Given the head of a singly linked list, reverse the list, and return the reversed list.
 
@@ -437,7 +460,7 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 
 ### O(N^2) Time and constant space
 
-- Cheak for every element, if it is present in the array using 2 loops.
+- Check for every element, if it is present in the array using 2 loops.
 
 ### O(N log N) Time and constant space
 
@@ -454,12 +477,12 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 ### O(N) Time recursive solution
 
 - if root is null return null
-- we just need to swap the left and right children of each node recursively.we can use inbuilt swap function or impliment our own swap function.
+- we just need to swap the left and right children of each node recursively.we can use inbuilt swap function or implement our own swap function.
 - We can travel in preorder as well as postorder , both solutions are accepted.(here is preorder solution)
 
-### O(N) Time O(N) stack itterative solution
+### O(N) Time O(N) stack iterative solution
 
-- We use stack insteed of recursive stack.
+- We use stack instead of recursive stack.
 
 ---
 
@@ -478,7 +501,7 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 
 - Find the path from the root node to node n1 and store it in a vector or array.
 - Find the path from the root node to node n2 and store it in another vector or array.
-- Traverse both paths untill the values in arrays are same. Return the common element just before the mismatch.
+- Traverse both paths until the values in arrays are same. Return the common element just before the mismatch.
 
 ### O(N) Time recursive solution
 
@@ -559,7 +582,7 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 
 - Brute force
 - for every element in nums1, check if it exists in nums2
-- if it exists then add it to the ans and set it to -1 and break inner loop, so duplicats will not be included.
+- if it exists then add it to the ans and set it to -1 and break inner loop, so duplicate will not be included.
 - return ans
 
 ---
@@ -637,7 +660,7 @@ soon...
 
 ### O(hn) Time and O(h) space
 
-- `h` is the height of the tree, which is `logn` at best case, and `n` at worst case.
+- `h` is the height of the tree, which is `log n` at best case, and `n` at worst case.
 - The idea is to use binary search method.
 - For each node, we check if k - node.val exists in this BST.
 
@@ -686,7 +709,7 @@ soon...
 
 ### O(N^2) Time and O(1) Space
 
-- Use inbuilt reverse() function to revese the vector.
+- Use inbuilt reverse() function to reverse the vector.
 - To Toggle we can use either `y=1-y` or `y^=1`
 
 ---
@@ -702,9 +725,27 @@ soon...
 
 ---
 
+# [876. Middle of the Linked List](./876_middleOfTheLinkedList.md) 🌟
+
+### O(N) Time solution
+
+- We can traverse through the whole linked list and count the number of node.
+- Then we travel from start until we reach to the middle.
+- Then return temp, which is the middle node.
+
+### O(N) Slow and Fast pointer
+
+- **NOTE: It works for all `Find middle` Questions.**
+- Each time, slow go 1 steps while fast go 2 steps.
+- When fast arrives at the end, slow will arrive right in the middle.
+- `fast != NULL` for odd number of nodes.
+- `fast->next != NULL` for even number of nodes.
+
+---
+
 # [977. Squares of a Sorted Array](./977_squaresOfASortedArray.md) 🌟
 
-### O(NlogN) Time solution
+### O(N*log*N) Time solution
 
 - Create new array and push_back squares of each element in it.
 - Sort the new array.
@@ -714,7 +755,7 @@ soon...
 
 - We use two pointer method to solve this problem.
 - set two array l=0 and r=arr.size()-1.
-- traverse throught the array and set max abs values square at last position.
+- traverse through the array and set max abs values square at last position.
 - return the array.
 
 ---
@@ -725,7 +766,7 @@ soon...
 
 - We use k itself as carry.
 - From last to first we fill array with addition and mod.
-- If after loop, k have some carry we insert k to the start of array untill it becomes 0.
+- If after loop, k have some carry we insert k to the start of array until it becomes 0.
 
 ---
 
@@ -738,7 +779,7 @@ soon...
 ### O(N) Time and O(1) Space
 
 - Using log10(num) to find the length of the number.
-- log10(num) gives lenght(num)-1.
+- log10(num) gives length(num)-1.
 
 ---
 
@@ -792,7 +833,7 @@ soon...
 
 ### O(N) Time and O(1) Space optimization
 
-- We can modify input array directy
+- We can modify input array directly
 
 ---
 
@@ -804,8 +845,8 @@ soon...
 
 ### O(N) Time O(N) Space optimization
 
-- Use map to store if the number appeard before or not.
-- If it appeard add frequency to ans.else add it to map.
+- Use map to store if the number appeared before or not.
+- If it appeared add frequency to ans.else add it to map.
 
 ---
 
@@ -813,7 +854,7 @@ soon...
 
 ### O(N) Time O(1) Space solution
 
-- Smart Implimentation😉
+- Smart Implementation😉
 
 ---
 
@@ -898,12 +939,12 @@ c[3] -> 270 deg
 - going by the example of [5,0,1,2,3,4], n = 6(size of array)
 - `nums[i] = nums[i]+(n*(nums[nums[i]]%n));`
 - after this nums[0] will be 5 + 6\*(4%6) = 5 + 24 = 29;
-- now for next index calulation we might need the original value of num[0] which can be obtain by num[0]%6 = 29%6 = 5;
+- now for next index calculation we might need the original value of num[0] which can be obtain by num[0]%6 = 29%6 = 5;
 - if we want to get just the new value of num[0], we can get it by num[0]/6 = 29/6 = 4
 
 ---
 
-# [1929. Concatenation of Array](./1929_ConcatinationOfArray.md) 🌟
+# [1929. Concatenation of Array](./1929_ConcatenationOfArray.md) 🌟
 
 ### O(N) Time and O(N) Space solution
 

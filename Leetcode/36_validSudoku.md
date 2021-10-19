@@ -43,7 +43,7 @@ public:
 
 ---
 
-**_Q. `(i/3)\*3+j/3` , how did you count this , means how did you think of this no , how it came in your mind ??_**
+**_Q. `(i/3)*3+j/3` , how did you count this , means how did you think of this no , how it came in your mind ??_**
 
 The problem is to come up with an equation to map (n\*n) coordinates to (n) numbers so we can use it as an index into the blocks array.
 
@@ -113,9 +113,9 @@ Well how do we map {0,1,2,3,4,5,6,7,8} to {0,3,6} ?
 We can use integer division again, but multiply the result by 3
 
 ```
-({0, 1, 2} / 3) _ 3 = (0) _ 3 = 0
-({3, 4, 5} / 3) _ 3 = (1) _ 3 = 3
-({6, 7, 8} / 3) _ 3 = (2) _ 3 = 6
+({0, 1, 2} / 3) * 3 = (0) * 3 = 0
+({3, 4, 5} / 3) * 3 = (1) * 3 = 3
+({6, 7, 8} / 3) * 3 = (2) * 3 = 6
 ```
 
-So we have `boxIndex = c/3 + r/3\*3`
+So we have `boxIndex = c/3 + r/3*3`
