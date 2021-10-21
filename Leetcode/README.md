@@ -22,6 +22,30 @@
 
 ---
 
+# [3. Longest Substring Without Repeating Characters](./3_longestSubstringWithoutRepeatingCharacters.md) 🌟🌟
+
+### O(N^3) Time, O(N) space
+
+- Brute force
+- We can consider all substrings one by one and check for each substring whether it contains all unique characters or not.
+- There will be n\*(n+1)/2 substrings.
+- Whether a substring contains all unique characters or not can be checked in linear time by scanning it from left to right and keeping a map of visited characters.
+- Time complexity of this solution would be O(n^3).
+
+### O(N^2) Time O(N) space, Sliding window
+
+- For every i in string we check, **How long the substring starting with index i have unique characters**
+
+### O(N) Time O(N) space, Sliding window
+
+- We keep track of unique characters in a hashmap(unordered_set).
+- l is left index and r is right index, these indicates unique substring's start and end.
+- if r'th character is not present in set, we add it and increment r also update `maxLength = max(maxLength, r-l);`
+- if r'th character is present in set, we remove it from set and increment l pointer.
+- finally return maxLength.
+
+---
+
 # [19. Remove Nth Node From End of List](./19_removeNthNodeFromEndOfList.md) 🌟🌟
 
 ### O(N) Time and O(1) Space Complexity
@@ -643,6 +667,10 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 ### <!-- TODO: (Column-First Approach) -->
 
 soon...
+
+---
+
+# [567. Permutation in String](./567_permutationInString.md) 🌟🌟
 
 ---
 
