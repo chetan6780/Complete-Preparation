@@ -6,7 +6,7 @@ Merge two sorted linked lists and return it as a sorted list. The list should be
 
 - If any list is empty, return the other list
 - Create dummy node to store new sorted lists
-- travese until one of the list is empty
+- traverse until one of the list is empty
   - if l1 is smaller, add l1 to new list, and move l1 to its next node
   - if l2 is smaller, add l2 to new list, and move l2 to its next node
   - move dummy pointer
@@ -29,7 +29,7 @@ public:
         ListNode *dummyNode = new ListNode();
         ListNode *dmptr = dummyNode; // pointer to dummyNode
 
-        // travese until one of the list is empty
+        // traverse until one of the list is empty
         while (l1 != NULL && l2 != NULL){
             // if l1 is smaller, add l1 to new list, and move l1 to its next node
             if (l1->val <= l2->val){
@@ -107,7 +107,7 @@ public:
 
 ### O(N+M) Time and O(1) Space, Recursive
 
-- We will recursively join two linked list such that they will be aways sorted.
+- We will recursively join two linked list such that they will be always sorted.
 
 ### Code
 

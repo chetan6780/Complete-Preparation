@@ -4,7 +4,7 @@ Given the head of a linked list and an integer val, remove all the nodes of the 
 
 ### O(N) Time and O(1) Space
 
-- Implimentation
+- Implementation
 
 ### Code
 

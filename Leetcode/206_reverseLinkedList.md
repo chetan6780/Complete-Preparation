@@ -1,6 +1,6 @@
 # [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) 🌟
 
-### O(N) Time and O(1) space, itterative
+### O(N) Time and O(1) space, iterative
 
 Given the head of a singly linked list, reverse the list, and return the reversed list.
 

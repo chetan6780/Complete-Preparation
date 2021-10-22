@@ -458,8 +458,6 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ### O(N) Time and O(1) space, iterative
 
-Given the head of a singly linked list, reverse the list, and return the reversed list.
-
 - Initialize three pointers prev as NULL, curr as head and next as NULL.
 - Iterate through the linked list. In loop, do following.
   - Before changing next of current, store next node
@@ -694,6 +692,40 @@ soon...
 
 ---
 
+# [695. Max Area of Island](./695_maxAreaOfIsland.md) 🌟🌟
+
+### DFS - Recursive
+
+- For each cell we check, if it is 1, then we call a dsf on it
+
+- **DFS Function:**
+
+  - we pass grid, i and j in dfs.
+  - if the cell is valid we call dfs on its four sides.
+
+- **Complexity:**
+
+  - Time: **O(M \* N)**, where M is number of rows, N is number of columns in the grid.
+  - Space: **O(M \* N)**, the space used by the depth stack during our recursion, in worst case is **O(M \* N)**.
+
+### BFS - Iterative
+
+- For each cell we check, if it is 1,then we call a **bsf** on it
+
+- **BFS Function**
+
+  - We use q for bfs and push the first pair of i&j in q
+  - While q is not empty
+  - for top of the queue, we go on four directions and set `grid[nr][nc]=0` and increase the area count.
+  - return the area.
+
+- **Complexity:**
+
+  - Time: **O(M \* N)**, where M is number of rows, N is number of columns in the grid.
+  - Space: **O(M \* N)**, the space used by the queue in bfs, in worst case is **O(M \* N)**, can check this discussion:[stackoverflow](https://stackoverflow.com/a/50912382/4084297)
+
+---
+
 # [700. Search in a Binary Search Tree](./700_searchInABinarySearchTree.md) 🌟
 
 ### O(N) Time, Recursive solution
@@ -730,6 +762,53 @@ soon...
   - if middle element is greater than target then r = middle - 1
   - if middle element is less than target then l = middle + 1
 - if we cant find element in array, return -1.
+
+---
+
+# [733. Flood Fill](./733_floodFill.md) 🌟
+
+### DFS - Recursive
+
+- **Main function:**
+
+  - if current color is not new color, call the dfs algorithm.
+  - else return original image.
+
+- **DFS function:**
+
+  - check for invalid row and column numbers.
+  - check if current color is not old color or is already new color.
+  - for both the cases return.
+  - set current color to new color.
+  - call the function for all the 4 directions.
+
+- **Complexity:**
+
+  - Time: **O(M \* N)**, where `M <= 50` is number of rows, `N <= 50` is number of columns in the matrix.
+  - Space: **O(M \* N)**, it's the depth stack memory, in worst case is **O(M \* N)**, can check this discussion on [stackoverflow](https://stackoverflow.com/a/50912382/4084297).
+
+### BFS - Iterative
+
+- **Main function:BFS**
+
+  - if current color is already new color, return original image
+  - We need a 2D direction vector and a queue for BFS (q of pairs).
+  - push starting point in the queue.
+  - while queue is not empty run loop.
+    - get the row and column index form the front of the queue, and pop it.
+    - set current color to new color
+    - for all directions push {r,c} in the queue if it's valid.
+
+- **Complexity:**
+
+  - Time: **O(M \* N)**, where `M <= 50` is number of rows, `N <= 50` is number of columns in the matrix.
+  - Space: **O(M \* N)**, it's the depth stack memory, in worst case is **O(M \* N)**, can check this discussion on [stackoverflow](https://stackoverflow.com/a/50912382/4084297).
+
+### MUST READS:
+
+- [How do you think about solving a question using DFS [ Learn before you Code ]](https://leetcode.com/problems/flood-fill/discuss/442143/How-do-you-think-about-solving-a-question-using-DFS-Learn-before-you-Code)
+
+- [[C++] standard solution, schema you can apply to other tasks: list + visited](https://leetcode.com/problems/flood-fill/discuss/627915/C%2B%2B-standard-solution-schema-you-can-apply-to-other-tasks%3A-list-%2B-visited)
 
 ---
 
