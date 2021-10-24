@@ -11,11 +11,11 @@ An input string is valid if:
 
 - if the string is empty, return true
 - if the string has an odd number of characters, return false
-- Create a stack to store paranthesis.
-- if character is any opening paranthesis, push it to the stack
-- after first if, if stack is empty, which means the character is closing paranthesis, return false
+- Create a stack to store parenthesis.
+- if character is any opening parenthesis, push it to the stack
+- after first if, if stack is empty, which means the character is closing parenthesis, return false
 - else
-  - current character is matching paranthesis of top char of stach, pop that opening character from stack.
+  - current character is matching parenthesis of top char of stack, pop that opening character from stack.
   - else push it in the stack.
 - return true if stack is empty else false.
 
@@ -47,9 +47,9 @@ public:
 };
 ```
 
-### Some slight simpification
+### Some slight simplification
 
-- we dont need to push extra closing paranthesis in the stak, if extra paranthesis appears return false.
+- we don't need to push extra closing parenthesis in the stack, if extra parenthesis appears return false.
 
 ### Code
 

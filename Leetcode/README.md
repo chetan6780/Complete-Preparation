@@ -670,6 +670,50 @@ soon...
 
 # [567. Permutation in String](./567_permutationInString.md) 🌟🌟
 
+### O(N) Time and O(1) Space
+
+- Permutation of string is the anagram of itself.
+- So, the problem become, find the anagram of the string1 in the string2.
+- We can find it with maintaining two frequency arrays for s1 and s2.
+- If at any point their frequencies are equal, then return true.
+- else by maintaining window size(s1.size()), try for next substring.
+- finally, return false, because there is no anagram of string1 in string2.
+
+---
+
+# [617. Merge Two Binary Trees](./617_mergeTwoBinaryTrees.md) 🌟
+
+### DFS - Recursive
+
+- if both nodes are null returns null.
+- if one of the node null, return the other node.
+- else Create new node with value = t1->val+t2->val.
+- set new nodes left = merge(t1->left, t2->left)
+- set new nodes right = merge(t1->right, t2->right)
+- return new node;
+
+**Time complexity**: **O(n)**. A total of n nodes need to be traversed. Here, n represents the minimum number of nodes from the two given trees.
+**Space complexity**: **O(n)**. The depth of the recursion tree can go upto n in the case of a skewed tree. In average case, depth will be **O(log n)**.
+
+### BFS - Iterative
+
+- Base condition as in recursion
+- Create 2 queues for BFS and push root nodes in them.
+- While both queues are not empty
+  - Store the front nodes and Pop from both queues
+  - Add value of 2nd node in 1st
+  - if node1's left is null and node2's left is not null, then add node1's left to node2's left
+  - else if both's left not null then push them in respective queues
+  - if node1's right is null and node2's right is not null, then add node1's right to node2's right
+  - else if both's right not null then push them in respective queues.
+
+**Time complexity**: **O(n)**. A total of n nodes need to be traversed. Here, n represents the minimum number of nodes from the two given trees.
+**Space complexity**: **O(n)**. The size of queue can go upto n in the case of a skewed tree.
+
+### MUST READ:
+
+- [~100.00% fast in run-time and memory Recursive/Iterative/BFS/DFS](https://leetcode.com/problems/merge-two-binary-trees/discuss/588123/~100.00-fast-in-run-time-and-memory-RecursiveIterativeBFSDFS)
+
 ---
 
 # [653. Two Sum IV - Input is a BST](./653_twoSumIV.md) 🌟
