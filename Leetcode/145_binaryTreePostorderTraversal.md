@@ -29,11 +29,11 @@ public:
 };
 ```
 
-### O(N) Time and O(2N) space, Itterative
+### O(N) Time and O(2N) space, Iterative
 
 **NOTE:** _Here instead of ***2 Stack*** I have used ***1 Stack and 1 vector*** and reversed the vector at the end._
 
-More detail explaination watch [this](https://www.youtube.com/watch?v=2YBhNLodD8Q) 4 min video.
+More detail explanation watch [this](https://www.youtube.com/watch?v=2YBhNLodD8Q) 4 min video.
 
 ### Code
 
@@ -64,7 +64,7 @@ public:
 };
 ```
 
-### O(N) Time and O(N) Space, Itterative (1 stack)
+### O(N) Time and O(N) Space, Iterative (1 stack)
 
 **This is bit tricky.Dry run 2-3 trees to understand**
 Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.

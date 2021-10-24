@@ -2,13 +2,13 @@
 
 Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
 
-### O(2N) Time and O(N) Space
+### O(N) Time and O(N) Space
 
 - Create an empty queue q.
 - Push the root node of tree to q.
 - Loop while the queue is not empty:
   - get all the elements of q.
-  - push thier left and right nodes in the queue.
+  - push their left and right nodes in the queue.
   - push_back these elements in the vector.
   - pus_back this vector in main 2d vector.
 - return 2d vector.

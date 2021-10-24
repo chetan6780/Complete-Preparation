@@ -271,7 +271,7 @@
 
 # [102. Binary Tree Level Order Traversal](./102_btLevelOrderTraversal.md) 🌟🌟
 
-### O(2N) Time and O(N) Space
+### O(N) Time and O(N) Space
 
 - Create an empty queue q.
 - Push the root node of tree to q.
@@ -312,6 +312,21 @@
 **soon...**
 
 <!-- TODO: iterative solution -->
+
+---
+
+# [116. Populating Next Right Pointers in Each Node](./116_populatingNextRightPointer.md) 🌟🌟
+
+### O(N) Time and O(N) space
+
+- Using level order traversal technique and NULL.
+- if current node is null and q is not empty, then push NULL into q.
+- else set current node's next to q's front.
+- push left and right in the queue , if they are not NULL.
+
+### O(N) Time and O(1) space
+
+## <!-- TODO: Explanation -->
 
 ---
 
@@ -381,7 +396,7 @@
 - while stack is not empty
   - pop the top element from stack
   - push the value of the popped element into vector
-  - we want left to the top of stack, so we store it last so it appear on the top of stack
+  - we want left node to the top of stack, so we store it last so it appear on the top of stack
   - if right node is not empty, push it into stack
   - if left node is not empty, push it into stack
 
@@ -491,6 +506,21 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 ### O(N) Time and O(N) Space
 
 - We can use a hash table to store the elements.
+
+---
+
+# [222. Count Complete Tree Nodes](./222_countCompleteTreeNodes.md) 🌟🌟
+
+### O(N) Time
+
+- we Can traverse the whole tree and count the number of nodes.
+
+### O(log N \* log N) Time
+
+- The idea behind the algorithm is - A complete binary tree has `2^h - 1` nodes, where `h` is the height of the tree.
+- so we get the left and right hight of the tree.
+- if the are equal, then we can directly return `2^(left) - 1`
+- else we check for its right and left subtree and return `1 + countNodes(root->left) + countNodes(root->right);`
 
 ---
 
