@@ -427,6 +427,49 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ## <!-- TODO: Morris traversal -->
 
+---
+
+# [155. Min Stack](./155_minStack.md) 🌟
+
+### TIP
+
+- Solving a question to implement stack using stack is possible , but not a good idea.
+- you can use 2 vector, 1 vector, vector of pair or map to implement the stack.
+
+### Time Complexity: O(1) for all the solutions.
+
+### Space Complexity: Extra O(N) Space used.
+
+### Using 2 Vectors
+
+- We maintain 2 vectors, 1 for stack implementation and another for min stack.push `INT_MAX` to min stack in declaration.
+- `push` operation:
+  - push element to stack.
+  - push min element to min stack.
+- `pop` operation:
+  - pop element from stack.
+  - pop min element from min stack.
+- `top` operation:
+  - return top element from stack.
+- `getMin` operation:
+  - return top element from min stack.
+
+### Using 1 vector
+
+- Instead of 2 vectors, we can use 1 vector to implement the stack.
+- `push` operation:
+  - if minElement is greater or equal to val, push minElement to stack and update minElement to val.
+  - then push val in the stack.
+- `pop` operation:
+  - pop the top of the stack.
+  - if top is equal to minElement, minElement will be top(next top) of the stack and pop the top(next top) from stack.
+
+### Using vector of pair
+
+- Self explanatory code
+
+---
+
 # [167. Two Sum II - Input array is sorted](./167_twoSumII_inputArrayIsSorted.md) 🌟
 
 ### O(N) Time 2-pointers solution
@@ -662,6 +705,35 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 - Store frequency of every character in a hash table
 - Iterate through the hash table and check if the character is Unique
+
+---
+
+# [542. 01 Matrix](./542_01Matrix.md) 🌟🌟
+
+### BFS solution
+
+- Firstly, we can see that the distance of all zero-cells are 0.
+- Same idea with Topology Sort, we process zero-cells first, then we use queue data structure to keep the order of processing cells, so that cells which have the smaller distance will be processed first. Then we expand the unprocessed neighbors of the current processing cell and push into our queue.
+- After all, we can achieve the minimum distance of all cells in our matrix.
+
+**Complexity:**
+
+- Time: `O(M * N)`, where M is number of rows, N is number of columns in the matrix.
+- Space: `O(M * N)`, space for the queue.
+
+### DP Solution
+
+- Firstly, we can see that the distance of all zero-cells are 0, so we skip zero-cells, we process one-cells only.
+- In DP, we can only use previous values if they're already computed.
+- In this problem, a cell has at most 4 neighbors that are left, top, right, bottom. If we use dynamic programming to compute the distance of the current cell based on 4 neighbors simultaneously, it's impossible because we are not sure if distance of neighboring cells is already computed or not.
+- That's why, we need to compute the distance one by one:
+  - Firstly, for a cell, we restrict it to only 2 directions which are left and top. Then we iterate cells from **top to bottom**, and from **left to right**, we calculate the distance of a cell **based on its left and top neighbors**.
+  - Secondly, for a cell, we restrict it only have 2 directions which are right and bottom. Then we iterate cells from **bottom to top**, and from **right to left**, we update the distance of a cell **based on its right and bottom neighbors**.
+
+**Complexity:**
+
+- Time: `O(M * N)`, where M is number of rows, N is number of columns in the matrix.
+- Space: `O(1)`
 
 ---
 
@@ -948,6 +1020,16 @@ soon...
 - We use k itself as carry.
 - From last to first we fill array with addition and mod.
 - If after loop, k have some carry we insert k to the start of array until it becomes 0.
+
+---
+
+# [994. Rotting Oranges](./994_rotatingOranges.md) 🌟🌟
+
+### BFS solution
+
+- simple application of bfs.
+- Watch [Striver's short video](https://www.youtube.com/watch?v=pUAPcVlHLKA) for better explanation.
+- **Time complexity: O(M\*N)**
 
 ---
 
