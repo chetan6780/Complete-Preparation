@@ -4,9 +4,9 @@ Given the root of a binary tree, return its maximum depth.
 
 A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
-### O(N) Time and O(H) Space,(DFS) More preffered than itterative
+### O(N) Time and O(H) Space,(DFS) More preferred than iterative
 
-- Worst case, if tree is sqwed then it will take **O(N)** else **O(h)** space, where h is the height of the tree.
+- Worst case, if tree is skewed then it will take **O(N)** else **O(h)** space, where h is the height of the tree.
 
 - If root is null then return 0.
 - else return 1 + maximum depth of(left subtree, right subtree)

@@ -4,7 +4,7 @@ Given the root of a binary tree, check whether it is a mirror of itself (i.e., s
 
 ### O(N) Time solution
 
-- we will trverse left and right subtrees of the root with the same type of traversal.
+- we will traverse left and right subtrees of the root with the same type of traversal.
 - we compare the value of left with right or value of right with left , if they are not equal we return false.
 - we recurse for left's left with right's right and left's right with right's left.
 
@@ -26,9 +26,9 @@ public:
 };
 ```
 
-### O(N) Time, using 2 queue, itterative solution
+### O(N) Time, using 2 queue, iterative solution
 
-- Same recursive solution can be converted to itterative solution by using queue.
+- Same recursive solution can be converted to iterative solution by using queue.
 - Remember while using 2 queue we push `left->left,left->right` in 1st queue and `right->right,right->left` in 2nd queue.
 
 ```cpp
@@ -62,10 +62,10 @@ public:
 };
 ```
 
-### O(N) Time, using 1 queue, itterative solution
+### O(N) Time, using 1 queue, iterative solution
 
-- We can use 1 queue insteed of 2.
-- remenber that while using 1 queue we do `left->left,right->right,left->right,right->left.`
+- We can use 1 queue instead of 2.
+- remember that while using 1 queue we do `left->left,right->right,left->right,right->left.`
 
 ```cpp
 class Solution{
