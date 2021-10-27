@@ -5,7 +5,7 @@ Given the root of a binary tree, invert the tree, and return its root.
 ### O(N) Time recursive solution
 
 - if root is null return null
-- we just need to swap the left and right children of each node recursively.we can use inbuilt swap function or impliment our own swap function.
+- we just need to swap the left and right children of each node recursively.we can use inbuilt swap function or implement our own swap function.
 - We can travel in preorder as well as postorder , both solutions are accepted.(here is preorder solution)
 
 ```cpp
@@ -29,9 +29,9 @@ public:
 };
 ```
 
-### O(N) Time O(N) stack itterative solution
+### O(N) Time O(N) stack iterative solution
 
-- We use stack insteed of recursive stack.
+- We use stack instead of recursive stack.
 
 ```cpp
 class Solution {

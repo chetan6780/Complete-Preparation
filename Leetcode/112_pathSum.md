@@ -8,7 +8,7 @@ A leaf is a node with no children.
 
 - if root is null return false
 - if roots left and right both are null return `root->val==targetSum`.
-- else recursively find `targerSum - root->val` in left and right subtree.
+- else recursively find `targetSum - root->val` in left and right subtree.
 
 ```cpp
 class Solution {
@@ -29,35 +29,35 @@ public:
 
 **soon...**
 
-<!-- TODO: itterative solution -->
+<!-- TODO: iterative solution -->
 
 ```cpp
 class Solution{
 public:
     bool hasPathSum(TreeNode *root, int sum){
         stack<TreeNode *> st;
-        TreeNode *pre = NULL, *node = root;
+        TreeNode *pre = NULL, *curr = root;
         int pathSum = 0;
 
-        while (node || !st.empty()){
-            while (node){
-                st.push(node);
-                pathSum += node->val;
-                node = node->left;
+        while (curr || !st.empty()){
+            while (curr){
+                st.push(curr);
+                pathSum += curr->val;
+                curr = curr->left;
             }
 
-            node = st.top();
-            if (node->left == NULL && node->right == NULL && pathSum == sum)
+            curr = st.top();
+            if (curr->left == NULL && curr->right == NULL && pathSum == sum)
                 return true;
 
-            if (node->right && pre != node->right){
-                node = node->right;
+            if (curr->right && pre != curr->right){
+                curr = curr->right;
             }
             else{
-                pre = node;
+                pre = curr;
                 st.pop();
-                pathSum -= node->val;
-                node = NULL;
+                pathSum -= curr->val;
+                curr = NULL;
             }
         }
         return false;
