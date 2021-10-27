@@ -142,6 +142,10 @@
 
 ---
 
+# [46. Permutations](./46_permutations.md) 🌟🌟
+
+---
+
 # [53. Maximum Subarray](./53_maximumSubarray.md) 🌟
 
 ### O(N) time constant space(DP)
@@ -172,6 +176,51 @@
 
 - Complete Binary search on matrix.
 - mid/m : row , mid%m : column
+
+---
+
+# [75. Sort Colors](./75_sortColors.md) 🌟🌟
+
+### O(N log N) Time Complexity with sort function.
+
+- sort the vector using stl `sort()` function.
+
+### O(N)+O(N) Time using counting sort.
+
+- count number of 0's, 1's, and 2's and push them in increasing order according to their frequency.
+
+### O(N) Time, 3 Pointers, dutch national flag algorithm.
+
+- We take 3 pointers low, mid and high.
+- low and mid points to 0 while high points to the last element.
+- we assume following conditions.
+  - Towards the left of low everything is 0.
+  - Towards the right of high everything is 2.
+  - In between low and high, everything is 1.
+- while(mid<=high) we do following.
+  - When we encounter 0.
+    - we swap low and mid.
+    - we increment low and mid.
+  - When we encounter 1.
+    - we increment mid.
+  - When we encounter 2.
+    - we swap mid and high.
+    - we decrement high.
+
+---
+
+# [77. Combinations](./77_combinations.md) 🌟🌟
+
+### Backtracking
+
+- Backtracking is a general technique for solving problems that uses DFS and finds **ALL POSSIBLE SOLUTIONS**.
+- General idea:
+  ```
+  Step 1: DO
+  Step 2: RECUR
+  Step 3: UNDO
+  ```
+  Make sure to use base conditions.
 
 ---
 
@@ -567,7 +616,7 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
-# [226. Invert Binary Tree](./226_invertBinaryTree.md) 🌟]
+# [226. Invert Binary Tree](./226_invertBinaryTree.md) 🌟
 
 ### O(N) Time recursive solution
 
@@ -908,6 +957,10 @@ soon...
   - if middle element is greater than target then r = middle - 1
   - if middle element is less than target then l = middle + 1
 - if we cant find element in array, return -1.
+
+---
+
+# [784. Letter Case Permutation](./784_letterCasePermutation.md) 🌟🌟
 
 ---
 
