@@ -46,6 +46,44 @@
 
 ---
 
+# [15. 3Sum](./15_3sum.md) 🌟🌟
+
+### O(N^3 Log m) Brute force
+
+- Travel all the triplets which sums to 0.
+- Pseudo code
+
+```
+    for(i=0,n-1)
+        for(j=i+1,n-1)
+            for(k=j+1,n-1)
+                a+b+c==0, cnt++
+```
+
+- To get unique triplets, we can use set data structure.
+- N^3 for for loop and Log M for inserting unique triplets in the set.
+- **SC:** O(M), M is all unique triplets.
+
+### O(N^2 Log M) Time and O(N)+O(M) Space
+
+- we can run 2 for loops for a and b.
+- store c in hashmap with its frequency
+- while running loops we have to decrease frequency of a and b inorder to find unique c.
+- then we find c=-(a+b) in the hashmap.
+- store the 3 numbers in sorted order in set so we will not have duplicates.
+- O(N^2) for 2 loops, Log(M) for inserting in set.
+- O(N) for map and O(M) For set.
+
+### Two pointers.
+
+- Sort the array.
+- Fix a and you just need to find b+c=-a which is two sum problem.
+- To not get duplicates we increment pointer in such way that they are not equal to their previous values.
+- **TC:O(N\*N)**
+- **SC:O(M)**, M is the number of triplets.
+
+---
+
 # [19. Remove Nth Node From End of List](./19_removeNthNodeFromEndOfList.md) 🌟🌟
 
 ### O(N) Time and O(1) Space Complexity
@@ -156,6 +194,12 @@
   - mx = max(current sum , mx);
   - current sum will be max(0,current sum);
 - finally we return mx
+
+---
+
+# [70. Climbing Stairs](./70_climbingStairs.md) 🌟
+
+### Dynamic Programming
 
 ---
 
@@ -385,6 +429,14 @@
 
 ---
 
+# [120. Triangle](./120_triangle.md) 🌟🌟
+
+### Dynamic Programming
+
+- [Video](https://www.youtube.com/watch?v=O2eaAdBpZBQ)
+
+---
+
 # [121. Best Time to Buy and Sell Stock](./121_bestTimeToBuyAndSellStock.md) 🌟
 
 ### O(N^2) Time and O(1) Space
@@ -409,6 +461,19 @@
 
 - If the price of the stock that day less than minimum price so far then there is no chance to get profit so we only update minimum price.
 - else we can get profit, update maxProfit.
+
+---
+
+# [136. Single Number](./136_singleNumber.md) 🌟
+
+### Sorting array
+
+### Using Map
+
+### Using XOR (^)
+
+- XOR of same numbers is 0;
+- XOR of 0 with a number is the number;
 
 ---
 
@@ -548,6 +613,39 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
+# [190. Reverse Bits](./190_reverseBits.md) 🌟
+
+### Using lsb
+
+- `n&1` will give us lsb.
+- we will shift lsb to left by `31-i` bits and it will be our reverseLsb.
+- we will or reverseLsb with result.
+- shift n by 1 to right.
+- [Reference Video](https://www.youtube.com/watch?v=LJiMk8lPJNc)
+
+---
+
+# [191. Number of 1 Bits](./191_numberOf1Bits.md) 🌟
+
+### Using \_\_builtin_popcount
+
+### Using n=n&(n-1) trick
+
+- Each time of "n &= n - 1", we delete one '1' from n.
+
+### READ:
+
+- [[Python] n & (n-1) trick + even faster, explained](<https://leetcode.com/problems/number-of-1-bits/discuss/1044775/Python-n-and-(n-1)-trick-%2B-even-faster-explained>)
+- [Short code of C++, O(m) by time, m is the count of 1's, and another several method of O(1) time](<https://leetcode.com/problems/number-of-1-bits/discuss/55120/Short-code-of-C%2B%2B-O(m)-by-time-m-is-the-count-of-1's-and-another-several-method-of-O(1)-time>)
+
+---
+
+# [198. House Robber](./198_houseRobber.md) 🌟🌟
+
+### Dynamic Programming
+
+---
+
 # [203. Remove Linked List Elements](./203_removeLinkedListElement.md) 🌟
 
 ### O(N) Time and O(1) Space
@@ -630,12 +728,33 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
+# [231. Power of Two](./231_powerOfTwo.md) 🌟
+
+- Go To above link.
+
+---
+
 # [232. Implement Queue using Stacks](./232_implementQueueUsingStacks.md) 🌟
 
 ### O(1) AMORTIZED Time solution
 
 - **AMORTIZED**: Most of the times operations are O(1) time. Sometimes it will be O(n) time. But total time for all the operations will be O(1).
 - Using 2 stacks; one is used for read and another for write.
+
+---
+
+# [235. Lowest Common Ancestor of a Binary Search Tree](./235_lowestCommonAncestorOfBst.md) 🌟
+
+### O(N) Time recursive solution
+
+- we traverse the tree and find p and q;
+- if one of child node is null return another
+- else both are not null return the root(curr node), that means left and right are p and q.
+- Reference: [link](https://www.youtube.com/watch?v=_-QHfMDde90) for recursive solution.
+
+### O(N) Time iterative solution
+
+- Self Explanatory.
 
 ---
 
@@ -961,6 +1080,8 @@ soon...
 ---
 
 # [784. Letter Case Permutation](./784_letterCasePermutation.md) 🌟🌟
+
+### Backtracking
 
 ---
 
