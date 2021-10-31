@@ -60,3 +60,35 @@ public:
 - first GAP = ceil(n1+n2/2) then next time it will be half of previous GAP.
 - If GAP is 1 then next time we stop.
 - [Striver Video 7:47](https://youtu.be/hVl2b3bLzBw?list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&t=467)
+
+### GFG Question
+
+- We point i to the last of array 1 and j to the start of array 2.
+- in while loop , if arr1[i]>arr2[j] then swap the elements.
+- finally sort the second array.
+- [Video Explanation(OhMyCode!)](https://www.youtube.com/watch?v=1S4KFg5viC0)
+- **Time Complexity**: O(NlogN)
+- **Space Complexity**: O(1)
+
+```cpp
+class Solution{
+public:
+	//Function to merge the arrays.
+	void merge(long long arr1[], long long arr2[], int n, int m){
+		// code here
+		long long i = n - 1, j = 0;
+		while (i >= 0 && j < m){
+			if (arr1[i] > arr2[j]){
+				swap(arr1[i], arr2[j]);
+			}
+			i--, j++;
+		}
+		sort(arr1, arr1 + n);
+		sort(arr2, arr2 + m);
+	}
+};
+```
+
+### Reference
+
+- [GFG](https://www.geeksforgeeks.org/efficiently-merging-two-sorted-arrays-with-o1-extra-space/)

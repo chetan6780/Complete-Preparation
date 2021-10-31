@@ -293,11 +293,13 @@
 
 - Code is self explanatory on leetcode
 
-### Using GAP algorithm(striver)
+### Using GAP algorithm
 
-**Here soon**
-
-## <!-- TODO: Write GAP algorithm -->
+- O(Log2N \* O(N)) time and O(1) space
+- We Will take GAP between two pointers and if the are not sorted we swap them.
+- first GAP = ceil(n1+n2/2) then next time it will be half of previous GAP.
+- If GAP is 1 then next time we stop.
+- [Striver Video 7:47](https://youtu.be/hVl2b3bLzBw?list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&t=467)
 
 ---
 
@@ -793,6 +795,19 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 - First confirm sizes of both strings is same.
 - We can avoid 3rd loop by checking if the frequency of each character less than 0 then return false.
 - return true by default.
+
+---
+
+### [268. Missing Number](./268_missingNumber.md) 🌟
+
+### O(NlogN) by Sorting
+
+- With sorting we can get missing number.
+
+### O(N) Time
+
+- Calculate the sum of all elements in the array.
+- Subtract the sum of all elements in the array from the sum of all elements in the range 1 to n.
 
 ---
 
