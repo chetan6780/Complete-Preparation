@@ -182,6 +182,23 @@
 
 # [46. Permutations](./46_permutations.md) 🌟🌟
 
+### Backtracking
+
+- Backtracking is a general technique for solving problems that uses DFS and finds **ALL POSSIBLE SOLUTIONS**.
+- General idea:
+  ```
+  Step 1: DO
+  Step 2: RECUR
+  Step 3: UNDO
+  ```
+  Make sure to use base conditions.
+
+### MUST READ:
+
+- [A general approach to backtracking questions in Java (Subsets, Permutations, Combination Sum, Palindrome Partitioning)](<https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)>)
+
+- [Backtrack Summary: General Solution for 10 Questions!!!!!!!! Python (Combination Sum, Subsets, Permutation, Palindrome)](<https://leetcode.com/problems/permutations/discuss/18284/Backtrack-Summary%3A-General-Solution-for-10-Questions!!!!!!!!-Python-(Combination-Sum-Subsets-Permutation-Palindrome)>)
+
 ---
 
 # [53. Maximum Subarray](./53_maximumSubarray.md) 🌟
@@ -194,6 +211,32 @@
   - mx = max(current sum , mx);
   - current sum will be max(0,current sum);
 - finally we return mx
+
+---
+
+# [56. Merge Intervals](./56_mergeIntervals.md) 🌟🌟
+
+### O(N^2) Time Solution
+
+- Brute force.
+- sort the intervals by start time.(NlogN Time)
+- for every interval i, check if it overlaps with any interval j.
+- if it does, merge the two intervals.
+- if it doesn't, add it to the result.
+
+### O(NlogN) Time O(N) Space Solution
+
+- Check for invalid case.
+- Sort the intervals by start time.
+- Take first pair of interval.
+- iterate over intervals and check if they overlap or not.
+- if they overlap, then change temp pair to `max(temp[1],x[1])`.
+- else push temp pair to result and change temp pair to x.
+
+### O(NlogN) Time O(1) Space Solution
+
+- If we not consider the vector ans, which we have to return this problem can be solved without using temp vector.
+- We can simply use vector.back and do the operations on it.
 
 ---
 
@@ -463,6 +506,26 @@
 
 - If the price of the stock that day less than minimum price so far then there is no chance to get profit so we only update minimum price.
 - else we can get profit, update maxProfit.
+
+---
+
+# [130. Surrounded Regions](./130_surroundedRegions.md) 🌟🌟
+
+### DFS Approach complex
+
+- This [video](https://www.youtube.com/watch?v=0ZJViJEdtEc) explains both the approaches and code.
+- 1st approach is complex while 2nd is easy.
+
+### DFS Approach more efficient
+
+- Pick all O's from boundary (Top/Bottom row, Leftmost/Rightmost column)
+- Make all connected O's to some intermediate value (1 in my case).
+- Now remaining all O's are surrounded by X (otherwise they should have been converted to 1).
+- Convert remaining all O to X.
+- Revert all intermediate values. (1 to O).
+
+- **Time Complexity** - **O(m \* n)**
+- **Space Complexity** - **O(1)** if we ignore recursive stack calls else **O(m \* n)**
 
 ---
 
@@ -798,7 +861,7 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
-### [268. Missing Number](./268_missingNumber.md) 🌟
+# [268. Missing Number](./268_missingNumber.md) 🌟
 
 ### O(NlogN) by Sorting
 
@@ -833,6 +896,24 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 - If element is 0, increase size of snowball by 1.
 - else we swap it with (i-snowball)th element.
 - **NOTE:** here we used temp variable instead of direct swapping for avoiding unnecessary swapping. For ex.`[1]` no swap required.
+
+---
+
+# [287. Find the Duplicate Number](./287_findDuplicateNumber.md) 🌟🌟
+
+### O(N^2) Brute force
+
+- check for all numbers if duplicate number exists.
+
+### O(NlogN) Sorting
+
+- Sort the array and duplicate numbers will be next to each other.
+
+### O(N) Time O(N) space, Hash Table
+
+- With the help of hash (set/map/vector) we can find the duplicate number.
+
+### O(N) Time O(1) space, Floyd's Cycle Detection Algorithm
 
 ---
 
