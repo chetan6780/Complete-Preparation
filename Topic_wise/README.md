@@ -10,3 +10,4 @@
 | 6   | [Graph](graph)                             |
 | 7   | [Recursion](recursion)                     |
 | 8   | [Dynamic Programming](Dynamic_Programming) |
+| 9   | [Number Theory](Number_Theory)             |
