@@ -8,7 +8,7 @@
 
 3. [SDE-SHEET](SDE-SHEET) 📄
 
-4. [GFG and Other Resources](GFG_other) 🖊️
+4. [Topic wise Q/T](Topic_wise) 🖊️
 
 5. [CP-SHEET](CP-SHEET) 📄
 
