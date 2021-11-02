@@ -240,6 +240,10 @@
 
 ---
 
+# [62. Unique Paths](./62_uniquePaths.md) 🌟🌟
+
+---
+
 # [70. Climbing Stairs](./70_climbingStairs.md) 🌟
 
 ### Dynamic Programming
@@ -1280,6 +1284,20 @@ soon...
 - set two array l=0 and r=arr.size()-1.
 - traverse through the array and set max abs values square at last position.
 - return the array.
+
+---
+
+# [980. Unique Paths III](./980_uniquePathsIII.md) 🌟🌟🌟
+
+### DFS + Backtracking
+
+- Below solution is explained [in this video](https://www.youtube.com/watch?v=XNKCkX_tHhM) also on must read no-1.
+- We don't need zero++ for backtracking, because it is local variable.
+
+### MUST READ
+
+- [Java Easy Solution || DFS + Backtracking || Explanation (Simplified)](<https://leetcode.com/problems/unique-paths-iii/discuss/1553873/Java-Easy-Solution-oror-DFS-%2B-Backtracking-oror-Explanation-(Simplified)>)
+- [C++ Simple and Clean DFS Solution, Explained, 0ms Faster than 100%](https://leetcode.com/problems/unique-paths-iii/discuss/1553805/C%2B%2B-Simple-and-Clean-DFS-Solution-Explained-0ms-Faster-than-100)
 
 ---
 
