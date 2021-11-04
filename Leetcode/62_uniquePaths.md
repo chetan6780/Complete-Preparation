@@ -8,7 +8,7 @@ How many possible unique paths are there?
 
 ### Recursive Solution (TLE)
 
-- **Time Complexity**: O(2^n)
+- **Time Complexity: O(2^n)**
 
 ```cpp
 class Solution {
@@ -48,8 +48,8 @@ public:
 
 ### Tabulation Solution
 
-- **Time complexity**: m x n
-- **Space complexity**: m x n
+- **Time complexity: m x n**
+- **Space complexity: m x n**
 
 ```cpp
 class Solution {

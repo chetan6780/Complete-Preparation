@@ -268,6 +268,10 @@
 
 ---
 
+# [63. Unique Paths II](./63_uniquePathII.md) 🌟🌟
+
+---
+
 # [70. Climbing Stairs](./70_climbingStairs.md) 🌟
 
 ### Dynamic Programming
@@ -1029,6 +1033,18 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 - Store frequency of every character in a hash table
 - Iterate through the hash table and check if the character is Unique
+
+---
+
+# [404. Sum of Left Leaves](./404_sumOfLeftLeaves.md) 🌟
+
+### Simple recursive dfs
+
+- We want sum of left leaf nodes only, so we can take additional boolean variable to specify whether it is left or not.
+- we recursively go to left and right leaf node, if leaf node is left then we return its value else return 0.
+- return dfs for left and right of tree.
+- **Time Complexity:** O(n), we traverse the tree once
+- **Space Complexity:** O(1) if we don't consider recursion stack, **O(height-of-tree)** if we do.
 
 ---
 
