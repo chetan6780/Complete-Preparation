@@ -1,6 +1,5 @@
 // FILE SHORTCUT
 
-cpf
 cpft
 debi - debug import
 cpp
