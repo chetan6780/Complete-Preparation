@@ -242,6 +242,30 @@
 
 # [62. Unique Paths](./62_uniquePaths.md) 🌟🌟
 
+### Recursive Solution (TLE)
+
+- **Time Complexity**: O(2^n)
+
+### Recursive + Memoization
+
+- Giving TLE , that should not happen , but it is happening.
+- **Time complexity**: m x n
+- **Space complexity**: m x n
+
+### Tabulation Solution
+
+- **Time complexity**: m x n
+- **Space complexity**: m x n
+
+### Combinatorics Solution
+
+- **Time complexity**: liner O(m)
+- Explained in [striver's video](https://www.youtube.com/watch?v=t_f0nwwdg5o&t=23s).
+
+### READ
+
+- [Recursive, memoization and dynamic programming solutions](https://leetcode.com/problems/unique-paths/discuss/182143/Recursive-memoization-and-dynamic-programming-solutions)
+
 ---
 
 # [70. Climbing Stairs](./70_climbingStairs.md) 🌟
@@ -510,6 +534,38 @@
 
 - If the price of the stock that day less than minimum price so far then there is no chance to get profit so we only update minimum price.
 - else we can get profit, update maxProfit.
+
+---
+
+# [129. Sum Root to Leaf Numbers](./129_sumRootToLeafNumbers.md) 🌟🌟
+
+### O(N) Time recursive
+
+- We recursively traverse to the all leaf node.
+- Multiply val by 10 and add curr val in it.
+- if both left and right child is null, we add the current node value to the sum.
+- else recurse for left anf right subtree.
+- Stack can grow upto the height of the tree so that we can explore the path from root to leaf node.
+- Thus, **Space Complexity = O(Height of the tree)**
+- **Time Complexity:O(N)** --> All Nodes will be visited once.
+
+### Useful Comment:
+
+1. List of problems you need to master the concept :
+   - [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+   - [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
+   - [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+   - [112. Path Sum](https://leetcode.com/problems/path-sum/)
+   - [113. Path Sum II](https://leetcode.com/problems/path-sum-ii/)
+   - [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+   - [257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)
+   - [437. Path Sum III](https://leetcode.com/problems/path-sum-iii/)
+   - [559. Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)
+   - [687. Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path/)
+   - [988. Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/)
+   - [1376. Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/)
+
+If you find more problems, please comment it below :)
 
 ---
 
