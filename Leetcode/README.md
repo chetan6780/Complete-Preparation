@@ -925,6 +925,48 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
+# [260. Single Number III](./260_singleNumberIII.md) 🌟🌟
+
+### O(N^2) Time
+
+- Brute force
+
+### O(NlogN) Time Sorting solution
+
+- Since we have condition that `exactly two elements appear only once and all the other elements appear exactly twice.`
+- First we sort the nums array.
+- if we found duplicates we increase i by 2 else we add number in ans.
+- if ans.size()==2 thn we can break loop, since we have only 2 unique elements.
+
+### O(N) Time HashMap solution
+
+- We can use `set` or `map` to solve this problem in O(N) time.
+
+### O(N) Time O(1) Bit Manipulation solution
+
+Idea is to use property of XOR:
+
+```
+1. xor(a, a) = 0
+2. xor(a, 0) = xor(0, a) = a
+3. xor(1, 1) = xor(0, 0) = 0
+4. xor(1, 0) = xor(0, 1) = 1
+5. xor(a, b) = c => xor(a, c) = b and xor(b, c) = a
+```
+
+Let two distinct elements be: first and sec. Now, firstXorSec := xor(first, sec) = xor(nums[i], 0), 0 <= i < [n:= nums.size()], why? because nums has odd and even freq. elements, doing xor will cancel out elements with even freq. using the 1. property of xor. So, at the end, xor of only odd freq. elements i.e first and sec remains.
+
+Now, first != sec => there is at least 1 set bit in firstXorSec. Using 4. property of xor, one of first and sec, must have a set bit (Let it be first). We find/ denote this rightmost set bit using mask: has all bits 0 except the rightmost set bit in firstXorSec. So, we can divide the elements in nums in two groups A and B, where:
+
+```
+1. groupA: (num & mask) == 1 i.e bit is set
+2. groupB: (num & mask) == 0 i.e bit is not set
+```
+
+Clearly, both first and sec belong to different groups and since, all other elements occurs in pair, so, we can safely again use 1. property of xor to generate first. Finally, using 5. property of xor, we have `sec = xor(firstXorSec, first)`
+
+---
+
 # [268. Missing Number](./268_missingNumber.md) 🌟
 
 ### O(NlogN) by Sorting
@@ -1045,6 +1087,36 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 - return dfs for left and right of tree.
 - **Time Complexity:** O(n), we traverse the tree once
 - **Space Complexity:** O(1) if we don't consider recursion stack, **O(height-of-tree)** if we do.
+
+---
+
+# [441. Arranging Coins](./441_arrangingCoins.md) 🌟
+
+### Simulation
+
+- We can just simulate the process of building the staircase.
+- Assume we have k as result, `1+2+...+i = N`, then `i*(i+1) = 2N => i^2 = N => i = sqrt(N)`
+- **Time Complexity: O(sqrt(n))**
+
+### Binary Search
+
+- The problem can be converted into - Find the maximum k such that `k*(k+1)/2 <= n`.
+- **Time Complexity: O(logN)**
+
+### Math solution
+
+- As we know the number of coins in each staircase are forming an AP `Eg :- 1+2+3+...+a = n`
+  Sum of all terms of AP :- `(1+a)a/2 = n`
+  n is given to us in question, we have to find a
+- ```
+  ===> a ^ 2 + a = 2 n
+  ===> x ^ 2 + a + 1/4 = 2 n +1/4
+  ===> (a + 1/2 ) ^ 2 = 2n + 1/4
+  ===> (a + 0.5) = sqrt( 2n + 1/4 )
+  ===> a = -0.5 + sqrt( 2n + 1/4 )
+  ```
+- We have calculated the value of `a = -0.5 + sqrt( 2\*n + 1/4 )`
+- **Time Complexity: O(1)**
 
 ---
 
