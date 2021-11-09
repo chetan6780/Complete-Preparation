@@ -1,6 +1,6 @@
 # Adjacency list representation of Graph
 
-Effecient than adjacency matrix representation of graph.
+Efficient than adjacency matrix representation of graph.
 
 - Declare **Array of Vector<int>**.
 

@@ -1,6 +1,6 @@
-# Adjecency matrix representation of Graph
+# Adjacency matrix representation of Graph
 
-- Use matric to represent a graph.
+- Use matrix to represent a graph.
 - Initialize it with 0s.
 - Then take u and v , set adj[u][v] = 1 and adj[v][u] = 1.
 
@@ -10,7 +10,7 @@
 
 ### Disadvantage
 
-- We cannot creaet matrix greater than 10^5.
+- We cannot create matrix greater than 10^5.
 
 ### Code
 
