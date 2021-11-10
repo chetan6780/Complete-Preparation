@@ -3,34 +3,47 @@
 -   if we observe, the number of times array rotated is equal to the **first occurrence** of minimum element.
 -   Now the problem becomes, find the first occurrence of minimum element.
 -   Our first task is to find minimum element.
-    -   if the mid element is less than previous element and greater than next element then it is min element.
-    -   `prev = (mid - 1 + n) % n`, it handles the case of `mid = 0`.
-    -   `next = (mid + 1) % n`, it handles the case of `mid = n-1`.
+    -   if next is less than mid, then return mid+1
+    -   if prev is greater than mid, then return mid
 -   next task is to find where to go.
--   We can observe that each time the minimum element occurs in the unsorted subarray.
--   if left element is less than mid element then left subarray is sorted array and we move `l to mid+1`.
--   else if mid element is less than right element then right subarray is sorted array and we move `r to mid-1`.
+    -   if mid is greater than start, then `left = mid + 1`, else `right = mid - 1`
+-   **NOTE: In Aditya verma video many testcases are not considered. like duplicates and array is not rotated.The below is leetcode solution**
 
-### Code
+### Code-1
 
 ```cpp
-int numberOfTimesRotated(vector<int> &a)
+int numberOfTimesRotated(vector<int>& a)
 {
     int n = a.size();
-    int l = 0, r = n - 1;
-    while (l <= r) {
-        int mid = l + (r - l) / 2;
-        int prev = (mid - 1 + n) % n; // if mid is in the start, so we add n and do mod n
-        int next = (mid + 1) % n;     // if mid is in the end, so we do mod n
-        if (a[next] > a[mid] && a[prev] < a[mid]) {
-            return mid;
-        }
-        if (a[l] <= a[mid]) {
-            l = mid + 1;
-        } else if (a[mid] <= a[r]) {
-            r = mid - 1;
-        }
+    int left = 0, right = n - 1;
+    if (n == 0 || a[right] > a[left]) return 0;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        // if next is less than mid, then return mid+1
+        if (a[mid + 1] < a[mid]) { return mid + 1; }
+        // if prev is greater than mid, then return mid
+        if (a[mid - 1] > a[mid]) { return mid; }
+        // if mid is greater than start, then left = mid + 1, else right = mid - 1
+        (a[mid] > a[0]) ? left = mid + 1 : right = mid - 1;
     }
-    return 0;
+    return -1;
+}
+```
+
+### Code-2
+
+```cpp
+int numberOfTimesRotated(vector<int>& a)
+{
+    int n = a.size();
+    int left = 0, right = n - 1;
+    while (left < right) { // note this
+        int mid = left + (right - left) / 2;
+        if (a[mid] >= a[right])
+            left = mid + 1;
+        else
+            right = mid; //note this
+    }
+    return left; // note this
 }
 ```

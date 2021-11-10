@@ -1,9 +1,11 @@
 # Find Element in Rotated array
 
-- If we can find the index of minimum element, we can divide array in 2 sorted subarray.
-- return the max(left subarray, right subarray)
+-   If we can find the index of minimum element, we can divide array in 2 sorted subarray.
+-   then we can binary search in those both subarray separately, one of them return -1 while other return index of element.
+-   return the max(left subarray, right subarray)
 
 ### Code
+
 ```cpp
 int findInRotated(vector<int>& a)
 {
