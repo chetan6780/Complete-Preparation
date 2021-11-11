@@ -160,6 +160,31 @@
 
 ---
 
+# [31. Next Permutation](./31_nextPermutation.md) 🌟🌟
+
+### Brute Force
+
+-   We first generate all the permutations and store them in permutations vector.
+-   Then we find the given vector in the permutations vector.if we found then we return its next vector as and.
+-   If given the last vector return the first vector from the permutations vector.
+-   **TC: O(N!\*N)** - Because there are N! orders and N is the length of every array.
+-   **SC: O(N!)** - To store the all permutations, there are N! permutations.
+
+### O(N) Time solution.
+
+-   INTUITION:- If we Observe the dictionary of order(permeation order) we can find that there is always Triangle like structure.
+-   For better understanding here is [striver's video](https://youtu.be/LuLCLgMElus?list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&t=222)
+-   ALGORITHM:- 1. From back find the _largest index_ `k` such that `nums[k] < nums[k + 1]`. If no such index exists, just reverse `nums` and done.
+    2.From back find the _largest index_ `l > k` such that `nums[k] < nums[l]`. 3.`Swap` `nums[k]` and `nums[l]`. 4.`Reverse` the sub-array `nums[k + 1:]`.
+-   REFERENCE:- [C++ from Wikipedia](https://leetcode.com/problems/next-permutation/discuss/13867/C%2B%2B-from-Wikipedia)
+
+### Inbuilt next_permutation
+
+-   we can also solve the problem in-place using in-built `next_permutation(a.being(),a.end())` function in c++.
+-   But in an interview this is not expected.
+
+---
+
 # [35. Search Insert Position](./35_searchInsertPosition.md)
 
 ### O(log N) Time solution
@@ -192,6 +217,43 @@
     Step 3: UNDO
     ```
     Make sure to use base conditions.
+
+---
+
+# [48. Rotate Image](./48_rotate_image.md) 🌟🌟
+
+### O(N^2) Time and O(N^2) space Solution
+
+-   We can take 1 more 2D matrix and perform the operation
+-   But this is not allowed.
+
+### O(N^2) Time O(1) Space Solution
+
+-   Clockwise 90deg rotation
+    1. Reverse the matrix.
+    2. Transpose the matrix.
+
+```
+ clockwise rotate
+ first reverse up to down, then swap the symmetry
+ 1 2 3     7 8 9     7 4 1
+ 4 5 6  => 4 5 6  => 8 5 2
+ 7 8 9     1 2 3     9 6 3
+```
+
+-   Anticlockwise 90deg rotation
+    1. Transpose the matrix
+    2. Rotate the matrix.
+
+```
+Anticlockwise rotate
+ first swap the symmetry, then reverse up to down
+ 1 2 3     1 4 7     3 6 9
+ 4 5 6  => 2 5 8  => 2 5 8
+ 7 8 9     3 6 9     1 4 7
+```
+
+---
 
 ### MUST READ:
 
@@ -275,6 +337,36 @@
 # [70. Climbing Stairs](./70_climbingStairs.md) 🌟
 
 ### Dynamic Programming
+
+---
+
+# [73. Set Matrix Zeroes](./73_setMatrixZeroes.md) 🌟🌟
+
+### Brute Force
+
+-   For every 0 in matrix we set its entire row and column to -1(if all values are positive)
+-   after whole matrix is traversed, we set all -1 to 0;
+-   **Time Complexity: O(m\*n) \* (m+n)**
+    -   m\*n : to traverse the array
+    -   m+n : to traverse the row and column for the element.
+-   **Space Complexity: O(1)**
+
+### O(m+n) space optimization
+
+-   We take 2 vectors 1 for row and 1 for column.
+-   We traverse in matrix and if the element is 0, we set the corresponding row and column vector index to 0.
+-   After the traversal, we again traverse the matrix and if any of the row or column vector at that index is 0, we set the element to 0.
+-   **Time complexity: 2\*O(N\*M) --> O(N\*M)**
+
+### O(1) Space Optimization
+
+-   Instead of creating 2 new vectors for row and column we can take first row and first column of matrix for marking.
+-   We traverse the whole array and if the element is 0, we set the corresponding row and column vector index to 0.
+-   For the first col there is one special case, if we set first col to 0 so the row will unnecessarily have 0's in them.
+-   to tackle this case we take `col` variable and set it `true` initially. while traversing the array if we got any 0 in first column so we change `col = false`.
+-   Now we traverse from bottom-right to top-left and if we found 0 in any marker vector we set current element to 0.
+-   for the first column, if `col==false` we set it to 0.
+-   **Time complexity: 2\*O(N\*M) --> O(N\*M)**
 
 ---
 
@@ -526,6 +618,10 @@
 # [118. Pascal's Triangle](./118_pascalsTriangle.md) 🌟
 
 ### Straightforward solution
+
+#### We can find any element(a[i][j]) in O(1) time using the formula (r-1)C(c-1) i.e (r-1)!/(c-1)!
+
+-   Ex. 3rd element of 5th row -> c=2,r=4 -> (4\*3)/(2\*1) = 6.
 
 ---
 
@@ -1629,6 +1725,16 @@ In an interview, if the first solution that comes to mind involves a complex dat
 -   It is HARD level problem
 -   Will be added soon...
 <!-- TODO:ADD O(N*logN) Solution -->
+
+---
+
+# [1413. Minimum Value to Get Positive Step by Step Sum](./1413_minimumValueToGetPositiveStepByStepSum.md) 🌟
+
+### PrefixSum O(N) Time
+
+-   We calculate the running sum (prefix sum) of the array.
+-   Every time we find minimum sum we got until now.
+-   return abs(minimum sum) + 1.
 
 ---
 

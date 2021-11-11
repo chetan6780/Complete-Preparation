@@ -10,8 +10,8 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 
 ### O(N^2) Time and O(1) Space
 
-- Brute force:
-- For each day, find the max profit that can be made by buying at that day and selling at the next j days.
+-   Brute force:
+-   For each day, find the max profit that can be made by buying at that day and selling at the next j days.
 
 ### Code
 
@@ -36,9 +36,9 @@ public:
 
 ### O(N) Time and O(N) Space
 
-- We try to sell stock each day.
-- For each day from last we store maximum stock price that will appeare.
-- then for each day we calculate by selling the stock.
+-   We try to sell stock each day.
+-   For each day from last we store maximum stock price that will appear.
+-   then for each day we calculate by selling the stock.
 
 ### Code
 
@@ -65,10 +65,10 @@ public:
 
 ### O(N) Time and O(1) Space
 
-- We try to buy stock each day.
-- For each day we keep track of the minimum price of the stock that appeared before it.
-- if todays stock price is minimum we will update it.
-- return max profit.
+-   We try to buy stock each day.
+-   For each day we keep track of the minimum price of the stock that appeared before it.
+-   if todays stock price is minimum we will update it.
+-   return max profit.
 
 ### Code
 
@@ -89,18 +89,25 @@ public:
 
 ### The inner for loop can be optimized and will require 33% less time.
 
-- If the price of the stock that day less than minimun price so far then there is no chance to get profit so we only update minimum price.
-- else we can get profit, update maxProfit.
+-   If the price of the stock that day less than minimum price so far then there is no chance to get profit so we only update minimum price.
+-   else we can get profit, update maxProfit.
 
 ### Code
 
 ```cpp
-for(int i=0;i<n;i++)
-{
-    if(minStockPrice>prices[i])
-        minStockPrice=prices[i];
-    else
-        maxProfit=max(maxProfit,prices[i]-minStockPrice);
-}
-```
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int n = prices.size();
+        int maxProfit=0,minStockPrice=1e9;
+        for(int i=0;i<n;i++){ // 33% faster
+            if(minStockPrice>prices[i])
+                minStockPrice=prices[i];
+            else
+                maxProfit=max(maxProfit,prices[i]-minStockPrice);
+        }
+        return maxProfit;
+    }
+};
 
+```
