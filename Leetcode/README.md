@@ -263,6 +263,28 @@ Anticlockwise rotate
 
 ---
 
+# [50. Pow(x, n)](./50_powXn.md) 🌟🌟
+
+### O(N) Time Brute force
+
+-   if n is `0`, return `1.0`
+-   set `ans = x`
+-   We iterate N times and multiply `ans` with `x`.
+-   If **N is negative**, we convert it to **positive** and then multiply with `x` and finally return `1/result`.
+-   But there is one **edge case**, given that `n` is `integer` and range of integers is **-2,147,483,648 to 2,147,483,647** so if we convert -2,147,483,648 to positive, it will **overflow**.
+-   To tackle this edge case, we can use **long** type.
+
+### O(log2_N) optimized
+
+-   Math concept `2^5 = 2*(2^4) = 2*(4^2) = 2*16 = 32`
+-   if n is even we can divide it half and do multiplication
+-   if n is odd we can multiply 1 x with ans and reduce it to even number.
+-   when it will be 0 we stop the loop.
+
+### Recursive
+
+---
+
 # [53. Maximum Subarray](./53_maximumSubarray.md) 🌟
 
 ### O(N) time constant space(DP)
@@ -901,6 +923,34 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
+# [169. Majority Element](./169_majorityElement.md) 🌟
+
+### O(N^2) Brute force
+
+-   For every number in array we count its occurrences.
+-   If count is greater than n/2, then we return the number.
+
+### O(N)Time with extra space
+
+-   we Can take a vector or unordered_map to store the frequency of each element.
+-   We traverse the hash map/ vector to find the n/2 frequency.
+-   if we found we return the element.
+-   **TC: O(N)**
+-   **SC:O(N)/O(N^2)** - _Yes if we use unordered_map it's worst case time complexity is **O(N^2)**, which occurs when all elements are divisible by prime number and result in collision_. But if we use frequency vector it's worst case time complexity is **O(N)**.
+
+### Moore's Voting Algorithm
+
+-   **TC:O(N)**
+-   **SC:O(1)**
+-   We maintain 2 variables count and candidate.
+-   We traverse the array and for every element we do following:
+    -   If count is 0, then we set candidate as current element.
+    -   If current element is same as candidate, then we increment count by 1.
+    -   else we decrement count by 1.
+-   return candidate.
+
+---
+
 # [189. Rotate Array](./189_rotateArray.md) 🌟
 
 ### O(N) Time and O(N) space
@@ -1030,6 +1080,30 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 ### O(N) Time O(N) stack iterative solution
 
 -   We use stack instead of recursive stack.
+
+---
+
+# [229. Majority Element II](./229_majorityElementII.md) 🌟🌟
+
+### Brute force
+
+-   We check for all the elements, if it appears more than n/3 times, we add it to the result vector.
+-   **TC: O(N^2)**
+-   **SC:O(1)**
+
+### O(N) Time and O(1) space
+
+-   we Can take a vector or unordered_map to store the frequency of each element.
+-   We traverse the hash map/ vector to find the n/3 frequency.
+-   if we found we return the element.
+-   **TC: O(N)**
+-   **SC:O(N)/O(N^2)** - _Yes if we use unordered_map it's worst case time complexity is **O(N^2)**, which occurs when all elements are divisible by prime number and result in collision_. But if we use frequency vector it's worst case time complexity is **O(N)**.
+
+### Moore's Voting Algorithm
+
+-   **TC:O(N)**
+-   **SC:O(1)**
+-   The intuition and method is same as `majority element` problem but here we maintain 2 cnt variables and 2 candidate because in the question it is given that at most 2 majority element will be present or there may be no element present.
 
 ---
 
@@ -1293,6 +1367,22 @@ Clearly, both first and sec belong to different groups and since, all other elem
     ```
 -   We have calculated the value of `a = -0.5 + sqrt( 2\*n + 1/4 )`
 -   **Time Complexity: O(1)**
+
+---
+
+# [493. Reverse Pairs](./493_reversePairs.md) 🌟🌟🌟
+
+### Brute force
+
+-   for every i we check the condition and increment the counter.
+-   **Time complexity: O(n^2)**
+-   **Space complexity: O(1)**
+
+### Using Merge Sort modification
+
+-   **TC: O(NlogN)**
+-   **SC: O(N)**, if we use temp array.
+-   [Striver's Video](https://www.youtube.com/watch?v=S6rsAlj_iB4&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=20) for detail explanation.
 
 ---
 
