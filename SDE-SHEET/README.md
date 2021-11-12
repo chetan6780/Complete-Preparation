@@ -34,7 +34,7 @@ Click here for complete [SDE-SHEET](https://docs.google.com/document/d/1SM92efk8
 | 4   | [Majority Element (>N/3 times)](DAY_3/4_majorityElementN3.md) |
 | 5   | [Grid Unique Paths](DAY_3/5_gridUniquePath.md)                |
 | 6   | [Reverse Pairs (Leetcode)](DAY_3/6_reversePairs.md)           |
-| 7   | **Go through Puzzles from GFG(Search on own**                 |
+| 7   | **Go through Puzzles from GFG(Search on own)**                |
 
 ### Day - 4 (Hashing)
 
