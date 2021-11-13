@@ -1642,6 +1642,26 @@ soon...
 
 ---
 
+# [739. Daily Temperatures](./739_dailyTemperatures.md) 🌟🌟
+
+### Brute Force
+
+-   **TC: O(N^2)**
+-   **SC: O(1)**
+-   check for every day in an array, if the next day is grater or not.
+
+### Stack Solution
+
+-   **TC: O(N)**
+-   **SC: O(N)**
+-   We iterate array from back.
+-   We use stack to store the index of the days which have greater temperature than the current day.
+-   Until the top element of the stack is not greater or the stack is empty, we pop the top element.
+-   After the operation, if stack is empty, we set ith element of ans array to 0, else we set it to `st.top - i`.
+-   return the ans vector.
+
+---
+
 # [832. Flipping an Image](./832_flippingAnImage.md) 🌟
 
 ### O(N^2) Time and O(1) Space
