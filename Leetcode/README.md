@@ -84,6 +84,37 @@
 
 ---
 
+# [18. 4Sum](./18_4sum.md) 🌟🌟
+
+### O(N^4) brute force
+
+-   using 4 for loops we can solve this question.
+
+### Sort + 3ptr + BinarySearch (int overflow)
+
+-   **TC: O(N^3)** - 2loops and finding 2 elements in O(N) time.
+-   **SC: O(N^2)** - set of vectors
+-   we keep i,j,k pointers and find l using binary search.
+
+### TIP:
+
+-   We can use following code to remove duplicates from vector.
+-   ```cpp
+    sort(v.begin(), v.end());
+    v.erase(unique(v.begin(), v.end()), v.end());
+    ```
+-   See my [GFG Solution](https://practice.geeksforgeeks.org/problems/find-all-four-sum-numbers1732/1) for better understanding.
+
+### Sort + 2ptr + BinarySearch
+
+-   **TC: O(N^3)** - 2loops and finding 2 elements in O(N) time.
+-   **SC: O(1)**
+-   we keep i,j pointers and find l and r using binary search.
+-   We can **overcome int overflow** by calculating target in every loop.(see code)
+-   We can also overcome extra space by processing pointers until duplicates occurs.(see code)
+
+---
+
 # [19. Remove Nth Node From End of List](./19_removeNthNodeFromEndOfList.md) 🌟🌟
 
 ### O(N) Time and O(1) Space Complexity
@@ -736,6 +767,23 @@ public:
 ### READ:
 
 -   [✅ [Java] Simple & Clean DP solutions for all 6 Buy & Sell Stock questions on LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/discuss/1569081/Java-Simple-and-Clean-DP-solutions-for-all-6-Buy-and-Sell-Stock-questions-on-LeetCode)
+
+---
+
+# [128. Longest Consecutive Sequence](./128_longestConsecutiveSequence.md) 🌟🌟
+
+### Sorting Solution
+
+-   **TC: O(NlogN)**
+-   sort the sequence and find the consecutive subsequences and out of them return the length of the longest consecutive subsequence.
+
+### Hash table O(N) Time solution
+
+-   we create hash table of `nums`.
+-   for every element we check if `num-1` is present or not.
+-   if its not present then from `num` we count `num,num+1,num+2,...` consecutive elements.
+-   when `num+..` not found we update our `ans`.
+-   `return ans`.
 
 ---
 
