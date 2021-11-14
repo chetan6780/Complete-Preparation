@@ -60,5 +60,18 @@ Click here for complete [SDE-SHEET](https://docs.google.com/document/d/1SM92efk8
 
 ### Day - 6 (Linked List)
 
+| Sn. | Question                                                                                 |
+| --- | ---------------------------------------------------------------------------------------- |
+| 1   | [Find intersection point of Y LinkedList](DAY_6/1_findIntersectionPointOfYLinkedList.md) |
+| 1   | [Detect a cycle in Linked List](DAY_6/detectCycleInLL.md)                                |
+| 1   | [Reverse a LinkedList in groups of size k.](DAY_6/reverseLLinGroupK.md)                  |
+| 1   | [Check if a LinkedList is palindrome or not.](DAY_6/isLLPalindrome.md)                   |
+| 1   | [Find the starting point of the Loop of LinkedList](DAY_6/startingPointOfLL.md)          |
+| 1   | [Flattening of a LinkedList](DAY_6/flatteningOfLL.md)                                    |
+| 1   | [Rotate a LinkedList](DAY_6/rotateLL.md)                                                 |
+
+### Day - 7 (2 Pointers)
+
 | Sn. | Question |
 | --- | -------- |
+| 1   | -------- |

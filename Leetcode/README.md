@@ -22,6 +22,18 @@
 
 ---
 
+# [2. Add Two Numbers](./2_addWtoNumbers.md) 🌟🌟
+
+### This question only have optimal solution
+
+-   In an interview you should kill some time and ask interviewer some questions.
+-   like what if l1 have more length than l2, or vice versa or what if both have sam length, and other edge cases.
+-   **TC: O(max(n1,n2))**
+-   **SC: O(len(l1) + len(l2))**
+-   Explained in code.
+
+---
+
 # [3. Longest Substring Without Repeating Characters](./3_longestSubstringWithoutRepeatingCharacters.md) 🌟🌟
 
 ### O(N^3) Time, O(N) space
@@ -1199,6 +1211,29 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 -   if one of child node is null return another
 -   else both are not null return the root(curr node), that means left and right are p and q.
 -   Reference: [link](https://www.youtube.com/watch?v=_-QHfMDde90) for recursive solution.
+
+---
+
+# [237. Delete Node in a Linked List](./237_deleteNodeInLL.md) 🌟
+
+### Dumb Question 😂🤣🤣
+
+-   Agree😂, not able to think this.
+-   We just need to copy the next node's value to the current node and then delete the next node.
+
+### MUST READ:
+
+**let's analyze why this problem **isn't** a good interview question.**
+
+```
+The whole point of asking any candidates a linked list problem is to test if the candidates think about edge cases, including:
+
+1. Dereferencing Null Pointer, usually targeting tail pointer
+2. When given Head is None
+3. When there are duplications in the list
+```
+
+> This question specifically mentioned all the above edge cases and extracted them out for you Someone who can solve this problem might not even think of all the edge cases, which can backfire on them in real interview settings
 
 ---
 
