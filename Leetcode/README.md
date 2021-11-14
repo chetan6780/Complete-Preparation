@@ -1847,6 +1847,27 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1286. Iterator for Combination](./1286_iteratorForCombination.md) 🌟🌟
+
+### Prerequisites:
+
+-   **Backtracking**
+-   **77. Combinations**
+
+### Backtracking Solution (Efficient)
+
+-   First, in the initialization, we recompute all the combinations of given string , and store the
+    string of `combinationLength` in the `combination` vector. It will be done in **O(2^n)** time and also in **Dictionary order**.
+-   In the `next()` function, from the `combination` vector, we return the next combination.
+-   In the `hasNext()` function, we check if the `combination` vector has the next combination or not.
+
+### Bitmasking Solution (Not more efficient)
+
+-   Here change is, we use bitmasking to compute all the combinations. takes **O(2^n)** time.
+-   but we need to have additional map to store the combinations in sorted order. takes **O(log N)** time.
+
+---
+
 # [1295. Find Numbers with Even Number of Digits](./1295_findNumbersWithEvenNumberOfDigits.md`) 🌟
 
 ### O(N\*length(num)) Time and O(1) Space
