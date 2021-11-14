@@ -38,16 +38,27 @@ Click here for complete [SDE-SHEET](https://docs.google.com/document/d/1SM92efk8
 
 ### Day - 4 (Hashing)
 
-| Sn. | Question                                                                             |
-| --- | ------------------------------------------------------------------------------------ |
-| 1   | [2 sum problem](DAY_4/1_2sum.md)                                                     |
-| 2   | [4 sum problem](DAY_4/2_4sum.md)                                                     |
-| 3   | [Longest Consecutive Sequence](DAY_4/3_LongestConsecutiveSequence.md)                |
-| 4   | [Largest Subarray with 0 sum](DAY_4/4_largestSubarrayZeroSum.md)                     |
+| Sn. | Question                                                                                                      |
+| --- | ------------------------------------------------------------------------------------------------------------- |
+| 1   | [2 sum problem](DAY_4/1_2sum.md)                                                                              |
+| 2   | [4 sum problem](DAY_4/2_4sum.md)                                                                              |
+| 3   | [Longest Consecutive Sequence](DAY_4/3_LongestConsecutiveSequence.md)                                         |
+| 4   | [Largest Subarray with 0 sum](DAY_4/4_largestSubarrayZeroSum.md)                                              |
 | 5   | [Count number of subarrays with given XOR](DAY_4/5_countNoOfSubArrayWithGivenXOR.md)(clears lots of problems) |
-| 6   | [Longest substring without repeat](DAY_4/6_longestSubstringWithoutRepeat.md)         |
+| 6   | [Longest substring without repeat](DAY_4/6_longestSubstringWithoutRepeat.md)                                  |
 
 ### Day - 5 (Linked List)
+
+| Sn. | Question                                                          |
+| --- | ----------------------------------------------------------------- |
+| 1   | [Reverse a LinkedList](DAY_5/1_ReverseLinkedList.md)              |
+| 2   | [Find middle of linked list](DAY_5/2_findMiddleOfLinkedList.md)   |
+| 3   | [Merge two sorted linked list](DAY_5/3_mergeTWoSortedLists.md)    |
+| 4   | [Remove Nth node from back](DAY_5/4_removeNthNodeFromBack.md)     |
+| 5   | [Delete a Given node O(1)](DAY_5/5_deleteGivenNode.md)            |
+| 6   | [Add two numbers as linked list](DAY_5/6_addTwoNumbersAsLList.md) |
+
+### Day - 6 (Linked List)
 
 | Sn. | Question |
 | --- | -------- |
