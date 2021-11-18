@@ -371,11 +371,14 @@ Anticlockwise rotate
 
 ### Recursive Solution (TLE)
 
+-   To reach at the end we can either go down or right, so we do it by recursion.
+-   when we reach the goal we return 1.
+-   if we go out of boundary we return 0
 -   **Time Complexity**: O(2^n)
 
 ### Recursive + Memoization
 
--   Giving TLE , that should not happen , but it is happening.
+-   remember to store calculated values in a dp - last line.
 -   **Time complexity**: m x n
 -   **Space complexity**: m x n
 
@@ -386,7 +389,7 @@ Anticlockwise rotate
 
 ### Combinatorics Solution
 
--   **Time complexity**: liner O(m)
+-   **Time complexity: O(min(m,n))**
 -   Explained in [striver's video](https://www.youtube.com/watch?v=t_f0nwwdg5o&t=23s).
 
 ### READ
@@ -1453,6 +1456,38 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [448. Find All Numbers Disappeared in an Array](./448_findAllNumbersDisappearedInAnArray.md) 🌟
+
+### Brute force
+
+-   For each number in the range [1,n], check if it is in the array.
+-   If not then add it in the result array.
+-   **TC: O(N^2)**
+-   **SC: O(1)**
+
+### Sort + search
+
+-   Sort the array.
+-   Then we can binary search the missing numbers OR linearly compare 2 adjacent numbers.
+-   **TC: O(NlogN)**
+-   **SC: O(1)**
+
+### Hash set
+
+-   We can store the value of each number in the array in a hash set.
+-   Then we can iterate over the range [1,n] and check if the number is in the hash set.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Space-Optimized using In-place modification
+
+-   We mark the present element as negative.
+-   then we iterate from [1,n] and check if there is `number > 0`, if its present then we add it in the answer array.
+-   **TC: O(N)**
+-   **SC: O(1)**
+
+---
+
 # [493. Reverse Pairs](./493_reversePairs.md) 🌟🌟🌟
 
 ### Brute force
@@ -1598,6 +1633,10 @@ soon...
 -   For each node, we check if k - node.val exists in this BST.
 
 ---
+
+# [668. Kth Smallest Number in Multiplication Table](./668_kthSmallestNumberInMultiplicationTable.md) 🌟🌟🌟
+
+## <!-- TODO: Add explanation -->
 
 # [695. Max Area of Island](./695_maxAreaOfIsland.md) 🌟🌟
 

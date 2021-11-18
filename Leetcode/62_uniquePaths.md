@@ -6,9 +6,52 @@ The robot can only move either down or right at any point in time. The robot is 
 
 How many possible unique paths are there?
 
+### Recursive Solution
+
+-   To reach at the end we can either go down or right, so we do it by recursion.
+-   when we reach the goal we return 1.
+-   if we go out of boundary we return 0
+
+```cpp
+class Solution {
+public:
+    int uniquePaths(int m, int n, int r = 0, int c = 0)
+    {
+        if (r >= m || c >= n) return 0;
+        if (r == m - 1 && c == n - 1) return 1;
+        return uniquePaths(m, n, r + 1, c) + uniquePaths(m, n, r, c + 1);
+    }
+};
+```
+
+### Memoization(Top Down Dp)
+
+```cpp
+int dp[101][101];
+class Solution {
+    int uniquePathsHelper(int m, int n, int r = 0, int c = 0){
+        if (r >= m || c >= n) return 0;
+        if (r == m - 1 && c == n - 1) return 1;
+        if (dp[r][c] != -1) return dp[r][c];
+        return dp[r][c] = uniquePathsHelper(m, n, r + 1, c) + uniquePathsHelper(m, n, r, c + 1);
+    }
+
+public:
+    int uniquePaths(int m, int n){
+        memset(dp, -1, sizeof(dp));
+        return uniquePathsHelper(m, n, 0, 0);
+    }
+};
+```
+
+<details>
+<summary><b>Other type solution</b></summary>
+
+---
+
 ### Recursive Solution (TLE)
 
-- **Time Complexity: O(2^n)**
+-   **Time Complexity: O(2^n)**
 
 ```cpp
 class Solution {
@@ -24,32 +67,35 @@ public:
 
 ### Recursive + Memoization
 
-- Giving TLE , that should not happen , but it is happening.
-- **Time complexity**: m x n
-- **Space complexity**: m x n
+-   remember to store calculated values in a dp - last line.
+-   **Time complexity: m x n**
+-   **Space complexity: m x n**
 
 ```cpp
 class Solution{
 private:
-    int helper(int m, int n, vector<vector<int>> &dp){
+    int dfs(int m, int n, vector<vector<int>> &dp){
         if (m < 0 || n < 0) return 0;
         if (m == 0 || n == 0) return 1;
         if(dp[m][n]>0) return dp[m][n];
-        return helper(m - 1, n, dp) + helper(m, n - 1, dp);
+        return dp[m][n] = dfs(m - 1, n, dp) + dfs(m, n - 1, dp);
     }
 
 public:
     int uniquePaths(int m, int n){
         vector<vector<int>> dp(m, vector<int>(n, -1));
-        return helper(m - 1, n - 1, dp);
+        return dfs(m - 1, n - 1, dp);
     }
 };
 ```
 
+---
+
+ </details>
 ### Tabulation Solution
 
-- **Time complexity: m x n**
-- **Space complexity: m x n**
+-   **Time complexity: m x n**
+-   **Space complexity: m x n**
 
 ```cpp
 class Solution {
@@ -72,8 +118,8 @@ public:
 
 ### Combinatorics Solution
 
-- **Time complexity**: liner O(m)
-- Explained in [striver's video](https://www.youtube.com/watch?v=t_f0nwwdg5o&t=23s).
+-   **Time complexity: O(min(m,n))**
+-   Explained in [striver's video](https://www.youtube.com/watch?v=t_f0nwwdg5o&t=23s).
 
 ```cpp
 class Solution{
@@ -93,4 +139,5 @@ public:
 
 ### READ
 
-- [Recursive, memoization and dynamic programming solutions](https://leetcode.com/problems/unique-paths/discuss/182143/Recursive-memoization-and-dynamic-programming-solutions)
+-   [ [C++/Python] 5 Simp le Solutions w/ Explanation | Optimization from Brute-Force to DP to Math](https://leetcode.com/problems/unique-paths/discuss/1581998/C%2B%2BPython-4-Simple-Solutions-w-Explanation-or-Optimization-from-Brute-Force-to-DP-to-Math)
+-   [Recursive, memoization and dynamic programming solutions](https://leetcode.com/problems/unique-paths/discuss/182143/Recursive-memoization-and-dynamic-programming-solutions)
