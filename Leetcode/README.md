@@ -1488,6 +1488,52 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [461. Hamming Distance](./461_hammingDistance.md) 🌟
+
+### Original Post - [4 Solutions](https://leetcode.com/problems/hamming-distance/discuss/1585474/C%2B%2BPython-4-Simple-Solutions-w-Explanations-or-XOR-and-Brian-Kernighan-method)
+
+### Converting Binary Form to String/Array & Iterating
+
+-   The most basic way one could solve this question is by simply taking the number, converting them to binary form's string / array and iterating over it to find the number of positions at which bits are different.
+-   **TC : O(N)**, where `N` is the `number of bits` in the given input numbers
+-   **SC : O(N)**, required to store the input number's binary form.
+
+### Iterating & Comparing each Bit
+
+-   We can also iterate over each bit of the given numbers manually and then compare the bits at each position.
+-   To check if the `ith` bit of a number `x` is set, we can perform - `(x >> i) & 1`.
+-   If the bit differ at a given position, we increment the count of hamming distance.
+-   **TC : O(N)**, to iterate over each bit of the number.
+-   **SC : O(1)**, No extra space required.
+
+### XOR & count bits
+
+-   We can XOR x and y and count the number of set bits in the result.
+-   To count the number of set bits we can use these inbuilt options:
+    ```cpp
+    ans = bitset<32>(Xor).count()
+    ans = __builtin_popcount(Xor);
+    ans = popcount(Xor)            // only since C++20
+    ```
+-   OR below is code to do it manually.
+-   **TC : O(N)**, to iterate over each bit of the number.
+-   **SC : O(1)**, No extra space required.
+
+### Brian-Kernighan's method
+
+-   We can use Brian Kernighan's method to count the number of set bits in the XOR of the two numbers.
+-   Take a XOR of x and y.
+-   Clear(unset) the rightmost bit by `n & (n - 1)` until xor becomes 0 and increment the count each time.
+-   **TC : O(K)**, where K is the hamming distance between given numbers. This assume XOR operation as O(1)
+-   **SC : O(1)**, No extra space required.
+
+### 💡 Note:
+
+1. The number of bits `N` for this problem is fixed to `32`. So, strictly speaking, the time complexity of 1st three solutions is `O(N) = O(32) = O(1)`. But to differentiate between time complexities of 1st three and last approach, I have denoted them as `O(N)`.
+2. It's likely that if you got such a question during an interview, you will probably be expected to come up with an approach similar to this one. This approach performs the least number of loops to find the number of set bits in a number which is equal to the number of set bits in the number itself.
+
+---
+
 # [493. Reverse Pairs](./493_reversePairs.md) 🌟🌟🌟
 
 ### Brute force
