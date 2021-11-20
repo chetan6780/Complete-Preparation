@@ -1550,6 +1550,10 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [540. Single Element in a Sorted Array](./540_singleElementInASortedArray.md) 🌟🌟
+
+---
+
 # [542. 01 Matrix](./542_01Matrix.md) 🌟🌟
 
 ### BFS solution
