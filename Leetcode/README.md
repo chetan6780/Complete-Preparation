@@ -652,6 +652,14 @@ Anticlockwise rotate
 
 ---
 
+# [106. Construct Binary Tree from Inorder and Postorder Traversal](./106_constructBinaryTreeFromInorderAndPostorderTraversal.md) 🌟🌟
+
+### MUST READ
+
+-   [[C++] EASY Intuitive Sol || Clean Recursive Code w/ Explanation || T.C:O(N)](<https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/discuss/1588934/C%2B%2B-EASY-Intuitive-Sol-oror-Clean-Recursive-Code-w-Explanation-oror-T.C%3AO(N)>)
+
+---
+
 # [112. Path Sum](./112_pathSum.md) 🌟
 
 ### O(N) Time , recursive
@@ -1551,6 +1559,41 @@ Clearly, both first and sec belong to different groups and since, all other elem
 ---
 
 # [540. Single Element in a Sorted Array](./540_singleElementInASortedArray.md) 🌟🌟
+
+### Brute force
+
+-   check for duplicates element using 2for loops.
+-   **TC: O(N^2)**
+-   **SC: O(1)**
+
+### Hashmap
+
+-   use hashmap to store the frequency of each element.
+-   in hashmap if frequency is 1 then return the element.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### linear search
+
+-   We can linearly search the array for the element.
+-   for each time we increment the i by 2 and check for adjacent elements.
+-   if the element is not equal to the previous element then we return the current element.
+-   **TC: O(N)**
+-   **SC: O(1)**
+
+### Bit Manipulation(XOR)
+
+-   We know that xor of 2 same numbers is 0.In the question it is given that all number except the ans appear twice.
+-   So we can use XOR to find the ans.
+-   **TC: O(N)**
+-   **SC: O(1)**
+
+### Binary Search
+
+-   We can observe that before unique elements every repeated element starts with even index and after unique elements every repeated element starts with odd index.
+-   so we can just binary search the ans based on the even and odd indexes.
+-   **TC: O(logN)**
+-   **SC: O(1)**
 
 ---
 
