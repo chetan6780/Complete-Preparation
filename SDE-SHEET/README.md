@@ -72,6 +72,21 @@ Click here for complete [SDE-SHEET](https://docs.google.com/document/d/1SM92efk8
 
 ### Day - 7 (2 Pointers)
 
-| Sn. | Question |
-| --- | -------- |
-| 1   | -------- |
+| Sn. | Question                                                                                       |
+| --- | ---------------------------------------------------------------------------------------------- |
+| 1   | [Clone a Linked List with random and next pointer](DAY_7/1_cloneLLWithRandomAndNextPointer.md) |
+| 2   | [3 sum](DAY_7/2_3sum.md)                                                                       |
+| 3   | [Trapping rainwater](DAY_7/3_trappingRainwater.md)                                             |
+| 4   | [Remove Duplicate from Sorted array](DAY_7/4_removeDuplicates.md)                              |
+| 5   | [Max consecutive ones](DAY_7/5_maxConsecutiveOnes.md)                                          |
+
+### Day - 8 (Greedy)
+
+| Sn. | Question                                                                           |
+| --- | ---------------------------------------------------------------------------------- |
+| 1   | [N meeting in one room](DAY_8/1_N_meeting_in_one_room.md)                          |
+| 2   | [Minimum number of platforms required for a railway](DAY_8/2_minimum_platforms.md) |
+| 3   | [Job sequencing Problem](DAY_8/3_job_sequencing.md)                                |
+| 4   | [Fractional Knapsack Problem](DAY_8/4_fractional_knapsack.md)                      |
+| 5   | [Greedy algorithm to find minimum number of coins](DAY_8/5_minimum_coins.md)       |
+| 6   | [Activity Selection (it is same as N meeting in one room]()                        |

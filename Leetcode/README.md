@@ -248,6 +248,30 @@
 
 ---
 
+# [42. Trapping Rain Water](./42_trappingRainWater.md) 🌟🌟🌟
+
+### Brute force
+
+-   For every index find the max water that can be trapped.
+-   This can be done with the formula `min(maxLeft(i),maxRight(i))-a[i]`
+-   **TC: O(N^2)**, 2nd loop for finding left and right max.
+-   **SC: O(1)**
+
+### PrefixSum Optimized
+
+-   We can pre-compute left max in an array and right max from back into the another array, so the 2 loop is not necessary.
+-   **TC: O(N)**
+-   **SC: O(2\*N)-->O(N)**
+
+### 2-pointer
+
+-   We can find left max and right max with 2 pointer approach.
+-   Explained in code.
+-   **TC: O(N)**
+-   **SC: O(1)**
+
+---
+
 # [46. Permutations](./46_permutations.md) 🌟🌟
 
 ### Backtracking
@@ -364,6 +388,24 @@ Anticlockwise rotate
 
 -   If we not consider the vector ans, which we have to return this problem can be solved without using temp vector.
 -   We can simply use vector.back and do the operations on it.
+
+---
+
+# [61. Rotate List](./61_rotateList.md) 🌟🌟
+
+### Brute force
+
+-   Pick up the last node and put it to the first, do this k times.
+-   **TC: O(k\*N)**
+-   **SC: O(1)**
+
+### Optimized
+
+-   Get the length of the linked list.
+-   point last nodes next to head.
+-   point the len-kth nodes next to null
+-   **TC: O(N)**
+-   **SC: O(1)**
 
 ---
 
@@ -875,6 +917,24 @@ If you find more problems, please comment it below :)
 
 ---
 
+# [138. Copy List with Random Pointer](./138_copyLinkedListWithRandomPointer.md) 🌟🌟
+
+### Brute force
+
+-   Take `hashmap<originalNode,copyNode>`
+-   Traverse the linked list and create deep copy of the current node and push both in the hashmap.
+-   Now traverse the linked list again and point deep copied node to the other deep copy nodes as present in original node.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Optimized
+
+-   3 Step algorithm explained in code.
+-   **TC: O(N)**
+-   **SC: O(1)**
+
+---
+
 # [141. Linked List Cycle](./141_linkedListCycle.md) 🌟
 
 ### O(N) Time and O(N) space
@@ -888,6 +948,21 @@ If you find more problems, please comment it below :)
 
 -   Here fast pointer move 2 steps and slow pointer moves one step.
 -   If they meet each other while traversing then loop that means there is a cycle else not.
+
+---
+
+# [142. Linked List Cycle II](./142_linkedListCycleII.md) 🌟🌟
+
+### fast ans slow pointer Solution
+
+-   We can use fast and slow pointer method to find the cycle.
+-   We move fast by 2 steps and slow by 1 step.
+-   When they both are equal, we have found the cycle, else we return null.
+-   If cycle found set fast pointer to head again and move both by 1 step.
+-   when both of then are equal, we have found the start of the cycle.
+-   return the fast/slow pointer.
+-   **TC: O(N)**
+-   **SC: O(1)**
 
 ---
 
@@ -1190,6 +1265,25 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 -   **AMORTIZED**: Most of the times operations are O(1) time. Sometimes it will be O(n) time. But total time for all the operations will be O(1).
 -   Using 2 stacks; one is used for read and another for write.
+
+---
+
+# [234. Palindrome Linked List](./234_palindromeLinkedList.md) 🌟
+
+### Brute force
+
+-   Store the element of the linked list in the array or string and check if the array is palindrome.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Optimized
+
+-   Use two pointers to traverse the linked list.
+-   We find the middle of linked list and reverse the second half of the linked list.
+-   Then we compare the first half and the second half of the linked list.
+-   if the second half of the linked list reaches to null return true. Otherwise return false.
+-   **TC: O(N)**
+-   **SC: O(1)**
 
 ---
 
