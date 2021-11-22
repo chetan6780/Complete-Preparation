@@ -545,7 +545,7 @@ Anticlockwise rotate
 
 ---
 
-# [83. Remove Duplicates from Sorted List](./removeDuplicatesFromSortedList.md) 🌟
+# [83. Remove Duplicates from Sorted List](./83_removeDuplicatesFromSortedList.md) 🌟
 
 ### O(N) Time and O(1) Space
 
@@ -1587,6 +1587,33 @@ Clearly, both first and sec belong to different groups and since, all other elem
 -   then we iterate from [1,n] and check if there is `number > 0`, if its present then we add it in the answer array.
 -   **TC: O(N)**
 -   **SC: O(1)**
+
+---
+
+# [450. Delete Node in a BST](./450_deleteNodeInBst.md) 🌟🌟
+
+### Solution
+
+1. **find the key node:** there are **3 cases**
+
+```cpp
+    if(key < root) -> find in left subtree
+    else if(key > root) -> find in right subtree
+    else (key==root) -> delete the node
+```
+
+2. **Now delete the node:** there are **3 cases**
+
+```cpp
+    if leaf node(0 child)  -> delete(node) and return NULL
+    else if node having 1 child  -> delete(node) and return the child
+    else  (node having 2 children){
+      i) find smallest node (leftmost) in the right subtree of the key
+      ii) copy the smallest node value with key node
+      iii) delete that smallest node from right subtree (as it have only 1 or 0 child)}
+```
+
+**Alternative: In the condition of node having 2 children, we can also find largest node (rightmost) of left subtree of the key.**
 
 ---
 
