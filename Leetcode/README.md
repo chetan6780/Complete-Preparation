@@ -203,6 +203,26 @@
 
 ---
 
+# [26. Remove Duplicates from Sorted Array](./26_removeDuplicatesFromSortedArray.md) 🌟
+
+### Naive Solution
+
+-   Store the elements in a set. then add them in the original vector in sorted order.
+-   return the size of the set.
+-   **TC: O(N log N)**, N for the traversal and log N for inserting elements in the set.
+-   **SC: O(N)**, N for the set.
+
+### 2 pointer solution
+
+-   Place pointe i to start and j to start + 1.
+-   If nums[i] == nums[j], increment j.
+-   else increment i and set nums[i] = nums[j].
+-   return i + 1.
+-   **TC: O(N)**, N for the traversal.
+-   **SC: O(1)**, since we are modifying the array in place.
+
+---
+
 # [31. Next Permutation](./31_nextPermutation.md) 🌟🌟
 
 ### Brute Force
@@ -1660,6 +1680,12 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 1. The number of bits `N` for this problem is fixed to `32`. So, strictly speaking, the time complexity of 1st three solutions is `O(N) = O(32) = O(1)`. But to differentiate between time complexities of 1st three and last approach, I have denoted them as `O(N)`.
 2. It's likely that if you got such a question during an interview, you will probably be expected to come up with an approach similar to this one. This approach performs the least number of loops to find the number of set bits in a number which is equal to the number of set bits in the number itself.
+
+---
+
+# [485. Max Consecutive Ones](./485_maxConsecutiveOnes.md) 🌟
+
+### Simple iterative solution
 
 ---
 
