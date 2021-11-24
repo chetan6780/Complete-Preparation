@@ -2093,6 +2093,15 @@ soon...
 
 ---
 
+# [986. Interval List Intersections](./986_intervalListIntersections.md) 🌟🌟
+
+### 2-pointer Solution
+
+-   [[Python] Two Pointer Approach + Thinking Process Diagrams](https://leetcode.com/problems/interval-list-intersections/discuss/647482/Python-Two-Pointer-Approach-%2B-Thinking-Process-Diagrams)
+<!-- TODO: Add explanation -->
+
+---
+
 # [989. Add to Array-Form of Integer](./989_addToArrayFormOfInteger.md) 🌟
 
 ### O(N) Time and O(1) Space
