@@ -6,7 +6,7 @@ Given weights and values of n items, we need to put these items in a knapsack of
 1. Just sort the items by decreasing order of value/weight.
 2. Get max portion of item.
 3. Use double to not loose precision.
-4. If item cannot fit full take its fration.
+4. If item cannot fit full take its fraction.
 
 ### Code
 
