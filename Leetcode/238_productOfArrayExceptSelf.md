@@ -62,6 +62,8 @@ public:
 -   Then we ge ans[i] by multiplying `ans[i-1] and right[i+1]` here `right[i+1]=prod` so `ans[i] = ans[i - 1] * prod;`
 -   from right each time we get num from right side and multiply it with the previous product.
 -   finally `ans[0]=prod` itself
+-   **TC: O(N)**
+-   **SC: O(1)**
 
 ### Code
 
@@ -93,7 +95,3 @@ public:
 ### Read
 
 -   [[C++/Python] 4 Simple Solutions w/ Explanation | Prefix & Suffix product O(1) space approach](<https://leetcode.com/problems/product-of-array-except-self/discuss/1597994/C%2B%2B-3-Simple-Solutions-w-Explanation-or-Prefix-and-Suffix-product-O(1)-space-approach>)
-
-```
-
-```
