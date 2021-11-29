@@ -10,23 +10,23 @@ Return the modified image after performing the flood fill.
 
 ### DFS - Recursive
 
-- **Main function:**
+-   **Main function:**
 
-  - if current color is not new color, call the dfs algorithm.
-  - else return original image.
+    -   if current color is not new color, call the dfs algorithm.
+    -   else return original image.
 
-- **DFS function:**
+-   **DFS function:**
 
-  - check for invalid row and column numbers.
-  - check if current color is not old color or is already new color.
-  - for both the cases return.
-  - set current color to new color.
-  - call the function for all the 4 directions.
+    -   check for invalid row and column numbers.
+    -   check if current color is not old color or is already new color.
+    -   for both the cases return.
+    -   set current color to new color.
+    -   call the function for all the 4 directions.
 
-- **Complexity:**
+-   **Complexity:**
 
-  - Time: **O(M \* N)**, where `M <= 50` is number of rows, `N <= 50` is number of columns in the matrix.
-  - Space: **O(M \* N)**, it's the depth stack memory, in worst case is **O(M \* N)**, can check this discussion on [stackoverflow](https://stackoverflow.com/a/50912382/4084297).
+    -   Time: **O(M \* N)**, where `M <= 50` is number of rows, `N <= 50` is number of columns in the matrix.
+    -   Space: **O(M \* N)**, it's the depth stack memory, in worst case is **O(M \* N)**, can check this discussion on [stackoverflow](https://stackoverflow.com/a/50912382/4084297).
 
 ### Code
 
@@ -59,20 +59,20 @@ private:
 
 ### BFS - Iterative
 
-- **Main function:BFS**
+-   **Main function:BFS**
 
-  - if current color is already new color, return original image
-  - We need a 2D direction vector and a queue for BFS (q of pairs).
-  - push starting point in the queue.
-  - while queue is not empty run loop.
-    - get the row and column index form the front of the queue, and pop it.
-    - set current color to new color
-    - for all directions push {r,c} in the queue if it's valid.
+    -   if current color is already new color, return original image
+    -   We need a 2D direction vector and a queue for BFS (q of pairs).
+    -   push starting point in the queue.
+    -   while queue is not empty run loop.
+        -   get the row and column index form the front of the queue, and pop it.
+        -   set current color to new color
+        -   for all directions push {r,c} in the queue if it's valid.
 
-- **Complexity:**
+-   **Complexity:**
 
-  - Time: **O(M \* N)**, where `M <= 50` is number of rows, `N <= 50` is number of columns in the matrix.
-  - Space: **O(M \* N)**, it's the depth stack memory, in worst case is **O(M \* N)**, can check this discussion on [stackoverflow](https://stackoverflow.com/a/50912382/4084297).
+    -   Time: **O(M \* N)**, where `M <= 50` is number of rows, `N <= 50` is number of columns in the matrix.
+    -   Space: **O(M \* N)**, it's the depth stack memory, in worst case is **O(M \* N)**, can check this discussion on [stackoverflow](https://stackoverflow.com/a/50912382/4084297).
 
 ### Code
 
@@ -111,6 +111,6 @@ public:
 
 ### MUST READS:
 
-- [How do you think about solving a question using DFS [ Learn before you Code ]](https://leetcode.com/problems/flood-fill/discuss/442143/How-do-you-think-about-solving-a-question-using-DFS-Learn-before-you-Code)
+-   [How do you think about solving a question using DFS [ Learn before you Code ]](https://leetcode.com/problems/flood-fill/discuss/442143/How-do-you-think-about-solving-a-question-using-DFS-Learn-before-you-Code)
 
-- [[C++] standard solution, schema you can apply to other tasks: list + visited](https://leetcode.com/problems/flood-fill/discuss/627915/C%2B%2B-standard-solution-schema-you-can-apply-to-other-tasks%3A-list-%2B-visited)
+-   [[C++] standard solution, schema you can apply to other tasks: list + visited](https://leetcode.com/problems/flood-fill/discuss/627915/C%2B%2B-standard-solution-schema-you-can-apply-to-other-tasks%3A-list-%2B-visited)
