@@ -1988,6 +1988,27 @@ soon...
 
 ---
 
+# [721. Accounts Merge](./721_accountsMerge.md) 🌟🌟
+
+-   **Famous Union-find interview Question**
+-   **Nutanix**
+
+### DFS Solution
+
+<!-- TODO: DFS solution here -->
+
+### Union-find (DSU)
+
+<!-- TODO: Learn DSU and explain this question -->
+
+### MUST READ:
+
+-   [Disjoint Set Union (DSU)/Union-Find - A Complete Guide](<https://leetcode.com/discuss/general-discussion/1072418/Disjoint-Set-Union-(DSU)Union-Find-A-Complete-Guide>)
+-   [DSU Practice Questions](https://leetcode.com/list/9nkostg1/)
+-   [[Java/C++] Union Find](https://leetcode.com/problems/accounts-merge/discuss/109157/JavaC%2B%2B-Union-Find)
+
+---
+
 # [784. Letter Case Permutation](./784_letterCasePermutation.md) 🌟🌟
 
 ### Backtracking
