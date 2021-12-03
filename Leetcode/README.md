@@ -1983,13 +1983,7 @@ soon...
 
 ---
 
-# [784. Letter Case Permutation](./784_letterCasePermutation.md) 🌟🌟
-
-### Backtracking
-
----
-
-# [733. Flood Fill](./733_floodFill.md) 🌟
+# [733. Flood Fill](./733_flood_Fill.md) 🌟
 
 ### DFS - Recursive
 
@@ -2053,6 +2047,12 @@ soon...
 -   Until the top element of the stack is not greater or the stack is empty, we pop the top element.
 -   After the operation, if stack is empty, we set ith element of ans array to 0, else we set it to `st.top - i`.
 -   return the ans vector.
+
+---
+
+# [784. Letter Case Permutation](./784_letterCasePermutation.md) 🌟🌟
+
+### Backtracking
 
 ---
 
