@@ -1036,6 +1036,23 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
+# [152. Maximum Product Subarray](./152_maximumProductSubarray.md) 🌟🌟
+
+### Brute Force
+
+-   We want to find maximum product subarray, so we can just create all subarrays and find maximum product subarray among them.
+-   **TC: O(N^2)**
+-   **SC: O(1)**
+
+### Kaden's algorithm
+
+<!-- TODO: Explanation -->
+
+-   **TC: O(n)**
+-   **SC: O(1)**
+
+---
+
 # [155. Min Stack](./155_minStack.md) 🌟
 
 ### TIP
