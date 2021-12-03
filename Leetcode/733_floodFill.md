@@ -84,7 +84,8 @@ public:
         // if current color is already new color, return original image
         if (currColor == newColor) return image;
 
-        const vector<pair<int, int>> dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}}; // directions vector
+        // UNCOMMENT BELOW LINE
+        // const vector<pair<int, int>> dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}}; // directions vector
 
         queue<pair<int, int>> q; // queue for bfs
         q.push({sr, sc}); // push starting point
