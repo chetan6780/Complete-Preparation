@@ -804,50 +804,7 @@ Anticlockwise rotate
 
 -   O(2^N) and O(N^2) approaches
 -   For each time at lowest cost(valley) we buy stock and at highest cost(peak) we sell stock.
-
-### Code-1
-
-```cpp
-class Solution {
-public:
-    int maxProfit(vector<int>& prices)
-    {
-        int i = 0, profit = 0, buy, sell, N = prices.size()-1;
-        while (i < N) {
-            while (i < N && prices[i + 1] <= prices[i]) {
-                i++;
-            }
-            buy = prices[i];
-            while (i < N && prices[i + 1] > prices[i]) {
-                i++;
-            }
-            sell = prices[i];
-            profit += sell - buy;
-        }
-        return profit;
-    }
-};
-```
-
 -   for each day we buy and on next day we sell, **If it is profitable**
-
-### Code-2
-
-```cpp
-class Solution {
-public:
-    int maxProfit(vector<int>& prices)
-    {
-        int profit = 0;
-        int n = prices.size();
-        for (int i = 1; i < n; i++) {
-            if (prices[i - 1] < prices[i])
-                profit += prices[i] - prices[i - 1];
-        }
-        return profit;
-    }
-};
-```
 
 ### READ:
 
@@ -2032,7 +1989,7 @@ soon...
 
 ---
 
-# [733. Flood Fill](./733_floodFill.txt) 🌟
+# [733. Flood Fill](./733_floodFill.md) 🌟
 
 ### DFS - Recursive
 
