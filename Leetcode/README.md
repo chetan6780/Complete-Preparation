@@ -2134,6 +2134,21 @@ The process of finding all paths using DFS can be implemented as -
 
 ---
 
+# [938. Range Sum of BST](./938_rangeSumOfBst.md) 🌟
+
+### Traversal Approaches
+
+-   We can solve this problem with any of the traversal for the tree.
+-   We just need to check for the condition of the node value and then add the value to the sum.
+
+### BST Traversal
+
+-   We can use BST properties and avoid extra recursive calls.
+-   **TC: O(N)**, N is number of nodes in the tree.
+-   **SC: O(h)**, h is the height of the tree.
+
+---
+
 # [977. Squares of a Sorted Array](./977_squaresOfASortedArray.md) 🌟
 
 ### O(N*log*N) Time solution
