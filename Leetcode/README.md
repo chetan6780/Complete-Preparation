@@ -1492,6 +1492,12 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [310. Minimum Height Trees](./310_minimumHeightTrees.md) 🌟🌟
+
+<!-- ! Explanation here -->
+
+---
+
 # [344. Reverse String](./344_reverseString.md) 🌟
 
 ### O(N) time and O(1) space, using stack
