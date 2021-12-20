@@ -2277,6 +2277,26 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+### [1200. Minimum Absolute Difference](./1200_minimumAbsoluteDifference.md) 🌟
+
+### Brute force
+
+-   First we find the minimum difference between all the pairs of array.
+-   With brute force, we can find all pairs of elements with the minimum absolute difference of any two elements in O(n^2) time.
+-   **TC: O(N^2)**
+-   **SC: O(1)**
+
+### Sort + Two traversal
+
+-   We sort the array first.
+-   Then we traverse the array from the beginning to the end and find minimum difference.
+-   Since array is sorted minimum difference pairs will be adjacent elements of the array.
+-   store them in 2D ans vector and return ans.
+-   **TC: O(NlogN)**: For sorting
+-   **SC: O(logN) || O(N)**: Space required for internal sorting. in C++ its O(logN) for py its O(N).
+
+---
+
 # [1286. Iterator for Combination](./1286_iteratorForCombination.md) 🌟🌟
 
 ### Prerequisites:
