@@ -8,17 +8,17 @@ The final sorted array should not be returned by the function, but instead be st
 
 ### O(M+N) Time and O(M+N) space
 
-- Create new array with m+n elements.
-- Traverse through both the given array, find min and insert in the new array.
+-   Create new array with m+n elements.
+-   Traverse through both the given array, find min and insert in the new array.
 
 ### O(M\*N) without using extra Space
 
-- Traverse through both the given array
-- If arr1[i]>arr2[i] then swap the elements and sort the second array.(here sorting means just put swapped element at its right position not real sorting)
+-   Traverse through both the given array
+-   If arr1[i]>arr2[i] then swap the elements and sort the second array.(here sorting means just put swapped element at its right position not real sorting)
 
 ### O(M+N) Time and O(1) Space
 
-- Code is self explanatory on leetcode
+-   Code is self explanatory on leetcode
 
 ### Code
 
@@ -55,20 +55,22 @@ public:
 
 ### Using GAP algorithm
 
-- O(Log2N \* O(N)) time and O(1) space
-- We Will take GAP between two pointers and if the are not sorted we swap them.
-- first GAP = ceil(n1+n2/2) then next time it will be half of previous GAP.
-- If GAP is 1 then next time we stop.
-- [Striver Video 7:47](https://youtu.be/hVl2b3bLzBw?list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&t=467)
+-   O(Log2N \* O(N)) time and O(1) space
+-   We Will take GAP between two pointers and if the are not sorted we swap them.
+-   first GAP = ceil(n1+n2/2) then next time it will be half of previous GAP.
+-   If GAP is 1 then next time we stop.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hVl2b3bLzBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### GFG Question
 
-- We point i to the last of array 1 and j to the start of array 2.
-- in while loop , if arr1[i]>arr2[j] then swap the elements.
-- finally sort the second array.
-- [Video Explanation(OhMyCode!)](https://www.youtube.com/watch?v=1S4KFg5viC0)
-- **Time Complexity**: O(NlogN)
-- **Space Complexity**: O(1)
+-   We point i to the last of array 1 and j to the start of array 2.
+-   in while loop , if arr1[i]>arr2[j] then swap the elements.
+-   finally sort the second array.
+-   **Time Complexity**: O(NlogN)
+-   **Space Complexity**: O(1)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1S4KFg5viC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ```cpp
 class Solution{
@@ -91,4 +93,4 @@ public:
 
 ### Reference
 
-- [GFG](https://www.geeksforgeeks.org/efficiently-merging-two-sorted-arrays-with-o1-extra-space/)
+-   [GFG](https://www.geeksforgeeks.org/efficiently-merging-two-sorted-arrays-with-o1-extra-space/)
