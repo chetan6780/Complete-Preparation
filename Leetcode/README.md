@@ -943,6 +943,30 @@ If you find more problems, please comment it below :)
 
 ---
 
+# [143. Reorder List](./143_reorderList.md) 🌟🌟
+
+### Most intuitive (Using stack)
+
+-   To access the last node fist we can use the stack.
+-   Count the length & push node in stack.
+-   for half of the length we can just reorder the list.
+    -   take the top of the stack.
+    -   `nxt` is the next node of the currNode
+    -   set `current node's next` to the `top of the stack`.
+    -   set the `next of the stack's top` to `nxt`.
+    -   finally set `curr` to `nxt`.
+-   Set the `last node's next` to `NULL`.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Using Dequeue
+
+-   Push all the nodes into a dequeue and popping alternatively from front and back while reordering the elements.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+---
+
 # [144. Binary Tree Preorder Traversal](./144_binaryTreePreorderTraversal.md) 🌟
 
 ### O(N) Time O(N) space (function call stack), Recursive
