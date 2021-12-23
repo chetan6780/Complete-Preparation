@@ -1202,6 +1202,21 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
+# [210. Course Schedule II](./210_courseScheduleII.md) 🌟🌟
+
+### Topological Sort + DFS
+
+-   Make adjacecncy list
+-   Detect CYCLE...If present then return empty array
+-   Find toposort and store it in stack
+-   Apply DFS and find topological sort
+
+### READ
+
+-   [✅ [C++/Python] Simple Solutions w/ Explanation | Topological Sort using BFS & DFS](https://leetcode.com/problems/course-schedule-ii/discuss/1642354/C%2B%2BPython-Simple-Solutions-w-Explanation-or-Topological-Sort-using-BFS-and-DFS)
+
+---
+
 # [217. Contains Duplicate](./217_containsDuplicate.md) 🌟
 
 ### O(N^2) Time and constant space
