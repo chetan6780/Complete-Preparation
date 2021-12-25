@@ -1276,6 +1276,31 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
+# [227. Basic Calculator II](./227_basicCalculatorII.md) 🌟🌟
+
+### Using Stack
+
+-   Scan the string from left to right
+    -   If the current character is a digit add it to the number currentNumber.
+    -   Otherwise, the current character must be an operation (+,-,\*, /). Evaluate the expression based on the type of operation.
+        -   _Addition (+) or Subtraction (-):_ We must evaluate the expression later based on the next operation. So, we must store the currentNumber to be used later. Let's push the currentNumber in the Stack.
+        -   _Multiplication (\*) or Division (/):_ Pop the top values from the stack and evaluate the current expression. Push the evaluated value back to the stack.
+-   Once the string is scanned, pop from the stack and add to the result.
+-   **TC: O(n)**
+-   **SC: O(n)**
+
+### Without Stack
+
+The approach works similar to Approach 1 with the following differences :
+
+-   Instead of using a stack, we use a variable lastNumber to track the value of the last evaluated expression.
+-   If the operation is Addition (+) or Subtraction (-), add the lastNumber to the result instead of pushing it to the stack. The currentNumber would be updated to lastNumber for the next iteration.
+-   If the operation is Multiplication (\*) or Division (/), we must evaluate the expression lastNumber \* currentNumber and update the lastNumber with the result of the expression. This would be added to the result after the entire string is scanned.
+-   **TC: O(n)**
+-   **SC: O(1)**
+
+---
+
 # [229. Majority Element II](./229_majorityElementII.md) 🌟🌟
 
 ### Brute force
