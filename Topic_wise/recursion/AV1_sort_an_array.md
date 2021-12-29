@@ -3,17 +3,17 @@
 ### Algorithm
 
 1. Sort function.
-   - if vector contains only one element, it is sorted in itself.return.
-   - Get the last element of the vector.
-   - Reduce the size of input for recursion.
-   - Recursively sort remaining the vector which has one element less.
-   - Insert the element in sorted vector at its right position.
+    - if vector contains only one element, it is sorted in itself.return.
+    - Get the last element of the vector.
+    - Reduce the size of input for recursion.
+    - Recursively sort remaining the vector which has one element less.
+    - Insert the element in sorted vector at its right position.
 2. Insert function.
-   - if vector is empty _OR_ temp is the largest element, then we can directly insert it at last position.
-   - else we need to insert temp at it's correct position.
-   - Get the last element of the vector and reduce its size by 1.
-   - Insert temp recursively.
-   - finally insert value which is poped.
+    - if vector is empty _OR_ temp is the largest element, then we can directly insert it at last position.
+    - else we need to insert temp at it's correct position.
+    - Get the last element of the vector and reduce its size by 1.
+    - Insert temp recursively.
+    - finally insert value which is poped.
 
 It's like insertion sort.
 
@@ -51,4 +51,5 @@ void sortArr(vector<int> &v)
 
 ### References
 
-- YouTube: [Sort An array using Recursion](https://www.youtube.com/watch?v=AZ4jEY_JAVc&list=PL_z_8CaSLPWeT1ffjiImo0sYTcnLzo-wY&index=6)
+-   YouTube:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AZ4jEY_JAVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -1,17 +1,19 @@
+# Reverse the stack
+
 ### Algorithm
 
 1. Insert function.
 
-   - if the stack is empty, push the element.
-   - Get the top element.
-   - Recursively call the insert function with reduced elements.
-   - push the temp element.
+    - if the stack is empty, push the element.
+    - Get the top element.
+    - Recursively call the insert function with reduced elements.
+    - push the temp element.
 
 2. reverse function.
-   - Base condition. If stack has only one element then return.
-   - Get the top element.
-   - Recursively call the reverse function with Reduced input.
-   - insert the temp element to the stack.
+    - Base condition. If stack has only one element then return.
+    - Get the top element.
+    - Recursively call the reverse function with Reduced input.
+    - insert the temp element to the stack.
 
 ### Code
 
@@ -47,5 +49,6 @@ void reverse(stack<int> &s)
 
 ### References
 
-- GFG: [Reverse a stack using recursion](https://www.geeksforgeeks.org/reverse-a-stack-using-recursion/)
-- YouTube: [Reverse a stack using recursion](https://www.youtube.com/watch?v=8YXQ68oHjAs&list=PL_z_8CaSLPWeT1ffjiImo0sYTcnLzo-wY&index=9)
+-   GFG: [Reverse a stack using recursion](https://www.geeksforgeeks.org/reverse-a-stack-using-recursion/)
+-   YouTube:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8YXQ68oHjAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

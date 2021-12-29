@@ -8,10 +8,10 @@ Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. Th
 
 ### Algorithm
 
-- if only one disk remaining, move it from source to destination.
-- Recursively move 1 disk less (n-1 disks) from source to temporary tower using destination tower.
-- Move n'th disk from source to destination using temporary tower.
-- Recursively move 1 disk less (n-1 disks) from temporary tower to destination tower using source tower.
+-   if only one disk remaining, move it from source to destination.
+-   Recursively move 1 disk less (n-1 disks) from source to temporary tower using destination tower.
+-   Move n'th disk from source to destination using temporary tower.
+-   Recursively move 1 disk less (n-1 disks) from temporary tower to destination tower using source tower.
 
 ### Code
 
@@ -36,5 +36,6 @@ void towerOfHanoi(int n, char source, char dest, char temp)
 
 ### References
 
-- GFG: [Tower of Hanoi](https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/)
-- YouTube: [Tower of Hanoi](https://www.youtube.com/watch?v=l45md3RYX7c&t=1165s)
+-   GFG: [Tower of Hanoi](https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/)
+-   YouTube:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l45md3RYX7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

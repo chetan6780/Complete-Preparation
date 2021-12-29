@@ -1,7 +1,9 @@
 # Sort a stack using recursion
 
 ### Algorithm
+
 1. Insert function.
+
     - If stack is empty _OR_ temp is the largest element, then we can directly insert it at last position.
     - else we need to insert temp at it's correct position.
     - Get the top element of the stack and reduce its size by 1.
@@ -14,7 +16,6 @@
     - Reduce the size of input for recursion.
     - Recursively sort remaining the stack which has one element less.
     - Insert the element in sorted stack at its right position.
-
 
 ### Code
 
@@ -47,6 +48,9 @@ void sortStack(stack<int> &s)
     inserT(s, temp);
 }
 ```
+
 ### References
-- GFG: [Sort a stack using recursion](https://www.geeksforgeeks.org/sort-a-stack-using-recursion/)
-- YouTube: [Sort a stack using recursion](https://www.youtube.com/watch?v=oCcUNRMl7dA&list=PL_z_8CaSLPWeT1ffjiImo0sYTcnLzo-wY&index=8)
+
+-   GFG: [Sort a stack using recursion](https://www.geeksforgeeks.org/sort-a-stack-using-recursion/)
+-   YouTube:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oCcUNRMl7dA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
