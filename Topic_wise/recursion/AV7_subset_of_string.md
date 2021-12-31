@@ -15,9 +15,9 @@ Print all subsets of a given string using recursion.
    - If string is empty, then print output string and return.
    - Create two string for which we choose option to take input or not.
    - for op1 we choose not to take input.
-   - for op2 we choose to take input(i.e. first charecter of string(ip)).
-   - Erase the first charecter of the string because we have taken it in op2.
-   - Call recursivly with reduced input(i.e. string).
+   - for op2 we choose to take input(i.e. first character of string(ip)).
+   - Erase the first character of the string because we have taken it in op2.
+   - Call recursively with reduced input(i.e. string).
 
 3. If want only unique subsets then store the values in unordered_set/set and you can print them later.
 
