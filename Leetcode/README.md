@@ -1784,6 +1784,22 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [492. Construct the Rectangle](./492_constructTheRectangle.md) 🌟
+
+### Iterative Solution
+
+-   Since `l >= w` always, w will not be larger than sqrt(area).
+-   If we can find w then `l = area / w`.
+-   We just simulate the process from sqrt(area) to 1, since in the condition it is given that the difference between L and W should be as small as possible.
+-   **TC: O(k)** where k is the sqrt of the area.
+-   **SC: O(1)**
+
+### Recursive Solution
+
+-   From above iterative solution, we can also write recursive solution.
+-   **TC: O(k)** where k is the sqrt of the area.
+-   **SC: O(k)** because of recursive stack.
+
 # [493. Reverse Pairs](./493_reversePairs.md) 🌟🌟🌟
 
 ### Brute force
@@ -1867,6 +1883,26 @@ Clearly, both first and sec belong to different groups and since, all other elem
 -   Space: `O(1)`
 
 ---
+
+# [551. Student Attendance Record I](./551_studentAttendanceRecordI.md) 🌟
+
+### Iterative Solution
+
+-   We count 'A' and 'L' from the string.
+-   If at any point we break the chain of consecutive 'L' we set `lCnt=0`.
+-   If count of 'A' exceeds 1 or count of 'L' = 3 we return false, else true.
+-   **TC: O(N)**, Where n is length of the string.
+-   **SC: O(1)**, No extra space required.
+
+### Using Builtin Functions
+
+-   We can get same results with inbuilt functions of C++ STL.
+
+### Recursive Solution
+
+-   Code is self explanatory.
+-   **TC: O(N)**, Where n is length of string.
+-   **SC: O(N)**, Recursive stack space.
 
 # [557. Reverse Words in a String III](./557_reverseWordsInString.md) 🌟
 
