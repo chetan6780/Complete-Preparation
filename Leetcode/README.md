@@ -2329,6 +2329,28 @@ The process of finding all paths using DFS can be implemented as -
 
 ---
 
+# [1010. Pairs of Songs With Total Durations Divisible by 60](./1010_pairsOfSongsWithTotalDurationsDivisibleBy60.md) 🌟🌟
+
+### Brute force (TLE)
+
+-   We can find all the pairs from the time array which are divisible by `60`
+-   **TC: O(N^2)**
+-   **SC: O(1)**
+
+### Hashing Solution
+
+-   `t % 60` gets the remainder from `0 to 59`.
+-   We _count the occurrence of each remainders_ in a _array/hashmap_ `mp`.
+-   we want to know that, for each `t` in `time`,
+-   how many `x` satisfy `(t + x) % 60 = 0`.
+-   The straight forward idea is to take `x % 60 = 60 - (t % 60)`, which is valid for the most cases.
+-   But, if `t % 60 = 0` then `x % 60` should be `0` instead of `60`.
+-   there are two solutions to avoid this situation,
+    -   `x % 60 = (60 - t % 60) % 60`,
+    -   `x % 60 = (600 - t) % 60`.
+-   **TC: O(N)**, Single for loop
+-   **SC: O(N)**, for the extra space to store the remainders.
+
 # [1178. Number of Valid Words for Each Puzzle](./1178_numberOfValidWordsForEachPuzzle.md) 🌟🌟🌟
 
 ### Bit masking with hashmap
