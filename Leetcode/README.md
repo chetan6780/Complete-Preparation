@@ -2329,6 +2329,19 @@ The process of finding all paths using DFS can be implemented as -
 
 ---
 
+# [997. Find the Town Judge](./997_findTheTownJudge.md) 🌟
+
+### Most intuitive
+
+-   There are 2 main conditions for the town judge if it exists.
+    -   1. The town judge trusts no one.
+    -   2. Everyone (except the town judge)(n-1 people) trusts the town judge.
+-   So we can build trusts array in which we store how many person , the current person trusts.
+-   also we can build trusted array in which we store the current person is trusted by how many people.
+-   So the answer will be simple, if any person has `trusts count == 0` and `trusted count == n-1`(everyone except town judge), then it is the town judge.else we return -1.
+-   **TC: O(N)**
+-   **SC: O(N)**, 2 Extra vectors, We can also take vector of pairs instee
+
 # [1010. Pairs of Songs With Total Durations Divisible by 60](./1010_pairsOfSongsWithTotalDurationsDivisibleBy60.md) 🌟🌟
 
 ### Brute force (TLE)
