@@ -881,6 +881,12 @@ If you find more problems, please comment it below :)
 
 ---
 
+# [131. Palindrome Partitioning](./131_palindromePartitioning.md) 🌟🌟
+
+### Backtracking solution
+
+## <!-- TODO: code & Approach here -->
+
 # [136. Single Number](./136_singleNumber.md) 🌟
 
 ### Sorting array
