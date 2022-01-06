@@ -2370,6 +2370,14 @@ The process of finding all paths using DFS can be implemented as -
 -   **TC: O(N)**, Single for loop
 -   **SC: O(N)**, for the extra space to store the remainders.
 
+# [1094. Car Pooling](./1094_carPooling.md) 🌟🌟
+
+### Approach
+
+-   for every trip we add the passengers in the car from destination and drop them off to the destination.
+-   After these actions we check in our stops array(hashmap) if the car has enough empty seats.
+-   If it does return true, else we return false.
+
 # [1178. Number of Valid Words for Each Puzzle](./1178_numberOfValidWordsForEachPuzzle.md) 🌟🌟🌟
 
 ### Bit masking with hashmap
