@@ -1600,6 +1600,8 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [382. Linked List Random Node](./382_linkedListRandomNode.md) 🌟🌟
+
 # [350. Intersection of Two Arrays II](./350_intersectionOfTwoArraysII.md) 🌟
 
 ### O(N\*M) Time and O(N) Space
