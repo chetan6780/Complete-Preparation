@@ -2372,6 +2372,16 @@ The process of finding all paths using DFS can be implemented as -
 -   **TC: O(N)**, Single for loop
 -   **SC: O(N)**, for the extra space to store the remainders.
 
+---
+
+# [1041. Robot Bounded In Circle](./1041_robotBoundedInCircle.md) 🌟🌟
+
+### Simulation
+
+-   We can simulate the robots movement 4 times and check if it reaches to same location(0,0), if it does return true, else false.
+    **or**
+-   we can simulate the process 1 time and check if it reaches to same location(0,0) or it changed its directions, if it does return true, else false.
+
 # [1094. Car Pooling](./1094_carPooling.md) 🌟🌟
 
 ### Approach
