@@ -17,6 +17,8 @@ Return true if and only if there exists a circle in the plane such that the robo
 -   We can simulate the robots movement 4 times and check if it reaches to same location(0,0), if it does return true, else false.
     **or**
 -   we can simulate the process 1 time and check if it reaches to same location(0,0) or it changed its directions, if it does return true, else false.
+-   **TC: O(N)**
+-   **SC: O(1)**
 
 ### Code
 
