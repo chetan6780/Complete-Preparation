@@ -11,3 +11,4 @@
 | 7   | [Recursion](recursion)                     |
 | 8   | [Dynamic Programming](Dynamic_Programming) |
 | 9   | [Number Theory](Number_Theory)             |
+| 10  | [Code Help DSA](codeHelpDsa)               |
