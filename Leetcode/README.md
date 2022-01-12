@@ -2015,7 +2015,23 @@ soon...
 
 # [668. Kth Smallest Number in Multiplication Table](./668_kthSmallestNumberInMultiplicationTable.md) 🌟🌟🌟
 
+### Brute Force
+
+-   We create a 2D matrix of multiplication table then convert it to a 1D array.
+-   We sort the array and return the `k`th element.
+-   **TC: O(N^2)**
+-   **SC: O(M\*N)+O(M+N)**- For extra 2D and 1D arrays.
+
+### Brute force with reduced space
+
+-   Instead of creating a 2D array, we can create a 1D array of size `m+n` and fill it with the multiplication table.
+-   Then We sort the array and return the `k`th element.
+-   **TC: O(N^2)**
+-   **SC: O(M+N)**- For 1D array.
+
 ## <!-- TODO: Add explanation -->
+
+---
 
 # [695. Max Area of Island](./695_maxAreaOfIsland.md) 🌟🌟
 
@@ -2087,6 +2103,18 @@ soon...
     -   if middle element is greater than target then r = middle - 1
     -   if middle element is less than target then l = middle + 1
 -   if we cant find element in array, return -1.
+
+---
+
+# [706. Design HashMap](./706_designHashMap.md) 🌟
+
+### Array implementation
+
+-   Simple implementation with array.
+
+### With the hashing function
+
+-   Read [this](<https://leetcode.com/problems/design-hashmap/discuss/1097755/JS-Python-Java-C%2B%2B-or-(Updated)-Hash-and-Array-Solutions-w-Explanation>)
 
 ---
 
