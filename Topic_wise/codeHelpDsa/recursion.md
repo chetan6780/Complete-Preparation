@@ -171,4 +171,6 @@ void bubbleSort(int* arr, int n)
 }
 ```
 
-// HW: selection , insertion sort
+// Selection sort - i'th smallest element at i'th position
+// Bubble sort - i'th largest element at its right position
+// Selection sort - smallest element to its right position
