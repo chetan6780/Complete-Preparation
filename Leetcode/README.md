@@ -1740,6 +1740,17 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [452. Minimum Number of Arrows to Burst Balloons](./452_minimumNumberOfArrowsToBurstBalloons.md) 🌟🌟
+
+### Solution
+
+-   sort the array by ending points i.e.(a[1] < b[1])
+-   if start of first array is greater than the minEnd then increase the count and set minEnd = end of first array.
+-   else set minEnd = min(minEnd, end of first array)
+-   finally, return count + !points.empty()
+
+---
+
 # [461. Hamming Distance](./461_hammingDistance.md) 🌟
 
 ### Original Post - [4 Solutions](https://leetcode.com/problems/hamming-distance/discuss/1585474/C%2B%2BPython-4-Simple-Solutions-w-Explanations-or-XOR-and-Brian-Kernighan-method)
