@@ -58,6 +58,19 @@
 
 ---
 
+# [8. String to Integer (atoi)](./8_stringToInteger.md) 🌟🌟
+
+### Solution
+
+We only need to handle four cases:
+
+-   discards all leading whitespace
+-   sign of the number
+-   overflow
+-   invalid input
+
+---
+
 # [15. 3Sum](./15_3sum.md) 🌟🌟
 
 ### O(N^3 Log m) Brute force
