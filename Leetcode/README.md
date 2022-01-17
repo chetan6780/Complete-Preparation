@@ -1589,6 +1589,28 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [290. Word Pattern](./290_wordPattern.md) 🌟
+
+### Hashmap Solution
+
+-   Maintain 2 hash maps, one mapping pattern to string and another mapping string to pattern.
+-   Using c++ stringstream we can easily get each word in string on the fly.
+-   Initialize a variable say `i` with 0 to count words in given string.
+-   We traverse the stringstream and check if the word is in the hashmap.
+    -   If it is not in the hashmap1,
+        -   check if the word is in hashmap2,i.e if its mapped already with other character or not.
+            -   If it is then map the word with character in the pattern and map character in the patter with the word. Increase the i.
+            -   else return `false`.
+    -   else the word in the hashmap1
+        -   Check if the word is mapped with the same character or not.
+            -   If its not return `false`.
+        -   Increment the i, i.e.words count.
+-   Finally return of `i==pattern.size()`, i.e. count of words in string and pattern same or not.
+-   **TC: O(N)**
+-   **SC: O(N)**, O(N)+O(N) 2 hashmaps.
+
+---
+
 # [310. Minimum Height Trees](./310_minimumHeightTrees.md) 🌟🌟
 
 <!-- ! Explanation here -->
