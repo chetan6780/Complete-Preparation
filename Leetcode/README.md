@@ -776,6 +776,10 @@ Anticlockwise rotate
 
 ---
 
+# [119. Pascal's Triangle II](./119_pascalsTriangleII.md) 🌟
+
+---
+
 # [120. Triangle](./120_triangle.md) 🌟🌟
 
 ### Dynamic Programming
