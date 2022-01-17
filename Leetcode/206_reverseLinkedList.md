@@ -4,15 +4,15 @@
 
 Given the head of a singly linked list, reverse the list, and return the reversed list.
 
-- Initialize three pointers prev as NULL, curr as head and next as NULL.
-- Iterate through the linked list. In loop, do following.
-  - Before changing next of current, store next node
-    next = curr->next
-  - Now change next of current This is where actual reversing happens
-    curr->next = prev
-  - Move prev and curr one step forward
-    prev = curr
-    curr = next
+-   Initialize three pointers prev as NULL, curr as head and next as NULL.
+-   Iterate through the linked list. In loop, do following.
+    -   Before changing next of current, store next node
+        next = curr->next
+    -   Now change next of current This is where actual reversing happens
+        curr->next = prev
+    -   Move prev and curr one step forward
+        prev = curr
+        curr = next
 
 ### Code
 
@@ -46,14 +46,17 @@ public:
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        if(head==NULL || head->next==NULL) return head;
-
-        ListNode *rest = reverseList(head->next);
-
-        head->next->next=head;
-        head->next=NULL;
-
-        return rest;
+        if(head==NULL) return NULL;
+        if(head->next==NULL) return head; // Make last node head
+        
+        ListNode* newHead = reverseList(head->next);
+        
+        head->next->next = head; // Actual reversal happens here
+        head->next = NULL;
+        
+        return newHead;
     }
 };
 ```
+
+### [Best Video To visualize reverse linked list recursively](https://www.youtube.com/watch?v=MRe3UsRadKw)
