@@ -2008,6 +2008,9 @@ soon...
 
 ---
 
+# [605. Can Place Flowers](./605_canPlaceFlowers.md) 🌟
+
+---
 # [617. Merge Two Binary Trees](./617_mergeTwoBinaryTrees.md) 🌟
 
 ### DFS - Recursive
