@@ -2011,6 +2011,7 @@ soon...
 # [605. Can Place Flowers](./605_canPlaceFlowers.md) 🌟
 
 ---
+
 # [617. Merge Two Binary Trees](./617_mergeTwoBinaryTrees.md) 🌟
 
 ### DFS - Recursive
@@ -2322,6 +2323,25 @@ The process of finding all paths using DFS can be implemented as -
 -   Create a new matrix of with no.rows=no.columns and no.columns=no.rows.
 -   Iterate over the matrix and copy the values from the given matrix to the new matrix `ans[j][i]=matrix[i][j]`;
 -   Space can be optimizes in case of square matrix, where we can use in place swapping of rows and columns.
+
+---
+
+# [875. Koko Eating Bananas](./875_kokoEatingBananas.md) 🌟🌟
+
+### Brute force (TLE)
+
+-   For every `k` from 1 to `max(piles)`, We check if hour spent is `h` or less.
+-   If it is then we return that `k`.
+-   **TC: O(n^2)**
+-   **SC: O(1)**
+
+### Binary Search (AC)
+
+-   We can observe that we are checking for every `k` from `1` to `max(piles)`, we can optimize this algorithm by using binary search.
+-   Here the main observation for binary search is, if we can finish eating all bananas in `i` hours, then we can finish eating all bananas in `i+1` hours.
+-   We need to minimize the result so we check for lesser i if the answer for current i is possible.
+-   **TC: O(N\*logM)**
+-   **SC: O(1)**
 
 ---
 
