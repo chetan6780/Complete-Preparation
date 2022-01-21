@@ -904,6 +904,18 @@ If you find more problems, please comment it below :)
 
 ## <!-- TODO: code & Approach here -->
 
+---
+
+# [134. Gas Station](./134_gasStation.md) 🌟🌟
+
+### Greedy Solution
+
+-   The sum of `gas[i] - cost[i]` (which is the current balance state) from start point should always be `>= 0`, otherwise, we can't move to the next point.
+-   **TC: O(N)**
+-   **SC: O(1)**
+
+---
+
 # [136. Single Number](./136_singleNumber.md) 🌟
 
 ### Sorting array
