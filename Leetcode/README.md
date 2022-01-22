@@ -385,6 +385,45 @@ Anticlockwise rotate
 
 ---
 
+# [51. N-Queens](./51_nQueens.md) 🌟🌟🌟
+
+### Brute force backtracking (8ms-AC)
+
+-   **Main Algorithm** - we iterate over each row in the board, i.e. once we reach the last row of the board, we should have explored all the possible solutions. - At each iteration (we are located at certain row), we then further iterate over each column of the board, along the current row. At this second iteration, we then can explore the possibility of placing a queen on a particular cell. - Before, we place a queen on the cell with index of `(row, col)`, we need to check if this cell is under the attacking zone of the queens that have been placed on the board before. We can do it with `isSafe()` function. - Once the check passes, we then can proceed to place a queen. Along with the placement, one should also mark out the attacking zone of this newly-placed queen. We achieve this with `placeQueen()` function. - As an important behavior of backtracking, we should be able to abandon our previous decision at the moment we decide to move on to the next candidate. We achieve this with `removeQueen()` function.
+
+-   **The time complexity of `nQueens` problem is dependent of how we implement `isSafe()` function.**
+
+-   **`isSafe()` function**:
+    -   We can check if the queen is placed in current row, current column, or the positive diagonal or negative diagonal.
+    -   BUT, we don't need to do some redundant checks. like chekiang for the same row, lower column, lower positive and negative diagonal as we haven't traverse them yet.
+    -   We just check upper positive and negative diagonal as well as upper column.
+    -   We can do it by simple simulation.
+
+### 3 vectors optimized backtracking (3ms-AC)
+
+-   All the algorithm is same but we can optimize the `isSafe()` function by using extra space.
+
+-   **`isSafe()` function**:
+    -   We can have the `colSet` vector to store the column index of the queens that are placed on the board.
+    -   also we can have `posDig` and `negDig` vectors to store the positive and negative diagonal indices of the queens that are placed on the board.
+    -   We can get the **positive diagonal index** with **`col + row`**
+    -   We can get the **negative diagonal index** with **`col - row + n - 1`**
+
+### 1 vector optimized backtracking (7ms-AC)
+
+-   Again same algorithm but we just used **1 vector** instead of **3 vectors**.
+
+-   **`isSafe()` function**:
+
+    -   **`flag[0] to flag[n - 1]`** to indicate if the column had a queen before.
+    -   **`flag[n] to flag[3 * n - 2]`** to indicate if the **45° diagonal** had a queen before.
+    -   **`flag[3 * n - 1] to flag[5 * n - 3]`** to indicate if the **135° diagonal** had a queen before.
+    -   So we will declare **`flag(5 * n - 3)`** vector to store the information of the board.
+    -   We can get the **positive diagonal index** with **`n + col + row`**
+    -   We can get the **negative diagonal index** with **`4 * n - 2 + col - row`**
+
+---
+
 # [53. Maximum Subarray](./53_maximumSubarray.md) 🌟
 
 ### O(N) time constant space(DP)
