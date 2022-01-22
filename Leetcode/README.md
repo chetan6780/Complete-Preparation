@@ -424,6 +424,14 @@ Anticlockwise rotate
 
 ---
 
+# [52. N-Queens II](./52_nQueensII.md) 🌟🌟🌟
+
+### Same problem as [51. N-Queens](./51_nQueens.md), Just need to change result vector with count variable.
+
+**For explanation refer previous question nQueens-1**
+
+---
+
 # [53. Maximum Subarray](./53_maximumSubarray.md) 🌟
 
 ### O(N) time constant space(DP)
