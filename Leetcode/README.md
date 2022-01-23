@@ -281,6 +281,35 @@ We only need to handle four cases:
 
 ---
 
+# [37. Sudoku Solver](./37_sudokuSolver.md) 🌟🌟🌟
+
+### Backtracking (16ms-AC)
+
+-   **Solve function algorithm:**
+
+    -   if index of row exceed the board size, we got our solution, return true.
+    -   if index of column exceed the board size, we are done for current row, move to next row.
+    -   if current cell is already marked, move to the next cell.
+
+    -   else current cell is empty so we try all characters from '1' to '9' for current cell.
+        -   if its valid to put i'th character in current cell,
+            -   put i'th character in current cell,
+            -   recursively call solve function for next cell,
+                -   if it returns true, we got our solution, return true.
+                -   else we can not put i'th character in current cell,
+            -   remove the i'th character from current cell
+    -   if we are done with all characters for current cell, we can not get our solution, return false.
+
+-   **isValid function algorithm:**
+    -   check if the current number appeared before in the row.
+    -   check if the current number appeared before in the column.
+    -   check if the current number appeared before in the 3x3 sub-box.
+        -   we can traverse the ith box with,
+            ` int newRow = (row / 3) * 3, newCol = (col / 3) * 3;`
+            ` int iindex = newRow + i, jindex = newCol + j;`
+
+---
+
 # [42. Trapping Rain Water](./42_trappingRainWater.md) 🌟🌟🌟
 
 ### Brute force
