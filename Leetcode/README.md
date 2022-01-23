@@ -216,6 +216,17 @@ We only need to handle four cases:
 
 ---
 
+# [22. Generate Parentheses](./22_generateParentheses.md) 🌟🌟
+
+### Backtracking
+
+-   For each time we have the choice of choking opening or closing parenthesis.
+-   We can choose opening parenthesis when it is greater than 0.
+-   We can choose closing parenthesis when it is greater than the number of opening parenthesis.
+-   and if both opening parenthesis and closing parenthesis are 0 then we got the answer, push-back it in the ans vector.
+
+---
+
 # [26. Remove Duplicates from Sorted Array](./26_removeDuplicatesFromSortedArray.md) 🌟
 
 ### Naive Solution
@@ -755,6 +766,16 @@ Anticlockwise rotate
 
 ---
 
+# [100. Same Tree](./100_sameTree.md) 🌟
+
+### Intuitive recursive solution
+
+-   self explanatory
+
+### Recursive to iterative using queue
+
+---
+
 # [101. Symmetric Tree](./101_symmetricTree.md) 🌟
 
 ### O(N) Time solution
@@ -790,6 +811,11 @@ Anticlockwise rotate
 
 ---
 
+### [103. Binary Tree Zigzag Level Order Traversal](./103_btZigzagLevelOrderTraversal.md) 🌟🌟
+
+
+---
+
 # [104. Maximum Depth of Binary Tree](./104_maxDepthBinaryTree.md) 🌟
 
 ### O(N) Time and O(H) Space,(DFS) More proffered than iterative
@@ -810,6 +836,25 @@ Anticlockwise rotate
 ### MUST READ
 
 -   [[C++] EASY Intuitive Sol || Clean Recursive Code w/ Explanation || T.C:O(N)](<https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/discuss/1588934/C%2B%2B-EASY-Intuitive-Sol-oror-Clean-Recursive-Code-w-Explanation-oror-T.C%3AO(N)>)
+
+---
+
+# [107. Binary Tree Level Order Traversal II](./107_btLevelOrderTraversalII.md) 🌟🌟
+
+### Recursive solution
+
+-   The code is same as [level-order-traversal](./102_btLevelOrderTraversal.md), just 2 modifications.
+    1. We have to insert New vector to the beginning of the result vector.
+    2. We have to insert values at `res.size() - 1 - level` position.
+
+### Iterative solution
+
+-   It is also same as [level-order-traversal](./102_btLevelOrderTraversal.md), just we return the reverse of the result vector.
+
+### Iterative Solution without reverse
+
+-   If you don't want to reverse the vector, you can insert new level directly to the beginning of the result vector.
+-   But as compared to previous solution, this solution is takes more time to execute.
 
 ---
 
