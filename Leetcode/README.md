@@ -641,7 +641,7 @@ Anticlockwise rotate
 
 # [77. Combinations](./77_combinations.md) 🌟🌟
 
-### Backtracking
+### Backtracking: solution-1 (28ms-AC)
 
 -   Backtracking is a general technique for solving problems that uses DFS and finds **ALL POSSIBLE SOLUTIONS**.
 -   General idea:
@@ -651,6 +651,8 @@ Anticlockwise rotate
     Step 3: UNDO
     ```
     Make sure to use base conditions.
+
+### Solution-2 (10ms-AC)
 
 ---
 
