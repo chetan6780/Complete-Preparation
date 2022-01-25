@@ -8,8 +8,8 @@ Given the root of a binary tree, return the zigzag level order traversal of its 
 
 **Prerequisites:**
 
-1. [102_btLevelOrderTraversal](./102_btLevelOrderTraversal.md)
-2. [107_btLevelOrderTraversalII](./107_btLevelOrderTraversalII.md)
+1. [Binary tree level order traversal](./102_btLevelOrderTraversal.md)
+2. [Binary tree level order traversal - II](./107_btLevelOrderTraversalII.md)
 
 ### Recursive solution
 

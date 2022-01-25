@@ -15,12 +15,89 @@ Populate each next pointer to point to its next right node. If there is no next 
 
 Initially, all next pointers are set to NULL.
 
+### This question is in continuation with **A general approach to level order traversal questions** series.
+
+**Previous Questions**
+
+1. [Binary tree level order traversal](./102_btLevelOrderTraversal.md)
+2. [Binary tree level order traversal - II](./107_btLevelOrderTraversalII.md)
+3. [Binary tree zig-zag level order traversal](./103_btZigzagLevelOrderTraversal.md)
+4. [Average of levels](637_averageOfLevels.md)
+5. [Binary tree right side view](./199_binaryTreeRightSideView.md)
+6. [largest value in each tree row](./515_findLargestValueInEachTreeRow.md)
+
+-   Next 2 solutions are part of the series other are not.
+
+### Recursive Solution
+
+-   self explanatory
+
+### Code
+
+```cpp
+class Solution {
+private:
+    void connectDFS(Node* root)
+    {
+        if (root == NULL || root->left == NULL) // check if left is NULL
+            return;
+
+        root->left->next = root->right; // next pointer of root's left
+
+        if (root->next != NULL) // if root's next exist
+            root->right->next = root->next->left; // next pointer of root's right
+
+        connectDFS(root->left);
+        connectDFS(root->right);
+    }
+
+public:
+    Node* connect(Node* root)
+    {
+        connectDFS(root);
+        return root;
+    }
+};
+```
+
+### Iterative Solution
+
+-   Self explanatory
+
+### Code
+
+```cpp
+class Solution {
+public:
+    Node* connect(Node* root)
+    {
+        if (root == NULL) return NULL;
+
+        queue<Node*> q;
+        q.push(root);
+
+        while (!q.empty()) {
+            int sz = q.size();
+            for (int i = 0; i < sz; i++) {
+                Node* temp = q.front(); q.pop();
+                if (temp->left) q.push(temp->left);
+                if (temp->right) q.push(temp->right);
+
+                // if its last node it's next is NULL else q.front()(next left node)
+                temp->next = (i == sz - 1 ? NULL : q.front());
+            }
+        }
+        return root;
+    }
+};
+```
+
 ### O(N) Time and O(N) space
 
-- Using level order traversal technique and NULL.
-- if current node is null and q is not empty, then push NULL into q.
-- else set current node's next to q's front.
-- push left and right in the queue , if they are not NULL.
+-   Using level order traversal technique and NULL.
+-   if current node is null and q is not empty, then push NULL into q.
+-   else set current node's next to q's front.
+-   push left and right in the queue , if they are not NULL.
 
 ### Code
 
@@ -53,7 +130,7 @@ public:
 
 ### O(N) Time and O(1) space
 
-<!-- TODO: Explanation -->
+-   level order traversal with root and its child,just dry run once you get the idea.
 
 ### Code
 

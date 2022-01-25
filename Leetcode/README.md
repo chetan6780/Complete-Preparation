@@ -811,8 +811,27 @@ Anticlockwise rotate
 
 ---
 
-### [103. Binary Tree Zigzag Level Order Traversal](./103_btZigzagLevelOrderTraversal.md) 🌟🌟
+# [103. Binary Tree Zigzag Level Order Traversal](./103_btZigzagLevelOrderTraversal.md) 🌟🌟
 
+### This question is in continuation with **A general approach to level order traversal questions** series.
+
+**Prerequisites:**
+
+1. [Binary tree level order traversal](./102_btLevelOrderTraversal.md)
+2. [Binary tree level order traversal - II](./107_btLevelOrderTraversalII.md)
+
+### Recursive solution
+
+-   Here is just one change, if level is odd we insert value at the beginning of vector, otherwise at the end.
+
+### Iterative solution
+
+-   Same code, just reversed the current level vector if result vector has odd size.
+-   Reason for above operation: since in the example we can observe every even vector is reversed, we have to reverse the even level vector, so at that time res vector has odd size.
+
+### Without reverse, insert at front if odd (Fastest)
+
+-   Here, just like we did in Q107, we just insert at the beginning of vector if res vector size is odd(i.e. currLevel is even).
 
 ---
 
@@ -876,6 +895,27 @@ Anticlockwise rotate
 
 # [116. Populating Next Right Pointers in Each Node](./116_populatingNextRightPointer.md) 🌟🌟
 
+### This question is in continuation with **A general approach to level order traversal questions** series.
+
+**Previous Questions**
+
+1. [Binary tree level order traversal](./102_btLevelOrderTraversal.md)
+2. [Binary tree level order traversal - II](./107_btLevelOrderTraversalII.md)
+3. [Binary tree zig-zag level order traversal](./103_btZigzagLevelOrderTraversal.md)
+4. [Average of levels](637_averageOfLevels.md)
+5. [Binary tree right side view](./199_binaryTreeRightSideView.md)
+6. [largest value in each tree row](./515_findLargestValueInEachTreeRow.md)
+
+-   Next 2 solutions are part of the series other are not.
+
+### Recursive Solution
+
+-   self explanatory
+
+### Iterative Solution
+
+-   Self explanatory
+
 ### O(N) Time and O(N) space
 
 -   Using level order traversal technique and NULL.
@@ -885,7 +925,7 @@ Anticlockwise rotate
 
 ### O(N) Time and O(1) space
 
-## <!-- TODO: Explanation -->
+-   level order traversal with root and its child,just dry run once you get the idea.
 
 ---
 
@@ -1320,6 +1360,31 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 # [198. House Robber](./198_houseRobber.md) 🌟🌟
 
 ### Dynamic Programming
+
+---
+
+# [199. Binary Tree Right Side View](./199_binaryTreeRightSideView.md) 🌟🌟
+
+### This question is in continuation with **A general approach to level order traversal questions** series.
+
+**Previous Questions**
+
+1. [Binary tree level order traversal](./102_btLevelOrderTraversal.md)
+2. [Binary tree level order traversal - II](./107_btLevelOrderTraversalII.md)
+3. [Binary tree zig-zag level order traversal](./103_btZigzagLevelOrderTraversal.md)
+4. [Average of levels](637_averageOfLevels.md)
+
+-   Both solutions passed with 0ms runtime.
+
+### Recursive Solution
+
+-   Simple DFS with right node first.
+-   if our level is same as result vector's size, then we push the value in the result vector.
+-   Travel right first and then left.
+
+### Iterative Solution
+
+-   We push last element of queue in the result to get right side view.
 
 ---
 
@@ -1825,6 +1890,30 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [429. N-ary Tree Level Order Traversal](./429_naryTreeLevelTraversal.md) 🌟🌟
+
+### This question is in continuation with **A general approach to level order traversal questions** series.
+
+**Previous Questions**
+
+1. [Binary tree level order traversal](./102_btLevelOrderTraversal.md)
+2. [Binary tree level order traversal - II](./107_btLevelOrderTraversalII.md)
+3. [Binary tree zig-zag level order traversal](./103_btZigzagLevelOrderTraversal.md)
+4. [Average of levels](637_averageOfLevels.md)
+5. [Binary tree right side view](./199_binaryTreeRightSideView.md)
+6. [largest value in each tree row](./515_findLargestValueInEachTreeRow.md)
+7. [Populating next right pointer](./116_populatingNextRightPointer.md)
+
+### Recursive solution
+
+-   The algorithm is same as the first question in the series, except that we traverse all the children of the root node, not just left and right.
+
+### Iterative solution
+
+-   The algorithm is same as the first question in the series, except that we push all the children of the root node in queue, not just left and right.
+
+---
+
 # [441. Arranging Coins](./441_arrangingCoins.md) 🌟
 
 ### Simulation
@@ -2009,6 +2098,28 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [515. Find Largest Value in Each Tree Row](./515_findLargestValueInEachTreeRow.md) 🌟🌟
+
+### This question is in continuation with **A general approach to level order traversal questions** series.
+
+**Previous Questions**
+
+1. [Binary tree level order traversal](./102_btLevelOrderTraversal.md)
+2. [Binary tree level order traversal - II](./107_btLevelOrderTraversalII.md)
+3. [Binary tree zig-zag level order traversal](./103_btZigzagLevelOrderTraversal.md)
+4. [Average of levels](637_averageOfLevels.md)
+5. [Binary tree right side view](./199_binaryTreeRightSideView.md)
+
+### Recursive Solution
+
+-   Self explanatory
+
+### Iterative solution
+
+-   self explanatory
+
+---
+
 # [540. Single Element in a Sorted Array](./540_singleElementInASortedArray.md) 🌟🌟
 
 ### Brute force
@@ -2179,6 +2290,37 @@ soon...
 ### MUST READ:
 
 -   [~100.00% fast in run-time and memory Recursive/Iterative/BFS/DFS](https://leetcode.com/problems/merge-two-binary-trees/discuss/588123/~100.00-fast-in-run-time-and-memory-RecursiveIterativeBFSDFS)
+
+---
+
+# [637. Average of Levels in Binary Tree](./637_averageOfLevels.md) 🌟
+
+### This question is in continuation with **A general approach to level order traversal questions** series.
+
+**Previous Questions**
+
+1. [Binary tree level order traversal](./102_btLevelOrderTraversal.md)
+2. [Binary tree level order traversal - II](./107_btLevelOrderTraversalII.md)
+3. [Binary tree zig-zag level order traversal](./103_btZigzagLevelOrderTraversal.md)
+
+### Recursive Solution
+
+-   Here we need to keep track of the sum of level and count of nodes so we can calculate the average.
+-   On every level we increment the level count and add the value of the node to the sum.
+-   If we encounter new level (`level==levelSum.size()`) we push new values(0.0) in the sum and count vectors.
+-   We do it recursively for left and right subtrees with increasing level count.
+-   Finally we can calculate average by dividing sum by count for each list.
+
+### Iterative Solution
+
+-   This solution is so same as the first question of level order traversal.
+-   Here we just keep track of sum at current level instead of pushing node in level vector which we did in first question.
+-   At last we divide sum by size of the queue (i.e. count of nodes in current level).
+
+### Iterative Solution
+
+-   Converted recursive solution to iterative.
+-   This solution involves 2 extra vectors which add up to the our additional use space.
 
 ---
 
@@ -2620,6 +2762,8 @@ The process of finding all paths using DFS can be implemented as -
 -   **TC: O(N)**
 -   **SC: O(1)**
 
+---
+
 # [1094. Car Pooling](./1094_carPooling.md) 🌟🌟
 
 ### Approach
@@ -2627,6 +2771,25 @@ The process of finding all paths using DFS can be implemented as -
 -   for every trip we add the passengers in the car from destination and drop them off to the destination.
 -   After these actions we check in our stops array(hashmap) if the car has enough empty seats.
 -   If it does return true, else we return false.
+
+---
+
+# [1161. Maximum Level Sum of a Binary Tree](./1161_maximumLevelSumOfABinaryTree.md) 🌟🌟
+
+**Previous Questions**
+
+1. [Binary tree level order traversal](./102_btLevelOrderTraversal.md)
+2. [Binary tree level order traversal - II](./107_btLevelOrderTraversalII.md)
+3. [Binary tree zig-zag level order traversal](./103_btZigzagLevelOrderTraversal.md)
+4. [Average of levels](637_averageOfLevels.md)
+5. [Binary tree right side view](./199_binaryTreeRightSideView.md)
+6. [largest value in each tree row](./515_findLargestValueInEachTreeRow.md)
+7. [Populating next right pointer](./116_populatingNextRightPointer.md)
+8. [n-ary tree level order traversal](./429_naryTreeLevelOrderTraversal.md)
+
+-   Just level order traversal and finding the max sum level
+
+---
 
 # [1178. Number of Valid Words for Each Puzzle](./1178_numberOfValidWordsForEachPuzzle.md) 🌟🌟🌟
 
