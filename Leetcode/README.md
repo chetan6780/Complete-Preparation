@@ -2893,6 +2893,19 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1305. All Elements in Two Binary Search Trees](./1305_allElementsInTwoBinarySearchTrees.md) 🌟🌟
+
+### Most intuitive Solution
+
+-   Traversal with any order and get all the nodes of the BST and then sort them.
+
+### By inorder traversal and merge sort
+
+-   We know that inorder traversal of BST gives us the sorted list.
+-   Then we can merge these two lists into one using merge technique similar to merge sort.
+
+---
+
 # [1365. How Many Numbers Are Smaller Than the Current Number](./1365_howMenyNumbersAreSmallerThanTheCurrentNumber.md) 🌟
 
 ### O(N^2) Time solution
