@@ -2809,6 +2809,20 @@ The process of finding all paths using DFS can be implemented as -
 
 ---
 
+# [1137. N-th Tribonacci Number](./1137_nthTribonacciNumber.md) 🌟
+
+-   **Same Question as fibonacci sequence**
+
+### Recursive Solution(TLE)
+
+### Memoization(Top-Down) (5ms-AC)
+
+### Tabulation (Bottom-Up) (0ms-AC)
+
+### Optimized Space (0ms-AC)
+
+---
+
 # [1161. Maximum Level Sum of a Binary Tree](./1161_maximumLevelSumOfABinaryTree.md) 🌟🌟
 
 **Previous Questions**
