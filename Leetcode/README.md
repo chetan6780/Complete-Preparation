@@ -2537,6 +2537,41 @@ soon...
 
 ---
 
+# [746. Min Cost Climbing Stairs](./746_minCostClimbingStairs.md) 🌟
+
+### Recursive Solution (TLE)
+
+-   Since we can start from either step `0` or step `1`, the cost to reach these steps is `0`.
+-   We can arrive at step `i` from either step `i - 1` or step `i - 2`. Choose whichever one is cheaper.
+-   Recurrence Relation:
+    `mincost(i) = cost[i]+min(mincost(i-1), mincost(i-2))`
+-   Base cases:
+    `mincost(0) = cost[0]`
+    `mincost(1) = cost[1]`
+-   **TC: O(2^N)**
+
+### Memoization (Top-Down) (3ms-AC)
+
+-   Since in recursion we are doing lots of redundant calculations, we can use memoization to speed up the process.
+-   We can use a hash table(memo vector) to store the results of the subproblems.
+-   Every time if the computation of 'n' is already present return that value, else store new value in memo vector.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Tabulation (Bottom-Up) (7ms-AC)
+
+-   We can get rid of that recursive stack with the help of tabulation.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Reduced space complexity
+
+-   If we observe our recurrence relation, we just using last and second last values, so we can reduce by using only two variables instead of a vector.
+-   **TC: O(N)**
+-   **SC: O(1)**
+
+---
+
 # [784. Letter Case Permutation](./784_letterCasePermutation.md) 🌟🌟
 
 ### Backtracking
