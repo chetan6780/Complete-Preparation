@@ -1361,7 +1361,16 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ### Dynamic Programming
 
----
+-   We can rob current house or not rob the current house.
+-   If we rob the current house then amount will be `current house amount + i-2th house amount`.
+-   else the amount will be `i-1th house amount`.
+-   we can choose whichever is maximum
+
+### Reduced space complexity DP.
+
+-   There are only two choices for the robber, either he rob the i the house or he don't.
+-   So the maximum he can rob is `rob(i) = max(rob(i-1), rob(i-2) + nums[i])`
+-   in the below code we store `rob(i-1)` in `prev1` and `rob(i-2)` in prev2.
 
 # [199. Binary Tree Right Side View](./199_binaryTreeRightSideView.md) 🌟🌟
 
@@ -2534,6 +2543,23 @@ soon...
 -   Until the top element of the stack is not greater or the stack is empty, we pop the top element.
 -   After the operation, if stack is empty, we set ith element of ans array to 0, else we set it to `st.top - i`.
 -   return the ans vector.
+
+---
+
+# [740. Delete and Earn](./740_deleteAndEarn.md) 🌟🌟
+
+-   similar problem as House robber
+
+### House robber - DP
+
+-   If we observe here this problem is very similar to House robber problem.
+-   Since the range of values is upto 10^4, We can calculate how many points we can get from ith number.
+-   We traverse through the array and store points we can get from ith number.
+-   We can maximize the points with the same approach as the House robber problem.
+
+### Space optimization DP
+
+-   Since we are using only last two values we can optimize the space complexity to O(1).
 
 ---
 

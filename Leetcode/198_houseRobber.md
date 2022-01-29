@@ -6,6 +6,34 @@ Given an integer array nums representing the amount of money of each house, retu
 
 ### Dynamic Programming
 
+-   We can rob current house or not rob the current house.
+-   If we rob the current house then amount will be `current house amount + i-2th house amount`.
+-   else the amount will be `i-1th house amount`.
+-   we can choose whichever is maximum
+
+### Code
+
+```cpp
+class Solution {
+public:
+    int rob(vector<int>& nums)
+    {
+        int n = nums.size();
+        if (n == 1) return nums[0];
+
+        vector<int> dp(n + 1, 0);
+        dp[0] = nums[0];
+        dp[1] = max(nums[0], nums[1]);
+        for (int i = 2; i < n; i++) {
+            dp[i] = max(dp[i - 1], dp[i - 2] + nums[i]);
+        }
+        return dp[n - 1];
+    }
+};
+```
+
+### Reduced space complexity DP.
+
 -   There are only two choices for the robber, either he rob the i the house or he don't.
 -   So the maximum he can rob is `rob(i) = max(rob(i-1), rob(i-2) + nums[i])`
 -   in the below code we store `rob(i-1)` in `prev1` and `rob(i-2)` in prev2.
