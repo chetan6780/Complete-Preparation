@@ -3082,6 +3082,37 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1770. Maximum Score from Performing Multiplication Operations](./maxScoreForMultiplicationOperation.md) 🌟🌟
+
+### Recursion (TLE)
+
+-   A **greedy solution** where for every index in multipliers vector you would choose the **first** or **last** one from the nums vector and then multiply it and keep on adding it to the sum.
+-   **This is not a correct solution** as it fails when their are uneven number of +ve and -ve values in both vector.
+-   Thus a recursive solution is required where all the possible values of choosing the leftmost num or rightmost num in nums vector are computed.Below is the implementation.
+-   **TC: O(2^N)**
+
+### Memoization (Top-Down) (AC)
+
+-   As we have a correct recursive code at hand, 90% of our Dynamic Programming solution is DONE.
+-   We just have to memorize the recursive code into a 2-D array of (Size of nums) X (Size of multipliers) as its changing variables.
+-   We initialize the 2-D array with -1, and keep on updating the smaller sub-solutions which is the maximum of choosing answer from leftmost or rightmost in nums vector.
+-   If during a pass we find some sub-problem is already present, return the answer.
+-   **TC: O(2\*m^2)**, where `m<=10^3`
+-   **SC: O(m^2)**
+
+### Tabulation (Bottom-Up) (AC-fastest)
+
+-   We can convert the top-down approach to the bottom-up approach and hence reduce the recursive stack space.
+-   **TC: O(2\*m^2)**, where `m<=10^3`
+-   **SC: O(m^2)**
+
+### MUST READ
+
+-   [[Java/C++/Python 3] Top Down DP - O(m^2) - Clean & Concise](<https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/discuss/1075469/JavaC%2B%2BPython-3-Top-Down-DP-O(m2)-Clean-and-Concise>)
+-   [C++ DP (SIMPLEST TO UNDERSTAND) -> Recursive to Memoization -> Complete EXPLANATION](<https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/discuss/1078881/C%2B%2B-DP-(SIMPLEST-TO-UNDERSTAND)-greater-Recursive-to-Memorisation-greater-Complete-EXPLANATION>)
+
+---
+
 # [1773. Count Items Matching a Rule](./1773_countItemsMatchingARule.md) 🌟
 
 ### O(N) Time and O(1) Space solution
