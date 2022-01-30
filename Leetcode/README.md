@@ -2849,6 +2849,31 @@ The process of finding all paths using DFS can be implemented as -
 
 ---
 
+# [1143. Longest Common Subsequence](./1143_longestCommonSubsequence.md) 🌟🌟
+
+### Recursive Solution (TLE)
+
+-   If last character of both strings are same them we can check for LCS with 1 character less in both strings. and return 1+lcs(1 char less in both strings)
+-   else they are not same we return the maximum of 1 char less in first text and 1 char less in second text.
+-   We reach to base case when one of i and j are 0, we return 0;
+-   **TC: O(2^n)**
+
+### Memoization (Top-Down) (AC)
+
+-   We can easily memoize the recursive function by using the extra space.
+-   make sure you pass by value if you are passing anything like string and vector.
+-   **TC: O(nm)**
+-   **SC: O(nm)**
+
+### Tabulation (Bottom-Up) (AC)
+
+-   With the help of memoized code we can visualize the code in a tabular form.
+-   Below is the implementation.
+-   **TC: O(nm)**
+-   **SC: O(nm)**
+
+---
+
 # [1161. Maximum Level Sum of a Binary Tree](./1161_maximumLevelSumOfABinaryTree.md) 🌟🌟
 
 **Previous Questions**

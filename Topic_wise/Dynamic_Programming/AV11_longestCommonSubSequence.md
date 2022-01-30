@@ -26,7 +26,7 @@ int lcsRec(int x, int y, string s1, string s2)
 ### Complexity Analysis
 
 - Time complexity: **O(2^n)**, exponential complexity
-- Space Complexity: **O(1)**, No extra space used
+- Space Complexity: **O(1)**, No extra space used,except recursive stack space.
 
 ---
 
