@@ -1941,6 +1941,23 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [438. Find All Anagrams in a String](./438_findAllAnagramsInAString.md) 🌟🌟
+
+### sliding window + hashmap
+
+-   We can maintain a sliding window of size equal to `p.size()` and check if `window == p`.
+-   We need to use hashmap not hashset because we need to keep track of duplicate counts.
+-   **TC: O(N)**, N is the length of the string s.
+-   **SC: O(N)**, extra hashmap.
+
+### sliding window + array [constant space]
+
+-   Since in the question it is given that input string has only lowercase letters, we can use a 26-element array to represent the sliding window.Hence the space complexity will be O(26)-->O(1).
+-   **TC: O(N)**, N is the length of the string s.
+-   **SC: O(1)**, constant space. O(26).
+
+---
+
 # [441. Arranging Coins](./441_arrangingCoins.md) 🌟
 
 ### Simulation
