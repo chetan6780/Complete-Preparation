@@ -2058,6 +2058,28 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [454. 4Sum II](./454_4sumII.md) 🌟🌟
+
+### Brute force (TLE)
+
+-   we can count for every quadruplet if their sum is 0;
+-   **TC: O(N^4)**
+-   **SC: O(1)**
+
+### O(N^3) (TLE)
+
+-   If we can take reference of 2 sum problem here we can store num4 values in hashmap so we can access them in O(1) time.
+-   **TC: O(N^3)**
+-   **SC: O(N)**
+
+### O(N^2) Optimized (AC)
+
+-   we can use hashmap to store a+b and then we can find -(c+d) to get total count.
+-   **TC: O(N^2)**
+-   **SC: O(N)**
+
+---
+
 # [461. Hamming Distance](./461_hammingDistance.md) 🌟
 
 ### Original Post - [4 Solutions](https://leetcode.com/problems/hamming-distance/discuss/1585474/C%2B%2BPython-4-Simple-Solutions-w-Explanations-or-XOR-and-Brian-Kernighan-method)
