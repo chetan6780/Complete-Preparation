@@ -2186,6 +2186,29 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [525. Contiguous Array](./525_contiguousArray.md) 🌟🌟
+
+### Brute Force (TLE)
+
+-   We will try all subarrays, and count the number of zeros and ones in each subarray.
+-   When the number of zeros and ones are equal, that means we can update our max count.
+-   **Time Complexity: O(n^2)**
+-   **Space Complexity: O(1)**
+
+### hashmap (AC)
+
+-   We can optimize brute force with hashmap.
+-   We increment the count by 1 if num is 1 and decrement count by 1 if num is 0.
+-   If the count is 0, we know that the subarray from index i to j is a contiguous subarray with equal number of 0s and 1s.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### READ MORE
+
+-   [[C++] Simplest Solution | Optimization from Brute Force | One-Pass]](https://leetcode.com/problems/contiguous-array/discuss/1743341/C%2B%2B-Simplest-Solution-or-Optimization-from-Brute-Force-or-One-Pass)
+
+---
+
 # [540. Single Element in a Sorted Array](./540_singleElementInASortedArray.md) 🌟🌟
 
 ### Brute force
