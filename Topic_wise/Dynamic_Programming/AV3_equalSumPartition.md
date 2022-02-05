@@ -4,10 +4,10 @@ Determine whether a given set can be partitioned into two subsets such that the 
 
 ### Prerequisite: [Subset Sum Problem](./AV2_subSetSum.md)
 
-- if sum of array is odd we cannot find equal partition. return false.
-- else sum is even then
-  - if there exists one partition with the halve sum, partition is always possible.
-  - else not.
+-   if sum of array is odd we cannot find equal partition. return false.
+-   else sum is even then
+    -   if there exists one partition with the halve sum, partition is always possible.
+    -   else not.
 
 ### Code
 
@@ -49,12 +49,12 @@ bool equalPartition(int N, int arr[])
 
 ### Complexity Analysis
 
-- Time Complexity: O(sum\*n)
-- Auxiliary Space: O(sum\*n)
+-   Time Complexity: O(sum\*n)
+-   Auxiliary Space: O(sum\*n)
 
-- **Optimized space complexity solution (O(sum)) available on gfg but that solution will not be feasible for arrays with big sum.**
+-   **Optimized space complexity solution (O(sum)) available on gfg but that solution will not be feasible for arrays with big sum.**
 
 ### References
 
-- GFG: [Equal Sum Partition Problem](https://www.geeksforgeeks.org/partition-problem-dp-18/)
-- Youtube: [AV - Equal Sum Partition Problem](https://www.youtube.com/watch?v=UmMh7xp07kY&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=8)
+-   GFG: [Equal Sum Partition Problem](https://www.geeksforgeeks.org/partition-problem-dp-18/)
+-   Youtube: [AV - Equal Sum Partition Problem](https://www.youtube.com/watch?v=UmMh7xp07kY&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=8)

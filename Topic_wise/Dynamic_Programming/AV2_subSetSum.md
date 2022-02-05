@@ -47,7 +47,7 @@ The above solution may try all subsets of given set in worst case. Therefore tim
 ### A) Memoization (top-down)
 
 ```cpp
-// Accoring to the constrins initialize the table;
+// According to the constrains initialize the table;
 int N = 102;
 int M = 100005;
 int dp[N][M];
@@ -92,7 +92,7 @@ bool isSubsetSum(int n, int arr[], int sum)
 {
     bool dp[n + 1][sum + 1];
 
-    // first column with 0 sum requred is always possible
+    // first column with 0 sum required is always possible
     for (int i = 0; i < n + 1; i++)
         dp[i][0] = true;
 

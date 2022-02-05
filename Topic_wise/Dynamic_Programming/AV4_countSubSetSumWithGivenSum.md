@@ -4,8 +4,8 @@ Given an array arr[] of length N and an integer X, the task is to find the numbe
 
 ### Prerequisite: [Subset Sum Problem](./AV2_subSetSum.md)
 
-- We just need to fill with ints instead of bools.
-- Instead of || we have to write +
+-   We just need to fill with int instead of bool.
+-   Instead of || we have to write +
 
 ### code
 
@@ -33,10 +33,10 @@ int countSubsetSum(int n, int arr[], int sum)
 
 ### Complexity Analysis
 
-- Time Complexity: O(sum\*n)
-- Auxiliary Space: O(sum\*n)
+-   Time Complexity: O(sum\*n)
+-   Auxiliary Space: O(sum\*n)
 
 ### References
 
-- GFG: [Count of subset sum with given sum](https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x/)
-- Youtube: [AV - Count of subset sum with given sum](https://www.youtube.com/watch?v=F7wqWbqYn9g&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=9)
+-   GFG: [Count of subset sum with given sum](https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x/)
+-   Youtube: [AV - Count of subset sum with given sum](https://www.youtube.com/watch?v=F7wqWbqYn9g&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=9)
