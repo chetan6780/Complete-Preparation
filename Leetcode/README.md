@@ -1905,6 +1905,40 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [389. Find the Difference](./389_findTheDifference.md) 🌟
+
+### Brute force
+
+-   Traverse every char in s and check if it is present in t or not.
+-   if not present, return the char.
+-   **TC: O(n^2)**
+-   **SC: O(1)**
+
+### sorting
+
+-   Sort s and t.
+-   traverse s and t and check if they are equal or not.
+-   if not equal, return the char.
+-   **TC: O(nlogn)**
+-   **SC: O(1)**, excluding the sorting space.
+
+### Hashing
+
+-   We can use hashmap to store the frequency of characters.
+-   first traverse `s` and increase frequency and then traverse `t` and decrease frequency.
+-   Now traverse map anf if `it.second<0` return `it.first`.
+-   **TC: O(n)**
+-   **SC: O(n)**
+
+### Bit Manipulation
+
+-   We can use bit manipulation to solve this problem.
+-   We can use XOR to find the difference.
+-   **TC: O(n)**
+-   **SC: O(1)**
+
+---
+
 # [404. Sum of Left Leaves](./404_sumOfLeftLeaves.md) 🌟
 
 ### Simple recursive dfs
