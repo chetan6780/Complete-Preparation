@@ -1722,6 +1722,16 @@ The whole point of asking any candidates a linked list problem is to test if the
 
 ---
 
+# [258. Add Digits](./258_addDigits.md) 🌟
+
+### Brute Force
+
+-   Intuitive solution
+
+### Mathematical solution
+
+---
+
 # [260. Single Number III](./260_singleNumberIII.md) 🌟🌟
 
 ### O(N^2) Time
