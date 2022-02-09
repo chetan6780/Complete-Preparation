@@ -2282,6 +2282,33 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [532. K-diff Pairs in an Array](./532_kdiffPairsInAnArray.md) 🌟🌟
+
+### Brute force
+
+-   We can traverse every pair of array elements and check if the difference is k.
+-   inset the minimum value in the set and return set.size().
+-   **TC: O(n^2)**
+-   **SC: O(n)**
+
+### with binary search
+
+-   we can sort the array and find the num+k in the sorted array.
+-   **TC: O(nlogn)**
+-   **SC: O(n)**
+
+### with hashmap
+
+-   we can reduce the time complexity if we store the count of numbers in hashmap.
+-   traverse the hash map.
+    -   if k>0 and map has num+x in it, increase the count.
+    -   if k==0 and num has frequency greater then 1, increase the count
+-   return count.
+-   **TC: O(n)**
+-   **SC: O(n)**
+
+---
+
 # [540. Single Element in a Sorted Array](./540_singleElementInASortedArray.md) 🌟🌟
 
 ### Brute force
