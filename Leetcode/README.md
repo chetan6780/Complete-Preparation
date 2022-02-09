@@ -1858,6 +1858,35 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [322. Coin Change](./322_coinChange.md) 🌟🌟
+
+### Recursive solution (TLE)
+
+-   For a coin we have 2 choices:
+    -   use it
+    -   don't use it
+-   if last coin have value less than or equal to amount,we have choice to use or not use it, We return the minimum of the two.
+-   else we don't have a choice and we cannot use it, we return not-use.
+-   If we use the coin we will increase the count by 1 and subtract the value of the coin from the amount.
+-   The base condition arises when the amount is 0, that means we found the answer, return 0
+-   and if index goes beyond the limits of the array, that means we cannot use the coin and we return INT_MAX-1.
+
+### Memoization (Top-Down) (AC)
+
+-   The simple recursively solution is not efficient nd results in TLE, because its doing so many calls again and again.
+-   We
+    rest of the code is same, we just need to store new calculated values in the table, if the value is already present then we can return value itself.
+-   **TC: O(N\*amount)**
+-   **SC: O(N\*amount)**
+
+### Tabulation (Bottom-Up) (AC)
+
+-   The memoization solution is acceptable but we can get rid of recursive calls with iterative dp.
+-   **TC: O(N\*amount)**
+-   **SC: O(N\*amount)**
+
+---
+
 # [344. Reverse String](./344_reverseString.md) 🌟
 
 ### O(N) time and O(1) space, using stack
