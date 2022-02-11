@@ -1313,6 +1313,35 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
+# [188. Best Time to Buy and Sell Stock IV](./188_bestTimeToBuyAndSellStockIV.md) 🌟🌟🌟
+
+### Recursion (TLE)
+
+-   for the i'th day if we are holding a stock we can either sell it or do nothing.
+-   if we are not holding a stock we can either buy it or do nothing.
+-   The base case arises when we completed all the transactions(k == 0) OR we are done for all days(i == prices.size()).
+
+> Note that you could also set up the solution so that transactions are completed upon buying a stock instead.
+
+### Memoization (AC)
+
+-   In the recursive version, we have to calculate the same subproblem multiple times.
+-   we can reduce the number of subproblems by storing the results of the subproblems.
+-   we use 3D array to store the results.
+-   **TC : O(N \* K)**
+-   **SC : O(N \* K)**
+
+### Tabulation (AC)
+
+-   The recurrence relation is the same with top-down, but we need to be careful about how we configure our for loops.
+-   The base cases are automatically handled because the dp array is initialized with all values set to 0.
+-   For iteration direction and order, remember with bottom-up we start at the base cases.
+-   Therefore we will start iterating from the end of the input and with only 1 transaction remaining.
+-   **TC: O(N\*K)**, O(n\*k\*2)--> O(N\*K)
+-   **SC: O(N\*K)**, O(n\*k\*2)--> O(N\*K)
+
+---
+
 # [189. Rotate Array](./189_rotateArray.md) 🌟
 
 ### O(N) Time and O(N) space
