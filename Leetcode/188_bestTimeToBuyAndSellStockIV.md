@@ -14,6 +14,20 @@ Find the maximum profit you can achieve. You may complete at most k transactions
 
 > Note that you could also set up the solution so that transactions are completed upon buying a stock instead.
 
+**Pseudo code**
+
+```
+dp(i, transactionsRemaining, holding) = max(doNothing, sellStock) if holding == 1
+                                        otherwise max(doNothing, buyStock)
+
+Where,
+doNothing = dp(i + 1, transactionsRemaining, holding),
+sellStock = prices[i] + dp(i + 1, transactionsRemaining - 1, 0),
+buyStock = -prices[i] + dp(i + 1, transactionsRemaining, 1).
+```
+
+![](https://leetcode.com/explore/learn/card/Figures/DP1/C3A5_1.png)
+
 ### Code
 
 ```cpp

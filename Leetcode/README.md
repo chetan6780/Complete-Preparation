@@ -1881,6 +1881,48 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [309. Best Time to Buy and Sell Stock with Cooldown](./309_bestTimeToBuyAndSellStockWithCooldown.md) 🌟🌟
+
+### Recursive Solution (TLE)
+
+-   For ith day we can `doNothing` or `buyOrSell`.
+-   `doNothing` is simple we just move to next day with current states.
+-   For `buyOrSell`:
+    -   if we can buy then we can choose from `doNothing` or `sell`
+        -   To buy, we have to subtract the price from the current balance and move to next day where we cannot buy again.
+    -   if we can sell then we can choose from `doNothing` or `buy`
+        -   To sell, we have to add the price to the current balance and rest 1 day(cooldown).
+        -   then for `i+2`nd day we can again buy.
+    -   We choose the max of `doNothing` and `buyOrSell`
+-   **TC: O(2^N)**
+-   **SC: O(N)**
+
+### Memoization (AC)
+
+-   We can easily convert recursive code to memoized code with 2-3 extra lines.
+-   Fill dp array with -1.
+-   If we already calculated the value for i, then return it.
+-   else calculate and store new value.
+-   **TC: O(N)**, O(N\*2)-->O(N)
+-   **SC: O(N)**, O(N\*2)-->O(N)
+
+### Tabulation (AC)
+
+-   For iteration direction and order, remember with bottom-up we start at the base cases.
+-   Therefore we will start iterating from the end of the input.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Space optimized dp
+
+-   For any day, we just need the answers for the next 2 days i.e day + 1 and day + 2.
+-   which means that we need to store the answers of 3 states (day, day + 1, day + 2).
+-   That's why we have taken an Array of [3][2] always and did modulo by 3.
+-   **TC: O(N)**
+-   **SC: O(1)**
+
+---
+
 # [310. Minimum Height Trees](./310_minimumHeightTrees.md) 🌟🌟
 
 <!-- ! Explanation here -->
