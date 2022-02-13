@@ -667,6 +667,14 @@ Anticlockwise rotate
 
 ---
 
+# [78. Subsets](./78_subsets.md) 🌟🌟
+
+### Recursive solution
+
+-   For a number we have 2 choices: either we can include it OR not in include it.
+
+---
+
 # [83. Remove Duplicates from Sorted List](./83_removeDuplicatesFromSortedList.md) 🌟
 
 ### O(N) Time and O(1) Space
