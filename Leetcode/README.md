@@ -2338,6 +2338,30 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+### [518. Coin Change 2](./518_coinChange2.md) 🌟🌟
+
+### Recursive Solution (TLE)
+
+-   For a i'th coin in coins, we can either use it or not use it.
+-   If the ith coin is less than or equal to the amount, we can use it or not use it.
+-   else, ith coin is greater than amount we cannot use it.
+-   Since we want to find the number of combinations, we add both include and exclude the ith coin.
+
+### Memoization (AC)
+
+-   The recursive solution calculates same sub-problem multiple times.
+-   We can use memoization to avoid this.
+-   **TC: O(N \* amount)**
+-   **SC: O(N \* amount)**
+
+### Tabulation (AC)
+
+-   Iterative DP.
+-   **TC: O(N \* amount)**
+-   **SC: O(N \* amount)**
+
+---
+
 # [525. Contiguous Array](./525_contiguousArray.md) 🌟🌟
 
 ### Brute Force (TLE)
