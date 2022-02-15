@@ -710,6 +710,35 @@ Anticlockwise rotate
 
 ---
 
+# [91. Decode Ways](./91_decodeWays.md) 🌟🌟
+
+### Recursive solution (TLE)
+
+-   For a character in string we have 2 choices:
+    -   We can use it as single character OR
+    -   We can use it as a part of a two-character string
+-   The base case arises when we cross length of the string, it means we have decoded all the characters.return 1.
+-   And if character in string starts with '0' we cannot decode it, return 0.
+-   finally we return `way1+way2` because we want to find all the possible ways to decode the string.
+-   **TC: O(2^N)**
+
+### Memoization (AC)
+
+-   The recursive solution results in TLE, because of repeated calculation.
+-   We can use memoization to store the result of subproblems.
+-   If the subproblem is already calculated, we can return the result from the memoization table.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Tabulation (AC)
+
+-   In tabulation we use iteration to calculate the result.
+-   It starts from base case and calculate the result for each subproblem.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+---
+
 # [94. Binary Tree Inorder Traversal](./94_binaryTreeInorderTraversal.md) 🌟
 
 ### O(N) Time and O(N) auxillary space, recursive
