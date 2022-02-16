@@ -227,6 +227,14 @@ We only need to handle four cases:
 
 ---
 
+# [24. Swap Nodes in Pairs](./24_swapNodesInPairs.md) 🌟🌟
+
+### By swapping values
+
+### By swapping Nodes
+
+---
+
 # [26. Remove Duplicates from Sorted Array](./26_removeDuplicatesFromSortedArray.md) 🌟
 
 ### Naive Solution
