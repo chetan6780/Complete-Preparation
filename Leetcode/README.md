@@ -328,7 +328,8 @@ We only need to handle four cases:
             ` int iindex = newRow + i, jindex = newCol + j;`
 
 ---
-
+# [39. Combination Sum](./39_combinationSum.md) 🌟🌟
+---
 # [42. Trapping Rain Water](./42_trappingRainWater.md) 🌟🌟🌟
 
 ### Brute force
