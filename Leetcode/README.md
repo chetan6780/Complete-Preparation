@@ -3137,6 +3137,35 @@ The process of finding all paths using DFS can be implemented as -
 
 ---
 
+# [931. Minimum Falling Path Sum](./931_minimumFallingPathSum.md) 🌟🌟
+
+### Recursion (TLE)
+
+-   For an element we can go down, right diagonal, or left diagonal, we will take minimum of those 3 and add with current element.
+-   The base case here is: If we reach to last row, we will return the current element.
+-   Also we have to check if the element is out of bound, if it is then return `INT_MAX`, because we are taking minimum element.
+
+### Memoization (AC)
+
+-   The recursive solution calculate same subproblem multiple times.
+-   we can use memoization table to store the results of the subproblems.
+-   If the subproblem is already calculated then return it else calculate and store it.
+-   **TC: O(m\*n)**
+-   **SC: O(m\*n)**
+
+### Tabulation (AC)
+
+-   we fill the first row with original values.
+-   then we fill rest as:
+    -   for first col we take `min(up,upRightDig) + currElem`
+    -   for last col we take `min(up,upLeftDig) + currElem`
+    -   for all other cols we take `min(up,upLeftDig,upRightDig) + currElem`
+-   Then we find the min of the last row.
+-   **TC: O(m\*n)**
+-   **SC: O(m\*n)**
+
+---
+
 # [938. Range Sum of BST](./938_rangeSumOfBst.md) 🌟
 
 ### Traversal Approaches
