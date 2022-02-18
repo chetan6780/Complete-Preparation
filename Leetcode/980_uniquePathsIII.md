@@ -61,6 +61,57 @@ public:
 };
 ```
 
+```cpp
+
+class Solution {
+private:
+    int dfs(vector<vector<int>>& grid, int r, int c, int start_r, int start_c, int zeros)
+    {
+        if (start_r < 0 || start_r >= r || start_c < 0 || start_c >= c || grid[start_r][start_c] == -1)
+            return 0;
+
+        if (grid[start_r][start_c] == 2)
+            return zeros == -1 ? 1 : 0;
+
+        // DO
+        grid[start_r][start_c] = -1;
+        zeros--;
+
+        // RECUR
+        int totalPaths = dfs(grid, r, c, start_r + 1, start_c, zeros) + 
+        dfs(grid, r, c, start_r - 1, start_c, zeros) + 
+        dfs(grid, r, c, start_r, start_c + 1, zeros) + 
+        dfs(grid, r, c, start_r, start_c - 1, zeros);
+
+        // UNDO
+        grid[start_r][start_c] = 0;
+        // zeros++;
+
+        return totalPaths;
+    }
+
+public:
+    int uniquePathsIII(vector<vector<int>>& grid)
+    {
+        int r = grid.size();
+        int c = grid[0].size();
+        int start_r = 0, start_c = 0;
+        int zeros = 0;
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                if (grid[i][j] == 0)
+                    zeros++;
+                else if (grid[i][j] == 1) {
+                    start_r = i;
+                    start_c = j;
+                }
+            }
+        }
+        return dfs(grid, r, c, start_r, start_c, zeros);
+    }
+};
+```
+
 ### MUST READ
 
 - [Java Easy Solution || DFS + Backtracking || Explanation (Simplified)](<https://leetcode.com/problems/unique-paths-iii/discuss/1553873/Java-Easy-Solution-oror-DFS-%2B-Backtracking-oror-Explanation-(Simplified)>)

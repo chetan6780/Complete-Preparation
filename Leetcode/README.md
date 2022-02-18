@@ -328,8 +328,11 @@ We only need to handle four cases:
             ` int iindex = newRow + i, jindex = newCol + j;`
 
 ---
+
 # [39. Combination Sum](./39_combinationSum.md) 🌟🌟
+
 ---
+
 # [42. Trapping Rain Water](./42_trappingRainWater.md) 🌟🌟🌟
 
 ### Brute force
@@ -570,6 +573,32 @@ Anticlockwise rotate
 ---
 
 # [63. Unique Paths II](./63_uniquePathII.md) 🌟🌟
+
+### Recursion (TLE)
+
+-   The straightforward solution is to use recursion.
+-   We have choice to go right or go down.
+-   we return right + left as we want to find all the paths.
+-   the base case arises when we reach to our destination i.e.(m-1, n-1), we return 1.
+-   also if we encounter an obstacle Or one of our indexes goes out of range, we return 0.
+
+### Memoization (AC)
+
+-   The above recursion solution calculates same subproblem again and again results in TLE.
+-   We can use memoization to store the result of subproblems in dp table.
+-   If we already calculated the solution return it.
+-   **TC: O(m\*n)**
+-   **SC: O(m\*n)**
+
+### Tabulation (AC)
+
+-   We can also use tabulation to solve this problem.
+-   But here are some edge case that we have to take care.
+-   we fill first row with 1 and first column with 1.
+-   but at any point in 1st row or column we encounter an obstacle, we set the all farther value to 0.
+-   other things are same as recursion.
+-   **TC: O(m\*n)**
+-   **SC: O(m\*n)**
 
 ---
 
@@ -2094,8 +2123,11 @@ Clearly, both first and sec belong to different groups and since, all other elem
 -   **SC: O(1)**
 
 ---
+
 # [402. Remove K Digits](./402_removeKDigits.md) 🌟🌟
+
 ---
+
 # [404. Sum of Left Leaves](./404_sumOfLeftLeaves.md) 🌟
 
 ### Simple recursive dfs
