@@ -2094,7 +2094,8 @@ Clearly, both first and sec belong to different groups and since, all other elem
 -   **SC: O(1)**
 
 ---
-
+# [402. Remove K Digits](./402_removeKDigits.md) 🌟🌟
+---
 # [404. Sum of Left Leaves](./404_sumOfLeftLeaves.md) 🌟
 
 ### Simple recursive dfs

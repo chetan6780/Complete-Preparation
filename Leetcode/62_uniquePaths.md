@@ -14,12 +14,22 @@ How many possible unique paths are there?
 
 ```cpp
 class Solution {
-public:
-    int uniquePaths(int m, int n, int r = 0, int c = 0)
+private:
+    int uniquePathsHelper(int m, int n, int i, int j)
     {
-        if (r >= m || c >= n) return 0;
-        if (r == m - 1 && c == n - 1) return 1;
-        return uniquePaths(m, n, r + 1, c) + uniquePaths(m, n, r, c + 1);
+        if (i == m - 1 && j == n - 1)
+            return 1;
+        if (i >= m || j >= n)
+            return 0;
+        int right = uniquePathsHelper(m, n, i, j + 1);
+        int down = uniquePathsHelper(m, n, i + 1, j);
+        return right + down;
+    }
+
+public:
+    int uniquePaths(int m, int n)
+    {
+        return uniquePathsHelper(m, n, 0, 0);
     }
 };
 ```
@@ -27,17 +37,25 @@ public:
 ### Memoization(Top Down Dp)
 
 ```cpp
-int dp[101][101];
 class Solution {
-    int uniquePathsHelper(int m, int n, int r = 0, int c = 0){
-        if (r >= m || c >= n) return 0;
-        if (r == m - 1 && c == n - 1) return 1;
-        if (dp[r][c] != -1) return dp[r][c];
-        return dp[r][c] = uniquePathsHelper(m, n, r + 1, c) + uniquePathsHelper(m, n, r, c + 1);
+private:
+    int dp[101][101];
+    int uniquePathsHelper(int m, int n, int i, int j)
+    {
+        if (i == m - 1 && j == n - 1)
+            return 1;
+        if (i >= m || j >= n)
+            return 0;
+        if (dp[i][j] != -1)
+            return dp[i][j];
+        int right = uniquePathsHelper(m, n, i, j + 1);
+        int down = uniquePathsHelper(m, n, i + 1, j);
+        return dp[i][j] = right + down;
     }
 
 public:
-    int uniquePaths(int m, int n){
+    int uniquePaths(int m, int n)
+    {
         memset(dp, -1, sizeof(dp));
         return uniquePathsHelper(m, n, 0, 0);
     }
@@ -46,8 +64,6 @@ public:
 
 <details>
 <summary><b>Other type solution</b></summary>
-
----
 
 ### Recursive Solution (TLE)
 
@@ -100,18 +116,19 @@ public:
 ```cpp
 class Solution {
 public:
-    int uniquePaths(int m, int n) {
+    int uniquePaths(int m, int n)
+    {
         int dp[m][n];
-
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(i==0||j==0) dp[i][j]=1;
-                else{
-                    dp[i][j]=dp[i-1][j]+dp[i][j-1];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == 0 || j == 0)
+                    dp[i][j] = 1;
+                else {
+                    dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
                 }
             }
         }
-        return dp[m-1][n-1];
+        return dp[m - 1][n - 1];
     }
 };
 ```
