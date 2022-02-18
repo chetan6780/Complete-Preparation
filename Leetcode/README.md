@@ -602,6 +602,37 @@ Anticlockwise rotate
 
 ---
 
+# [64. Minimum Path Sum](./64_minimumPathSum.md) 🌟🌟
+
+### Recursion (TLE)
+
+-   For a cell in grid we can go either right or down.
+-   We take minimum of right path and down path with current cell's value.
+-   The base case arises when we reach to the last cell, then we return that cell's value.
+-   also if we go out of bound the we return `INT_MAX`, because we are taking minimum of right and down.
+
+### Memoization (AC)
+
+-   The recursive solution will result in TLE, because of representing subproblems.
+-   We can use memoization table to remember the result of subproblems.
+-   If we have already computed the values of the subproblem then we directly return it from the table.
+-   If we encounter new subproblem then we store it in the table.
+-   **TC: O(m\*n)**
+-   **SC: O(m\*n)**
+
+### Tabulation (AC)
+
+-   We can convert memoization method to tabulation method.
+-   first we fill the bottom-right corner with the value of `grid[m-1][n-1]`, because it **Don't have any other choice**.
+-   Then we fill last row and last column, because they have **Only one choice**.
+-   Rest we can fill with regular method, they have **Two choices** we take minimum of both.
+-   **TC: O(m\*n)**
+-   **SC: O(m\*n)**
+
+-   The above code can also written as:
+
+---
+
 # [70. Climbing Stairs](./70_climbingStairs.md) 🌟
 
 ### Dynamic Programming
