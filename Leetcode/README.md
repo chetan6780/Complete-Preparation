@@ -3445,6 +3445,26 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1289. Minimum Falling Path Sum II](./1289_minimumFallingPathSumII.md) 🌟🌟🌟
+
+### Recursion (TLE)
+
+-   From every element in the first row of grid we find min answer.
+-   we have to try all the columns except the current column in the recursion and get the minimum answer.
+-   When we reach the last row, return the element itself.
+-   also check for out of bounds.
+
+### Memoization
+
+-   We use memoization table to store the result of subproblems.
+-   We can return directly from the table if the computation is already done, else we store new computation.
+
+### Tabulation (AC)
+
+-   The memoization solution can be converted into tabulation.
+
+---
+
 # [1295. Find Numbers with Even Number of Digits](./1295_findNumbersWithEvenNumberOfDigits.md`) 🌟
 
 ### O(N\*length(num)) Time and O(1) Space
