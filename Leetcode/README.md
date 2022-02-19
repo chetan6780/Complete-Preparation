@@ -3584,6 +3584,18 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1675. Minimize Deviation in Array](./1675_minimizeDeviationInArray.md) 🌟🌟🌟
+
+### Priority Queue (AC)
+
+### Set
+
+### Must Read
+
+-   [✅ C++ || Easy || 2 Approaches || Priority Queue || Set](https://leetcode.com/problems/minimize-deviation-in-array/discuss/1781709/C%2B%2B-oror-Easy-oror-2-Approaches-oror-Priority-Queue-oror-Set)
+
+---
+
 # [1732. Find the Highest Altitude](./1732_findHighestAltitude.md) 🌟
 
 ### O(N) Time and O(1) Space solution
