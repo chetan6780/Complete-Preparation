@@ -1098,6 +1098,41 @@ Anticlockwise rotate
 
 ---
 
+# [123. Best Time to Buy and Sell Stock III](./123_bestTimeToBuySellStockIII.md) 🌟🌟🌟
+
+### Recursive Solution (TLE)
+
+-   For a day we have 2 choices, either can buy stock or sell stock.
+-   We can do 2 total transactions(buy & sell) that means we have total 4 individual transactions(buy,sell,buy,sell).
+-   if we have even transactions remaining then we buy stock else we sell stock.
+-   for every day we return maximum of `(doing nothing, buy/sell stock)`.
+-   At any point we finish all our transactions we return 0 also if we don't have days left from trading we return 0.
+-   **TC: O(2^n)**
+-   **SC: O(n)**
+
+### Memoization (AC)
+
+-   The recursive solution giving TLE because of so many subproblems calculated again and again.
+-   We can remember the result of subproblems in dp array.
+-   If we already calculated the result of subproblems then we can directly return the result, else we store new calculations in table.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Tabulation (AC)
+
+-   Tabulation starts from base cases as its the bottom up approach.
+-   from memoization solution we can write tabulation method easily
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Tabulation | space optimization (AC)
+
+-   We can observe that, for any day we just need the answers of the next day, so we can reduce space complexity to O(1).
+-   **TC: O(N)**
+-   **SC: O(1)**
+
+---
+
 # [128. Longest Consecutive Sequence](./128_longestConsecutiveSequence.md) 🌟🌟
 
 ### Sorting Solution
