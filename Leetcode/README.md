@@ -1453,8 +1453,18 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 -   return candidate.
 
 ---
+
 # [171. Excel Sheet Column Number](./171_excelSheetColumnNumber.md) 🌟
+
+### Intuitive Solution (AC)
+
+-   We can observe that the number formed is like 26 base number system represented in capital letters.
+-   We can for number with `char*26+carry` formula.
+-   **TC: O(N)**
+-   **SC: O(1)**
+
 ---
+
 # [188. Best Time to Buy and Sell Stock IV](./188_bestTimeToBuyAndSellStockIV.md) 🌟🌟🌟
 
 ### Recursion (TLE)

@@ -19,6 +19,8 @@ AB -> 28
 
 -   We can observe that the number formed is like 26 base number system represented in capital letters.
 -   We can for number with `char*26+carry` formula.
+-   **TC: O(N)**
+-   **SC: O(1)**
 
 ### Code
 
