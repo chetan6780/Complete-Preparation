@@ -1210,6 +1210,39 @@ If you find more problems, please comment it below :)
 
 ---
 
+# [133. Clone Graph](./133_cloneGraph.md) 🌟🌟
+
+### Solution
+
+-   To clone a graph, you will need to traverse it.
+-   Both BFS and DFS are for this purpose. But that is not all you need.
+-   To clone a graph, you need to have a copy of each node and you need to avoid copying the same node for multiple times.
+-   So you still need a mapping from an original node to its copy.
+
+### DFS Solution
+
+-   We need map to store copies of node.
+-   We pass node and map in dfs function.
+-   **DFS:**
+-   if node is already visited, return the node
+-   else create a new node and add it to the map
+-   add all the neighbors of the node in the new node(add dfs)
+-   return new node
+
+### BFS Solution
+
+-   create a map to store the cloned nodes & queue for bfs
+-   create a new node with the same value as the original node
+-   and add it to the map
+-   **BFS:**
+-   add all the neighbors of the node in the new node
+-   if x is not in the map
+-   add x->val in the map
+-   add x to the queue
+-   add x to the neighbors of the cloned node
+
+---
+
 # [134. Gas Station](./134_gasStation.md) 🌟🌟
 
 ### Greedy Solution
