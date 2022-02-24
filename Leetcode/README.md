@@ -1389,6 +1389,20 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
+# [148. Sort List](./148_sortList.md) 🌟🌟
+
+### Intuitive Approach
+
+-   Store all the values of the nodes in the array.
+-   Sort the array.
+-   Create new Linked List from the sorted array.
+
+### merge sort
+
+-   Same like array merge sort.
+
+---
+
 # [152. Maximum Product Subarray](./152_maximumProductSubarray.md) 🌟🌟
 
 ### Brute Force
