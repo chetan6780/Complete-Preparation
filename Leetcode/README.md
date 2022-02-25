@@ -1460,8 +1460,18 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 -   Self explanatory code
 
 ---
+
 # [165. Compare Version Numbers](./165_compareVersionNumbers.md) 🌟🌟
+
+### split and compare (two pass)
+
+-   split both strings on '.' and store numbers in vectors.
+-   compare each element and return the ans.
+-   **TC: O(N)**, N=length of `max(version1, version2)`
+-   **SC: O(N)**, N=length of `max(vector1, vector2)`
+
 ---
+
 # [167. Two Sum II - Input array is sorted](./167_twoSumII_inputArrayIsSorted.md) 🌟
 
 ### O(N) Time 2-pointers solution
