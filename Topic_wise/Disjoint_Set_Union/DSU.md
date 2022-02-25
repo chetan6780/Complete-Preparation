@@ -43,15 +43,17 @@ public:
         v = findParent(v);
 
         // union by rank
-        if (nodeRank[u] < nodeRank[v])
-            parent[u] = v;
-        else if (nodeRank[u] > nodeRank[v])
-            parent[v] = u;
-        else {
-            parent[v] = u; // join to anyone
-            nodeRank[u]++; // increase rank(level)
+        if (u != v) {
+            if (nodeRank[u] < nodeRank[v])
+                parent[u] = v;
+            else if (nodeRank[u] > nodeRank[v])
+                parent[v] = u;
+            else {
+                parent[v] = u; // join to anyone
+                nodeRank[u]++; // increase rank(level)
+            }
+            connectedCount--;
         }
-        connectedCount--;
     }
 
     // TC: O(1) amortized
@@ -67,4 +69,55 @@ public:
     }
 };
 // TC: Amortized O(1) [O(αN) - α is inverse ackermann function, we assume it constant]
+```
+
+
+### Leetcode Implementation
+
+```cpp
+class UnionFind {
+private:
+    vector<int> root;
+    vector<int> rank;
+    int count;
+
+public:
+    UnionFind(int sz) : root(sz), rank(sz), count(sz) {
+        for (int i = 0; i < sz; i++) {
+            root[i] = i;
+            rank[i] = 1;
+        }
+    }
+
+    int find(int x) {
+        if (x == root[x]) {
+            return x;
+        }
+        return root[x] = find(root[x]);
+    }
+
+    void unionSet(int x, int y) {
+        int rootX = find(x);
+        int rootY = find(y);
+        if (rootX != rootY) {
+            if (rank[rootX] > rank[rootY]) {
+                root[rootY] = rootX;
+            } else if (rank[rootX] < rank[rootY]) {
+                root[rootX] = rootY;
+            } else {
+                root[rootY] = rootX;
+                rank[rootX] += 1;
+            }
+            count--;
+        }
+    }
+
+    int getCount() {
+        return count;
+    }
+
+    bool isConnected(int u, int v) {
+        return find(u) == find(v);
+    }
+};
 ```
