@@ -12,12 +12,14 @@ private:
     int* parent;
     int* nodeRank;
     int n;
+    int connectedCount;
 
 public:
     // TC: O(N)
     UnionFind(int sz)
     {
         this->n = sz;
+        this->connectedCount = sz;
         parent = new int[n + 1];
         nodeRank = new int[n + 1];
         for (int i = 0; i <= n; i++) {
@@ -49,12 +51,19 @@ public:
             parent[v] = u; // join to anyone
             nodeRank[u]++; // increase rank(level)
         }
+        connectedCount--;
     }
 
     // TC: O(1) amortized
     bool connected(int u, int v)
     {
         return findParent(u) == findParent(v);
+    }
+
+    // TC: O(1)
+    int getConnectedCount()
+    {
+        return connectedCount;
     }
 };
 // TC: Amortized O(1) [O(αN) - α is inverse ackermann function, we assume it constant]
