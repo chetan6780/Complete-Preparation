@@ -2685,7 +2685,8 @@ Clearly, both first and sec belong to different groups and since, all other elem
 -   Space: `O(1)`
 
 ---
-
+# [547. Number of Provinces](./547_numberOfProvinces.md) 🌟🌟
+---
 # [551. Student Attendance Record I](./551_studentAttendanceRecordI.md) 🌟
 
 ### Iterative Solution

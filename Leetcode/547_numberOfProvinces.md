@@ -1,21 +1,28 @@
-### Disjoint Set Union (Union Find)
+# [547. Number of Provinces](https://leetcode.com/problems/number-of-provinces/) 🌟🌟
 
--   Following is the implementation of Disjoint Set Union data structure with path compression and union by rank which provides best time complexity `~O(1)` for both find and union operations.
--   Without path compression and union by rank, TC will be `O(logN)` OR `O(N)` depending on method used to create DSU class.
+There are n cities. Some of them are connected, while some are not. If city a is connected directly with city b, and city b is connected directly with city c, then city a is connected indirectly with city c.
 
-### Implementation
+A province is a group of directly or indirectly connected cities and no other cities outside of the group.
+
+You are given an n x n matrix isConnected where isConnected[i][j] = 1 if the ith city and the jth city are directly connected, and isConnected[i][j] = 0 otherwise.
+
+Return the total number of provinces.
+
+### DSU implementation
+
+-   We have to simply connect the components in DSU and return the connected component count.
+
+### Code-1
 
 ```cpp
-// UnionFind class (DSU)
 class UnionFind {
 private:
+    int n;
     int* parent;
     int* nodeRank;
-    int n;
     int connectedCount;
 
 public:
-    // TC: O(N)
     UnionFind(int sz)
     {
         this->n = sz;
@@ -28,7 +35,6 @@ public:
         }
     }
 
-    // TC: O(1) amortized
     int findParent(int node)
     {
         if (node == parent[node])
@@ -36,7 +42,6 @@ public:
         return parent[node] = findParent(parent[node]); // path compression
     }
 
-    // TC: O(1) amortized
     void unionSet(int u, int v)
     {
         u = findParent(u);
@@ -56,91 +61,44 @@ public:
         }
     }
 
-    // TC: O(1) amortized
     bool connected(int u, int v)
     {
         return findParent(u) == findParent(v);
     }
 
-    // TC: O(1)
     int getConnectedCount()
     {
         return connectedCount;
     }
 };
-// TC: Amortized O(1) [O(αN) - α is inverse ackermann function, we assume it constant]
-```
 
-### With vector
-
-```cpp
-class UnionFind {
-private:
-    int n;
-    vector<int> parent;
-    vector<int> nodeRank;
-    int connectedCount;
-
+class Solution {
 public:
-    UnionFind(int sz)
+    int findCircleNum(vector<vector<int>>& isConnected)
     {
-        this->n = sz;
-        this->connectedCount = sz;
-        parent.resize(n + 1);
-        nodeRank.resize(n + 1);
-        for (int i = 0; i <= n; i++) {
-            parent[i] = i;
-            nodeRank[i] = 0;
-        }
-    }
+        int n = isConnected.size();
+        if (n == 0)
+            return 0;
+        UnionFind uf(n);
 
-    int findParent(int node)
-    {
-        if (node == parent[node])
-            return node;
-        return parent[node] = findParent(parent[node]); // path compression
-    }
-
-    void unionSet(int u, int v)
-    {
-        u = findParent(u);
-        v = findParent(v);
-
-        // union by rank
-        if (u != v) {
-            if (nodeRank[u] < nodeRank[v])
-                parent[u] = v;
-            else if (nodeRank[u] > nodeRank[v])
-                parent[v] = u;
-            else {
-                parent[v] = u; // join to anyone
-                nodeRank[u]++; // increase rank(level)
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (isConnected[i][j])
+                    uf.unionSet(i, j);
             }
-            connectedCount--;
         }
-    }
 
-    bool connected(int u, int v)
-    {
-        return findParent(u) == findParent(v);
-    }
-
-    int getConnectedCount()
-    {
-        return connectedCount;
+        return uf.getConnectedCount();
     }
 };
 ```
 
-### Leetcode Implementation
+### Code-2
+
+-   leetcode solution
 
 ```cpp
 class UnionFind {
-private:
-    vector<int> root;
-    vector<int> rank;
-    int count;
-
 public:
     UnionFind(int sz) : root(sz), rank(sz), count(sz) {
         for (int i = 0; i < sz; i++) {
@@ -176,8 +134,28 @@ public:
         return count;
     }
 
-    bool isConnected(int u, int v) {
-        return find(u) == find(v);
+private:
+    vector<int> root;
+    vector<int> rank;
+    int count;
+};
+
+class Solution {
+public:
+    int findCircleNum(vector<vector<int>>& isConnected) {
+        if (isConnected.size() == 0) {
+            return 0;
+        }
+        int n = isConnected.size();
+        UnionFind uf(n);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (isConnected[i][j] == 1) {
+                    uf.unionSet(i, j);
+                }
+            }
+        }
+        return uf.getCount();
     }
 };
 ```
