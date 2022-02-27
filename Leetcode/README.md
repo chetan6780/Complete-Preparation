@@ -3833,3 +3833,16 @@ c[3] -> 270 deg
 ### O(N) Time and O(N) Space solution
 
 -   We will use inbuilt function `vector.insert()` to concatenate the arrays.
+
+---
+
+# [1971. Find if Path Exists in Graph](./1971_findIfPathExistsInGraph.md) 🌟
+
+### DFS
+
+-   Basic DFS with stack
+
+### UnionFind
+
+-   If path exist between 2 nodes then they are in same component.
+-   We can use UnionFind to know if source and destination are in same component.
