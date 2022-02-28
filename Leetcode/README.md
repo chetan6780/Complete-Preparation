@@ -1789,7 +1789,17 @@ The approach works similar to Approach 1 with the following differences :
 -   **SC: O(1)**
 
 ---
+# [228. Summary Ranges](./228_summaryRanges.md) 🌟
 
+### Intuitive Solution
+
+-   We traverse the array and find right element to add.
+-   If we found then change flag to true.
+-   else add arrow and right element to the array as string and store new left element i.e. nums[i] and flag = true.
+-   **TC: O(n)**
+-   **SC: O(1)**
+
+---
 # [229. Majority Element II](./229_majorityElementII.md) 🌟🌟
 
 ### Brute force
