@@ -2188,6 +2188,17 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [338. Counting Bits](./338_countingBits.md) 🌟🌟
+
+### STL
+
+### DP
+
+-   Even numbers have same set bits as n/2.
+-   Odd numbers have set bits prev+1.
+
+---
+
 # [344. Reverse String](./344_reverseString.md) 🌟
 
 ### O(N) time and O(1) space, using stack
