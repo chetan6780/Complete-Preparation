@@ -2217,7 +2217,6 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
-# [382. Linked List Random Node](./382_linkedListRandomNode.md) 🌟🌟
 
 # [350. Intersection of Two Arrays II](./350_intersectionOfTwoArraysII.md) 🌟
 
@@ -2229,7 +2228,9 @@ Clearly, both first and sec belong to different groups and since, all other elem
 -   return ans
 
 ---
+# [382. Linked List Random Node](./382_linkedListRandomNode.md) 🌟🌟
 
+---
 # [383. Ransom Note](./383_ransomNote.md) 🌟
 
 ### same as is_subsequence problem.
@@ -2289,7 +2290,8 @@ Clearly, both first and sec belong to different groups and since, all other elem
 -   **SC: O(1)**
 
 ---
-
+# [392. Is Subsequence](./392_isSubsequence.md) 🌟
+---
 # [402. Remove K Digits](./402_removeKDigits.md) 🌟🌟
 
 ---
