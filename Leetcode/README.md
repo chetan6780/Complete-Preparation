@@ -2217,7 +2217,6 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
-
 # [350. Intersection of Two Arrays II](./350_intersectionOfTwoArraysII.md) 🌟
 
 ### O(N\*M) Time and O(N) Space
@@ -2228,9 +2227,11 @@ Clearly, both first and sec belong to different groups and since, all other elem
 -   return ans
 
 ---
+
 # [382. Linked List Random Node](./382_linkedListRandomNode.md) 🌟🌟
 
 ---
+
 # [383. Ransom Note](./383_ransomNote.md) 🌟
 
 ### same as is_subsequence problem.
@@ -2290,8 +2291,11 @@ Clearly, both first and sec belong to different groups and since, all other elem
 -   **SC: O(1)**
 
 ---
+
 # [392. Is Subsequence](./392_isSubsequence.md) 🌟
+
 ---
+
 # [402. Remove K Digits](./402_removeKDigits.md) 🌟🌟
 
 ---
@@ -2305,6 +2309,27 @@ Clearly, both first and sec belong to different groups and since, all other elem
 -   return dfs for left and right of tree.
 -   **Time Complexity:** O(n), we traverse the tree once
 -   **Space Complexity:** O(1) if we don't consider recursion stack, **O(height-of-tree)** if we do.
+
+---
+
+# [413. Arithmetic Slices](./413_arithmeticSlices.md) 🌟🌟
+
+-   Here array is arithmetic if it consists of at least three elements \*\*\*\*and if the difference between any two consecutive elements is the same.
+-   We will be using the sliding window technique, comparing 3 elements at a time and then storing the answer in dp array.
+-   Start our loop from 3rd element and compare it with the previous 2 and if there is more than 3 elements with the same difference then we’ll also add that to our dp.
+-   Let’s take an example:
+
+```py
+	array: [1,2,3,4]
+	Here first 3 element:   [1,2,3] is arithmetic -> count=1
+	also next 3 element:    [2,3,4] is arithmetic -> count=1
+	now all together:     [1,2,3,4] is arithmetic -> count=1
+```
+
+-   So while storing 2nd ans in dp, we'll simply add the previous 1 to our current dp.
+    `dp[i] = 1 + dp[i-1]`
+-   Add the current dp count to our answer variable, count += dp[i];
+-   Time complexity: `O(n)`.
 
 ---
 
