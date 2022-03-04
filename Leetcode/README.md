@@ -3261,6 +3261,12 @@ The process of finding all paths using DFS can be implemented as -
 
 ---
 
+# [799. Champagne Tower](./799_champagneTower.md) 🌟🌟
+
+### Simulation
+
+---
+
 # [832. Flipping an Image](./832_flippingAnImage.md) 🌟
 
 ### O(N^2) Time and O(1) Space
