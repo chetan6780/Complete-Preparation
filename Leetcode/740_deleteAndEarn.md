@@ -41,7 +41,7 @@ public:
 
 ### Space optimization DP
 
--   Since we are using only last two values we can optimize the space complexity to O(1).
+-   Since we are using only last two values we can optimize the space complexity to from 2\*10000 to 10000.
 
 ### Code
 
