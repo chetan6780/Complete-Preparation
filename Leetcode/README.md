@@ -3704,6 +3704,12 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1359. Count All Valid Pickup and Delivery Options](./1359_countAllValidPickupAndDeliveryOption.md) 🌟🌟
+
+### DP Solution
+
+---
+
 # [1413. Minimum Value to Get Positive Step by Step Sum](./1413_minimumValueToGetPositiveStepByStepSum.md) 🌟
 
 ### PrefixSum O(N) Time
