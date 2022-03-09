@@ -744,6 +744,16 @@ Anticlockwise rotate
 
 ---
 
+# [82. Remove Duplicates from Sorted List II](./82_removeDuplicatesFromSortedListII.md) 🌟🌟
+
+### Solution
+
+-   Explained in code.
+-   **TC: O(N)**
+-   **SC: O(1)**
+
+---
+
 # [83. Remove Duplicates from Sorted List](./83_removeDuplicatesFromSortedList.md) 🌟
 
 ### O(N) Time and O(1) Space
