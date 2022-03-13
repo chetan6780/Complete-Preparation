@@ -9,15 +9,15 @@ An input string is valid if:
 
 ### O(N) Time and O(N) Space, straightforward solution
 
-- if the string is empty, return true
-- if the string has an odd number of characters, return false
-- Create a stack to store parenthesis.
-- if character is any opening parenthesis, push it to the stack
-- after first if, if stack is empty, which means the character is closing parenthesis, return false
-- else
-  - current character is matching parenthesis of top char of stack, pop that opening character from stack.
-  - else push it in the stack.
-- return true if stack is empty else false.
+-   if the string is empty, return true
+-   if the string has an odd number of characters, return false
+-   Create a stack to store parenthesis.
+-   if character is any opening parenthesis, push it to the stack
+-   after first if, if stack is empty, which means the character is closing parenthesis, return false
+-   else
+    -   current character is matching parenthesis of top char of stack, pop that opening character from stack.
+    -   else push it in the stack.
+-   return true if stack is empty else false.
 
 ### Code
 
@@ -49,7 +49,7 @@ public:
 
 ### Some slight simplification
 
-- we don't need to push extra closing parenthesis in the stack, if extra parenthesis appears return false.
+-   we don't need to push extra closing parenthesis in the stack, if extra parenthesis appears return false.
 
 ### Code
 
@@ -68,6 +68,34 @@ public:
                 if (st.empty() || (s[i] == ')' && st.top() != '(') || (s[i] == ']' && st.top() != '[') || (s[i] == '}' && st.top() != '{'))
                     return false;
                 st.pop();
+            }
+        }
+        return st.empty();
+    }
+};
+```
+
+### Code-2
+
+```cpp
+class Solution {
+public:
+    bool isValid(string s) {
+        stack<char> st;
+        for(auto x: s){
+            if(x == '('||x == '['||x == '{')
+                st.push(x);
+            else{
+                if(st.empty())
+                    return false;
+                char c = st.top();
+                st.pop();
+                if(c == '(' && x != ')')
+                    return false;
+                if(c == '[' && x != ']')
+                    return false;
+                if(c == '{' && x != '}')
+                    return false;
             }
         }
         return st.empty();
