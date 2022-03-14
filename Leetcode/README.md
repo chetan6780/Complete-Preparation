@@ -638,7 +638,8 @@ Anticlockwise rotate
 ### Dynamic Programming
 
 ---
-
+# [71. Simplify Path](./71_simplifyPath.md) 🌟🌟
+---
 # [73. Set Matrix Zeroes](./73_setMatrixZeroes.md) 🌟🌟
 
 ### Brute Force
