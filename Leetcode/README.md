@@ -3378,6 +3378,8 @@ The process of finding all paths using DFS can be implemented as -
 -   **SC: O(h)**, h is the height of the tree.
 
 ---
+# [946. Validate Stack Sequences](./946_validateStackSequences.md) 🌟🌟
+---
 
 # [977. Squares of a Sorted Array](./977_squaresOfASortedArray.md) 🌟
 
