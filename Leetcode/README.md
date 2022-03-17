@@ -638,8 +638,11 @@ Anticlockwise rotate
 ### Dynamic Programming
 
 ---
+
 # [71. Simplify Path](./71_simplifyPath.md) 🌟🌟
+
 ---
+
 # [73. Set Matrix Zeroes](./73_setMatrixZeroes.md) 🌟🌟
 
 ### Brute Force
@@ -3287,6 +3290,42 @@ The process of finding all paths using DFS can be implemented as -
 
 ---
 
+# [856. Score of Parentheses](./856_scoreOfParentheses.md) 🌟🌟
+
+### Using stack
+
+-   We use stack to store the score of each parentheses.
+-   If we meet a `(`, we push 0 to the stack.
+-   If we meet a `)`, pop call 0's and multiple the result with 2, also if there is only one () then result will become 0 so store val as `max(1, 2*val)`, push the result to the stack.
+-   calculate total result from stack.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Leetcode Approach 3: Count Cores
+
+-   **TC: O(N)**
+-   **SC: O(1)**
+
+**Intuition**
+
+-   The final sum will be a sum of powers of 2, as every core (a substring (), with score 1) will have it's score multiplied by 2 for each exterior set of parentheses that contains that core.
+
+**Algorithm**
+
+-   Keep track of the balance of the string, as defined in Approach #1. For every ) that immediately follows a (, the answer is 1 << balance, as balance is the number of exterior set of parentheses that contains this core.
+
+### kkzeng's explanation:
+
+The key idea is that:
+
+1. the balance tells you what "depth" you are at since with each '(' we are increasing the depth by 1 (kind of similar to the concept in Solution 2).
+2. the "cores" () are the only structure that provides value, the outer parentheses just add some multiplier to the cores. So we only need to be concerned with those.
+   With those 2 ideas in mind, we are able to calculate how much the "core" is worth directly without having to calculate substructures recursively and then apply multipliers.
+
+E.g. For the example of `( ( ) ( ( ) ) )`, with the stack method, we are calculating the inner structure `( ) ( ( ) )` first and then multiplying the score by 2. With the 3rd method, by knowing the depth of the core, we are actually performing this calculation `( ( ) )` + `( ( ( ) ) )`.
+
+---
+
 # [867. Transpose Matrix](./867_transposeMatrix.md) 🌟
 
 ### O(N\*M) Time and O(N\*M) space
@@ -3378,7 +3417,9 @@ The process of finding all paths using DFS can be implemented as -
 -   **SC: O(h)**, h is the height of the tree.
 
 ---
+
 # [946. Validate Stack Sequences](./946_validateStackSequences.md) 🌟🌟
+
 ---
 
 # [977. Squares of a Sorted Array](./977_squaresOfASortedArray.md) 🌟
