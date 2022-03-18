@@ -1,4 +1,4 @@
-// FILE SHORTCUT
+// Snippet triggers for my custom snippet
 
 cpft
 debi - debug import
