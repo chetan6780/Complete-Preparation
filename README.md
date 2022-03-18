@@ -10,6 +10,4 @@
 
 4. [Topic wise Q/T](Topic_wise) 🖊️
 
-5. [CP-SHEET](CP-SHEET) 📄
-
-6. [C++ Tips and Tricks](Tips.md) 😀
+5. [C++ Tips and Tricks](Tips.md) 😀
