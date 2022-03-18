@@ -2173,6 +2173,26 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [316. Remove Duplicate Letters](./316_removeDuplicateLetters.md) 🌟🌟
+
+### NOTE: This question is same as [1081](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/)
+
+### Solution
+
+-   We store the frequency of characters in a hashmap or vector.
+-   Create an answer string to store the result.
+-   for every character in the string.
+    -   Decrement the frequency of the character.
+    -   If its already visited the continue.
+    -   else remove all characters from ans string that are greater than current character.
+    -   Add current character in the answer string.
+    -   mark visited as true.
+-   Return the answer string.
+-   **TC: O(N)**
+-   **SC: O(26)=O(1)**
+
+---
+
 # [322. Coin Change](./322_coinChange.md) 🌟🌟
 
 ### Recursive solution (TLE)
@@ -3528,6 +3548,10 @@ E.g. For the example of `( ( ) ( ( ) ) )`, with the stack method, we are calcula
 -   we can simulate the process 1 time and check if it reaches to same location(0,0) or it changed its directions, if it does return true, else false.
 -   **TC: O(N)**
 -   **SC: O(1)**
+
+---
+
+# [1081. Smallest Subsequence of Distinct Characters](./1081_smallestSubsequenceOfDistinctCharacters.md) 🌟🌟
 
 ---
 
