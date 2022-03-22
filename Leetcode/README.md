@@ -3847,6 +3847,10 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1663. Smallest String With A Given Numeric Value](./1663_smallestStringWithAGivenNumericValue.md) 🌟🌟
+
+---
+
 # [1672. Richest Customer Wealth](./1672_richestCustomerWealth.md) 🌟
 
 ### O(N^2) Time and O(1) Space solution
@@ -3875,7 +3879,7 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
-# [1770. Maximum Score from Performing Multiplication Operations](./maxScoreForMultiplicationOperation.md) 🌟🌟
+# [1770. Maximum Score from Performing Multiplication Operations](./1770_maxScoreForMultiplicationOperation.md) 🌟🌟
 
 ### Recursion (TLE)
 
