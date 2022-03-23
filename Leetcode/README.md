@@ -3492,6 +3492,19 @@ E.g. For the example of `( ( ) ( ( ) ) )`, with the stack method, we are calcula
 
 ---
 
+# [991. Broken Calculator](./991_brokenCalculator.md) 🌟🌟
+
+### Greedy Solution
+
+-   Very intuitive solution. we can just think reverse of the problem statement.
+-   we will start from target and divide it when it is even else add one init, until target is greater than the starting value.
+-   count the total number of times we have to do so.
+-   return count + (startValue - target).
+-   **TC: O(log target)**
+-   **TC: O(1)**
+
+---
+
 # [994. Rotting Oranges](./994_rotatingOranges.md) 🌟🌟
 
 ### BFS solution
