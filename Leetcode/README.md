@@ -3393,8 +3393,17 @@ E.g. For the example of `( ( ) ( ( ) ) )`, with the stack method, we are calcula
 -   `fast->next != NULL` for even number of nodes.
 
 ---
+
 # [881. Boats to Save People](./boatsToSavePeople.md) 🌟🌟
+
+### Greedy Two pointer
+
+-   Code is self explanatory.
+-   **TC: O(N log N)**
+-   **SC: O(1)**
+
 ---
+
 # [931. Minimum Falling Path Sum](./931_minimumFallingPathSum.md) 🌟🌟
 
 ### Recursion (TLE)
