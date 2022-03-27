@@ -3791,6 +3791,9 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1337. The K Weakest Rows in a Matrix](./1337_theKWeakestRowsInAMatrix.md) 🌟
+
+---
 # [1365. How Many Numbers Are Smaller Than the Current Number](./1365_howMenyNumbersAreSmallerThanTheCurrentNumber.md) 🌟
 
 ### O(N^2) Time solution
