@@ -30,6 +30,12 @@ public:
 };
 ```
 
+-   For the i'th row we will create a temp array of size i+1(i is 0 based|row is 1 based) of all elements 1 in it.
+-   push this temp array in ans.
+-   for the pascals triangle we know that `currNum = numOnPrevRowAndPrevCol + numOnPrevRowAndSameCol` for all numbers except first and last.
+-   we calculate all the numbers with above formula.
+-   finally return the ans.
+
 ### Code
 
 ```cpp
