@@ -80,3 +80,36 @@ public:
     }
 };
 ```
+
+### Code - 3
+
+```cpp
+class Solution {
+private:
+    void backtrack(vector<int>& cand, int i, int target, vector<int>& temp, vector<vector<int>>& ans)
+    {
+        if (target == 0) {
+            ans.push_back(temp);
+            return;
+        }
+        if (i == cand.size() || target < 0)
+            return;
+
+        temp.push_back(cand[i]);
+        backtrack(cand, i, target - cand[i], temp, ans);
+        temp.pop_back();
+        backtrack(cand, i + 1, target, temp, ans);
+    }
+
+public:
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target)
+    {
+        int n = candidates.size();
+        vector<vector<int>> ans;
+        vector<int> temp = {};
+        sort(candidates.begin(), candidates.end());
+        backtrack(candidates, 0, target, temp, ans);
+        return ans;
+    }
+};
+```
