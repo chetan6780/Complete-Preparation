@@ -4,7 +4,7 @@ Given a list arr of N integers, print sums of all subsets in it.
 
 ### Brute force
 
--   Generate all subsets of the given set ans print the sun of each subset.
+-   Generate all subsets of the given set ans print the sum of each subset.
 -   We can generate all the subset with bit manipulation method.
 -   **TC: O(2^N \* N)**
 
