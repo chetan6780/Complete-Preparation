@@ -3023,6 +3023,12 @@ soon...
 ## <!-- TODO: Add explanation -->
 
 ---
+# [682. Baseball Game](./682_baseballGame.md) 🌟🌟
+### Stack Solution
+
+- Simple simulation using stack.
+
+---
 
 # [695. Max Area of Island](./695_maxAreaOfIsland.md) 🌟🌟
 
