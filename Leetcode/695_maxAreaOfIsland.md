@@ -8,7 +8,7 @@ Return the maximum area of an island in grid. If there is no island, return 0.
 
 ### DFS - Recursive
 
-- For each cell we check, if it is 1,then we call a bfs on it
+- For each cell we check, if it is 1,then we call a Dfs on it
 
 - **DFS Function:**
 

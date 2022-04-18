@@ -1848,6 +1848,25 @@ The approach works similar to Approach 1 with the following differences :
 
 ---
 
+# [230. Kth Smallest Element in a BST](./230_kthSmallestElementInABST.md) 🌟🌟
+
+### Inorder traversal
+
+-   Binary search tree in inorder traversal gives sorted values.
+-   So we can find kth smallest from the list.
+-   **TC: O(N)**
+-   **SC: O(N)**, To store inorder traversal.
+
+### Get kth while traversing.
+
+-   We don't need to traverse whole tree, instead we can just traverse until we find kth smallest element.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Above method in iterative way.
+
+---
+
 # [231. Power of Two](./231_powerOfTwo.md) 🌟
 
 -   Go To above link.
@@ -3794,6 +3813,7 @@ In an interview, if the first solution that comes to mind involves a complex dat
 # [1337. The K Weakest Rows in a Matrix](./1337_theKWeakestRowsInAMatrix.md) 🌟
 
 ---
+
 # [1365. How Many Numbers Are Smaller Than the Current Number](./1365_howMenyNumbersAreSmallerThanTheCurrentNumber.md) 🌟
 
 ### O(N^2) Time solution
