@@ -886,6 +886,16 @@ Anticlockwise rotate
 
 ---
 
+# [99. Recover Binary Search Tree](./99_recoverBinarySearchTree.md) 🌟🌟
+
+### Recursive using inorder traversal
+
+-   We know that inorder traversal of BST is sorted, so we can use this fact to find the two nodes swapped.(In question it's confirmed that only two nodes are swapped)
+-   We can use inorder traversal to find the two nodes swapped.
+-   **TC: O(n)**
+
+---
+
 # [100. Same Tree](./100_sameTree.md) 🌟
 
 ### Intuitive recursive solution
@@ -3042,10 +3052,12 @@ soon...
 ## <!-- TODO: Add explanation -->
 
 ---
+
 # [682. Baseball Game](./682_baseballGame.md) 🌟🌟
+
 ### Stack Solution
 
-- Simple simulation using stack.
+-   Simple simulation using stack.
 
 ---
 
