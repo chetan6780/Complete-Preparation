@@ -41,7 +41,7 @@ public:
 
 ### Linked list + Chaining solution
 
--   Prerequisite [chaining](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)
+-   Prerequisite: [chaining](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)
 -   Implementation for interviews.
 -   We can use hashing. To handle collision, we can use chaining method.
 -   We will create a hash function and if a collision happens, we will add the key to the linked list.
