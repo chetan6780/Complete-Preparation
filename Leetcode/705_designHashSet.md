@@ -8,6 +8,10 @@ void add(key) Inserts the value key into the HashSet.
 bool contains(key) Returns whether the value key exists in the HashSet or not.
 void remove(key) Removes the value key in the HashSet. If key does not exist in the HashSet, do nothing.
 
+### Solution
+
+-   Simple vector solution, **Not for interview**.
+
 ```cpp
 class MyHashSet {
     vector<int> a;
@@ -34,6 +38,13 @@ public:
     }
 };
 ```
+
+### Linked list + Chaining solution
+
+-   Prerequisite [chaining](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)
+-   Implementation for interviews.
+-   We can use hashing. To handle collision, we can use chaining method.
+-   We will create a hash function and if a collision happens, we will add the key to the linked list.
 
 ```cpp
 class MyHashSet {
