@@ -3134,6 +3134,20 @@ soon...
 
 ---
 
+# [705. Design HashSet](./705_designHashSet.md) 🌟
+
+### Solution
+
+-   Simple vector solution, **Not for interview**.
+
+### Linked list + Chaining solution
+
+-   Implementation for interviews.
+-   We can use hashing. To handle collision, we can use chaining method.
+-   We will create a hash function and if a collision happens, we will add the key to the linked list.
+
+---
+
 # [706. Design HashMap](./706_designHashMap.md) 🌟
 
 ### Array implementation
