@@ -36,7 +36,74 @@ public:
 };
 ```
 
-### With the hashing function
+### With the hashing function - 1
+
+### Code
+
+```cpp
+class MyHashMap {
+    vector<list<pair<int, int>>> mp;
+    int sz;
+
+public:
+    MyHashMap()
+    {
+        sz = 119;
+        mp.resize(sz);
+    }
+
+    // hash function
+    int hash(int key)
+    {
+        return key % sz;
+    }
+
+    // returns iterator to the element with key == k
+    list<pair<int, int>>::iterator search(int key)
+    {
+        int i = hash(key);
+        list<pair<int, int>>::iterator it = mp[i].begin();
+        while (it != mp[i].end()) {
+            if (it->first == key) {
+                return it;
+            }
+            it++;
+        }
+        return it;
+    }
+
+    // insert key, value pair
+    void put(int key, int value)
+    {
+        int i = hash(key);
+        remove(key);
+        mp[i].push_back({ key, value });
+    }
+
+    // get value for key
+    int get(int key)
+    {
+        int i = hash(key);
+        list<pair<int, int>>::iterator it = search(key);
+        if (it != mp[i].end()) {
+            return it->second;
+        }
+        return -1;
+    }
+
+    // remove key, value pair
+    void remove(int key)
+    {
+        int i = hash(key);
+        list<pair<int, int>>::iterator it = search(key);
+        if (it != mp[i].end()) {
+            mp[i].erase(it);
+        }
+    }
+};
+```
+
+### With the hashing function - 2
 
 -   Read [this](<https://leetcode.com/problems/design-hashmap/discuss/1097755/JS-Python-Java-C%2B%2B-or-(Updated)-Hash-and-Array-Solutions-w-Explanation>)
 
