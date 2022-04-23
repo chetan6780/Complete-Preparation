@@ -3445,7 +3445,7 @@ E.g. For the example of `( ( ) ( ( ) ) )`, with the stack method, we are calcula
 
 ---
 
-# [881. Boats to Save People](./boatsToSavePeople.md) 🌟🌟
+# [881. Boats to Save People](./881_boatsToSavePeople.md) 🌟🌟
 
 ### Greedy Two pointer
 
@@ -4088,3 +4088,9 @@ c[3] -> 270 deg
 
 -   If path exist between 2 nodes then they are in same component.
 -   We can use UnionFind to know if source and destination are in same component.
+
+---
+
+# Leetcode Patterns (IMPORTANT)
+
+-   [General approach to level order traversal](./generalApproachToLevelOrder.md)
