@@ -1,9 +1,9 @@
 # Sum of Elements between k1 smallest and k2 smallest numbers
 
-### Prerequesite
+### Prerequisites:
 
-- [k'th smallest element](1_kth_smallest.md)
-- After above question code is self explanatory.
+-   [k'th smallest element](1_kth_smallest.md)
+-   After above question code is self explanatory.
 
 ### Code
 

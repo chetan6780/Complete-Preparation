@@ -4,8 +4,8 @@
 
 1. create min heap with pair.
 2. get the frequencies.
-   - push the (freq,value) pair in heap.
-   - if size is greater than k pop the top.
+    - push the (freq,value) pair in heap.
+    - if size is greater than k pop the top.
 3. while heap is not empty, print second of each element.
 
 ### Code

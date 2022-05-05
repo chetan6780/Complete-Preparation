@@ -3,16 +3,16 @@
 ### Algorithm
 
 1. Heapify function
-   - Initialize largest as root.
-   - left = 2\*i + 1.
-   - right = 2\*i + 2.
-   - If left child is larger than root.
-   - If right child is larger than largest so far.
-   - If largest is not root.
-   - Recursively heapify the affected sub-tree.
+    - Initialize largest as root.
+    - left = 2\*i + 1.
+    - right = 2\*i + 2.
+    - If left child is larger than root.
+    - If right child is larger than largest so far.
+    - If largest is not root.
+    - Recursively heapify the affected sub-tree.
 2. Build heap function.
-   - Index of last non-leaf node
-   - Perform reverse level order traversal from last non-leaf node and heapify each node
+    - Index of last non-leaf node
+    - Perform reverse level order traversal from last non-leaf node and heapify each node
 
 ### Code
 

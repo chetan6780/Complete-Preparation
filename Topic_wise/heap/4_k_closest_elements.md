@@ -4,8 +4,8 @@
 
 1. create a max heap of pair (index,element) and vector to store answer.
 2. traverse all elements of the array.
-   - push the pair in max heap.
-   - if size is greater than k pop the top element of max heap.
+    - push the pair in max heap.
+    - if size is greater than k pop the top element of max heap.
 3. until heap is not empty push the second element of top in vector.
 
 ### Code
@@ -27,6 +27,7 @@ vector<int> k_closest(int *arr, int n, int k, int x)
     while (maxHeap.size() > 0)
     {
         v.push_back(maxHeap.top().second);
+        maxHeap.pop();  
     }
     return v;
 }

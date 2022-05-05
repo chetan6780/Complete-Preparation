@@ -1,10 +1,11 @@
 # Frequency sort
 
 ### Prerequisite
-- This problem is based on [top k frequent element](5_top_k_frequent_element.md).
-- Code is self explanatory.
+
+-   [top k frequent element](./5_top_k_frequent_element.md).
 
 ### Code
+
 ```cpp
 void frequentSort(int *arr, int n, int k)
 {

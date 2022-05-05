@@ -4,8 +4,8 @@
 
 1. create a max heap (HINT: Because we have k and smallest in problem.)
 2. traverse all elements of the array.
-   - push the element in max heap.
-   - if size is greater than k pop the top element of max heap.
+    - push the element in max heap.
+    - if size is greater than k pop the top element of max heap.
 3. return the top of max heap.
 
 ### Code
@@ -28,4 +28,5 @@ int kthSmallest(int *arr, int n, int k)
 ```
 
 ### Complexity
-Time Complexity: **O(N*logK)**
+
+Time Complexity: **O(N\*logK)**

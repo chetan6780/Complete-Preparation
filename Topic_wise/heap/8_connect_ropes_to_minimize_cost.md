@@ -2,9 +2,9 @@
 
 ### Algorithm
 
-1. Initialalize cost and minHeap with default values.
+1. Initialize cost and minHeap with default values.
 2. while size of min heap is greater than or equal to 2, get top 2 elements and add them in the cost
-   - push first + second in minHeap
+    - push first + second in minHeap
 3. return cost
 
 ### Code

@@ -4,8 +4,8 @@
 
 1. create a min heap (HINT: Because we have k and largest in problem.)
 2. traverse all elements of the array.
-   - push the element in max heap.
-   - if size is greater than k pop the top element of min heap.
+    - push the element in max heap.
+    - if size is greater than k pop the top element of min heap.
 3. print the top until heap is not empty.
 
 ### Code

@@ -5,9 +5,9 @@ Given a list of points on the 2-D plane and an integer K. The task is to find K 
 ### Algorithm
 
 1. Create max heap of pair of int and pair of int.
-2. Treaverse all elements
-   - push spuare of points , points itself.
-   - if heap size is greater than k pop it.
+2. Traverse all elements
+    - push square of points , points itself.
+    - if heap size is greater than k pop it.
 3. print points remaining in heap.
 
 ### Code
