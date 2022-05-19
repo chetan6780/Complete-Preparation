@@ -3866,6 +3866,18 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./1379_findACorrespondingNodeOfABinaryTreeInACloneOfThatTree.md) 🌟🌟
+
+### DFS
+
+-   Simple dfs traversal.
+-   check if original node is null if yes then return null.
+-   if original node is equal to target node then return the cloned node.
+-   else recur ot left and right of the original and cloned subtrees and store the result in the left and right.
+-   if left is not null return left else return right.
+
+---
+
 # [1389. Create Target Array in the Given Order](./1389_createTargetArrayInTheGivenOrder.md) 🌟
 
 ### O(N^2) Time solution
