@@ -2251,6 +2251,14 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [329. Longest Increasing Path in a Matrix](./329_longestIncreasingPathInAMatrix.md) 🌟🌟🌟
+
+### DFS with memoization
+
+-   Self-explanatory
+
+---
+
 # [338. Counting Bits](./338_countingBits.md) 🌟🌟
 
 ### STL
