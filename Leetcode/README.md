@@ -2154,6 +2154,25 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [304. Range Sum Query 2D - Immutable](./304_rangeSumQuery2D_Immutable.md) 🌟🌟
+
+### Brute force (TLE)
+
+-   Directly calculate the sum of area.
+
+### Row Prefix sum (AC)
+
+-   We know the concept of prefix sum for 1D array, we can apply it to 2D array.
+-   Calculate prefix sum of each row.
+-   From the calculated prefix sum for row, Take only part which is in the area and add it to the answer.
+-   Return the answer.
+
+### Area Prefix sum (AC)
+
+-   Leetcode official solution has very good explanation for this approach.
+
+---
+
 # [309. Best Time to Buy and Sell Stock with Cooldown](./309_bestTimeToBuyAndSellStockWithCooldown.md) 🌟🌟
 
 ### Recursive Solution (TLE)
