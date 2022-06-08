@@ -3869,6 +3869,14 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1332. Remove Palindromic Subsequences](./1332_removePalindromicSubsequences.md) 🌟
+
+### using reverse function
+
+### Checking if string is palindrome
+
+---
+
 # [1337. The K Weakest Rows in a Matrix](./1337_theKWeakestRowsInAMatrix.md) 🌟
 
 ---
