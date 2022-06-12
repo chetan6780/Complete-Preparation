@@ -3984,6 +3984,10 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1658. Minimum Operations to Reduce X to Zero](./1658_minimumOperationsToReduceXToZero.md)
+
+---
+
 # [1663. Smallest String With A Given Numeric Value](./1663_smallestStringWithAGivenNumericValue.md) 🌟🌟
 
 ---
