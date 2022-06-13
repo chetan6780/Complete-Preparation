@@ -1075,9 +1075,19 @@ Anticlockwise rotate
 
 # [120. Triangle](./120_triangle.md) 🌟🌟
 
-### Dynamic Programming
+### Recursion(TLE)
 
--   [Video](https://www.youtube.com/watch?v=O2eaAdBpZBQ)
+-   If we are at the last row, return the element.
+-   else try going down and right diagonally, take minimum of both.
+-   return current element + min of both.
+
+### Memoization (AC)
+
+-   The recursive code gives TLE.
+-   We can use memoization to solve this problem.
+-   Take 2D array memo to store the result.
+
+### Dynamic Programming (AC)
 
 ---
 
