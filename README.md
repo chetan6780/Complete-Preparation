@@ -4,7 +4,7 @@ One-stop destination for all you coding round Preparation.
 
 ### Index
 
-<!-- 1. [Aptitude](Aptitude) 😀 -->
+1. [Aptitude](Aptitude) 😀
 
 2. [Leetcode](Leetcode) 💻
 
