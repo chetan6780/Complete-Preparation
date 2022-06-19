@@ -1,12 +1,8 @@
-# [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) 🌟
+# Best Time to Buy and Sell Stock
 
-You are given an array prices where prices[i] is the price of a given stock on the ith day.
+You are given an array/list 'prices' where the elements of the array represent the prices of the stock as they were yesterday and indices of the array represent minutes. Your task is to find and return the maximum profit you can make by buying and selling the stock. You can buy and sell the stock only once.
 
-You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
-
-Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
-
----
+> Note:You can’t sell without buying first.
 
 ### O(N^2) Time and O(1) Space
 

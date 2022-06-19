@@ -1,4 +1,4 @@
-# [169. Majority Element](https://leetcode.com/problems/majority-element/) 🌟
+# Majority Element
 
 Given an array nums of size n, return the majority element.
 
@@ -14,8 +14,8 @@ The majority element is the element that appears more than `⌊n / 2⌋` times. 
 -   we Can take a vector or unordered_map to store the frequency of each element.
 -   We traverse the hash map/ vector to find the n/2 frequency.
 -   if we found we return the element.
--   **TC: O(N)**
--   **SC:O(N)/O(N^2)** - _Yes if we use unordered_map it's worst case time complexity is **O(N^2)**, which occurs when all elements are divisible by prime number and result in collision_. But if we use frequency vector it's worst case time complexity is **O(N)**.
+-   **SC: O(N)**
+-   **TC:O(N)/O(NlogN)** - _Yes if we use unordered_map it's worst case time complexity is **O(NlogN)**, which occurs when all elements are divisible by prime number and result in collision_. But if we use frequency vector it's worst case time complexity is **O(N)**.
 
 ### Code
 
@@ -47,7 +47,8 @@ public:
     -   If count is 0, then we set candidate as current element.
     -   If current element is same as candidate, then we increment count by 1.
     -   else we decrement count by 1.
--   return candidate.
+-   run loop to check the frequency of candidate i strictly greater than N/2 or not.
+-   if no return -1, else return candidate.
 
 ```cpp
 class Solution {

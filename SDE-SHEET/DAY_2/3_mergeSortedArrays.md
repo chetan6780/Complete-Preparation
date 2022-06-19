@@ -1,10 +1,4 @@
-# [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) 🌟
-
-You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
-
-Merge nums1 and nums2 into a single array sorted in non-decreasing order.
-
-The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
+# Merge Sorted Array
 
 ### O(M+N) Time and O(M+N) space
 
@@ -18,12 +12,12 @@ The final sorted array should not be returned by the function, but instead be st
 
 ### O(M+N) Time and O(1) Space
 
--   Code is self explanatory on leetcode
+-   self explanatory.
 
 ### Code
 
 ```cpp
-
+// leetcode
 class Solution{
 public:
     void merge(vector<int> &nums1, int m, vector<int> &nums2, int n)
@@ -55,12 +49,12 @@ public:
 
 ### Using GAP algorithm
 
--   O(Log2N \* O(N)) time and O(1) space
+-   **O(Log2N \* O(N))** time and **O(1)** space
 -   We Will take GAP between two pointers and if the are not sorted we swap them.
--   first GAP = ceil(n1+n2/2) then next time it will be half of previous GAP.
--   If GAP is 1 then next time we stop.
+-   first **GAP = ceil(n1+n2/2)** then next time it will be **half of previous GAP**.
+-   If GAP is **1** then next time we **stop**.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hVl2b3bLzBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+---
 
 ### GFG Question
 
@@ -69,8 +63,6 @@ public:
 -   finally sort the second array.
 -   **Time Complexity**: O(NlogN)
 -   **Space Complexity**: O(1)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1S4KFg5viC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ```cpp
 class Solution{

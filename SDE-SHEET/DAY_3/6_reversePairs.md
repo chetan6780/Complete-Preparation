@@ -1,4 +1,4 @@
-# [493. Reverse Pairs](https://leetcode.com/problems/reverse-pairs/) 🌟🌟🌟
+# Reverse Pairs
 
 Given an integer array `nums`, return the number of reverse pairs in the array.
 
@@ -30,9 +30,11 @@ public:
 
 ### Using Merge Sort modification
 
+-   In the Merge function, we will be using low, mid, high values to count the total number of inversion pairs for the Left half and Right half of the Array.
+-   Now, after the above task, we need to Merge the both Left and Right sub-arrays using a temporary vector.
+-   After this, we need to copy back the temporary vector to the Original Array. Then finally we return the number of pairs we counted.
 -   **TC: O(NlogN)**
 -   **SC: O(N)**, if we use temp array.
--   [Striver's Video](https://www.youtube.com/watch?v=S6rsAlj_iB4&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=20) for detail explanation.
 
 ### Code
 
@@ -48,9 +50,10 @@ public:
             while (j <= high && nums[i] > 2LL * nums[j]) {
                 j++;
             }
-            cnt += (j - (mid + 1));
+            cnt += (j - (mid + 1)); // add j-i in count
         }
 
+        // Below is the merge code
         vector<int> temp;
         int left = low, right = mid + 1;
         while (left <= mid && right <= high) {
@@ -75,8 +78,7 @@ public:
     }
     int mergeSort(vector<int>& nums, int low, int high)
     {
-        if (low >= high)
-            return 0;
+        if (low >= high) return 0;
         int mid = (low + high) / 2;
         int inv = mergeSort(nums, low, mid);
         inv += mergeSort(nums, mid + 1, high);

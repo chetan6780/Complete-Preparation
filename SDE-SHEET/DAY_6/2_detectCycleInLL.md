@@ -1,4 +1,4 @@
-# [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) 🌟
+# Linked List Cycle
 
 Given head, the head of a linked list, determine if the linked list has a cycle in it.
 
@@ -32,7 +32,7 @@ public:
 };
 ```
 
-### O(N) Time and O(1) space - floyds cycle detection algorithm
+### O(N) Time and O(1) space - floyd's cycle detection algorithm
 
 - Here fast pointer move 2 steps and slow pointer moves one step.
 - If they meet each other while traversing then loop that means there is a cycle else not.

@@ -1,4 +1,4 @@
-# [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/) 🌟🌟
+# Majority Element II
 
 -   **GOOGLE QUESTION**
 
@@ -16,7 +16,7 @@ Given an integer array of size n, find all elements that appear more than ⌊ n/
 -   We traverse the hash map/ vector to find the n/3 frequency.
 -   if we found we return the element.
 -   **TC: O(N)**
--   **SC:O(N)/O(N^2)** - _Yes if we use unordered_map it's worst case time complexity is **O(N^2)**, which occurs when all elements are divisible by prime number and result in collision_. But if we use frequency vector it's worst case time complexity is **O(N)**.
+-   **SC: O(N)**
 
 ### Code
 
@@ -41,7 +41,7 @@ public:
 
 -   **TC:O(N)**
 -   **SC:O(1)**
--   The intuition and method is same as `majority element` problem but here we maintain 2 cnt variables and 2 candidate because in the question it is given that at most 2 majority element will be present or there may be no element present.
+-   The intuition and method is same as `majority element` problem but here we maintain 2 cnt variables and 2 candidate because mathematically we cant have more than 2 elements whose count is >N/3.
 
 ```cpp
 class Solution {

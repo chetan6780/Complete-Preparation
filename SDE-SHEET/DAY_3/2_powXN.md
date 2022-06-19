@@ -1,4 +1,4 @@
-# [50. Pow(x, n)](https://leetcode.com/problems/powx-n/) 🌟🌟
+# 50. Pow(x, n)
 
 Implement `pow(x, n)`, which calculates `x` raised to the power `n` (i.e., `x^n`).
 
@@ -35,7 +35,7 @@ public:
 };
 ```
 
-### O(log2_N) optimized
+### O(log2N) optimized
 
 -   Math concept `2^5 = 2*(2^4) = 2*(4^2) = 2*16 = 32`
 -   if n is even we can divide it half and do multiplication
@@ -82,4 +82,28 @@ public:
         return x * myPow(myPow(x, n / 2), 2);
     }
 };
+```
+
+### Codestudio - Modular Exponentiation
+
+-   Fast modular exponentiation
+-   start with ans = 1;
+-   while n > 0
+    -   if n is odd, ans = ans \* x
+    -   else x = x^2
+    -   use 1LL to avoid overflow, ans mod them with m
+    -   reduce n to n/2
+-   return ans
+
+```cpp
+int modularExponentiation(int x, int n, int m)
+{
+    int ans = 1;
+    while (n > 0) {
+        if (n & 1) ans = (1LL * ans * x % m);
+        x = (1LL * x * x) % m;
+        n >>= 1;
+    }
+    return ans;
+}
 ```

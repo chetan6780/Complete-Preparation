@@ -1,4 +1,4 @@
-# [62. Unique Paths](https://leetcode.com/problems/unique-paths/description/) 🌟🌟
+# Unique Paths
 
 -   **GOOGLE QUESTION**
 
@@ -10,6 +10,7 @@ How many possible unique paths are there?
 
 ### Recursive Solution (TLE)
 
+-   Simple recursive solution
 -   **Time Complexity: O(2^n)**
 
 ```cpp
@@ -17,8 +18,7 @@ class Solution {
 public:
     int uniquePaths(int m, int n) {
         if(m<1||n<1) return 0;
-        if(m==1||n==1) return 1;
-
+        if(m==1&&n==1) return 1;
         return uniquePaths(m-1,n)+uniquePaths(m,n-1);
     }
 };
@@ -26,7 +26,6 @@ public:
 
 ### Recursive + Memoization
 
--   Giving TLE , that should not happen , but it is happening.
 -   **Time complexity**: m x n
 -   **Space complexity**: m x n
 
@@ -35,9 +34,9 @@ class Solution{
 private:
     int helper(int m, int n, vector<vector<int>> &dp){
         if (m < 0 || n < 0) return 0;
-        if (m == 0 || n == 0) return 1;
+        if (m == 0 && n == 0) return 1;
         if(dp[m][n]>0) return dp[m][n];
-        return helper(m - 1, n, dp) + helper(m, n - 1, dp);
+        return dp[m][n]=helper(m - 1, n, dp) + helper(m, n - 1, dp);
     }
 
 public:
@@ -93,6 +92,21 @@ public:
 };
 ```
 
-### READ
+### Codestudio
 
--   [Recursive, memoization and dynamic programming solutions](https://leetcode.com/problems/unique-paths/discuss/182143/Recursive-memoization-and-dynamic-programming-solutions)
+```cpp
+int helper(int m, int n, int i, int j,vector<vector<int>> &memo)
+{
+    if (i >= m || j >= n) return 0;
+    if (i == m - 1 && j == n - 1) return 1;
+    if(memo[i][j]!=-1) return memo[i][j];
+    int right = helper(m, n, i, j + 1, memo);
+    int down = helper(m, n, i + 1, j, memo);
+    return memo[i][j]=right + down;
+}
+int uniquePaths(int m, int n)
+{
+    vector<vector<int>> memo(m,vector<int> (n, -1));
+    return helper(m, n, 0, 0,memo);
+}
+```

@@ -1,4 +1,4 @@
-# [Subset Sums](https://practice.geeksforgeeks.org/problems/subset-sums2234/1) 🌟
+# Subset Sums
 
 Given a list arr of N integers, print sums of all subsets in it.
 
@@ -10,8 +10,8 @@ Given a list arr of N integers, print sums of all subsets in it.
 
 ### Recursive Solution
 
--   By observation, we can say that there are only two choices for the element in the arr, either er pick it or we don't pick it.
--   Here the base condition will be, if we reach at the last+1(N) index then we can add the sum in the ans.
+-   By observation, we can say that there are only two choices for the element in the arr, either we pick it or we don't pick it.
+-   Here the base condition will be, if we reach at the `last+1`(N) index then we can add the sum in the ans.
 -   So, we can write trivial recursive function to solve this problem.
 -   `void recFunc(int ind, int sum, vector<int> &arr, int N, vector<int> &sumArr)`, Where only **ind** and **sum** will change in almost every recursive call and other remain same.
 -   **TC: O(2^N)**

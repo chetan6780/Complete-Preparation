@@ -1,39 +1,38 @@
-# [Largest subarray with 0 sum](https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1) 🌟
+# Largest subarray with 0 sum
 
 Given an array having both positive and negative integers. The task is to compute the length of the largest subarray with sum 0.
 
 ### Brute force
 
 -   We generate all subarrays and find the largest subarray with 0 sum.
--   We can generate subarrays with **O(N^3), O(N^2), O(N)-using kadanes algorithm**
+-   We can generate subarrays with **O(N^3), O(N^2)-using kadanes algorithm**
 
 ### Hashing Solution
 
--   **TC: O(N lonN)**
--   **SC:O(N)** for map
 -   kind of extension of kadanes algorithm
+-   **TC: O(N lonN)**
+-   **SC: O(N)** for map
 
 ### Code
 
 ```cpp
-int maxLen(int A[], int n)
+#include <bits/stdc++.h>
+int LongestSubsetWithZeroSum(vector<int> arr)
 {
-    unordered_map<int, int> prefixSum_mp;
-    int sum = 0;
-    int max_length = 0;
+    int n = arr.size();
+    int sum = 0, mxLen = 0;
+    unordered_map<int, int> mp;
     for (int i = 0; i < n; i++) {
-        sum += A[i];
-        if (sum == 0) {
-            max_length = i + 1;
-        } else {
-            if (prefixSum_mp.find(sum) != prefixSum_mp.end()) {
-                max_length = max(max_length, i - prefixSum_mp[sum]);
+        sum += arr[i];
+        if (sum == 0) mxLen = i + 1;
+        else {
+            if (mp.count(sum)) {
+                mxLen = max(mxLen, i - mp[sum]);
             } else {
-                prefixSum_mp[sum] = i;
+                mp[sum] = i;
             }
         }
     }
-    return max_length;
+    return mxLen;
 }
-
 ```

@@ -1,13 +1,13 @@
-# [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) 🌟🌟
+# Longest Consecutive Sequence
 
 Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
 
 You must write an algorithm that runs in **`O(N)`** time.
 
-### Sorting Solution
+### Naive Sorting Solution
 
--   **TC: O(NlogN)**
 -   sort the sequence and find the consecutive subsequences and out of them return the length of the longest consecutive subsequence.
+-   **TC: O(NlogN)**
 
 ### Hash table O(N) Time solution
 

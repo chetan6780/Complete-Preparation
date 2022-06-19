@@ -1,4 +1,4 @@
-# [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) 🌟
+# Reverse Linked List
 
 Given the head of a singly linked list, reverse the list, and return the reversed list.
 
@@ -38,7 +38,7 @@ public:
    rest of the linked list.
 2. Call reverse for the rest of the linked list.
 3. Link rest to first.
-4. Fix head pointer
+4. Fix head pointer.
 
 ### Code
 

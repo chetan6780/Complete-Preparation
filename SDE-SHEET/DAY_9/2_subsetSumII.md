@@ -1,4 +1,4 @@
-# [90. Subsets II](https://leetcode.com/problems/subsets-ii/) 🌟🌟
+# Subsets II
 
 Given an integer array nums that may contain duplicates, return all possible subsets (the power set).
 
@@ -18,8 +18,8 @@ The solution set **must not** contain duplicate subsets. Return the solution in 
 ### Optimized Recursive solution (backtracking)
 
 -   We can handle the case of not getting duplicates in the recursion itself.
--   we take the element and check if we tool it before or not, except for the first element.
--   If it the duplicate then we continue to the next element.
+-   we take the element and check if we took it before or not, except for the first element.
+-   If element is duplicate then we continue to the next element.
 -   else we add that element and recur for the next subset.
 -   After the recursion we remove the element.
 -   Here is example explanation of backtracking:

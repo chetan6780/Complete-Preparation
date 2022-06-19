@@ -12,9 +12,7 @@ For each job find an empty time slot from deadline to 0. If found empty slot put
 ### Code
 
 ```cpp
-
-struct Job
-{
+struct Job {
     char id;
     int dead;
     int profit;
@@ -41,12 +39,9 @@ vector<int> JobScheduling(Job arr[], int n)
 
     int countJobs = 0, jobProfit = 0;
 
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = arr[i].dead; j > 0; j--)
-        {
-            if (slot[j] == -1)
-            {
+    for (int i = 0; i < n; i++) {
+        for (int j = arr[i].dead; j > 0; j--) {
+            if (slot[j] == -1) {
                 slot[j] = i;
                 countJobs++;
                 jobProfit += arr[i].profit;
@@ -60,10 +55,52 @@ vector<int> JobScheduling(Job arr[], int n)
 }
 ```
 
-### Reference
+### Codestudio
 
-- GFG: [link](https://www.geeksforgeeks.org/job-sequencing-problem/)
+```cpp
+#include <bits/stdc++.h>
+
+struct jobStruct {
+    int deadline;
+    int profit;
+};
+
+bool static comparator(struct jobStruct f1, jobStruct f2)
+{
+    return f1.profit > f2.profit;
+}
+
+int jobScheduling(vector<vector<int>>& jobs)
+{
+    int n = jobs.size();
+    struct jobStruct job[n];
+    for (int i = 0; i < n; i++) {
+        job[i].deadline = jobs[i][0];
+        job[i].profit = jobs[i][1];
+    }
+
+    sort(job, job + n, comparator);
+
+    int mx = 0;
+    for (int i = 0; i < n; i++) {
+        mx = max(mx, job[i].deadline);
+    }
+
+    vector<int> slot(mx + 1, -1);
+    int jobProfit = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = job[i].deadline; j > 0; j--) {
+            if (slot[j] == -1) {
+                slot[j] = 0;
+                jobProfit += job[i].profit;
+                break;
+            }
+        }
+    }
+    return jobProfit;
+}
+```
 
 ### using disjoint set
-- GFG: [link](https://www.geeksforgeeks.org/job-sequencing-using-disjoint-set-union/)
 
+-   GFG: [link](https://www.geeksforgeeks.org/job-sequencing-using-disjoint-set-union/)

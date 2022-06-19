@@ -1,6 +1,8 @@
-# [Count the number of subarrays having a given XOR](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/) 🌟🌟🌟
+# Count the number of subarrays having a given XOR
 
 Given an array of integers arr[] and a number m, count the number of subarrays having XOR of their elements as m.
+
+### Note: This problem covers many concepts of subarray and xor.
 
 ### Brute force
 

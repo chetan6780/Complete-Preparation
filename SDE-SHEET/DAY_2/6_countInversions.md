@@ -1,11 +1,11 @@
-# [Count Inversions (using merge sort)](https://www.geeksforgeeks.org/counting-inversions/) 🌟🌟
+# Count Inversions
 
 Given an array of integers. Find the Inversion Count in the array.
 
 **Inversion Count:** For an array, inversion count indicates _how far (or close) the array is from being sorted_. If array is already _sorted_ then the inversion count is _0_. If an array is _sorted in the reverse order_ then the inversion count is the _maximum_.
 Formally, two elements `a[i]` and `a[j]` form an inversion if `a[i] > a[j]` and `i < j`.
 
-### Brute force
+### Brute force (TLE)
 
 -   find all i,j where `a[i]>a[j]`.
 -   **TC: O(N^2)**
@@ -26,11 +26,10 @@ ll inversionCount(ll arr[], ll N)
 }
 ```
 
-### Using Merge Sort
+### Using Merge Sort (AC)
 
 -   **Merge sort:**
-    -   We break array in 2 parts `(low,mid)` and `(mid+1,high)`, here `mid=(low+high)/2` always.
-    -   We break array in 2 parts, until only 1 element remain in both array.
+    -   We break array in 2 parts `(low,mid)` and `(mid+1,high)`, here `mid=(low+high)/2` always, until only 1 element remain in both array.
     -   Then in `merge function` we merge them by swapping or by comparing.
 -   **TC: O(N\*logN)**, Complexity of merge sort.
 -   **SC: O(N)**, If we are not allowed to modify the array we take the extra space.else it is **O(1)** space.
@@ -38,11 +37,9 @@ ll inversionCount(ll arr[], ll N)
 ### Code
 
 ```cpp
-
 typedef long long ll;
 
-ll merge(ll arr[], ll temp[], ll left, ll mid,
-    ll right)
+ll merge(ll arr[], ll temp[], ll left, ll mid, ll right)
 {
     ll i, j, k;
     ll inv_count = 0;
@@ -51,17 +48,17 @@ ll merge(ll arr[], ll temp[], ll left, ll mid,
     j = mid;  /* j is index for right subarray*/
     k = left; /* k is index for resultant merged subarray*/
 
-    while ((i <= mid - 1) && (j <= right)) { // this is merge part
+    while ((i < mid) && (j <= right)) { // this is merge part
         if (arr[i] <= arr[j]) {
             temp[k++] = arr[i++];
         } else {
             temp[k++] = arr[j++];
-            inv_count = inv_count + (mid - i);
+            inv_count += (mid - i);
         }
     }
 
     // Copy the remaining elements of left subarray
-    while (i <= mid - 1)
+    while (i < mid)
         temp[k++] = arr[i++];
 
     // Copy the remaining elements of right subarray

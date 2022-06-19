@@ -1,14 +1,14 @@
-# [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) 🌟🌟
+# Longest Substring Without Repeating Characters
 
 Given a string s, find the length of the longest substring without repeating characters.
 
 ### O(N^3) Time, O(N) space
 
-- Brute force
-- We can consider all substrings one by one and check for each substring whether it contains all unique characters or not.
-- There will be n\*(n+1)/2 substrings.
-- Whether a substring contains all unique characters or not can be checked in linear time by scanning it from left to right and keeping a map of visited characters.
-- Time complexity of this solution would be O(n^3).
+-   Brute force
+-   We can consider all substrings one by one and check for each substring whether it contains all unique characters or not.
+-   There will be n\*(n+1)/2 substrings.
+-   Whether a substring contains all unique characters or not can be checked in linear time by scanning it from left to right and keeping a map of visited characters.
+-   Time complexity of this solution would be O(n^3).
 
 ### Code
 
@@ -38,7 +38,7 @@ int longestUniqueSubstr(string str)
 
 ### O(N^2) Time O(N) space, Sliding window
 
-- For every i in string we check, **How long the substring starting with index i have unique characters**
+-   For every i in string we check, **How long the substring starting with index i have unique characters**
 
 ### Code
 
@@ -71,11 +71,11 @@ int longestUniqueSubstr(string s){
 
 ### O(N) Time O(N) space, Sliding window
 
-- We keep track of unique characters in a hashmap(unordered_set).
-- l is left index and r is right index, these indicates unique substring's start and end.
-- if r'th character is not present in set, we add it and increment r also update `maxLength = max(maxLength, r-l);`
-- if r'th character is present in set, we remove it from set and increment l pointer.
-- finally return maxLength.
+-   We keep track of unique characters in a hashmap(unordered_set).
+-   l is left index and r is right index, these indicates unique substring's start and end.
+-   if r'th character is not present in set, we add it and increment r also update `maxLength = max(maxLength, r-l);`
+-   if r'th character is present in set, we remove it from set and increment l pointer.
+-   finally return maxLength.
 
 ### Code
 

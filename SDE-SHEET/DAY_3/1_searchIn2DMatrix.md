@@ -1,4 +1,4 @@
-# [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) 🌟🌟
+# 74. Search a 2D Matrix
 
 Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
 

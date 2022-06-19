@@ -1,4 +1,4 @@
-# [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) 🌟🌟
+# Find the Duplicate Number
 
 Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
 
@@ -8,17 +8,17 @@ You must solve the problem without modifying the array nums and uses only consta
 
 ### O(N^2) Brute force
 
-- check for all numbers if duplicate number exists.
+-   check for all numbers if duplicate number exists.
 
 ### O(NlogN) Sorting
 
-- Sort the array and duplicate numbers will be next to each other.
+-   Sort the array and duplicate numbers will be next to each other.
 
 ### O(N) Time O(N) space, Hash Table
 
-- With the help of hash (set/map/vector) we can find the duplicate number.
+-   With the help of hash (set/map/vector) we can find the duplicate number.
 
-###  O(N) Time O(1) space, Floyd's Cycle Detection Algorithm
+### O(N) Time O(1) space, Floyd's Cycle Detection Algorithm
 
 ```cpp
 class Solution{

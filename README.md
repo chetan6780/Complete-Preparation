@@ -4,15 +4,15 @@ One-stop destination for all you coding round Preparation.
 
 ### Index
 
-1. [Aptitude](Aptitude) 😀
+<!-- 1. [Aptitude](Aptitude) 😀 -->
 
-2. [Leetcode](Leetcode) 💻
+1. [Leetcode](Leetcode) 💻
 
-3. [SDE-SHEET](SDE-SHEET) 📄
+2. [SDE-SHEET](SDE-SHEET) 📄
 
-4. [Topic wise](Topic_wise) 🖊️
+3. [Topic wise](Topic_wise) 🖊️
 
-5. [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀
+4. [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀
 
 ---
 

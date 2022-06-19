@@ -1,4 +1,4 @@
-# [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) 🌟🌟🌟
+# Trapping Rain Water
 
 Given n non-negative integers representing an elevation map where the width of each bar is `1`, compute how much water it can trap after raining.
 
@@ -11,9 +11,9 @@ Given n non-negative integers representing an elevation map where the width of e
 
 ### PrefixSum Optimized
 
--   We can pre-compute left max in an array and right max from back into the another array, so the 2 loop is not necessary.
+-   We can pre-compute left max in an array and right max from back into the another array, so the 2nd loop is not necessary.
 -   **TC: O(N)**
--   **SC: O(2\*N)-->O(N)**
+-   **SC: O(N)**
 
 ### 2-pointer
 
@@ -30,19 +30,18 @@ public:
     int trap(vector<int>& height)
     {
         int n = height.size();
-        int left = 0;
-        int right = n - 1;
+        int left = 0, right = n - 1;
         int res = 0;
-        int maxleft = 0, maxright = 0;
+        int maxLeft = 0, maxRight = 0;
 
         while (left <= right) {
             if (height[left] <= height[right]) { // update max left
-                if (height[left] >= maxleft) maxleft = height[left];
-                else res += maxleft - height[left];
+                if (height[left] > maxLeft) maxLeft = height[left];
+                else res += maxLeft - height[left];
                 left++;
             } else { // update max right
-                if (height[right] >= maxright) maxright = height[right];
-                else res += maxright - height[right];
+                if (height[right] > maxRight) maxRight = height[right];
+                else res += maxRight - height[right];
                 right--;
             }
         }

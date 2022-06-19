@@ -1,4 +1,4 @@
-# [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) 🌟🌟
+# Remove Nth Node From End of List
 
 Given the head of a linked list, remove the nth node from the end of the list and return its head.
 
@@ -17,6 +17,7 @@ Given the head of a linked list, remove the nth node from the end of the list an
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
+        if(n==0 || head == NULL) return head;
         int len = 0;
         ListNode *temp = head;
         while (temp) {
@@ -40,11 +41,11 @@ public:
 
 ### O(N) Time and O(1) Space Complexity, two pointers
 
--   We take 2 pointers, fast and slow. (here both move equally i.e. 1 node at a time)
 -   move fast pointer n times.
 -   if fast is null return head->next
 -   now move slow and fast pointers together until fast->next != NULL.
--   slow->next = slow->next->next
+-   Slow->next is the node to be deleted, so store it for deletion.
+-   move `slow->next = slow->next->next`
 -   Delete deleted node.
 -   **NOTE:** This method have same complexity as above method.
 
@@ -53,6 +54,7 @@ class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         ListNode* fast = head,*slow = head;
+        if(n==0 || head == NULL) return head;
         while(n--) fast = fast->next;
         if(!fast) return head->next;
         while(fast->next){
