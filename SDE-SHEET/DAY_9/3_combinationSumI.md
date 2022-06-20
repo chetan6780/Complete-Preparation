@@ -14,7 +14,6 @@ It is **guaranteed** that the number of unique combinations that sum up to `targ
 -   if current element is less than target we can choose it.
 -   else we can't choose it.
 -   Base case arises when target is 0, we add the vector in answer.
--   and if index is greater than size of candidates array, we return.
 
 ### Code-1
 
