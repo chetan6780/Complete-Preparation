@@ -1,112 +1,7 @@
-// Implimentation of stack using array -------------------------------------------------
 #include <bits/stdc++.h>
 using namespace std;
 
 #define MAX 1000
-
-class Stack
-{
-    int top;
-
-public:
-    int a[MAX];
-
-    Stack()
-    {
-        top = -1;
-    }
-
-    bool push(int x);
-    int pop();
-    bool isEmpty();
-};
-
-bool Stack::push(int x)
-{
-    if (top >= (MAX - 1))
-    {
-        cout << "Stack Overflow";
-        return false;
-    }
-    else
-    {
-        a[++top] = x;
-        cout << x << " pushed into stack\n";
-        return true;
-    }
-}
-
-int Stack::pop()
-{
-    if (top < 0)
-    {
-        cout << "Stack Underflow";
-        return 0;
-    }
-    else
-    {
-        int x = a[top--];
-        return x;
-    }
-}
-
-bool Stack::isEmpty()
-{
-    return (top < 0);
-}
-
-// Implimentation of stack using Linked List ------------------------------------------------
-
-struct StackNode
-{
-    int data;
-    struct StackNode *next;
-};
-
-struct StackNode *newNode(int data)
-{
-    struct StackNode *stackNode = new StackNode;
-    stackNode->data = data;
-    stackNode->next = NULL;
-    return stackNode;
-}
-
-int isEmpty(struct StackNode *root)
-{
-    return !root;
-}
-
-void push(struct StackNode **root, int data)
-{
-    struct StackNode *stackNode = newNode(data);
-
-    stackNode->next = *root;
-    *root = stackNode;
-
-    cout << data << " pushed to stack\n";
-}
-
-int pop(struct StackNode **root)
-{
-    if (isEmpty(*root))
-        return INT_MIN;
-
-    struct StackNode *temp = *root;
-    *root = (*root)->next;
-
-    int popped = temp->data;
-    free(temp);
-
-    return popped;
-}
-
-int peek(struct StackNode *root)
-{
-    if (isEmpty(root))
-        return INT_MIN;
-
-    return root->data;
-}
 
 // infix to postfix conversion using stack ---------------------------------------------------------
 
@@ -126,36 +21,28 @@ string infixToPostfix(string s)
 {
     stack<char> st;
     string res = "";
-    for (int i = 0; i < s.length(); i++)
-    {
+    for (int i = 0; i < s.length(); i++) {
         if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
             res += s[i];
         else if (s[i] == '(')
             st.push(s[i]);
-        else if (s[i] == ')')
-        {
-            while (!st.empty() && st.top() != '(')
-            {
+        else if (s[i] == ')') {
+            while (!st.empty() && st.top() != '(') {
                 res += st.top();
                 st.pop();
             }
-            if (!st.empty())
-            {
+            if (!st.empty()) {
                 st.pop();
             }
-        }
-        else
-        {
-            while (!st.empty() && precedence(st.top()) > precedence(s[i]))
-            {
+        } else {
+            while (!st.empty() && precedence(st.top()) > precedence(s[i])) {
                 res += st.top();
                 st.pop();
             }
             st.push(s[i]);
         }
     }
-    while (!st.empty())
-    {
+    while (!st.empty()) {
         res += st.top();
         st.pop();
     }
@@ -163,27 +50,24 @@ string infixToPostfix(string s)
 }
 
 // Evauate postfix expression using stack (//*Numbers are only one digit) ---------------------------------------------
-int evaluatePostfix(char *exp)
+int evaluatePostfix(char* exp)
 {
     stack<int> st;
 
     int i;
 
-    for (i = 0; exp[i]; ++i)
-    {
+    for (i = 0; exp[i]; ++i) {
         if (isdigit(exp[i]))
             st.push(exp[i] - '0');
 
-        else
-        {
+        else {
             int val1 = st.top();
             st.pop();
 
             int val2 = st.top();
             st.pop();
 
-            switch (exp[i])
-            {
+            switch (exp[i]) {
             case '+':
                 st.push(val2 + val1);
                 break;
@@ -203,22 +87,19 @@ int evaluatePostfix(char *exp)
 }
 
 // Evauate postfix expression using stack (//*Numbers are more than one digits) ------------------------------------
-int evaluatePostfix(char *exp)
+int evaluatePostfix(char* exp)
 {
     stack<int> st;
     int i;
 
-    for (i = 0; exp[i]; ++i)
-    {
+    for (i = 0; exp[i]; ++i) {
         if (exp[i] == ' ')
             continue;
 
-        else if (isdigit(exp[i]))
-        {
+        else if (isdigit(exp[i])) {
             int num = 0;
 
-            while (isdigit(exp[i]))
-            {
+            while (isdigit(exp[i])) {
                 num = num * 10 + (int)(exp[i] - '0');
                 i++;
             }
@@ -228,16 +109,14 @@ int evaluatePostfix(char *exp)
             st.push(num);
         }
 
-        else
-        {
+        else {
             int val1 = st.top();
             st.pop();
 
             int val2 = st.top();
             st.pop();
 
-            switch (exp[i])
-            {
+            switch (exp[i]) {
             case '+':
                 st.push(val2 + val1);
                 break;
@@ -259,20 +138,18 @@ int evaluatePostfix(char *exp)
 
 // Reverse a string using stack -----------------------------------------------------------------------------
 // return the address of the string
-char *reverse(char *S, int len)
+char* reverse(char* S, int len)
 {
-    char *arr = new char[len + 1];
+    char* arr = new char[len + 1];
     arr[len] = '\0';
     // we need to create a new string of length n+1 and assign \0 to its last index so it will terminate
 
     stack<char> st;
 
-    for (int i = 0; i < len; i++)
-    {
+    for (int i = 0; i < len; i++) {
         st.push(S[i]);
     }
-    for (int i = 0; i < len; i++)
-    {
+    for (int i = 0; i < len; i++) {
         arr[i] = st.top();
         st.pop();
     }
@@ -342,10 +219,8 @@ bool areBracketsBalanced(string expr)
     stack<char> s;
     char x;
     int l = expr.length();
-    for (int i = 0; i < l; i++)
-    {
-        if (expr[i] == '(' || expr[i] == '[' || expr[i] == '{')
-        {
+    for (int i = 0; i < l; i++) {
+        if (expr[i] == '(' || expr[i] == '[' || expr[i] == '{') {
             s.push(expr[i]);
             continue;
         }
@@ -353,8 +228,7 @@ bool areBracketsBalanced(string expr)
         if (s.empty())
             return false;
 
-        switch (expr[i])
-        {
+        switch (expr[i]) {
         case ')':
 
             x = s.top();
@@ -385,36 +259,28 @@ bool areBracketsBalanced(string expr)
 }
 
 // Max rectangle ---------------------------------------------------------------------------------
-int histogramArea(int *arr, int n)
+int histogramArea(int* arr, int n)
 {
     stack<int> s;
     int max_area = 0, area = 0;
     int i = 0;
-    while (i < n)
-    {
-        if (s.empty() or arr[s.top()] <= arr[i])
-        {
+    while (i < n) {
+        if (s.empty() or arr[s.top()] <= arr[i]) {
             s.push(i);
             i++;
-        }
-        else
-        {
+        } else {
             int top = s.top();
             s.pop();
-            if (s.empty())
-            {
+            if (s.empty()) {
                 area = arr[top] * i;
-            }
-            else
-            {
+            } else {
                 area = arr[top] * (i - s.top() - 1);
             }
             max_area = max(area, max_area);
         }
     }
-    ///When array becomes empty, pop all the elements of stack:
-    while (!s.empty())
-    {
+    /// When array becomes empty, pop all the elements of stack:
+    while (!s.empty()) {
         int top = s.top();
         s.pop();
         area = arr[top] * (s.empty() ? i : (i - s.top() - 1));
@@ -427,23 +293,17 @@ int maxArea(int M[MAX][MAX], int n, int m)
 {
     // Your code here
     int max_area = 0;
-    int *arr = new int[m];
-    for (int j = 0; j < m; j++)
-    {
+    int* arr = new int[m];
+    for (int j = 0; j < m; j++) {
         arr[j] = M[0][j];
     }
     int curr_area = histogramArea(arr, m);
     max_area = max(curr_area, max_area);
-    for (int i = 1; i < n; i++)
-    {
-        for (int j = 0; j < m; j++)
-        {
-            if (M[i][j] == 0)
-            {
+    for (int i = 1; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if (M[i][j] == 0) {
                 arr[j] = 0;
-            }
-            else
-            {
+            } else {
                 arr[j] += M[i][j];
             }
         }
