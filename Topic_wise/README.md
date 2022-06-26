@@ -14,4 +14,4 @@
 | 10  | [Number Theory](./Number_Theory)                        |    ❌     |
 | 11  | [Code Help DSA](./codeHelpDsa)                          |    ❌     |
 | 12  | [Binary Search](./Binary_search)                        |    ❌     |
-| 13  | [Sorting Algorithms](./Sorting_Algorithms)              |    ❌     |
+| 13  | [Sorting Algorithms](./Sorting_Algorithms)              |    ✅     |
