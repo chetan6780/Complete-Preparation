@@ -58,6 +58,7 @@ void stableSelectionSort(vector<int>& v, int n)
 ### Analysis
 
 -   **Is Stable**: Default implementation of selection sort is not stable.
+-   **Is In-place Algorithm:** Yes
 
 ### References
 

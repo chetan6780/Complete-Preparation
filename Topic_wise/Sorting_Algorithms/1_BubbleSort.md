@@ -2,7 +2,7 @@
 
 ### Bubble Sort
 
--   Swap the adjacent elements if they are in wrong order.
+-   **Swap the adjacent elements if they are in wrong order.**
 -   Not Suitable for large data sets.
 -   **TC: O(n^2)**
 -   **SC: O(1)**
@@ -57,6 +57,7 @@ void bubbleSort(vector<int>& v)
 -   **Best Case**: When the array is already sorted in ascending order.**TC: O(N)**
 -   **Is Stable**: Yes.
 -   Check if array is already sorted to avoid O(N^2) time,then it will take linear time. This is the **Boundary case** for bubble sort.
+-   **Is In-place Algorithm:** Yes
 
 ### Uses:
 

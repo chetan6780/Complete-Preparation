@@ -72,6 +72,7 @@ void binaryInsertionSort(vector<int>& a, int n)
 -   **Is Sorted**: Yes
 -   **Boundary Cases**: max time - when array is already sorted in reverse order, min time - when array is already sorted in ascending order
 -   **Algorithmic Paradigm**: Follows incremental approach
+-   **Is In-place Algorithm:** Yes
 
 ### Uses
 
