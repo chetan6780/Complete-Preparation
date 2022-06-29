@@ -18,5 +18,5 @@ One-stop destination for all you coding round Preparation.
 
 ### Other
 
--   My vscode [snippets](./vscode_snippet_cpp.json) and its [triggers](./vscode_snippet_triggers.txt).
--   My vscode custom key bindings [config](./vscode_key_bindings.json).
+-   My vscode [snippets](vscode-settings/vscode_snippet_cpp.json) and its [triggers](vscode-settings/vscode_snippet_triggers.md).
+-   My vscode custom key bindings [config](vscode-settings/vscode_key_bindings.json).

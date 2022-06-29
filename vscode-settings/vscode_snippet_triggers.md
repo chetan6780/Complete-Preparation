@@ -1,4 +1,4 @@
-// Snippet triggers for my custom snippet
+### Snippet triggers for my custom snippets
 
 cpft
 debi - debug import
