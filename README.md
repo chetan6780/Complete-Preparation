@@ -4,15 +4,15 @@ One-stop destination for all you coding round Preparation.
 
 ### Index
 
-<!-- 1. [Aptitude](Aptitude) 😀 -->
+1. [Leetcode Problems](Leetcode/README.md) 💻
 
-1. [Leetcode](Leetcode) 💻
+2. [Striver's SDE-Sheet](SDE-SHEET/README.md) 📄
 
-2. [SDE-SHEET](SDE-SHEET) 📄
+3. [Topic wise learning](Topic_wise/README.md) 📚
 
-3. [Topic wise](Topic_wise) 🖊️
+4. [Company Specific Information](Company-specific/README.md) 🏢
 
-4. [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀
+5. [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀
 
 ---
 
