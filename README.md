@@ -6,9 +6,9 @@ One-stop destination for all you coding round Preparation.
 
 1. [Leetcode Problems](Leetcode/README.md) 💻
 
-2. [Striver's SDE-Sheet](SDE-SHEET/README.md) 📄
+2. [Striver's SDE-Sheet](SDE-Sheet/README.md) 📄
 
-3. [Topic wise learning](Topic_wise/README.md) 📚
+3. [Topic wise learning](Topic-Wise/README.md) 📚
 
 4. [Company Specific Information](Company-specific/README.md) 🏢
 
