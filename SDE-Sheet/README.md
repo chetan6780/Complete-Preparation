@@ -102,11 +102,11 @@ Find complete [SDE-SHEET](https://takeuforward.org/interviews/strivers-sde-sheet
 
 ### Day - 10 (Recursion and Backtracking)
 
-| Sn. | Problems                                                                |
-| --- | ----------------------------------------------------------------------- |
-| 1.  | [All permutations of the string](DAY_10/1_allPermutationOfTheString.md) |
-| 2.  | [N Queen Problem](DAY_10/2_nQueenProblem.md)                            |
-| 3.  | [Sudoku Solver](DAY_10/3_sudokuSolver.md)                               |
-| 4.  | [M Coloring Problem](DAY_10/4_mColoringProblem.md)                      |
-| 5.  | [Rat In a Maze](DAY_10/5_ratInAMaze.md)                                 |
-| 6.  | [Word Break](DAY_10/6_wordBreak.md)                                     |
+| Sn. | Problems                                                   |
+| --- | ---------------------------------------------------------- |
+| 1.  | [All permutations of the string](DAY_10/1_permutations.md) |
+| 2.  | [N Queen Problem](DAY_10/2_nQueenProblem.md)               |
+| 3.  | [Valid sudoku](DAY_10/3_validSudoku.md)                    |
+| 4.  | [M Coloring Problem](DAY_10/4_mColoringProblem.md)         |
+| 5.  | [Rat In a Maze](DAY_10/5_ratInAMaze.md)                    |
+| 6.  | [Word Break](DAY_10/6_wordBreak.md)                        |

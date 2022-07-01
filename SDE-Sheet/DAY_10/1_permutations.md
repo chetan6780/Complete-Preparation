@@ -1,4 +1,4 @@
-# [46. Permutations](https://leetcode.com/problems/permutations/) 🌟🌟
+# Permutations
 
 Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.
 
@@ -12,20 +12,12 @@ Given an array nums of distinct integers, return all the possible permutations. 
     Step 3: UNDO
     ```
     Make sure to use base conditions.
--   Swap the elements from 0 to n-1, do recursive call for next element and re-swap the elements.
 
 ### Code
 
 ```cpp
 class Solution{
-public:
-	vector<vector<int>> permute(vector<int> &nums){
-		vector<vector<int>> res;
-		backtrackDfs(nums, 0, res);
-		return res;
-	}
-
-	void backtrackDfs(vector<int> &nums, int start, vector<vector<int>> &res){
+    	void backtrackDfs(vector<int> &nums, int start, vector<vector<int>> &res){
 		int n = nums.size();
 		if (start >= n){
 			res.push_back(nums);
@@ -38,10 +30,16 @@ public:
 			swap(nums[start], nums[i]); // UNDO
 		}
 	}
+public:
+	vector<vector<int>> permute(vector<int> &nums){
+		vector<vector<int>> res;
+		backtrackDfs(nums, 0, res);
+		return res;
+	}
 };
 ```
 
-### MUST READ:
+### Informative leetcode posts:
 
 -   [A general approach to backtracking questions in Java (Subsets, Permutations, Combination Sum, Palindrome Partitioning)](<https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning)>)
 
