@@ -4022,6 +4022,20 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1710. Maximum Units on a Truck](./1710_maximumUnitsOnATruck.md) 🌟
+
+### Greedy
+
+-   It is a greedy problem.
+-   We just choose the box with the largest number of units per box.
+-   We keep adding boxes and **units\*boxes** until the total number of boxes on the truck is greater than truckSize.
+-   finally, if we cannot take all boxes we take remaining required number of boxes and stop there.
+-   Return the count of total units.
+-   **TC:O(N log N)**
+-   **SC:O(1)**
+
+---
+
 # [1732. Find the Highest Altitude](./1732_findHighestAltitude.md) 🌟
 
 ### O(N) Time and O(1) Space solution
