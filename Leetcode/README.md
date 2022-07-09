@@ -871,7 +871,9 @@ Anticlockwise rotate
 -   Considering the jth node as the root node in BST having total of `i` nodes, the result is summation for all `j` from `1...i` of `dp[j-1] * dp[i-j]`. (Comparing to above solution `dp[j-1] = numTrees(j-1) and dp[i-j]=numTrees(i-j)`)
 
 ---
+
 # [97. Interleaving String](./97_interleavingString.md) 🌟🌟
+
 ---
 
 # [98. Validate Binary Search Tree](./98_validateBinarySearchTree.md) 🌟🌟
@@ -4021,6 +4023,39 @@ In an interview, if the first solution that comes to mind involves a complex dat
 ### Must Read
 
 -   [✅ C++ || Easy || 2 Approaches || Priority Queue || Set](https://leetcode.com/problems/minimize-deviation-in-array/discuss/1781709/C%2B%2B-oror-Easy-oror-2-Approaches-oror-Priority-Queue-oror-Set)
+
+---
+
+# [1696. Jump Game VI](./1696_jumpGameVI.md) 🌟🌟
+
+### Recursion (TLE)
+
+-   Try whats the question asking.
+-   For every index try to jump 1 to k steps, and get maximum score.
+-   if we reach outside return `nums[n-1]`.
+-   **TC: O(k^n)**
+-   **SC: O(n)**, Recursion stack
+
+### Memoization (TLE)
+
+-   Memoize the result by storing it in memo array of INT_MIN.
+-   **TC: O(k\*n)**
+-   **SC: O(n)**, Memoization array
+
+### Tabulation (TLE) 🤕
+
+-   **TC: O(k\*n)**
+-   **SC: O(n)**, Memoization array
+
+### Tabulation optimization with multiset
+
+-   **TC: O(n log k)**
+-   **SC: O(n)**
+
+### Further optimization with dequeue
+
+-   **TC: O(n)**
+-   **SC: O(n)**
 
 ---
 
