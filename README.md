@@ -14,7 +14,7 @@ One-stop destination for all you coding round Preparation.
 
 5. [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀
 
-6. [Core Subjects](./Topic-Wise/CoreSubjects.html) 📚
+6. [Core Subjects](./Topic-Wise/Core_Subjects/README.md) 📚
 
 ---
 
