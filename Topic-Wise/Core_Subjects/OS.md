@@ -415,7 +415,7 @@
     <summary><b>Diff between multitasking and multiprocessing</b></summary>
 </details>
 
----
+<br>
 
 > All rights reserved by [takeUforward!](https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/)
 > Please find original Post [here](https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/).
