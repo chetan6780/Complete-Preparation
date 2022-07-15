@@ -13,8 +13,6 @@ One-stop destination for all you technical interview Preparation.
 | 5.  | [Company Specific Information](Company-specific/README.md) 🏢 |
 | 6.  | [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀            |
 
-<br>
-
 ### Other
 
 -   My vscode [snippets](vscode-settings/vscode_snippet_cpp.json) and its [triggers](vscode-settings/vscode_snippet_triggers.md).
