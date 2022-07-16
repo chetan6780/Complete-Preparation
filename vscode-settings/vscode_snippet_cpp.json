@@ -11,23 +11,19 @@
 			"#include <bits/stdc++.h>",
 			"using namespace std;",
 			"#define PI 3.1415926535897932384626",
-			"#define MOD 1000000007",
+			"#define mod 1000000007",
 			"#define all(x) x.begin(), x.end()",
 			"#define rall(x) x.rbegin(), x.rend()",
 			"#define mem(a, elem) memset(a, elem, sizeof(a))",
 			"#define ff first",
 			"#define ss second",
-			"#define pb push_back",
-			"#define eb emplace_back",
-			"#define pob pop_back",
-			"#define mt make_tuple",
 			"#define bpc __builtin_popcount",
 			"#define nl '\\n'",
 			"#define sp ' '",
 			"#define yes cout << \"YES\\n\"",
 			"#define no cout << \"NO\\n\"",
 			"#define ANS(cnd) cout << ((cnd) ? \"YES\\n\" : \"NO\\n\")",
-			"#define out(x) cout << (x) << nl",
+			"#define print(x) cout << (x) << nl",
 			"#define precision(x) cout << fixed << setprecision(x)",
 			"#ifdef ONLINE_JUDGE",
 			"#define line",
@@ -42,17 +38,6 @@
 			"#endif",
 			"typedef long long ll;",
 			"typedef long double lld;",
-			"typedef vector<int> vi;",
-			"typedef vector<vi> vvi;",
-			"typedef vector<ll> vl;",
-			"typedef vector<vl> vvl;",
-			"typedef vector<bool> vb;",
-			"typedef vector<char> vc;",
-			"typedef vector<string> vs;",
-			"typedef pair<int, int> pii;",
-			"typedef pair<ll, ll> pll;",
-			"typedef vector<pair<int, int>> vpii;",
-			"typedef vector<pair<ll, ll>> vpll;",
 			"",
 			"void solve()",
 			"{",
@@ -66,7 +51,7 @@
 			"    cin.tie(0);",
 			"    cout.tie(0);",
 			"    ll t = 1;",
-			"    // cin >> t;",
+			"    cin >> t;",
 			"    while (t--)",
 			"    {",
 			"        solve();",
@@ -156,13 +141,12 @@
 		"body": [
 			"ll n;",
 			"cin >> n;",
-			"vl a(n);",
-			"for (ll i = 0; i < n; i++)",
-			"{",
+			"vector<ll> a(n);",
+			"for (ll i = 0; i < n; i++) {",
 			"    cin >> a[i];",
 			"}"
 		],
-		"description": "vector input 1"
+		"description": "vector intput 1"
 	},
 	//--------------------------------------------------------------
 	"vector input 2": {
@@ -170,25 +154,11 @@
 		"body": [
 			"ll n;",
 			"cin >> n;",
-			"vl a(n);",
+			"vector<ll> a(n);",
 			"for (auto &it : a)",
 			"    cin >> it;"
 		],
 		"description": "vector input 2"
-	},
-	//--------------------------------------------------------------
-	"vector input integer": {
-		"prefix": "vini",
-		"body": [
-			"int n;",
-			"cin >> n;",
-			"vi a(n);",
-			"for (int i = 0; i < n; i++)",
-			"{",
-			"    cin >> a[i];",
-			"}"
-		],
-		"description": "vector input integer"
 	},
 	//--------------------------------------------------------------
 	"output vector": {
@@ -395,29 +365,36 @@
 		"description": "Return true if string is palindrome else false"
 	},
 	//--------------------------------------------------------------
+	"modular operations": {
+		"prefix": "modi",
+		"body": [
+			"ll mod_add(ll a, ll b, ll m) {a = a % m; b = b % m; return (((a + b) % m) + m) % m;}",
+			"ll mod_mul(ll a, ll b, ll m) {a = a % m; b = b % m; return (((a * b) % m) + m) % m;}",
+			"ll mod_sub(ll a, ll b, ll m) {a = a % m; b = b % m; return (((a - b) % m) + m) % m;}",
+			"ll modulo(ll x,ll N) {return (x % N + N) % N;}"
+		],
+		"description": "modular operations"
+	},
+	//--------------------------------------------------------------
 	"Snippet for google kickstart": {
 		"prefix": "gsn",
 		"body": [
 			"#include <bits/stdc++.h>",
 			"using namespace std;",
 			"#define PI 3.1415926535897932384626",
-			"#define MOD 1000000007",
+			"#define mod 1000000007",
 			"#define all(x) x.begin(), x.end()",
 			"#define rall(x) x.rbegin(), x.rend()",
 			"#define mem(a, elem) memset(a, elem, sizeof(a))",
 			"#define ff first",
 			"#define ss second",
-			"#define pb push_back",
-			"#define eb emplace_back",
-			"#define pob pop_back",
-			"#define mt make_tuple",
 			"#define bpc __builtin_popcount",
 			"#define nl '\\n'",
 			"#define sp ' '",
 			"#define yes cout << \"YES\\n\"",
 			"#define no cout << \"NO\\n\"",
 			"#define ANS(cnd) cout << ((cnd) ? \"YES\\n\" : \"NO\\n\")",
-			"#define out(x) cout << (x) << nl",
+			"#define print(x) cout << (x) << nl",
 			"#define precision(x) cout << fixed << setprecision(x)",
 			"#ifdef ONLINE_JUDGE",
 			"#define line",
@@ -432,17 +409,6 @@
 			"#endif",
 			"typedef long long ll;",
 			"typedef long double lld;",
-			"typedef vector<int> vi;",
-			"typedef vector<vi> vvi;",
-			"typedef vector<ll> vl;",
-			"typedef vector<vl> vvl;",
-			"typedef vector<bool> vb;",
-			"typedef vector<char> vc;",
-			"typedef vector<string> vs;",
-			"typedef pair<int, int> pii;",
-			"typedef pair<ll, ll> pll;",
-			"typedef vector<pair<int, int>> vpii;",
-			"typedef vector<pair<ll, ll>> vpll;",
 			"",
 			"void solve()",
 			"{",
@@ -471,6 +437,60 @@
 			""
 		],
 		"description": "Snippet for google kickstart"
+	},
+	//--------------------------------------------------------------
+	//---------------------------------------- Short Snippets ----------------------------------------
+	//--------------------------------------------------------------	
+	"vector of int": {
+		"prefix": "svi",
+		"body": [
+			"vector<int>"
+		],
+		"description": "vector of int"
+	},
+	"vector of ll": {
+		"prefix": "svl",
+		"body": [
+			"vector<ll>"
+		],
+		"description": "vector of ll"
+	},
+	"vector of string": {
+		"prefix": "svs",
+		"body": [
+			"vector<string>"
+		],
+		"description": "vector of string"
+	},
+	"vector of char": {
+		"prefix": "svc",
+		"body": [
+			"vector<char>"
+		],
+		"description": "vector of char"
+	},
+	//--------------------------------------------------------------	
+	"2d vector of intergers": {
+		"prefix": "svvi",
+		"body": [
+			"vector<vector<int>>"
+		],
+		"description": "2d vector of intergers"
+	},
+	"2d vector of long long": {
+		"prefix": "svvl",
+		"body": [
+			"vector<vector<ll>>"
+		],
+		"description": "2d vector of long long"
+	},
+	//--------------------------------------------------------------
+	"vector of ll pair": {
+		"prefix": "svp",
+		"body": [
+			"vector<pair<ll, ll>>"
+		],
+		"description": "vector of ll pair"
 	},
 	//--------------------------------------------------------------
 }
