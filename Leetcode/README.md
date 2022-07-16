@@ -2971,6 +2971,31 @@ soon...
 
 ---
 
+# [576. Out of Boundary Paths](./576_outOfBoundaryPaths.md) 🌟🌟
+
+### Recursion (TLE)
+
+-   Trivial DFS: travel in all 4 directions.
+-   If we hit the boundary return 1.
+-   If we don't have any moves to perform , return 0;
+-   **TC: O(4^maxMove)**
+-   **SC: O(maxMove)**
+
+### Memorization (AC)
+
+-   Use memoization to avoid redundant calculations.
+-   **TC: O(n\*m\*maxMove)**
+-   **SC: O(n\*m\*maxMove)**
+
+### Tabulation (Bottom-Up) (AC)
+
+-   Memoization to tabulation conversion.
+-   **TC: O(n\*m\*maxMove)**
+-   **SC: O(n\*m\*maxMove)**
+-   `isOutOfBounds()` function returns true if the current position is out of bounds, found this trick in discussion tab.
+
+---
+
 # [605. Can Place Flowers](./605_canPlaceFlowers.md) 🌟
 
 ---
