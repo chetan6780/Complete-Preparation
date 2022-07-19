@@ -1,5 +1,7 @@
 # Leetcode problem hints and solutions
 
+⬅️ [Back to homepage](/README.md)
+
 ### Difficulty level:
 
 -   🌟 **- Easy**
@@ -4228,6 +4230,4 @@ c[3] -> 270 deg
 
 ---
 
-# Leetcode Patterns (IMPORTANT)
-
--   [General approach to level order traversal](./generalApproachToLevelOrder.md)
+⬅️ [Back to homepage](/README.md)

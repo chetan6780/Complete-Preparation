@@ -146,3 +146,7 @@ Find complete [SDE-SHEET](https://takeuforward.org/interviews/strivers-sde-sheet
 | 5.  | [Check for balanced parentheses](DAY_13/5_balancedParenthesis.md)    |
 | 6.  | [Next Greater Element](DAY_13/6_nextGreaterElement.md)               |
 | 7.  | [Sort a Stack](DAY_13/7_sortAStack.md)                               |
+
+---
+
+⬅️ [Back to homepage](/README.md)
