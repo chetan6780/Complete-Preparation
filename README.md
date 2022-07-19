@@ -2,7 +2,7 @@
 
 One-stop destination for all you technical interview Preparation.
 
-### Section Index
+### Index
 
 <!--
 | Sn. | Sections                                                      |
@@ -26,3 +26,7 @@ One-stop destination for all you technical interview Preparation.
 
 -   My vscode [snippets](vscode-settings/vscode_snippet_cpp.json) and its [triggers](vscode-settings/vscode_snippet_triggers.md).
 -   My vscode custom key bindings [config](vscode-settings/vscode_key_bindings.json).
+
+<br/>
+
+> Head over to [CONTRIBUTING.md](CONTRIBUTING.md) to Complete-Preparation.
