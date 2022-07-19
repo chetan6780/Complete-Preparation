@@ -69,7 +69,7 @@ $ git merge upstream/master
 -   Limit the first line to 72 characters or less
 -   Consider starting the commit message with an applicable emoji:
     -   🎨 `:art:` when **creating** new file/folder
-    -   🚀 `:rocket:` when **updating** existing file/folder
+    -   ✨ `:sparkles:` or 🚀 `:rocket:` when **updating** existing file/folder
     -   📘 `:blue_book:` when **writing docs**
     -   🔥 `:fire:` when **deleting** code or files
     -   💯 `:100:` when completed adding full youtube playlist code
