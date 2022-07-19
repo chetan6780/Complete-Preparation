@@ -73,6 +73,7 @@ $ git merge upstream/master
     -   📘 `:blue_book:` when **writing docs**
     -   🔥 `:fire:` when **deleting** code or files
     -   💯 `:100:` when completed adding full youtube playlist code
+    -   🥲 `:smiling_face_with_tear:` only for gitignore file 
 -   Example: `🎨 Create contributing.md`
 
 ### C++ Style Guide
