@@ -3378,6 +3378,25 @@ soon...
 
 ---
 
+# [792. Number of Matching Subsequences](./792_numberOfMatchingSubsequences.md) 🌟🌟
+
+### Brute Force (TLE)
+
+-   Find all subsequences of s and check if words[i] is in the subsequence.
+-   **TC: O(2^n)**
+
+### Optimization (TLE)
+
+-   Instead of finding all subsequences and checking in words array, we can do opposite of it. i.e. we can find if words[i] is subsequence or not.
+-   **TC: O(n\*m)**, where n = words.size() and m = s.size()
+
+### Hashmap (AC)
+
+-   We have multiple duplicate words in words array, we can store them and numbers of times they appeared in hashmap and check for subsequence.
+-   **TC: O(n\*m)**, where n = hashmap.size() and m = s.size()
+
+---
+
 # [797. All Paths From Source to Target](./797_allPathsFromSourceToTarget.md) 🌟🌟
 
 ### BFS
@@ -4230,4 +4249,4 @@ c[3] -> 270 deg
 
 ---
 
-⬅️ [Back to homepage](/README.md)
+⬅️ [Back to homepage](./README.md)
