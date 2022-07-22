@@ -768,6 +768,8 @@ Anticlockwise rotate
 -   else traverse next node,
 
 ---
+# [86. Partition List](./86_partitionList.md) 🌟🌟
+---
 
 # [88. Merge Sorted Array](./88_mergeSortedArray.md) 🌟
 
