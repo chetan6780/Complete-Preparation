@@ -2,6 +2,8 @@
 
 You are given an array of ‘N’ integers, you need to find the maximum of minimum for every window size. The size of the window should vary from 1 to ‘N’ only.
 
+### Monotonic Stack
+
 ### Code
 
 ```cpp
@@ -14,7 +16,7 @@ void prevSmallerFun(vector<int>& nums, vector<int>& res)
     for (int i = 0; i < n; i++) {
         while (!st.empty() && nums[st.top()] >= nums[i]) {
             st.pop();
-        }   
+        }
         res[i] = st.empty() ? -1 : st.top();
         st.push(i);
     }

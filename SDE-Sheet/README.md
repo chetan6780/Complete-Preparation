@@ -135,7 +135,7 @@ Find complete [SDE-SHEET](https://takeuforward.org/interviews/strivers-sde-sheet
 | 5.  | [Merge K sorted arrays](DAY_12/5_mergeKSortedArrays.md)                     |
 | 6.  | [K most frequent elements](DAY_12/6_kMostFrequentElements.md)               |
 
-### Day - 13 (Stack & Queue)
+### Day - 13 (Stack & Queue - I)
 
 | Sn. | Problem                                                              |
 | --- | -------------------------------------------------------------------- |
@@ -147,6 +147,28 @@ Find complete [SDE-SHEET](https://takeuforward.org/interviews/strivers-sde-sheet
 | 6.  | [Next Greater Element](DAY_13/6_nextGreaterElement.md)               |
 | 7.  | [Sort a Stack](DAY_13/7_sortAStack.md)                               |
 
----
+### Day - 14 (Stack & Queue - II)
 
-⬅️ [Back to homepage](/README.md)
+| Sn. | Problem                                                                       |
+| --- | ----------------------------------------------------------------------------- |
+| 1.  | [Next Smaller Element](DAY_14/1_nextSmallerElement.md)                        |
+| 2.  | [LRU cache (IMPORTANT)](DAY_14/2_lruCache.md)                                 |
+| 3.  | [LFU Cache](DAY_14/3_lfuCache.md)                                             |
+| 4.  | [Largest rectangle in a histogram](DAY_14/4_largestRectangleInHistogram.md)   |
+| 5.  | [Sliding Window maximum](DAY_14/5_slidingWindowMaximum.md)                    |
+| 6.  | [Implement Min Stack](DAY_14/6_minStack.md)                                   |
+| 7.  | [Rotten Orange (Using BFS)](DAY_14/7_rottenOrange.md)                         |
+| 8.  | [Stock Span Problem](DAY_14/8_stockSpanProblem.md)                            |
+| 9.  | [maximum of minimums of every window size](DAY_14/9_maxOfMinOfEveryWindow.md) |
+| 10. | [The Celebrity Problem](DAY_14/10_theCelebrityProblem.md)                     |
+
+### Day -15 (String I)
+
+| Sn. | Problem                                                                  |
+| --- | ------------------------------------------------------------------------ |
+| 1.  | [Reverse Words in a String](DAY_15/1_reverseWord.md)                     |
+| 2.  | [Longest Palindromic Substring](DAY_15/2_longestPalindromicSubstring.md) |
+| 3.  | [Roman Number to Integer and vice versa](DAY_15/3_romanToInt.md)         |
+| 4.  | [Implement ATOI/STRSTR](DAY_15/4_atoiImplementation.md)                  |
+| 5.  | [Longest Common Prefix](DAY_15/5_lcp.md)                                 |
+| 6.  | [Rabin Karp](DAY_15/6_rabinKarp.md)                                      |
