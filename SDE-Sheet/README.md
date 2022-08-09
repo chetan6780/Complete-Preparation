@@ -162,7 +162,7 @@ Find complete [SDE-SHEET](https://takeuforward.org/interviews/strivers-sde-sheet
 | 9.  | [maximum of minimums of every window size](DAY_14/9_maxOfMinOfEveryWindow.md) |
 | 10. | [The Celebrity Problem](DAY_14/10_theCelebrityProblem.md)                     |
 
-### Day -15 (String I)
+### Day - 15 (String I)
 
 | Sn. | Problem                                                                  |
 | --- | ------------------------------------------------------------------------ |
@@ -172,3 +172,29 @@ Find complete [SDE-SHEET](https://takeuforward.org/interviews/strivers-sde-sheet
 | 4.  | [Implement ATOI/STRSTR](DAY_15/4_atoiImplementation.md)                  |
 | 5.  | [Longest Common Prefix](DAY_15/5_lcp.md)                                 |
 | 6.  | [Rabin Karp](DAY_15/6_rabinKarp.md)                                      |
+
+### Day - 16 (String II)
+
+| Sn. | Problem                                                     |
+| --- | ----------------------------------------------------------- |
+| 1.  | [Z-Function](DAY_16/1_zFunction.md)                         |
+| 2.  | [KMP algo / LPS(pi) array](DAY_16/2_KMP.md)                 |
+| 3.  | Minimum Characters For Palindrome                           |
+| 4.  | [Check for Anagrams](DAY_16/4_checkAnagrams.md)             |
+| 5.  | [Count and Say](DAY_16/5_countAndSay.md)                    |
+| 6.  | [Compare version numbers](DAY_16/6_compareVersionNumber.md) |
+
+### Day - 17 (Binary Tree)
+
+| Sn. | Problem                                                                         |
+| --- | ------------------------------------------------------------------------------- |
+| 1.  | [Inorder Traversal](DAY_17/1_inorderTraversal.md)                               |
+| 2.  | [Preorder Traversal](DAY_17/2_preorderTraversal.md)                             |
+| 3.  | [Postorder Traversal](DAY_17/3_postorderTraversal.md)                           |
+| 4.  | [LeftView Of Binary Tree](DAY_17/4_leftViewOfBinaryTree.md)                     |
+| 5.  | [Bottom View of Binary Tree](DAY_17/5_bottomViewOfBinaryTree.md)                |
+| 6.  | [Top View of Binary Tree](DAY_17/6_topViewOfBinaryTree.md)                      |
+| 7.  | [Preorder inorder postorder in a single traversal](DAY_17/7_3traversalInOne.md) |
+| 8.  | [Vertical order traversal](DAY_17/8_verticalOrderTraversal.md)                  |
+| 9.  | [Root to node path in a Binary Tree](DAY_17/9_rootToNodePath.md)                |
+| 10. | [Max width of a Binary Tree](DAY_17/10_maxWidthOfBinaryTree.md)                 |
