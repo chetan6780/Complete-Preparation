@@ -9,5 +9,5 @@
 5. [Binary tree right side view](./199_binaryTreeRightSideView.md)
 6. [largest value in each tree row](./515_findLargestValueInEachTreeRow.md)
 7. [Populating next right pointer](./116_populatingNextRightPointer.md)
-8. [n-ary tree level order traversal](./429_naryTreeLevelOrderTraversal.md)
+8. [n-ary tree level order traversal](./429_naryTreeLevelTraversal.md)
 9. [Maximum Level Sum of a Binary Tree](./1161_maximumLevelSumOfABinaryTree.md)
