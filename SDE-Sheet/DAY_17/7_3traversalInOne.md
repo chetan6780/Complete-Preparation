@@ -5,7 +5,6 @@
 ```cpp
 vector<vector<int>> getTreeTraversal(BinaryTreeNode<int>* root)
 {
-    // vector<vector<int>> result = {{},{},{}};
     vector<vector<int>> result(3, vector<int>());
 
     if (root == NULL)
