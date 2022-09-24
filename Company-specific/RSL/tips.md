@@ -18,3 +18,5 @@ Tip 3 : Having internship experience will help.
 -   [20 most common interview questions and answers Asked in every interview](https://www.justcrackinterview.com/20-most-common-interview-questions-and-answers-asked-in-every-interview/)
 
 -   [Where do you see yourself in next five years](https://www.indiabix.com/hr-interview/where-do-you-see-yourself-five-years-from-now/)
+
+In next 5 years, I see myself to hold a responsible position, with more knowledge, skills and experience. I would love to invest my next few years in upskilling myself in accordance with company requirements and contributing to the company's growth, with better version of me. Also, I would like to help people in all manners.

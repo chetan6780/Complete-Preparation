@@ -47,14 +47,14 @@ Find complete [SDE-SHEET](https://takeuforward.org/interviews/strivers-sde-sheet
 
 ### Day - 5 (Linked List)
 
-| No. | Problems                                                          |
-| --- | ----------------------------------------------------------------- |
-| 1.  | [Reverse a LinkedList](DAY_5/1_ReverseLinkedList.md)              |
-| 2.  | [Find middle of linked list](DAY_5/2_findMiddleOfLinkedList.md)   |
-| 3.  | [Merge two sorted linked list](DAY_5/3_mergeTWoSortedLists.md)    |
-| 4.  | [Remove Nth node from back](DAY_5/4_removeNthNodeFromBack.md)     |
-| 5.  | [Delete a Given node O(1)](DAY_5/5_deleteGivenNode.md)            |
-| 6.  | [Add two numbers as linked list](DAY_5/6_addTwoNumbersAsLList.md) |
+| No. | Problems                                                           |
+| --- | ------------------------------------------------------------------ |
+| 1.  | [Reverse a LinkedList](DAY_5/1_ReverseLinkedList.md)               |
+| 2.  | [Find middle of linked list](DAY_5/2_PlsfindMiddleOfLinkedList.md) |
+| 3.  | [Merge two sorted linked list](DAY_5/3_mergeTWoSortedLists.md)     |
+| 4.  | [Remove Nth node from back](DAY_5/4_removeNthNodeFromBack.md)      |
+| 5.  | [Delete a Given node O(1)](DAY_5/5_deleteGivenNode.md)             |
+| 6.  | [Add two numbers as linked list](DAY_5/6_addTwoNumbersAsLList.md)  |
 
 ### Day - 6 (Linked List)
 
