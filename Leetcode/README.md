@@ -4065,6 +4065,10 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
+# [1578. Minimum Time to Make Rope Colorful](./1578_minimumTimeToMakeRopeColorful.md) 🌟🌟
+
+---
+
 # [1658. Minimum Operations to Reduce X to Zero](./1658_minimumOperationsToReduceXToZero.md)
 
 ---
