@@ -73,6 +73,27 @@ We only need to handle four cases:
 
 ---
 
+# [12. Integer to Roman](./12_integerToRoman.md) 🌟🌟
+
+### Greedy solution
+
+-   Ask interviewer if there could be negative numbers or 0.
+-   Ask if the number is guaranteed to be in the range 1 to 3999.
+-   We create 2 arrays to store the Roman numerals and their corresponding values.
+-   Greedily we try to subtract largest possible number from the input number, and assign their corresponding Roman numeral to the result string.
+-   We repeat this process until the input number becomes 0.
+-   **Time complexity: O(n)=O(1)**, where n is the number of Roman numerals, here constant because we know the number of Roman numerals is 13.
+-   **Space complexity: O(n)=O(1)**, where n is the number of Roman numerals, here constant because we know the number of Roman numerals is 13.
+
+### Fun solution
+
+-   As human being came so far they evolved and they created some flexing solutions, but just don't flex this solution before interviewer.
+-   **TC: O(1)**, indeed.
+-   **SC: O(1)**, indeed.
+-   Don't evolve more and create 4\*10 array to store all the Roman numerals.
+
+---
+
 # [15. 3Sum](./15_3sum.md) 🌟🌟
 
 ### O(N^3 Log m) Brute force
