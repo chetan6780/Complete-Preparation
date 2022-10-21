@@ -1769,6 +1769,27 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
+### [219. Contains Duplicate II](./219_containsDuplicateII.md) 🌟
+
+### Sliding window + hashmap
+
+-   We know that if there exist any duplicate then it should be in range `abs(i-j) <= k`.
+-   So we can create map to store the index of the element.
+-   when we encounter the duplicate we can check if the index is in range `abs(i-j) <= k`.
+-   If it does `return true` else give the index of the number to the map.
+-   Finally `return false` if there is no duplicate in the range.
+-   **TC: O(N)**
+-   **SC: O(N)**
+
+### Sliding window + set
+
+-   instead of map we can use set to store the elements.
+-   Here we can reduce space complexity to `O(k)`.
+-   **TC: O(N)**
+-   **SC: O(k)**
+
+---
+
 ### [221. Maximal Square](./221_maximalSquare.md) 🌟🌟
 
 ### Dynamic Programming
