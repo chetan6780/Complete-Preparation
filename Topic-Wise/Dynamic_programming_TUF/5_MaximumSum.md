@@ -1,7 +1,5 @@
 # [Maximum sum of non-adjacent elements](https://www.codingninjas.com/codestudio/problems/maximum-sum-of-non-adjacent-elements_843261?leftPanelTab=0) 🌟🌟
 
-This problem is same as leetcode [House Robber](https://leetcode.com/problems/house-robber/).
-
 ### Recursive Approach
 
 -   For index `i`, `f(i)` is the maximum sum of non-adjacent elements till index `i`.
@@ -99,7 +97,7 @@ int maximumNonAdjacentSum(vector<int>& nums)
     prev1 = dp[n-1];
     ```
 -   Recurrence relation is, `curr = max(pick, notPick);`
-- Return `dp[n-1]` i.e. `prev1`.
+-   Return `dp[n-1]` i.e. `prev1`.
 
 ### Code
 
