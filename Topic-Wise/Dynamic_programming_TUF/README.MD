@@ -16,3 +16,5 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 |     8     | [Unique Paths](./8_UniquePaths.md)                        |
 |     9     | [Unique Path II](./9_UniquePathII.md)                     |
 |    10     | [Minimum Path Sum](./10_MinimumPathSum.md)                |
+|    11     | [Triangle](./11.triangle.md)                              |
+|    12     | [Maximum Path sum in matrix](./12_MaximumPathSum.md)      |
