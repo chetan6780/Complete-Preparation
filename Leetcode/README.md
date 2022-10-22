@@ -664,6 +664,20 @@ Anticlockwise rotate
 
 # [71. Simplify Path](./71_simplifyPath.md) 🌟🌟
 
+### Using stack
+
+-   We create stringstream objects to store the path
+-   We use a stack to store the directories
+-   Iterate those the path,
+    -   if it is "." or ""(we get "" when multiple '//' appears) continue
+    -   if it is ".." and stack is not empty, pop the stack.
+    -   if it is a directory, push it to the stack
+-   append the stack to the result string.
+-   **NOTE:** Appending from front is O(N^2) operation, we can reduce it by reversing the stack and appending to last of result string.
+-   If result string is empty, return "/" else return result string.
+-   **TC: O(N^2)** OR reverse the stack **O(N)**
+-   **SC: O(N)**
+
 ---
 
 # [73. Set Matrix Zeroes](./73_setMatrixZeroes.md) 🌟🌟
@@ -743,6 +757,18 @@ Anticlockwise rotate
     -   When we encounter 2.
         -   we swap mid and high.
         -   we decrement high.
+
+---
+
+# [76. Minimum Window Substring](./76_minimumWindowSubstring.md) 🌟🌟🌟
+
+### Sliding Window + Hashmap
+
+-   We use sliding window with hashmap and counter for this problem.
+-   counter indicates if characters are present in the window or not. if positive then present, if negative then not present.
+-   Other Code is self explanatory.
+-   **TC: O(n)**
+-   **SC: O(n)**
 
 ---
 
