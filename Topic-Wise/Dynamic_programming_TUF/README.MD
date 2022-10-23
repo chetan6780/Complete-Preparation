@@ -18,3 +18,4 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 |    10     | [Minimum Path Sum](./10_MinimumPathSum.md)                |
 |    11     | [Triangle](./11.triangle.md)                              |
 |    12     | [Maximum Path sum in matrix](./12_MaximumPathSum.md)      |
+| 13 | [Chocolate Pickup](./13_chocolatePickup.md)
