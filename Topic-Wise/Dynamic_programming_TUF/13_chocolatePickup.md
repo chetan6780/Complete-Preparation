@@ -69,7 +69,6 @@ int maximumChocolates(int r, int c, vector<vector<int>>& grid)
 ### Code
 
 ```cpp
-
 int f(vector<vector<int>>& grid, int r, int c, int i, int aj, int bj, vector<vector<vector<int>>>& dp)
 {
     if (aj < 0 || bj < 0 || aj >= c || bj >= c)
