@@ -26,3 +26,7 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 |    18     | [Partition with given difference](./18_PartitionWithGivenDifference.md) |
 |    19     | [0-1 Knapsack](./19_0-1Knapsack.md)                                     |
 |    20     | [Minimum Elements/Coin change](./20_MinimumElements.md)                 |
+|    21     | [Target Sum](./21_TargetSum.md)                                         |
+|    22     | [coin change II](./22_coinChangeII.md)                                  |
+|    23     | [Unbounded Knapsack](./23_UnboundedKnapsack.md)                         |
+|    24     | [Rod cutting](./24_RodCutting.md)                                       |
