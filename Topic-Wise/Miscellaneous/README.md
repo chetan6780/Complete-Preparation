@@ -1,5 +1,5 @@
-# Code Help DSA
+# Miscellaneous
 
-| Sr  | Topic(DSA)                |
+| Sr  | Topic                     |
 | --- | ------------------------- |
 | 1   | [Recursion](recursion.md) |
