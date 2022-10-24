@@ -63,7 +63,7 @@ bool subsetSumToK(int n, int k, vector<int>& arr)
 ### Tabulation(bottom-up) Solution
 
 -   From memoization we can observe that value of 0'th column is true.
--   From 2nd base case we can say value at arr[0]=k'th column is true.
+-   From 2nd base case we can say value at arr[0]=k'th column is true, if its less than or equal to target k.
 -   Other representation is same as memoization.
 -   **TC: O(n\*k)**
 -   **SC: O(n\*k)**
@@ -77,7 +77,8 @@ bool subsetSumToK(int n, int k, vector<int>& arr)
     for (int i = 0; i < n; i++) {
         dp[i][0] = true;
     }
-    dp[0][arr[0]] = true;
+    // don't forget to check arr[0] <= k
+    if(arr[0]<=k) dp[0][arr[0]] = true;
 
     for (int i = 1; i < n; i++) {
         for (int target = 1; target <= k; target++) {
@@ -112,7 +113,8 @@ bool subsetSumToK(int n, int k, vector<int>& arr)
     vector<bool> prev(k + 1, false), curr(k + 1, false);
     prev[0] = true;
     curr[0] = true;
-    prev[arr[0]] = true;
+    // don't forget to check arr[0] <= k
+    if(arr[0]<=k) prev[arr[0]] = true;
 
     for (int i = 1; i < n; i++) {
         prev[0] = true; // from base case
