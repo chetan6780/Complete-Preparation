@@ -72,7 +72,7 @@ $ git merge upstream/master
     -   ✨ `:sparkles:` or 🚀 `:rocket:` when **updating** existing file/folder
     -   📘 `:blue_book:` when **writing docs**
     -   🔥 `:fire:` when **deleting** code or files
-    -   ✅ `:white_check_mark:` when **completing** content for 1 folder/group of files
+    -   ✅ `:white_check_mark:` when **completing** something.
     -   💯 `:100:` when completed adding full youtube playlist code
     -   🥲 `:smiling_face_with_tear:` only for gitignore file
 -   Example: `🎨 Create contributing.md`
