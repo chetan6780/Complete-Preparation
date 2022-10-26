@@ -2821,6 +2821,26 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
+# [523. Continuous Subarray Sum](./523_continuousSubarraySum.md) 🌟🌟
+
+### Brute force
+
+-   Try all possible subarrays and check if the sum is a multiple of k.
+-   Will give TLE.
+-   **TC: O(n^2)**
+
+### Prefix sum with hash map
+
+-   The intuition is that if we take remainder of subarray A[i:j] with k, and remainder of B[i:j+x] and they both have same remainder, then subarray between j and j+x will have remainder 0.
+-   Ex. 23, 2, 4, 6, 7 - here 23 have remainder 5 and 23+2+4 also have remainder 5. So, subarray 2,4 have remainder 0.
+-   So we can store indexes of all the remainders that we encounter and if remainder repeats and it has size more than or equal to 2 then we can return true.
+-   We can store 0's index as -1 to handle the case when first 2 elements have remainder 0.
+-   Else return false.
+-   **TC: O(n)**
+-   **SC: O(n)**
+
+---
+
 # [525. Contiguous Array](./525_contiguousArray.md) 🌟🌟
 
 ### Brute Force (TLE)
