@@ -1,6 +1,6 @@
 # [Edit Distance](https://www.codingninjas.com/codestudio/problems/edit-distance_630420?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTab=0) 🌟🌟🌟
 
-### Recusrive Approach
+### Recursive Approach
 
 -   For an index if both characters match we don't need to do anything and move to next index.
 -   If both characters don't match we have 3 options:

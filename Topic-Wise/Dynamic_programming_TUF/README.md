@@ -14,38 +14,39 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 
 ### Index
 
-| Video No. | Problem                                                                                                                          | Type |
-| :-------: | -------------------------------------------------------------------------------------------------------------------------------- | ---- |
-|     1     | [Fibonacci Numbers](./1_fibonacciNumbers.md)                                                                                     | 1    |
-|     2     | [Climbing stairs](./2_climbingStairs.md)                                                                                         | 1    |
-|     3     | [Frog Jump](./3_frogJump.md)                                                                                                     | 1    |
-|     4     | [Frog Jump follow up](./4_KfrogJump.md)                                                                                          | 1    |
-|     5     | [Maximum sum of non-adjacent elements](./5_MaximumSum.md)                                                                        | 1    |
-|     6     | [House Robber](./6_HouseRobberII.md)                                                                                             | 1    |
-|     7     | [Ninja's Training](./7_ninjasTraining.md)                                                                                        | 2    |
-|     8     | [Unique Paths](./8_UniquePaths.md)                                                                                               | 2    |
-|     9     | [Unique Path II](./9_UniquePathII.md)                                                                                            | 2    |
-|    10     | [Minimum Path Sum](./10_MinimumPathSum.md)                                                                                       | 2    |
-|    11     | [Triangle](./11.triangle.md)                                                                                                     | 2    |
-|    12     | [Maximum Path sum in matrix](./12_MaximumPathSum.md)                                                                             | 2    |
-|    13     | [Chocolate Pickup](./13_chocolatePickup.md)                                                                                      | 2    |
-|    14     | [Subset sum equals to K](./14_subsetSumEqualsK.md)                                                                               | 3    |
-|    15     | [Partition Equal Subset Sum](./15_PartitionEqualSubsetSum.md)                                                                    | 3    |
-|    16     | [Minimum subset sum difference](./16_MinimumSubsetSumDifference.md)                                                              | 3    |
-|    17     | [Count Subset with target sum](./17_CountSubsetWithTargetSum.md)                                                                 | 3    |
-|    18     | [Partition with given difference](./18_PartitionWithGivenDifference.md)                                                          | 3    |
-|    19     | [0-1 Knapsack](./19_0-1Knapsack.md)                                                                                              | 3    |
-|    20     | [Minimum Elements/Coin change](./20_MinimumElements.md)                                                                          | 3    |
-|    21     | [Target Sum](./21_TargetSum.md)                                                                                                  | 3    |
-|    22     | [coin change II](./22_coinChangeII.md)                                                                                           | 3    |
-|    23     | [Unbounded Knapsack](./23_UnboundedKnapsack.md)                                                                                  | 3    |
-|    24     | [Rod cutting](./24_RodCutting.md)                                                                                                | 3    |
-|    25     | [Longest Common Subsequence](./25_LongestCommonSubsequence.md)                                                                   | 4    |
-|    26     | [Print LCS](./26_PrintLCS.md)                                                                                                    | 4    |
-|    27     | [Longest Common substring](./27_LongestCommonSubstring.md)                                                                       | 4    |
-|    28     | [Longest Palindromic Subsequence](./28_LongestPalindromicSubsequence.md)                                                         | 4    |
-|    29     | [minimum insertions to make a string palindrome](./29_minimumInsertionsToMakeAStringPalindrome.md)                               | 4    |
-|    30     | [Deletion and insertions require to convert string A to string B](./30_deletionAndInsertionsRequireToConvertStringAToStringB.md) | 4    |
-|    31     | [Shortest Common Supersequence](./31_ShortestCommonSupersequence.md)                                                             | 4    |
-| 32 | [Distinct Subsequences](./32_DistinctSubsequences.md) | 5 |
-| 33 |[Edit Distance](./33_EditDistance.md) | 5 |
+| Video No. | Problem                                                                                                             | Type |
+| :-------: | ------------------------------------------------------------------------------------------------------------------- | ---- |
+|     1     | [Fibonacci Numbers](./1_fibonacciNumbers.md)                                                                        | 1    |
+|     2     | [Climbing stairs](./2_climbingStairs.md)                                                                            | 1    |
+|     3     | [Frog Jump](./3_frogJump.md)                                                                                        | 1    |
+|     4     | [Frog Jump follow up](./4_KfrogJump.md)                                                                             | 1    |
+|     5     | [Maximum sum of non-adjacent elements](./5_MaximumSum.md)                                                           | 1    |
+|     6     | [House Robber](./6_HouseRobberII.md)                                                                                | 1    |
+|     7     | [Ninja's Training](./7_ninjasTraining.md)                                                                           | 2    |
+|     8     | [Unique Paths](./8_UniquePaths.md)                                                                                  | 2    |
+|     9     | [Unique Path II](./9_UniquePathII.md)                                                                               | 2    |
+|    10     | [Minimum Path Sum](./10_MinimumPathSum.md)                                                                          | 2    |
+|    11     | [Triangle](./11.triangle.md)                                                                                        | 2    |
+|    12     | [Maximum Path sum in matrix](./12_MaximumPathSum.md)                                                                | 2    |
+|    13     | [Chocolate Pickup](./13_chocolatePickup.md)                                                                         | 2    |
+|    14     | [Subset sum equals to K](./14_subsetSumEqualsK.md)                                                                  | 3    |
+|    15     | [Partition Equal Subset Sum](./15_PartitionEqualSubsetSum.md)                                                       | 3    |
+|    16     | [Minimum subset sum difference](./16_MinimumSubsetSumDifference.md)                                                 | 3    |
+|    17     | [Count Subset with target sum](./17_CountSubsetWithTargetSum.md)                                                    | 3    |
+|    18     | [Partition with given difference](./18_PartitionWithGivenDifference.md)                                             | 3    |
+|    19     | [0-1 Knapsack](./19_0-1Knapsack.md)                                                                                 | 3    |
+|    20     | [Minimum Elements/Coin change](./20_MinimumElements.md)                                                             | 3    |
+|    21     | [Target Sum](./21_TargetSum.md)                                                                                     | 3    |
+|    22     | [coin change II](./22_coinChangeII.md)                                                                              | 3    |
+|    23     | [Unbounded Knapsack](./23_UnboundedKnapsack.md)                                                                     | 3    |
+|    24     | [Rod cutting](./24_RodCutting.md)                                                                                   | 3    |
+|    25     | [Longest Common Subsequence](./25_LongestCommonSubsequence.md)                                                      | 4    |
+|    26     | [Print LCS](./26_PrintLCS.md)                                                                                       | 4    |
+|    27     | [Longest Common substring](./27_LongestCommonSubstring.md)                                                          | 4    |
+|    28     | [Longest Palindromic Subsequence](./28_LongestPalindromicSubsequence.md)                                            | 4    |
+|    29     | [minimum insertions to make a string palindrome](./29_minimumInsertionsToMakeAStringPalindrome.md)                  | 4    |
+|    30     | [Deletion and insertions require to convert string A to B](./30_deletionAndInsertionsRequireToConvertStringAToB.md) | 4    |
+|    31     | [Shortest Common Supersequence](./31_ShortestCommonSupersequence.md)                                                | 4    |
+|    32     | [Distinct Subsequences](./32_DistinctSubsequences.md)                                                               | 5    |
+|    33     | [Edit Distance](./33_EditDistance.md)                                                                               | 5    |
+|    34     | [Wildcard matching](./34_WildcardMatching.md)                                                                       | 5    |
