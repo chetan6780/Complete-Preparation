@@ -4,14 +4,15 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 
 ### Types
 
-| No  | Range | Type                                   |
-| :-: | :---: | -------------------------------------- |
-|  1  |  1-6  | Basic(Fibonacci Pattern)               |
-|  2  | 7-13  | DP on Grid                             |
-|  3  | 14-24 | DP on subsets(knapsack Pattern)        |
-|  4  | 25-31 | DP on strings(LCS Pattern)             |
-|  5  | 32-34 | DP on strings(String Matching Pattern) |
-|  6  | 35-40 | DP on Stocks                           |
+| No  | Range | Type                                      |
+| :-: | :---: | ----------------------------------------- |
+|  1  |  1-6  | Basic(Fibonacci Pattern)                  |
+|  2  | 7-13  | DP on Grid                                |
+|  3  | 14-24 | DP on subsets(knapsack Pattern)           |
+|  4  | 25-31 | DP on strings(LCS Pattern)                |
+|  5  | 32-34 | DP on strings(String Matching Pattern)    |
+|  6  | 35-40 | DP on Stocks                              |
+|  7  | 41-47 | DP on Longest increasing subsequence(LIS) |
 
 ### Index
 
@@ -57,3 +58,6 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 |    38     | [Best Time to Buy and Sell Stock IV](./38_BestTimeToBuyAndSellStockIV.md)                                           | 6    |
 |    39     | [Best Time to Buy and Sell Stock with Cooldown](./39_BestTimeToBuyAndSellStockWithCooldown.md)                      | 6    |
 |    40     | [Best Time to Buy and Sell Stock with Transaction Fee](./40_BestTimeToBuyAndSellStockWithTransactionFee.md)         | 6    |
+| 41 | [Longest Increasing Subsequence](./41_LongestIncreasingSubsequence.md) | 7 |
+| 42 | [LIS continued](./42_LIScontinued.md) | 7 |
+| 43 | [LIS solved with BS](./43_LISsolvedWithBS.md) | 7 |
