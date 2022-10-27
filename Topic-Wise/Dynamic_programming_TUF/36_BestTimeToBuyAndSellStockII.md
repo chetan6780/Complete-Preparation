@@ -88,7 +88,17 @@ long getMaximumProfit(long* values, int n)
 
 ```cpp
 long getMaximumProfit(long* values, int n)
-{c
+{
+    long aheadNotBuy = 0, aheadBuy = 0, currBuy = 0, currNotBuy = 0;
+
+    for (int ind = n - 1; ind >= 0; ind--) {
+        currNotBuy = max(aheadNotBuy, values[ind] + aheadBuy);
+        currBuy = max(aheadBuy, -values[ind] + aheadNotBuy);
+
+        aheadBuy = currBuy;
+        aheadNotBuy = currNotBuy;
+    }
+    return aheadBuy;
 }
 ```
 

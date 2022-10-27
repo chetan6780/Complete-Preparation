@@ -9,6 +9,8 @@
 -   **TC: O(NK)**
 -   **SC: O(NK)**
 
+### Code
+
 ```cpp
 int maximumProfit(vector<int>& prices, int n, int k)
 {
@@ -37,6 +39,8 @@ int maximumProfit(vector<int>& prices, int n, int k)
 
 -   **TC: O(NK)**
 -   **SC: O(2\*K) = O(K)**
+
+### Code
 
 ```cpp
 int maximumProfit(vector<int> &prices, int n, int k)

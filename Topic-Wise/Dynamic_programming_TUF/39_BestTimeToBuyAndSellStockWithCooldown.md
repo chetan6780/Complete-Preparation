@@ -9,6 +9,8 @@
 -   **TC: O(n\*2) = O(n)**
 -   **SC: O(n\*2) = O(n)**
 
+### Code
+
 ```cpp
 int stockProfit(vector<int> &prices){
     int n = prices.size();
@@ -40,6 +42,8 @@ int stockProfit(vector<int> &prices){
 -   **TC: O(n)**
 -   **SC: O(n)**
 
+### Code
+
 ```cpp
 int stockProfit(vector<int>& prices)
 {
@@ -64,6 +68,8 @@ int stockProfit(vector<int>& prices)
     ```
 -   **TC: O(n)**
 -   **SC: O(6)=O(1)**
+
+### Code
 
 ```cpp
 int stockProfit(vector<int>& prices)

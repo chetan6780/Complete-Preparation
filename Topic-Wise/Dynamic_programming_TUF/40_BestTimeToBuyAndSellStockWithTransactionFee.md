@@ -7,6 +7,8 @@
 -   All solution of [stock II](./36_BestTimeToBuyAndSellStockII.md) can be used here.
 -   Just need to add `-fee` when we complete a transaction.
 
+### Code
+
 ```cpp
 int maximumProfit(int n, int fee, vector<int>& prices)
 {
