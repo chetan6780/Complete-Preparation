@@ -58,6 +58,10 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 |    38     | [Best Time to Buy and Sell Stock IV](./38_BestTimeToBuyAndSellStockIV.md)                                           | 6    |
 |    39     | [Best Time to Buy and Sell Stock with Cooldown](./39_BestTimeToBuyAndSellStockWithCooldown.md)                      | 6    |
 |    40     | [Best Time to Buy and Sell Stock with Transaction Fee](./40_BestTimeToBuyAndSellStockWithTransactionFee.md)         | 6    |
-| 41 | [Longest Increasing Subsequence](./41_LongestIncreasingSubsequence.md) | 7 |
-| 42 | [LIS continued](./42_LIScontinued.md) | 7 |
-| 43 | [LIS solved with BS](./43_LISsolvedWithBS.md) | 7 |
+|    41     | [Longest Increasing Subsequence](./41_LongestIncreasingSubsequence.md)                                              | 7    |
+|    42     | [LIS continued](./42_LIScontinued.md)                                                                               | 7    |
+|    43     | [LIS solved with BS](./43_LISsolvedWithBS.md)                                                                       | 7    |
+|    44     | [Largest Divisible Subset](./44_LargestDivisibleSubset.md)                                                          | 7    |
+|    45     | [Longest String chain](./45_LongestStringChain.md)                                                                  | 7    |
+|    46     | [Longest Bitonic Sequence](./46_LongestBitonicSequence.md)                                                          | 7    |
+|    47     | [Number of LIS](./47_NumberOfLIS.md)                                                                                | 7    |
