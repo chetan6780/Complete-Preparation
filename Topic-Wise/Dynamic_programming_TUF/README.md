@@ -8,11 +8,13 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 | :-: | :---: | ----------------------------------------- |
 |  1  |  1-6  | Basic(Fibonacci Pattern)                  |
 |  2  | 7-13  | DP on Grid                                |
-|  3  | 14-24 | DP on subsets(knapsack Pattern)           |
-|  4  | 25-31 | DP on strings(LCS Pattern)                |
-|  5  | 32-34 | DP on strings(String Matching Pattern)    |
+|  3  | 14-24 | DP on Subsets(knapsack Pattern)           |
+|  4  | 25-31 | DP on Strings(LCS Pattern)                |
+|  5  | 32-34 | DP on Strings(String Matching Pattern)    |
 |  6  | 35-40 | DP on Stocks                              |
 |  7  | 41-47 | DP on Longest increasing subsequence(LIS) |
+|  8  | 48-54 | DP on Matrix chain multiplication(MCM)    |
+|  9  | 55-56 | DP on Squares                             |
 
 ### Index
 
@@ -65,3 +67,5 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 |    45     | [Longest String chain](./45_LongestStringChain.md)                                                                  | 7    |
 |    46     | [Longest Bitonic Sequence](./46_LongestBitonicSequence.md)                                                          | 7    |
 |    47     | [Number of LIS](./47_NumberOfLIS.md)                                                                                | 7    |
+|    55     | [Maximal Rectangle](./55_MaximalRectangle.md)                                                                       | 9    |
+|    56     | [Count Square Submatrices with All Ones](./56_CountSquareSubmatricesWithAllOnes.md)                                 | 9    |
