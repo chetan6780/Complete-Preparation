@@ -11,6 +11,7 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 |  3  | 14-24 | DP on subsets(knapsack Pattern)        |
 |  4  | 25-31 | DP on strings(LCS Pattern)             |
 |  5  | 32-34 | DP on strings(String Matching Pattern) |
+|  6  | 35-40 | DP on Stocks                           |
 
 ### Index
 
@@ -50,3 +51,9 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 |    32     | [Distinct Subsequences](./32_DistinctSubsequences.md)                                                               | 5    |
 |    33     | [Edit Distance](./33_EditDistance.md)                                                                               | 5    |
 |    34     | [Wildcard matching](./34_WildcardMatching.md)                                                                       | 5    |
+|    35     | [Best Time to Buy and Sell Stock](./35_BestTimeToBuyAndSellStock.md)                                                | 6    |
+|    36     | [Best Time to Buy and Sell Stock II](./36_BestTimeToBuyAndSellStockII.md)                                           | 6    |
+|    37     | [Best Time to Buy and Sell Stock III](./37_BestTimeToBuyAndSellStockIII.md)                                         | 6    |
+|    38     | [Best Time to Buy and Sell Stock IV](./38_BestTimeToBuyAndSellStockIV.md)                                           | 6    |
+|    39     | [Best Time to Buy and Sell Stock with Cooldown](./39_BestTimeToBuyAndSellStockWithCooldown.md)                      | 6    |
+|    40     | [Best Time to Buy and Sell Stock with Transaction Fee](./40_BestTimeToBuyAndSellStockWithTransactionFee.md)         | 6    |

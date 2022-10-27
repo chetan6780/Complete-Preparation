@@ -5,3 +5,7 @@
 -   [Backtrack Summary: General Solution for 10 Questions!!!!!!!! Python (Combination Sum, Subsets, Permutation, Palindrome)](<https://leetcode.com/problems/permutations/discuss/18284/Backtrack-Summary%3A-General-Solution-for-10-Questions!!!!!!!!-Python-(Combination-Sum-Subsets-Permutation-Palindrome)>)
 
 -   [Monotonic Stack Algorithm and Problems](https://liuzhenglaichn.gitbook.io/algorithm/monotonic-stack)
+
+-   [Recursive - DP | Explanation from (brute force-> dp -> greedy)](<https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/discuss/1569135/Explanation-from-(brute-force-greater-dp-greater-greedy)>)
+
+-   [✅ [Java] Simple & Clean DP solutions for all 6 Buy & Sell Stock questions on LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/discuss/1569081/Java-Simple-and-Clean-DP-solutions-for-all-6-Buy-and-Sell-Stock-questions-on-LeetCode)
