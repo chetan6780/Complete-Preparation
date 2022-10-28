@@ -438,6 +438,17 @@ Anticlockwise rotate
 
 ---
 
+# [49. Group Anagrams](./49_groupAnagrams.md) 🌟🌟
+
+### Hash map + sorting
+
+-   By sorting s[i] we can use it as key for out hashmap.
+-   Store the sorted string as key and the original string as value.
+-   **TC: O(NKlogK)**, where N is the length of strs, and K is the maximum length of a string in strs. The outer loop has complexity O(N) as we iterate through each string. Then, we sort each string in O(KlogK) time.
+-   **SC: O(N)**, the total information content stored in res.
+
+---
+
 # [50. Pow(x, n)](./50_powXn.md) 🌟🌟
 
 ### O(N) Time Brute force
