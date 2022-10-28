@@ -13,7 +13,7 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 |  5  | 32-34 | DP on Strings(String Matching Pattern)    |
 |  6  | 35-40 | DP on Stocks                              |
 |  7  | 41-47 | DP on Longest increasing subsequence(LIS) |
-|  8  | 48-54 | DP on Matrix chain multiplication(MCM)    |
+|  8  | 48-54 | Partitioning DP(MCM Pattern)              |
 |  9  | 55-56 | DP on Squares                             |
 
 ### Index
@@ -67,5 +67,16 @@ Access full [Playlist](<(https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5
 |    45     | [Longest String chain](./45_LongestStringChain.md)                                                                  | 7    |
 |    46     | [Longest Bitonic Sequence](./46_LongestBitonicSequence.md)                                                          | 7    |
 |    47     | [Number of LIS](./47_NumberOfLIS.md)                                                                                | 7    |
+|    48     | [Matrix Chain Multiplication](./48_MatrixChainMultiplication.md)                                                    | 8    |
+|    49     | [MCM Continued](./49_MCMcontinued.md)                                                                               | 8    |
+|    50     | [Min cost to cut a stick](./50_MinCostToCutAStick.md)                                                               | 8    |
+|    51     | [Burst Balloons](./51_BurstBalloons.md)                                                                             | 8    |
+|    52     | [Evaluate Expression to True](./52_EvaluateExpressionToTrue.md)                                                     | 8    |
+|    53     | [Palindrome Partitioning II](./53_PalindromePartitioningII.md)                                                      | 8    |
+|    54     | [Partition Array for Maximum Sum](./54_PartitionArrayForMaximumSum.md)                                              | 8    |
 |    55     | [Maximal Rectangle](./55_MaximalRectangle.md)                                                                       | 9    |
 |    56     | [Count Square Submatrices with All Ones](./56_CountSquareSubmatricesWithAllOnes.md)                                 | 9    |
+
+---
+
+⬅️ [Back to homepage](../README.md)
