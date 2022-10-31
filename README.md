@@ -9,20 +9,12 @@ Head over to [old site](https://chetan6780.github.io/Complete-Preparation/) or [
 | Sn. |                           Sections                            |
 | :-: | :-----------------------------------------------------------: |
 |  1  |          [Leetcode Problems](Leetcode/README.md) 💻           |
-|  2  |         [Striver's SDE-Sheet](SDE-Sheet/README.md) 📄         |
-|  3  |        [Topic wise learning](Topic-Wise/README.md) 📚         |
-|  4  |          [Core Subjects](Core-Subjects/README.md) 📚          |
-|  5  | [Company Specific Information](Company-specific/README.md) 🏢 |
-|  6  |      [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀       |
-
-<!--
-1. [Leetcode Problems](Leetcode/README.md) 💻
-2. [Striver's SDE-Sheet](SDE-Sheet/README.md) 📄
-3. [Topic wise learning](Topic-Wise/README.md) 📚
-4. [Core Subjects](Core-Subjects/README.md) 📚
-5. [Company Specific Information](Company-specific/README.md) 🏢
-6. [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀
--->
+|  2  |           [Topic wise DSA](Topic-Wise/README.md) 📚           |
+|  3  |         [Striver's SDE-Sheet](SDE-Sheet/README.md) 📄         |
+|  4  |       [Object Oriented Programming](OOPs/README.md) 📝        |
+|  5  |          [Core Subjects](Core-Subjects/README.md) 📚          |
+|  6  | [Company Specific Information](Company-specific/README.md) 🏢 |
+|  7  |      [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀       |
 
 ### Other
 
@@ -35,7 +27,7 @@ Head over to [old site](https://chetan6780.github.io/Complete-Preparation/) or [
 
 ### File and Folder tree for convenience
 
-<details>
+<details open="true">
   <summary>Tree View</summary>
   <pre>
 .
@@ -220,10 +212,12 @@ Head over to [old site](https://chetan6780.github.io/Complete-Preparation/) or [
 │   ├── 48_rotate_image.md
 │   ├── 492_constructTheRectangle.md
 │   ├── 493_reversePairs.md
+│   ├── 49_groupAnagrams.md
 │   ├── 50_powXn.md
 │   ├── 515_findLargestValueInEachTreeRow.md
 │   ├── 518_coinChange2.md
 │   ├── 51_nQueens.md
+│   ├── 523_continuousSubarraySum.md
 │   ├── 525_contiguousArray.md
 │   ├── 52_nQueensII.md
 │   ├── 532_kdiffPairsInAnArray.md
@@ -304,6 +298,15 @@ Head over to [old site](https://chetan6780.github.io/Complete-Preparation/) or [
 │   ├── generalApproachToLevelOrder.md
 │   └── README.md
 ├── LICENSE
+├── OOPs
+│   ├── 1_introduction.md
+│   ├── 2_classesAndObjects.md
+│   ├── 3_constructorsAndDestructors.md
+│   ├── 4_thisPointerAndCopy.md
+│   ├── 5_pillarsOfOOPs.md
+│   ├── 6_problems.md
+│   ├── 7_abstractClassAndFriendFunction.md
+│   └── README.md
 ├── README.md
 ├── SDE-Sheet
 │   ├── DAY_1
@@ -492,18 +495,41 @@ Head over to [old site](https://chetan6780.github.io/Complete-Preparation/) or [
 │   │   ├── 28_LongestPalindromicSubsequence.md
 │   │   ├── 29_minimumInsertionsToMakeAStringPalindrome.md
 │   │   ├── 2_climbingStairs.md
-│   │   ├── 30_deletionAndInsertionsRequireToConvertStringAToStringB.md
+│   │   ├── 30_deletionAndInsertionsRequireToConvertStringAToB.md
 │   │   ├── 31_ShortestCommonSupersequence.md
 │   │   ├── 32_DistinctSubsequences.md
 │   │   ├── 33_EditDistance.md
+│   │   ├── 34_WildcardMatching.md
+│   │   ├── 35_BestTimeToBuyAndSellStock.md
+│   │   ├── 36_BestTimeToBuyAndSellStockII.md
+│   │   ├── 37_BestTimeToBuyAndSellStockIII.md
+│   │   ├── 38_BestTimeToBuyAndSellStockIV.md
+│   │   ├── 39_BestTimeToBuyAndSellStockWithCooldown.md
 │   │   ├── 3_frogJump.md
+│   │   ├── 40_BestTimeToBuyAndSellStockWithTransactionFee.md
+│   │   ├── 41_LongestIncreasingSubsequence.md
+│   │   ├── 42_LIScontinued.md
+│   │   ├── 43_LISsolvedWithBS.md
+│   │   ├── 44_LargestDivisibleSubset.md
+│   │   ├── 45_LongestStringChain.md
+│   │   ├── 46_LongestBitonicSequence.md
+│   │   ├── 47_NumberOfLIS.md
+│   │   ├── 48_MatrixChainMultiplication.md
+│   │   ├── 49_MCMcontinued.md
 │   │   ├── 4_KfrogJump.md
+│   │   ├── 50_MinCostToCutAStick.md
+│   │   ├── 51_BurstBalloons.md
+│   │   ├── 52_EvaluateExpressionToTrue.md
+│   │   ├── 53_PalindromePartitioningII.md
+│   │   ├── 54_PartitionArrayForMaximumSum.md
+│   │   ├── 55_MaximalRectangle.md
+│   │   ├── 56_CountSquareSubmatricesWithAllOnes.md
 │   │   ├── 5_MaximumSum.md
 │   │   ├── 6_HouseRobberII.md
 │   │   ├── 7_ninjasTraining.md
 │   │   ├── 8_UniquePaths.md
 │   │   ├── 9_UniquePathII.md
-│   │   └── README.MD
+│   │   └── README.md
 │   ├── graph
 │   │   ├── R10_bipartiteGraphDfs.md
 │   │   ├── R11_topoSortDFS.md
