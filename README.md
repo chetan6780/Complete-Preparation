@@ -1,6 +1,6 @@
 # Complete-Preparation
 
-One-stop destination for all you technical interview Preparation.
+One-stop destination for all your technical interview Preparation.
 
 Head over to [old site](https://chetan6780.github.io/Complete-Preparation/) or [new site](https://chetan6780.gitbook.io/complete-preparation/readme) to get started. Both are updated 🚀.
 
