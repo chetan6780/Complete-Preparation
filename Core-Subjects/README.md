@@ -1,4 +1,4 @@
-# Code Subjects Revision
+# CS Fundamentals Revision
 
 Important Questions of CS Fundamentals.
 
