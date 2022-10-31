@@ -1,4 +1,4 @@
-# GFG and Other Resources
+#Topic-wise DSA learning
 
 | Sr. | Topic(DSA)                                              | Completed |
 | --- | :------------------------------------------------------ | :-------: |
