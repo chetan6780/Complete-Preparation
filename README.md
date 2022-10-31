@@ -12,7 +12,7 @@ Head over to [old site](https://chetan6780.github.io/Complete-Preparation/) or [
 |  2  |           [Topic wise DSA](Topic-Wise/README.md) 📚           |
 |  3  |         [Striver's SDE-Sheet](SDE-Sheet/README.md) 📄         |
 |  4  |       [Object Oriented Programming](OOPs/README.md) 📝        |
-|  5  |          [Core Subjects](Core-Subjects/README.md) 📚          |
+|  5  |        [CS Fundamentals](CS-fundamentals/README.md) 📚        |
 |  6  | [Company Specific Information](Company-specific/README.md) 🏢 |
 |  7  |      [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀       |
 
