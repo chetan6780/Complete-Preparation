@@ -13,5 +13,3 @@
 | 7   | [Abstract class and friend function](./7_abstractClassAndFriendFunction.md) |
 
 ---
-
-⬅️ [Back to homepage](/README.md)

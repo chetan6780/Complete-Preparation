@@ -1,7 +1,10 @@
 # Company specific preparation tips and previous year experience
 
-| Sr. | Company                             | On-Campus |
-| --- | ----------------------------------- | :-------: |
-| 1.  | [Raja Software Labs (Pune)](./rsl/) |    Yes    |
+-   [HR Round Tips](./hr.md)
+-   [Interview Tips](./tips.md)
 
-⬅️ [Back to homepage](/README.md)
+## Companies
+
+-   [RSL](./RSL/README.md)
+-   [IAURO](./IAURO/README.md)
+-   [TIAA](./TIAA/)

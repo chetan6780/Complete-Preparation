@@ -40,19 +40,19 @@
 -   Below are some interview experiences/questions I found.
 
 1. find out factorial of given no.
-2. -    find the no. Of palindrome numbers in the given array.
+2.  - find the no. Of palindrome numbers in the given array.
 3. if a string is given, find out the no. Of times given alphabet occurs in the string.
 4. if two arrays of strings are given them find no. Of similar words in those arrays.
-5. -    substring finding problem.
-6. -    write code for infix to prefix operation.
-7. -    priority queue implementation.
-8. -    Questions based on nested queries in DBMS. Ex. Find nth highest number in the given data.
-9. -    there were questions of OS, like what is thrashing, page fault, segmentation, deadlock etc.
+5.  - substring finding problem.
+6.  - write code for infix to prefix operation.
+7.  - priority queue implementation.
+8.  - Questions based on nested queries in DBMS. Ex. Find nth highest number in the given data.
+9.  - there were questions of OS, like what is thrashing, page fault, segmentation, deadlock etc.
 
 10. Introduce yourself.
 11. Data structures question on stack,queue,array
-12. -   Write a program to sort linked list using merge sort.
-13. -   program of implementation of queue using linked list.
+12. - Write a program to sort linked list using merge sort.
+13. - program of implementation of queue using linked list.
 14. program to check if string are anagrams
 15. program to check occurrence of all character in a string.
 16. program to reverse the sentence.like
@@ -70,21 +70,23 @@
 24. Asked about what am I good at.
 25. Which programming language am I suitable with?
 26. I was asked to write linked list program .(The interviewer told me to write the program on online editor and I faced problems due to that because the performance of online editor is not soo good and it gives many errors. )
-27. -   I was asked about the new technologies that are used nowadays.
+27. - I was asked about the new technologies that are used nowadays.
 28. I was asked to explain my project and based on that the interviewer asked questions related to web development, Database , what was my role in the project?,what kind of difficulties did I faced?
 
 ---
 
 The questions were to delete a node and to check whether there exists a loop in LL.Later he asked me the definition of DS called "stack"
--  later he asked me oops questions on C++.he asked everything he can ask .to mention few ,copy constructor, polymorphism and it's type, virtual func,friend func,etc.At last he asked me a SQL query to find a tuple with second max element.
+
+-   later he asked me oops questions on C++.he asked everything he can ask .to mention few ,copy constructor, polymorphism and it's type, virtual func,friend func,etc.At last he asked me a SQL query to find a tuple with second max element.
 
 1 hour interview
 Oops concepts basics
+
 -   OS virtual memory deadlock
-DBMS normalization
-Questions on project and internship
-Few basic programs ( logic only)
-Little bit about academic subjects
+    DBMS normalization
+    Questions on project and internship
+    Few basic programs ( logic only)
+    Little bit about academic subjects
 
 1 stock maximum profit
 2 anagram
@@ -101,10 +103,11 @@ Later, he gave me 3 codes to implement easy - medium leveled,
 -   Try to answer max questions accurately than bluffing. If you don't know the concept just tell them that you couldn't recall. Prepare oops concepts precisely with realtime example. Have deep knowledge of language you chosen as your programming language. They asked me some Java code snippet , SQL join query, explain oops concepts, what is no- SQL database and which one is good, project explanation, technical achievements , quick sort algorithm explanation, binary search, tree DFS , merge sort code, time complexity of them and finally a question on train (puzzle type)
 
 Oops advanced concepts in very detail with practical example
+
 -   About frameworks I know and their architecture
-Programs with consideration of complexity
-About my internship in detail with what I did which libraries I used
-Some simple sql queries
+    Programs with consideration of complexity
+    About my internship in detail with what I did which libraries I used
+    Some simple sql queries
 
 ### tips
 

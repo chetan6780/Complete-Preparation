@@ -33,7 +33,3 @@
 -   svvi - vector vector int
 -   svvl - vector vector ll
 -   svp - vector pair ll
-
----
-
-⬅️ [Back to homepage](/README.md)

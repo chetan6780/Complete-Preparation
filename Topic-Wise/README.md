@@ -16,7 +16,3 @@
 | 12  | [Binary Search](./Binary_search)                        |    ❌     |
 | 13  | [Sorting Algorithms](./Sorting_Algorithms)              |    ✅     |
 | 14  | [Miscellaneous](./Miscellaneous)                        |    ✅     |
-
----
-
-⬅️ [Back to homepage](/README.md)

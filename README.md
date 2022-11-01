@@ -18,8 +18,8 @@ Head over to [old site](https://chetan6780.github.io/Complete-Preparation/) or [
 
 ### Other
 
--   My vscode [snippets](vscode-settings/vscode_snippet_cpp.md) and its [triggers](vscode-settings/vscode_snippet_triggers.md).
--   My vscode custom key bindings [config](vscode-settings/vscode_key_bindings.md).
+-   My vscode [snippets](./vscode-settings-windows/vscode_snippet_cpp.md) and its [triggers](./vscode-settings-windows/vscode_snippet_triggers.md).
+-   My vscode custom key bindings [config](./vscode-settings-windows/vscode_key_bindings.md).
 
 <br/>
 

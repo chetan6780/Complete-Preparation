@@ -1,7 +1,5 @@
 # Leetcode problem hints and solutions
 
-⬅️ [Back to homepage](/README.md)
-
 ### Difficulty level:
 
 -   🌟 **- Easy**
@@ -1806,7 +1804,7 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
-### [219. Contains Duplicate II](./219_containsDuplicateII.md) 🌟
+# [219. Contains Duplicate II](./219_containsDuplicateII.md) 🌟
 
 ### Sliding window + hashmap
 
@@ -1827,21 +1825,7 @@ Watch [this](https://www.youtube.com/watch?v=NzIGLLwZBS8) Video.
 
 ---
 
-### [221. Maximal Square](./221_maximalSquare.md) 🌟🌟
-
-### Dynamic Programming
-
--   1 square itself can create a square.
--   Also We can observe that if there are 1 in cell above, cell left and cell diagonally then we can create a new 2x2 square.
--   So the relation can be found as `dp[i][j] = min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) + 1`
--   Also we maintain a max_sq to get the maximum ans.
--   finally we return max_sq \*\* 2
--   **TC: O(nm)**,n=row , m=col
--   **SC: O(nm)**
-
----
-
-# [221. Maximal Square](https://leetcode.com/problems/maximal-square/) 🌟🌟
+# [221. Maximal Square](./221_maximalSquare.md) 🌟🌟
 
 ### Dynamic Programming
 
@@ -2808,7 +2792,7 @@ Clearly, both first and sec belong to different groups and since, all other elem
 
 ---
 
-### [518. Coin Change 2](./518_coinChange2.md) 🌟🌟
+# [518. Coin Change 2](./518_coinChange2.md) 🌟🌟
 
 ### Recursive Solution (TLE)
 
@@ -3962,7 +3946,7 @@ In an interview, if the first solution that comes to mind involves a complex dat
 
 ---
 
-### [1200. Minimum Absolute Difference](./1200_minimumAbsoluteDifference.md) 🌟
+# [1200. Minimum Absolute Difference](./1200_minimumAbsoluteDifference.md) 🌟
 
 ### Brute force
 
@@ -4370,7 +4354,3 @@ c[3] -> 270 deg
 
 -   If path exist between 2 nodes then they are in same component.
 -   We can use UnionFind to know if source and destination are in same component.
-
----
-
-⬅️ [Back to homepage](./README.md)
