@@ -16,6 +16,23 @@
     -   [Problems on oops](./OOPs/6_problems.md)
     -   [Abstract class and friend function](./OOPs/7_abstractClassAndFriendFunction.md)
 
+-   [Topic Wise DSA](./Topic-Wise/README.md)
+
+    -   [Linked List](./Topic-Wise/linked_list)
+    -   [Stack](./Topic-Wise/stack)
+    -   [Queue](./Topic-Wise/queue)
+    -   [Tree](./Topic-Wise/tree)
+    -   [Heap](./Topic-Wise/heap)
+    -   [Graph](./Topic-Wise/graph)
+    -   [Recursion](./Topic-Wise/recursion)
+    -   [Dynamic Programming](./Topic-Wise/Dynamic_Programming)
+    -   [Dynamic Programming TUF](./Topic-Wise/Dynamic_programming_TUF)
+    -   [Disjoint set(Union Find)](./Topic-Wise/Disjoint_Set_Union/DSU.md)
+    -   [Number Theory](./Topic-Wise/Number_Theory)
+    -   [Binary Search](./Topic-Wise/Binary_search)
+    -   [Sorting Algorithms](./Topic-Wise/Sorting_Algorithms)
+    -   [Miscellaneous](./Topic-Wise/Miscellaneous)
+
 -   [SDE-Sheet](./SDE-Sheet/README.md)
 
     -   Day-1 (Arrays-I)
@@ -180,3 +197,21 @@
         -   [Vertical order traversal](./SDE-Sheet/DAY_17/8_verticalOrderTraversal.md)
         -   [Root to node path in a Binary Tree](./SDE-Sheet/DAY_17/9_rootToNodePath.md)
         -   [Max width of a Binary Tree](./SDE-Sheet/DAY_17/10_maxWidthOfBinaryTree.md)
+
+-   [Leetcode](./Leetcode/README.md)
+
+-   VS Code Linux
+
+    -   [Key Bindings](./vscode-setting-linux/key_bindings.json)
+    -   [Settings](./vscode-setting-linux/setting.json)
+
+-   VS Code Windows
+
+    -   [Key Bindings](./vscode-settings-windows/vscode_key_bindings.json)
+    -   [Settings](./vscode-settings-windows/settings.json)
+    -   [Snippets](./vscode-settings-windows/vscode_snippet_cpp.json)
+    -   [Snippet Triggers](./vscode-settings-windows/vscode_snippet_triggers.md)
+
+-   [Important Links](./Important-links.md)
+
+-   [CPP Tips and Tricks](./cpp_tips_and_tricks.md)
