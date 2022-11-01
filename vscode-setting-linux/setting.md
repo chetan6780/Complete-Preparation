@@ -1,3 +1,4 @@
+```cpp
 {
     "liveServer.settings.donotShowInfoMsg": true,
     "editor.fontSize": 18,
@@ -11,7 +12,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "liveServer.settings.CustomBrowser": "chrome",
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -19,7 +20,6 @@
     "liveServer.settings.donotVerifyTags": true,
     "editor.wordWrap": "on",
     "python.languageServer": "Pylance",
-    "C_Cpp.updateChannel": "Insiders",
     "code-runner.clearPreviousOutput": true,
     "code-runner.runInTerminal": true,
     "code-runner.saveAllFilesBeforeRun": true,
@@ -45,7 +45,7 @@
     "explorer.confirmDelete": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
-        "*.sqlite3": "default"
+        "*.sqlite3": "sqlite-viewer.view"
     },
     "jupyter.alwaysTrustNotebooks": true,
     "[javascriptreact]": {
@@ -118,11 +118,10 @@
     "editor.fastScrollSensitivity": 10,
     // ---------------------------------------------------------------------------------------------
     // Added by chetan if we remove above lines no harm will happen
-    "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
-    "terminal.integrated.fontSize": 14,
+    // "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 16,
     "workbench.colorCustomizations": {
-        "terminal.ansiBlue": "#ADADAD",
-        "terminal.ansiBlack": "#424242",
         "terminal.background": "#121212",
         "terminal.foreground": "#dedede"
     },
@@ -136,13 +135,14 @@
         "comments": "on",
         "strings": "on",
         "other": "on"
-    }, /// for snippets quickSuggestions 
+    }, /// for snippets quickSuggestions
     "security.workspace.trust.untrustedFiles": "open",
     "[css]": {
         "editor.suggest.insertMode": "replace",
         "gitlens.codeLens.scopes": [
             "document"
-        ]
+        ],
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.inlineSuggest.enabled": true,
     "cph.language.python.SubmissionCompiler": "Python 3.7.2",
@@ -168,35 +168,45 @@
     "diffEditor.codeLens": true,
     "editor.formatOnType": true,
     "editor.quickSuggestionsDelay": 15,
-    "workbench.preferredDarkColorTheme": "Monokai",
+    "workbench.preferredDarkColorTheme": "JellyFish",
+    "workbench.preferredLightColorTheme": "Quiet Light",
     "pdf-preview.default.sidebar": true,
     "editor.scrollbar.verticalScrollbarSize": 12,
     "screencastMode.fontSize": 30,
     "screencastMode.onlyKeyboardShortcuts": true,
     "screencastMode.verticalOffset": 6,
     "markdown-preview-enhanced.previewTheme": "github-light.css",
-    "window.menuBarVisibility": "classic",
+    "window.menuBarVisibility": "toggle",
     "thunder-client.codeSnippetLanguage": "cs-httpclient",
     "go.toolsManagement.autoUpdate": true,
     "cSpell.userWords": [
         "ackermann",
         "acnt",
         "bcnt",
+        "Chetan",
+        "codestudio",
         "Cooldown",
         "cout",
         "curr",
         "getline",
+        "Heapifies",
+        "Heapify",
         "inorder",
         "istringstream",
+        "Kadane's",
+        "kadanes",
+        "Karp",
         "Leetcode",
         "memset",
         "nlogn",
         "nums",
+        "Patil",
         "Robo",
         "stdc",
         "stoi",
         "stringstream",
         "subarray",
+        "subarrays",
         "subproblems",
         "substr",
         "tailwindcss",
@@ -236,5 +246,23 @@
     "redhat.telemetry.enabled": false,
     "editor.fontFamily": "'Cascadia code',Consolas, 'Courier New', monospace",
     "workbench.productIconTheme": "fluent-icons",
-    "window.zoomLevel": -1,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 1,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.allowForcePush": true,
+    "git.confirmForcePush": false,
+    // for vim extension
+    // "vim.insertModeKeyBindings": [
+    //     {
+    //         "before": [
+    //             "j",
+    //             "k"
+    //         ],
+    //         "after": [
+    //             "<Esc>"
+    //         ]
+    //     }
+    // ],
+    // "vim.useSystemClipboard": true,
 }
+```

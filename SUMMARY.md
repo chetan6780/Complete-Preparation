@@ -202,14 +202,14 @@
 
 -   VS Code Linux
 
-    -   [Key Bindings](./vscode-setting-linux/key_bindings.json)
-    -   [Settings](./vscode-setting-linux/setting.json)
+    -   [Key Bindings](./vscode-setting-linux/key_bindings.md)
+    -   [Settings](./vscode-setting-linux/setting.md)
 
 -   VS Code Windows
 
-    -   [Key Bindings](./vscode-settings-windows/vscode_key_bindings.json)
-    -   [Settings](./vscode-settings-windows/settings.json)
-    -   [Snippets](./vscode-settings-windows/vscode_snippet_cpp.json)
+    -   [Key Bindings](./vscode-settings-windows/vscode_key_bindings.md)
+    -   [Settings](./vscode-settings-windows/settings.md)
+    -   [Snippets](./vscode-settings-windows/vscode_snippet_cpp.md)
     -   [Snippet Triggers](./vscode-settings-windows/vscode_snippet_triggers.md)
 
 -   [Important Links](./Important-links.md)

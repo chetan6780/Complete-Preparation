@@ -1,3 +1,4 @@
+```json
 [
     {
         "key": "alt+w",
@@ -100,3 +101,4 @@
         "when": "editorTextFocus && foldingEnabled"
     }
 ]
+```

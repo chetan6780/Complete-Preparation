@@ -1,3 +1,4 @@
+```json
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
@@ -46,3 +47,4 @@
         "when": "editorTextFocus && !editorReadonly"
     }
 ]
+```
