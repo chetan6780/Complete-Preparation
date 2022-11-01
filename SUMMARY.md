@@ -35,7 +35,7 @@
 
 -   [SDE-Sheet 📄](./SDE-Sheet/README.md)
 
-    -   Day-1 (Arrays-I)
+    -   Day - 1 (Arrays-I)
 
         -   [Set Matrix Zeros](./SDE-Sheet/DAY_1/1_setMatrixZeros.md)
         -   [Pascal Triangle](./SDE-Sheet/DAY_1/2_pascalTriangle.md)
@@ -44,7 +44,7 @@
         -   [Sort 0 1 2](./SDE-Sheet/DAY_1/5_sort012.md)
         -   [Best Time to Buy and Sell Stock](./SDE-Sheet/DAY_1/6_buyAndSellStock.md)
 
-    -   Day-2 (Arrays-II)
+    -   Day - 2 (Arrays-II)
 
         -   [Merge intervals](./SDE-Sheet/DAY_2/2_mergeIntervals.md)
         -   [Merge two sorted arrays](./SDE-Sheet/DAY_2/3_mergeSortedArrays.md)
@@ -61,7 +61,7 @@
         -   [Grid Unique Paths](./SDE-Sheet/DAY_3/5_gridUniquePath.md)
         -   [Reverse Pairs (Leetcode)](./SDE-Sheet/DAY_3/6_reversePairs.md)
 
-    -   Day-4 (Hashing)
+    -   Day - 4 (Hashing)
 
         -   [2 sum problem](./SDE-Sheet/DAY_4/1_2sum.md)
         -   [4 sum problem](./SDE-Sheet/DAY_4/2_4sum.md)
