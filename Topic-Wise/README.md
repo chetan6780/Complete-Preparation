@@ -7,12 +7,13 @@
 | 3   | [Queue](./queue)                                        |    ✅     |
 | 4   | [Tree](./tree)                                          |    ✅     |
 | 5   | [Heap](./heap)                                          |    ✅     |
-| 6   | [Graph](./graph)                                        |    ✅     |
-| 7   | [Recursion](./recursion)                                |    ✅     |
-| 8   | [Dynamic Programming](./Dynamic_Programming)            |    ✅     |
-| 9   | [Dynamic Programming TUF](./Dynamic_programming_TUF)    |    ✅     |
-| 10  | [Disjoint set(Union Find)](./Disjoint_Set_Union/DSU.md) |    ✅     |
-| 11  | [Number Theory](./Number_Theory)                        |    ❌     |
-| 12  | [Binary Search](./Binary_search)                        |    ❌     |
-| 13  | [Sorting Algorithms](./Sorting_Algorithms)              |    ✅     |
-| 14  | [Miscellaneous](./Miscellaneous)                        |    ✅     |
+| 6   | [Graph](./graph/)                                       |    ✅     |
+| 7   | [Graph Striver New](./graph_striver_new//README.md)     |    ❌     |
+| 8   | [Recursion](./recursion)                                |    ✅     |
+| 9   | [Dynamic Programming](./Dynamic_Programming)            |    ✅     |
+| 10  | [Dynamic Programming TUF](./Dynamic_programming_TUF)    |    ✅     |
+| 11  | [Disjoint set(Union Find)](./Disjoint_Set_Union/DSU.md) |    ✅     |
+| 12  | [Number Theory](./Number_Theory)                        |    ❌     |
+| 13  | [Binary Search](./Binary_search)                        |    ❌     |
+| 14  | [Sorting Algorithms](./Sorting_Algorithms)              |    ✅     |
+| 15  | [Miscellaneous](./Miscellaneous)                        |    ✅     |
