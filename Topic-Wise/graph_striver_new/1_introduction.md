@@ -2,7 +2,7 @@
 
 ### Type of graphs
 
-![Introduction to graph](assets/G1.png)
+![Introduction to graph](assets/g1.png)
 
 1. **Directed:** If there is an edge from u to v, then there is no edge from v to u.
 
