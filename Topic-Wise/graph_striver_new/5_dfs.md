@@ -16,7 +16,7 @@
 -   **TC: O(N)+O(2\*E)**, For directed graph.
 
 ```cpp
-vector<int> dfs(int node, vector<int> adj[], vector<int>& vis, vector<int>& ans)
+void dfs(int node, vector<int> adj[], vector<int>& vis, vector<int>& ans)
 {
     vis[node] = 1;
     ans.push_back(node);
