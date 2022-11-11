@@ -20,7 +20,7 @@ public:
         vector<vector<int>> vis(n, vector<int>(m, 0));
         vector<vector<int>> dist(n, vector<int>(m, 0));
 
-        // {{x,y}, dist}
+        // pair of (i, j) and distance
         queue<pair<pair<int, int>, int>> q;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
