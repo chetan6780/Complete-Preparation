@@ -23,3 +23,6 @@
 | 15  | [Bipartite graph](./15_bipartite_graph.md)                       |
 | 16  | [Detect cycle in directed graph](./16_detect_cycle_directed.md)  |
 | 17  | [Eventual Safe States](./17_eventual_safe_state.md)              |
+| 18  | [Topological sort](./18_topological_sort.md)                     |
+| 19  | [Kahn's algorithm](./19_kahns_algorithm.md)                      |
+| 20  | [Course schedule I & II](./20_course_schedule.md)                |
