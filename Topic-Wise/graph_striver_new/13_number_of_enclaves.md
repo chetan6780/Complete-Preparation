@@ -12,6 +12,7 @@
 
 ```cpp
 class Solution {
+    vector<pair<int, int>> dirs = { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
 public:
     int numEnclaves(vector<vector<int>>& grid)
     {
@@ -32,8 +33,6 @@ public:
                 }
             }
         }
-
-        vector<pair<int, int>> dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 
         while(!q.empty()){
             int r = q.front().first;
