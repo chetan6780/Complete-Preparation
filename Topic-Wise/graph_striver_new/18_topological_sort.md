@@ -10,7 +10,6 @@
 ### Code
 
 ```cpp
-
 class Solution {
     void dfs(int node, vector<int> adj[], vector<int>& vis, stack<int>& st)
     {

@@ -8,7 +8,7 @@
 | 4   | [Tree](./tree)                                          |    ✅     |
 | 5   | [Heap](./heap)                                          |    ✅     |
 | 6   | [Graph](./graph/)                                       |    ✅     |
-| 7   | [Graph Striver New](./graph_striver_new//README.md)     |    ❌     |
+| 7   | [Graph Striver New](./graph_striver_new/README.md)      |    ❌     |
 | 8   | [Recursion](./recursion)                                |    ✅     |
 | 9   | [Dynamic Programming](./Dynamic_Programming)            |    ✅     |
 | 10  | [Dynamic Programming TUF](./Dynamic_programming_TUF)    |    ✅     |
