@@ -6,7 +6,7 @@
 ### Algorithm
 
 -   Take visited array and initialize it with 0.
--   Size of visited array is N if graph is 0 based indexed and N+1 if graph is 1 based indexed.
+-   Size of visited array is N if graph is 1 based indexed and N+1 if graph is 0 based indexed.
 -   We use recursive function dfs to traverse the graph.
 -   In dfs function, we push the current node in ans array and set `visited[node]=1`.
 -   We traverse all the adjacent vertices of the current node and call dfs function for them if they are not visited.
@@ -31,7 +31,7 @@ vector<int> dfsOfGraph(int N, vector<int> adj[])
     vector<int> ans;
     vector<int> vis(N, 0);
     int start = 0;
-    ans = dfs(start, adj, vis, ans);
+    dfs(start, adj, vis, ans);
     return ans;
 }
 ```

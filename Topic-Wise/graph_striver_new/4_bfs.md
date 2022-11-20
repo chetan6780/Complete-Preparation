@@ -6,7 +6,7 @@
 ### Algorithm
 
 -   Take visited array and initialize it with 0.
--   Size of visited array is N if graph is 0 based indexed and N+1 if graph is 1 based indexed.
+-   Size of visited array is N if graph is 1 based indexed and N+1 if graph is 0 based indexed.
 -   Take a queue and push the source vertex in it. make `visited[0] = 1`.
 -   While queue is not empty, pop the front element and store it in ans array.
 -   Traverse all the adjacent vertices of the popped element and push them in the queue if they are not visited.

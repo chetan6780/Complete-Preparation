@@ -1,7 +1,7 @@
 # Bipartite graph
 
 -   **Bipartite graph:** A graph is bipartite if it can be colored using **two colors** such that **no two adjacent vertices/nodes** have the **same color**.
--   Linear graph hs with no cycle are always bipartite.
+-   Linear graph with no cycle are always bipartite.
 -   Any graph with **even length cycle** is bipartite.
 -   Any graph with **odd length cycle** is not bipartite.
 
