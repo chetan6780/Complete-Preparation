@@ -4,4 +4,4 @@ A Challenge by Arsh Goyal to prepare for 6 companies over a period of 30 days by
 
 ## Companies
 
-1. [ ] [Microsoft](Microsoft/README.md)
+1. [ ] [Microsoft](./Microsoft/README.md)

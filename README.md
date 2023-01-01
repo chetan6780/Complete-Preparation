@@ -13,8 +13,9 @@ Head over to [old site](https://chetan6780.github.io/Complete-Preparation/) or [
 |  3  |         [Striver's SDE-Sheet](SDE-Sheet/README.md) 📄         |
 |  4  |       [Object Oriented Programming](OOPs/README.md) 📝        |
 |  5  |        [CS Fundamentals](CS-fundamentals/README.md) 📚        |
-|  6  | [Company Specific Information](Company-specific/README.md) 🏢 |
-|  7  |      [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀       |
+|  6  |     [6 Companies 30 Days](6Companies30Days/README.md) 🏢      |
+|  7  | [Company Specific Information](Company-specific/README.md) 🏢 |
+|  8  |      [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀       |
 
 ### Other
 
