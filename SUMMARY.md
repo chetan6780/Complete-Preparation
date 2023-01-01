@@ -96,6 +96,7 @@
     -   [144. Binary Tree Preorder Traversal](./Leetcode/144_binaryTreePreorderTraversal.md) 🌟
     -   [145. Binary Tree Postorder Traversal](./Leetcode/145_binaryTreePostorderTraversal.md) 🌟
     -   [148. Sort List](./Leetcode/148_sortList.md) 🌟🌟
+    -   [150. Evaluate Reverse Polish Notation](./Leetcode/150_evaluateReversePolishNotation.md) 🌟🌟
     -   [152. Maximum Product Subarray](./Leetcode/152_maximumProductSubarray.md) 🌟🌟
     -   [155. Min Stack](./Leetcode/155_minStack.md) 🌟
     -   [165. Compare Version Numbers](./Leetcode/165_compareVersionNumbers.md) 🌟🌟
@@ -111,6 +112,7 @@
     -   [203. Remove Linked List Elements](./Leetcode/203_removeLinkedListElement.md) 🌟
     -   [206. Reverse Linked List](./Leetcode/206_reverseLinkedList.md) 🌟
     -   [210. Course Schedule II](./Leetcode/210_courseScheduleII.md) 🌟🌟
+    -   [216. Combination Sum III](./Leetcode/216_combinationSumIII.md) 🌟🌟
     -   [217. Contains Duplicate](./Leetcode/217_containsDuplicate.md) 🌟
     -   [219. Contains Duplicate II](./Leetcode/219_containsDuplicateII.md) 🌟
     -   [221. Maximal Square](./Leetcode/221_maximalSquare.md) 🌟🌟
@@ -135,6 +137,7 @@
     -   [283. Move Zeroes](./Leetcode/283_moveZeros.md) 🌟
     -   [287. Find the Duplicate Number](./Leetcode/287_findDuplicateNumber.md) 🌟🌟
     -   [290. Word Pattern](./Leetcode/290_wordPattern.md) 🌟
+    -   [299. Bulls and Cows](./Leetcode/299_bullsAndCows.md) 🌟🌟
     -   [304. Range Sum Query 2D - Immutable](./Leetcode/304_rangeSumQuery2D_Immutable.md) 🌟🌟
     -   [309. Best Time to Buy and Sell Stock with Cooldown](./Leetcode/309_bestTimeToBuyAndSellStockWithCooldown.md) 🌟🌟
     -   [310. Minimum Height Trees](./Leetcode/310_minimumHeightTrees.md) 🌟🌟
@@ -442,6 +445,10 @@
     -   [Operating System](./CS-fundamentals/OS.md)
 
 -   [Important Links 📌](./Important-links.md)
+
+-   6 Companies 30 Days
+
+    -   [Microsoft](./6Companies30Days/Microsoft/README.md)
 
 -   Company specific and Interview tips
 
