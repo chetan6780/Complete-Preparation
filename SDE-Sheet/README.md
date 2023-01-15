@@ -198,3 +198,16 @@ Find complete [SDE-SHEET](https://takeuforward.org/interviews/strivers-sde-sheet
 | 8.  | [Vertical order traversal](DAY_17/8_verticalOrderTraversal.md)                  |
 | 9.  | [Root to node path in a Binary Tree](DAY_17/9_rootToNodePath.md)                |
 | 10. | [Max width of a Binary Tree](DAY_17/10_maxWidthOfBinaryTree.md)                 |
+
+### Day - 18 (Binary Tree II)
+
+| Sn. | Problem                                                                                       |
+| --- | --------------------------------------------------------------------------------------------- |
+| 1.  | [Level order Traversal/Level order traversal in spiral form](DAY_18/1_levelOrderTraversal.md) |
+| 2.  | [Height of a Binary Tree](DAY_18/2_heightOfBinaryTree.md)                                     |
+| 3.  | Diameter of Binary Tree                                                                       |
+| 4.  | Check if the Binary tree is height-balanced or not                                            |
+| 5.  | LCA in Binary Tree                                                                            |
+| 6.  | Check if two trees are identical or not                                                       |
+| 7.  | Zig Zag Traversal of Binary Tree                                                              |
+| 8.  | Boundary Traversal of Binary Tree                                                             |
