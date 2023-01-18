@@ -774,4 +774,139 @@ void quickSort(Node *head)
 }
 
 // ================================================== END ===========================================================
+
+
+// double linked list
+#include <iostream>
+using namespace std;
+
+// Node Structure:
+
+struct Node {
+    int value;
+    Node* next;
+    Node* prev;
+};
+
+class doublyLinkedList {
+private:
+    Node* head;
+
+public:
+    doublyLinkedList()
+    {
+        head = NULL;
+    }
+
+    void insert(int ele, int pos)
+    {
+        if (pos < 1)
+            cout << "Invalid position" << endl;
+
+        Node* new_node = new Node();
+        new_node->value = ele;
+        new_node->next = NULL;
+        new_node->prev = NULL;
+
+        if (pos == 1) {
+            new_node->next = head;
+            if (head != NULL) {
+                head->prev = new_node;
+            }
+            head = new_node;
+        } else if (pos > 1) {
+            Node* temp_node = head;
+            for (int i = 1; i <= pos - 2 && temp_node != NULL; i++) {
+                temp_node = temp_node->next;
+            }
+            if (temp_node == NULL) {
+                cout << "Invalid position" << endl;
+            } else {
+                new_node->next = temp_node->next;
+                new_node->prev = temp_node;
+                if (temp_node->next != NULL) {
+                    temp_node->next->prev = new_node;
+                }
+                temp_node->next = new_node;
+            }
+        }
+    }
+
+    void remove(int pos)
+    {
+        if (pos < 1)
+            cout << "Invalid position" << endl;
+
+        if (pos == 1) {
+            Node* temp_node = head;
+            head = head->next;
+            if (head != NULL) {
+                head->prev = NULL;
+            }
+            delete temp_node;
+        } else if (pos > 1) {
+            Node* temp_node = head;
+            for (int i = 1; i <= pos - 2 && temp_node != NULL; i++) {
+                temp_node = temp_node->next;
+            }
+            if (temp_node == NULL || temp_node->next == NULL) {
+                cout << "Invalid position" << endl;
+            } else {
+                Node* temp_node2 = temp_node->next;
+                temp_node->next = temp_node2->next;
+                if (temp_node2->next != NULL) {
+                    temp_node2->next->prev = temp_node;
+                }
+                delete temp_node2;
+            }
+        }
+    }
+
+    void find(int ele)
+    {
+        Node* temp_node = head;
+        int pos = 1;
+        while (temp_node != NULL) {
+            if (temp_node->value == ele) {
+                cout << ele << " remove from position " << pos << endl;
+                return;
+            }
+            temp_node = temp_node->next;
+            pos++;
+        }
+        cout << "Element not found" << endl;
+    }
+
+    void display()
+    {
+        Node* temp_node = head;
+        if (temp_node == NULL)
+            cout << "Empty DLL" << endl;
+        if (temp_node != NULL) {
+            while (temp_node != NULL) {
+                cout << temp_node->value << " ";
+                temp_node = temp_node->next;
+            }
+            cout << endl;
+        }
+    }
+};
+
+int main()
+{
+
+    doublyLinkedList Dll;
+    Dll.insert(10, 1);
+    Dll.insert(20, 2);
+    Dll.insert(30, 3);
+    Dll.display();
+    Dll.find(20);
+    Dll.find(40);
+    Dll.remove(2);
+    Dll.display();
+    Dll.remove(1);
+    Dll.display();
+
+    return 0;
+}
 ```
