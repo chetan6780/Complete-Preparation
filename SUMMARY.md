@@ -230,6 +230,7 @@
     -   [1161. Maximum Level Sum of a Binary Tree](./Leetcode/1161_maximumLevelSumOfABinaryTree.md) 🌟🌟
     -   [1178. Number of Valid Words for Each Puzzle](./Leetcode/1178_numberOfValidWordsForEachPuzzle.md) 🌟🌟🌟
     -   [1200. Minimum Absolute Difference](./Leetcode/1200_minimumAbsoluteDifference.md) 🌟
+    -   [1232. Check If It Is a Straight Line](./Leetcode/1232_checkIfItIsAStraightLine.md) 🌟
     -   [1286. Iterator for Combination](./Leetcode/1286_iteratorForCombination.md) 🌟🌟
     -   [1289. Minimum Falling Path Sum II](./Leetcode/1289_minimumFallingPathSumII.md) 🌟🌟🌟
     -   [1295. Find Numbers with Even Number of Digits](./Leetcode/1295_findNumbersWithEvenNumberOfDigits.md`) 🌟
@@ -244,6 +245,7 @@
     -   [1431. Kids With the Greatest Number of Candies](./Leetcode/1431_kidsWithTheGreatestNumberOfCandies.md) 🌟
     -   [1470. Shuffle the Array](./Leetcode/1470_shuffleTheArray.md) 🌟
     -   [1480. Running Sum of 1d Array](./Leetcode/1480_runningSumArr.md) 🌟
+    -   [1502. Can Make Arithmetic Progression From Sequence](./Leetcode/1502_canMakeArithmeticProgressionFromSequence.md) 🌟
     -   [1512. Number of Good Pairs](./Leetcode/1512_numberOfGoodPairs.md) 🌟
     -   [1572. Matrix Diagonal Sum](./Leetcode/1572_matrixDiagonalSum.md) 🌟
     -   [1578. Minimum Time to Make Rope Colorful](./Leetcode/1578_minimumTimeToMakeRopeColorful.md) 🌟🌟
