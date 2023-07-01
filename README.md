@@ -2,7 +2,7 @@
 
 One-stop destination for all your technical interview Preparation.
 
-Head over to [old site](https://chetan6780.github.io/Complete-Preparation/) or [new site](https://chetan6780.gitbook.io/complete-preparation/readme) to get started. Both are updated 🚀.
+Head over to [github pages style site](https://chetan6780.github.io/Complete-Preparation/) or [gitbook style site](https://chetan6780.gitbook.io/complete-preparation/readme) to get started! 🚀
 
 ### Index
 
@@ -17,14 +17,9 @@ Head over to [old site](https://chetan6780.github.io/Complete-Preparation/) or [
 |  7  | [Company Specific Information](Company-specific/README.md) 🏢 |
 |  8  |      [C++ Tips and Tricks](./cpp_tips_and_tricks.md) 😀       |
 
-### Other
-
--   My vscode [snippets](./vscode-settings-windows/vscode_snippet_cpp.md) and its [triggers](./vscode-settings-windows/vscode_snippet_triggers.md).
--   My vscode custom key bindings [config](./vscode-settings-windows/vscode_key_bindings.md).
-
 <br/>
 
-> Head over to [CONTRIBUTING.md](CONTRIBUTING.md) to know how to contribute to this repo.
+Head over to [CONTRIBUTING.md](CONTRIBUTING.md) to know how to contribute to this repo.
 
 ### File and Folder tree for convenience
 

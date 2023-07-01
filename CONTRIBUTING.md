@@ -4,7 +4,7 @@
 
 I started this project on April 21, 2021 (Initial commit) as private repo to document all my DSA preparation. I have been preparing for DSA since 2021 and I have solved more than 1000+ problems on various platforms. I have been asked by many people to share my code and approach. So I decided to make this repo public so that everyone can benefit from it.
 
-As its started as my personal repo, I have written explanation in my own way. I have tried to explain as much as I can, I have also added multiple approaches to solve the problem with their time and space complexity. Still you can expect some mistakes(I tried my best to avoid them) and if you find any, please feel free to correct them.
+As its started as my personal repo, I have written explanation in my own way. I have tried to explain as much as I can, I have also added multiple approaches to solve the problem with their time and space complexity. Still you can expect some mistakes(I tried my best to avoid them) and if you find any, please feel free to correct them. Also some series are not completed yet, you can contribute in them too.
 
 ## 🚀 Let's get started!
 
