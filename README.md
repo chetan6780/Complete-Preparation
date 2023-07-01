@@ -2,12 +2,12 @@
 
 One-stop destination for all your technical interview Preparation.
 
-Head over to [github pages style site](https://chetan6780.github.io/Complete-Preparation/) or [gitbook style site](https://chetan6780.gitbook.io/complete-preparation/readme) to get started! 🚀
+Head over to [complete-preparation](https://chetan6780.gitbook.io/complete-preparation/readme) to get started! 🚀
 
 ### Index
 
 | Sn. |                           Sections                            |
-| :-: | :-----------------------------------------------------------: |
+| :- | :-----------------------------------------------------------: |
 |  1  |          [Leetcode Problems](Leetcode/README.md) 💻           |
 |  2  |           [Topic wise DSA](Topic-Wise/README.md) 📚           |
 |  3  |         [Striver's SDE-Sheet](SDE-Sheet/README.md) 📄         |
