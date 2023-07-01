@@ -205,9 +205,9 @@ Find complete [SDE-SHEET](https://takeuforward.org/interviews/strivers-sde-sheet
 | --- | --------------------------------------------------------------------------------------------- |
 | 1.  | [Level order Traversal/Level order traversal in spiral form](DAY_18/1_levelOrderTraversal.md) |
 | 2.  | [Height of a Binary Tree](DAY_18/2_heightOfBinaryTree.md)                                     |
-| 3.  | [Diameter of Binary Tree](DAY_18/3_diameterOfBinaryTree.md)                                    |
-| 4.  | Check if the Binary tree is height-balanced or not                                            |
-| 5.  | LCA in Binary Tree                                                                            |
-| 6.  | Check if two trees are identical or not                                                       |
-| 7.  | Zig Zag Traversal of Binary Tree                                                              |
-| 8.  | Boundary Traversal of Binary Tree                                                             |
+| 3.  | [Diameter of Binary Tree](DAY_18/3_diameterOfBinaryTree.md)                                   |
+| 4.  | [Check if the Binary tree is height-balanced or not](DAY_18/4_heightBalancedBinaryTree.md)    |
+| 5.  | [LCA in Binary Tree](DAY_18/5_lcaOfBinaryTree.md)                                             |
+| 6.  | [Check if two trees are identical or not](DAY_18/6_sameTree.md)                               |
+| 7.  | [Zig Zag Traversal of Binary Tree](DAY_18/7_zigZagTraversal.md)                               |
+| 8.  | [Boundary Traversal of Binary Tree](DAY_18/8_boundryTraversalOfBT.md)                         |

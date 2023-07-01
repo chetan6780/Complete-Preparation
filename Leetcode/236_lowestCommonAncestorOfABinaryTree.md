@@ -8,7 +8,7 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 
 - Find the path from the root node to node n1 and store it in a vector or array.
 - Find the path from the root node to node n2 and store it in another vector or array.
-- Traverse both paths untill the values in arrays are same. Return the common element just before the mismatch.
+- Traverse both paths until the values in arrays are same. Return the common element just before the mismatch.
 
 ### O(N) Time recursive solution
 

@@ -6,8 +6,8 @@ Given the root of a binary tree, return the zigzag level order traversal of its 
 
 **Prerequisites:**
 
-1. [Binary tree level order traversal](./102_btLevelOrderTraversal.md)
-2. [Binary tree level order traversal - II](./107_btLevelOrderTraversalII.md)
+1. [Binary tree level order traversal](../../Leetcode/102_btLevelOrderTraversal.md)
+2. [Binary tree level order traversal - II](../../Leetcode/107_btLevelOrderTraversalII.md)
 
 ### Recursive solution
 
@@ -129,4 +129,44 @@ public:
         return res;
     }
 };
+```
+
+### Codestudio solution
+
+### code
+
+```cpp
+vector<int> zigZagTraversal(BinaryTreeNode<int> *root)
+{
+    vector<int> result;
+    if (root == NULL)
+        return result;
+    stack<BinaryTreeNode<int> *> s1;
+    stack<BinaryTreeNode<int> *> s2;
+    s1.push(root);
+    while (!s1.empty() || !s2.empty())
+    {
+        while (!s1.empty())
+        {
+            BinaryTreeNode<int> *temp = s1.top();
+            s1.pop();
+            result.push_back(temp->data);
+            if (temp->left)
+                s2.push(temp->left);
+            if (temp->right)
+                s2.push(temp->right);
+        }
+        while (!s2.empty())
+        {
+            BinaryTreeNode<int> *temp = s2.top();
+            s2.pop();
+            result.push_back(temp->data);
+            if (temp->right)
+                s1.push(temp->right);
+            if (temp->left)
+                s1.push(temp->left);
+        }
+    }
+    return result;
+}
 ```

@@ -1,6 +1,6 @@
-# [Diameter of the binary tree](https://leetcode.com/problems/diameter-of-binary-tree/)
+# [Diameter of the binary tree](https://leetcode.com/problems/diameter-of-binary-tree/) 🌟🌟
 
--   [code studio](https://www.codingninjas.com/codestudio/problems/920552?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website)
+-   [code studio link](https://www.codingninjas.com/codestudio/problems/920552?topList=striver-sde-sheet-problems&utm_source=striver&utm_medium=website)
 
 Given the root of a binary tree, return the length of the diameter of the tree.
 

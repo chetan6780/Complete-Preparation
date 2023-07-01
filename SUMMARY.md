@@ -74,6 +74,7 @@
     -   [104. Maximum Depth of Binary Tree](./Leetcode/104_maxDepthBinaryTree.md) 🌟
     -   [106. Construct Binary Tree from Inorder and Postorder Traversal](./Leetcode/106_constructBinaryTreeFromInorderAndPostorderTraversal.md) 🌟🌟
     -   [107. Binary Tree Level Order Traversal II](./Leetcode/107_btLevelOrderTraversalII.md) 🌟🌟
+    -   [110. Balanced Binary Tree](./Leetcode/110_balancedBinaryTree.md) 🌟🌟
     -   [112. Path Sum](./Leetcode/112_pathSum.md) 🌟
     -   [116. Populating Next Right Pointers in Each Node](./Leetcode/116_populatingNextRightPointer.md) 🌟🌟
     -   [118. Pascal's Triangle](./Leetcode/118_pascalsTriangle.md) 🌟
@@ -429,6 +430,17 @@
         -   [Vertical order traversal](./SDE-Sheet/DAY_17/8_verticalOrderTraversal.md)
         -   [Root to node path in a Binary Tree](./SDE-Sheet/DAY_17/9_rootToNodePath.md)
         -   [Max width of a Binary Tree](./SDE-Sheet/DAY_17/10_maxWidthOfBinaryTree.md)
+
+    -   Day - 18 (Binary Tree II)
+
+        -   [Level order Traversal/Level order traversal in spiral form](./SDE-Sheet/DAY_18/1_levelOrderTraversal.md)
+        -   [Height of a Binary Tree](./SDE-Sheet/DAY_18/2_heightOfBinaryTree.md)
+        -   [Diameter of Binary Tree](./SDE-Sheet/DAY_18/3_diameterOfBinaryTree.md)
+        -   [Check if the Binary tree is height-balanced or not](./SDE-Sheet/DAY_18/4_heightBalancedBinaryTree.md)
+        -   [LCA in Binary Tree](./SDE-Sheet/DAY_18/5_lcaOfBinaryTree.md)
+        -   [Check if two trees are identical or not](./SDE-Sheet/DAY_18/6_sameTree.md)
+        -   [Zig Zag Traversal of Binary Tree](./SDE-Sheet/DAY_18/7_zigZagTraversal.md)
+        -   [Boundary Traversal of Binary Tree](./SDE-Sheet/DAY_18/8_boundryTraversalOfBT.md)
 
 -   [Object Oriented Programming 📝](./OOPs/README.md)
 
