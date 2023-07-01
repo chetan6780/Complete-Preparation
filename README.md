@@ -7,7 +7,7 @@ Head over to [complete-preparation](https://chetan6780.gitbook.io/complete-prepa
 ### Index
 
 | Sn. |                           Sections                            |
-| :- | :-----------------------------------------------------------: |
+| :-: | :-----------------------------------------------------------: |
 |  1  |          [Leetcode Problems](Leetcode/README.md) 💻           |
 |  2  |           [Topic wise DSA](Topic-Wise/README.md) 📚           |
 |  3  |         [Striver's SDE-Sheet](SDE-Sheet/README.md) 📄         |

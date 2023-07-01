@@ -6,6 +6,8 @@
 
 -   [Monotonic Stack Algorithm and Problems](https://liuzhenglaichn.gitbook.io/algorithm/monotonic-stack)
 
--   [Recursive - DP | Explanation from (brute force-> dp -> greedy)](<https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/discuss/1569135/Explanation-from-(brute-force-greater-dp-greater-greedy)>)
+-   [bttbass-II - Recursive - DP | Explanation from (brute force-> dp -> greedy)](<https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/discuss/1569135/Explanation-from-(brute-force-greater-dp-greater-greedy)>)
 
 -   [✅ [Java] Simple & Clean DP solutions for all 6 Buy & Sell Stock questions on LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/discuss/1569081/Java-Simple-and-Clean-DP-solutions-for-all-6-Buy-and-Sell-Stock-questions-on-LeetCode)
+
+-   [All Types of Patterns for Bits Manipulations and How to use it](https://leetcode.com/discuss/interview-question/3695233/all-types-of-patterns-for-bits-manipulations-and-how-to-use-it)
