@@ -460,116 +460,116 @@
 
 -   [Important Links 📌](./Important-links.md)
 
--   [75 Days DSA challenge](./75-days-dsa-challenge/README.md)
+-   [75 Days DSA challenge 🔥](./75-days-dsa-challenge/README.md)
 
     -   Day - 1 (Array - I)
 
-        -   [1. Two Sum](./Day_1/1_twoSum.md)
-        -   [121. Best Time to Buy and Sell Stock](./Day_1/121_bestTimeToBuyAndSellStocks.md)
-        -   [66. Plus One](./Day_1/66_plusOne.md)
-        -   [283. Move Zeroes](./Day_1/283_moveZeros.md)
+        -   [1. Two Sum](./75-days-dsa-challenge/Day_1/1_twoSum.md)
+        -   [121. Best Time to Buy and Sell Stock](./75-days-dsa-challenge/Day_1/121_bestTimeToBuyAndSellStocks.md)
+        -   [66. Plus One](./75-days-dsa-challenge/Day_1/66_plusOne.md)
+        -   [283. Move Zeroes](./75-days-dsa-challenge/Day_1/283_moveZeros.md)
 
     -   Day - 2 (Array - II)
 
-        -   [977. Squares of a Sorted Array](./Day_2/977_squareOfSortedArray.md)
-        -   [122. Best Time to Buy and Sell Stock II](./Day_2/122_bestTimeToBuyAndSellStock.md)
-        -   [724. Find Pivot Index](./Day_2/724_findPivotIndex.md)
-        -   [169. Majority Element](./Day_2/169_mejorityElement.md)
+        -   [977. Squares of a Sorted Array](./75-days-dsa-challenge/Day_2/977_squareOfSortedArray.md)
+        -   [122. Best Time to Buy and Sell Stock II](./75-days-dsa-challenge/Day_2/122_bestTimeToBuyAndSellStock.md)
+        -   [724. Find Pivot Index](./75-days-dsa-challenge/Day_2/724_findPivotIndex.md)
+        -   [169. Majority Element](./75-days-dsa-challenge/Day_2/169_mejorityElement.md)
 
     -   Day - 3 (Array - III)
 
-        -   [118. Pascals triangle](./Day_3/118_pascalsTriangle.md)
-        -   [26. Remove duplicates](./Day_3/26_removeDuplicateFormSortedArray.md)
-        -   [56. Merge intervals](./Day_3/56_mergeIntervals.md)
-        -   [15. 3-Sum](./Day_3/15_threeSum.md)
+        -   [118. Pascals triangle](./75-days-dsa-challenge/Day_3/118_pascalsTriangle.md)
+        -   [26. Remove duplicates](./75-days-dsa-challenge/Day_3/26_removeDuplicateFormSortedArray.md)
+        -   [56. Merge intervals](./75-days-dsa-challenge/Day_3/56_mergeIntervals.md)
+        -   [15. 3-Sum](./75-days-dsa-challenge/Day_3/15_threeSum.md)
 
     -   Day - 4 (Array - IV)
 
-        -   [380. Insert and delete O(1)](./Day_4/380_insertAndDeleteO_1.md)
-        -   [560. Subarray sum equals k](./Day_4/560_subarraySumEqualsK.md)
-        -   [31. Next permutation](./Day_4/31_nextPermutation.md)
-        -   [11. Container With Most Water](./Day_4/11_containerWithMostWater.md)
+        -   [380. Insert and delete O(1)](./75-days-dsa-challenge/Day_4/380_insertAndDeleteO_1.md)
+        -   [560. Subarray sum equals k](./75-days-dsa-challenge/Day_4/560_subarraySumEqualsK.md)
+        -   [31. Next permutation](./75-days-dsa-challenge/Day_4/31_nextPermutation.md)
+        -   [11. Container With Most Water](./75-days-dsa-challenge/Day_4/11_containerWithMostWater.md)
 
     -   Day - 5 (Array - V)
 
-        -   [54. Spiral Matrix](./Day_5/54_spiralMatrix.md)
-        -   [48. Rotate Image](./Day_5/48_rotateImage.md)
-        -   [79. Word Search](./Day_5/79_wordSearch.md)
+        -   [54. Spiral Matrix](./75-days-dsa-challenge/Day_5/54_spiralMatrix.md)
+        -   [48. Rotate Image](./75-days-dsa-challenge/Day_5/48_rotateImage.md)
+        -   [79. Word Search](./75-days-dsa-challenge/Day_5/79_wordSearch.md)
 
     -   Day - 6 (Array - VI)
 
-        -   [16. 3Sum Closest](./Day_6/16_3SumClosest.md)
-        -   [289. Game of Life](./Day_6/289_gameOfLife.md)
-        -   [1010. Pairs of Songs With Total Durations Divisible by 60](./Day_6/1010_pairsOfSongsWithTotalDurationDivisibleBy60.md)
-        -   [18. 4Sum](./Day_6/18_4Sum.md)
+        -   [16. 3Sum Closest](./75-days-dsa-challenge/Day_6/16_3SumClosest.md)
+        -   [289. Game of Life](./75-days-dsa-challenge/Day_6/289_gameOfLife.md)
+        -   [1010. Pairs of Songs With Total Durations Divisible by 60](./75-days-dsa-challenge/Day_6/1010_pairsOfSongsWithTotalDurationDivisibleBy60.md)
+        -   [18. 4Sum](./75-days-dsa-challenge/Day_6/18_4Sum.md)
 
     -   Day - 7 (Array - VII)
 
-        -   [39. Combination Sum](./Day_7/39_combinationSum.md)
-        -   [45. Jump Game II](./Day_7/45_jumpGameII.md)
-        -   [1423. Maximum Points You Can Obtain from Cards](./Day_7/1423_maximumPointsYouCanObtainFromCards.md)
+        -   [39. Combination Sum](./75-days-dsa-challenge/Day_7/39_combinationSum.md)
+        -   [45. Jump Game II](./75-days-dsa-challenge/Day_7/45_jumpGameII.md)
+        -   [1423. Maximum Points You Can Obtain from Cards](./75-days-dsa-challenge/Day_7/1423_maximumPointsYouCanObtainFromCards.md)
 
     -   Day - 8 (Array - VIII)
 
-        -   [1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts](./Day_8/1465_maximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts.md)
-        -   [695. Max Area of Island](./Day_8/695_maxAreaOfIsland.md)
-        -   [442. Find All Duplicates in an Array](./Day_8/442_findAllDuplicatesInAnArray.md)
-        -   [532. K-diff Pairs in an Array](./Day_8/532_kdiffPairsInAnArray.md)
+        -   [1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts](./75-days-dsa-challenge/Day_8/1465_maximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts.md)
+        -   [695. Max Area of Island](./75-days-dsa-challenge/Day_8/695_maxAreaOfIsland.md)
+        -   [442. Find All Duplicates in an Array](./75-days-dsa-challenge/Day_8/442_findAllDuplicatesInAnArray.md)
+        -   [532. K-diff Pairs in an Array](./75-days-dsa-challenge/Day_8/532_kdiffPairsInAnArray.md)
 
     -   Day - 9 (Array - IX)
 
-        -   [1169. Invalid Transactions](./Day_9/1169_invalidTransactions.md)
-        -   [55. Jump Game](./Day_9/55_jumpGame.md)
-        -   [974. Subarray Sums Divisible by K](./Day_9/974_subarraySumsDivisibleByK.md)
+        -   [1169. Invalid Transactions](./75-days-dsa-challenge/Day_9/1169_invalidTransactions.md)
+        -   [55. Jump Game](./75-days-dsa-challenge/Day_9/55_jumpGame.md)
+        -   [974. Subarray Sums Divisible by K](./75-days-dsa-challenge/Day_9/974_subarraySumsDivisibleByK.md)
 
     -   Day - 10 (Array - X)
 
-        -   [123. Best Time to Buy and Sell Stock III](./Day_10/123_bestTimeToBuyAndSellStockIII.md)
-        -   [41. First Missing Positive](./Day_10/41_firstMissingPositive.md)
-        -   [84. Largest Rectangle in Histogram](./Day_10/84_largestRectangleInHistogram.md)
+        -   [123. Best Time to Buy and Sell Stock III](./75-days-dsa-challenge/Day_10/123_bestTimeToBuyAndSellStockIII.md)
+        -   [41. First Missing Positive](./75-days-dsa-challenge/Day_10/41_firstMissingPositive.md)
+        -   [84. Largest Rectangle in Histogram](./75-days-dsa-challenge/Day_10/84_largestRectangleInHistogram.md)
 
     -   Day - 11 (Array - XI)
 
-        -   [381. Insert Delete GetRandom O(1) - Duplicates allowed](./Day_11/381_insertDeleteGetRandomO_1.md)
-        -   [1499. Max Value of Equation](./Day_11/1499_maxValueOfEquation.md)
+        -   [381. Insert Delete GetRandom O(1) - Duplicates allowed](./75-days-dsa-challenge/Day_11/381_insertDeleteGetRandomO_1.md)
+        -   [1499. Max Value of Equation](./75-days-dsa-challenge/Day_11/1499_maxValueOfEquation.md)
 
     -   Day - 12 (Two Pointers & Sliding Window - I)
 
-        -   [763. Partition Labels](./Day_12/763_partitionLabels.md)
-        -   [75. Sort Colors](./Day_12/75_sortColors.md)
+        -   [763. Partition Labels](./75-days-dsa-challenge/Day_12/763_partitionLabels.md)
+        -   [75. Sort Colors](./75-days-dsa-challenge/Day_12/75_sortColors.md)
 
     -   Day - 13 (Two Pointers & Sliding Window - II)
 
-        -   [424. Longest Repeating Character Replacement](./Day_13/424_longestRepeatingCharacterReplacement.md)
-        -   [992. Subarrays with K Different Integers](./Day_13/992_subarraysWithKDifferentIntegers.md)
+        -   [424. Longest Repeating Character Replacement](./75-days-dsa-challenge/Day_13/424_longestRepeatingCharacterReplacement.md)
+        -   [992. Subarrays with K Different Integers](./75-days-dsa-challenge/Day_13/992_subarraysWithKDifferentIntegers.md)
 
     -   Day - 14 (Binary Search - I)
 
-        -   [1351. Count Negative Numbers in a Sorted Matrix](./Day_14/1351_countNegativeNumbersInASortedMatrix.md)]
-        -   [852. Peak Index in a Mountain Array](./Day_14/852_peakIndexInAMountainArray.md)
-        -   [981. Time Based Key-Value Store](./Day_14/981_timeBasedKeyValueStore.md)
-        -   [33. Search in Rotated Sorted Array](./Day_14/33_searchInRotatedSortedArray.md)
+        -   [1351. Count Negative Numbers in a Sorted Matrix](./75-days-dsa-challenge/Day_14/1351_countNegativeNumbersInASortedMatrix.md)
+        -   [852. Peak Index in a Mountain Array](./75-days-dsa-challenge/Day_14/852_peakIndexInAMountainArray.md)
+        -   [981. Time Based Key-Value Store](./75-days-dsa-challenge/Day_14/981_timeBasedKeyValueStore.md)
+        -   [33. Search in Rotated Sorted Array](./75-days-dsa-challenge/Day_14/33_searchInRotatedSortedArray.md)
 
     -   Day - 15 (Binary Search - II)
 
-        -   [50. Pow(x, n)](./Day_15/50_pow.md)
-        -   [34. Find First and Last Position of Element in Sorted Array](./Day_15/34_findFirstAndLastPositionOfElementInSortedArray.md)
-        -   [162. Find Peak Element](./Day_15/162_findPeakElement.md)
-        -   [74. Search a 2D Matrix](./Day_15/74_search2DMatrix.md)
+        -   [50. Pow(x, n)](./75-days-dsa-challenge/Day_15/50_pow.md)
+        -   [34. Find First and Last Position of Element in Sorted Array](./75-days-dsa-challenge/Day_15/34_findFirstAndLastPositionOfElementInSortedArray.md)
+        -   [162. Find Peak Element](./75-days-dsa-challenge/Day_15/162_findPeakElement.md)
+        -   [74. Search a 2D Matrix](./75-days-dsa-challenge/Day_15/74_search2DMatrix.md)
 
     -   Day - 16 (Binary Search - III)
 
-        -   [29. Divide Two Integers](./Day_16/29_divideTwoIntegers.md)
-        -   [1011. Capacity To Ship Packages Within D Days](./Day_16/1011_capacityToShipPackagesWithinDDays.md)
-        -   [1760. Minimum Limit of Balls in a Bag](./Day_16/1760_minimumLimitOfBallsInABag.md)
-        -   [4. Median of Two Sorted Arrays](./Day_16/4_medianOfTwoSortedArrays.md)
+        -   [29. Divide Two Integers](./75-days-dsa-challenge/Day_16/29_divideTwoIntegers.md)
+        -   [1011. Capacity To Ship Packages Within D Days](./75-days-dsa-challenge/Day_16/1011_capacityToShipPackagesWithinDDays.md)
+        -   [1760. Minimum Limit of Balls in a Bag](./75-days-dsa-challenge/Day_16/1760_minimumLimitOfBallsInABag.md)
+        -   [4. Median of Two Sorted Arrays](./75-days-dsa-challenge/Day_16/4_medianOfTwoSortedArrays.md)
 
     -   Day - 17 (Binary Search - IV)
 
           <!-- TODO: Solve day 17 questions -->
 
-        -   [315. Count of Smaller Numbers After Self](./Day_17/315_countOfSmallerNumbersAfterSelf.md)
-        -   [410. Split Array Largest Sum](./Day_17/410_splitArrayLargestSum.md)
+        -   [315. Count of Smaller Numbers After Self](./75-days-dsa-challenge/Day_17/315_countOfSmallerNumbersAfterSelf.md)
+        -   [410. Split Array Largest Sum](./75-days-dsa-challenge/Day_17/410_splitArrayLargestSum.md)
 
     -   Day - 18 (Hashing - I)
 
@@ -579,125 +579,125 @@
 
     -   Day - 19 (Hashing - II)
 
-        -   [953. Verifying an Alien Dictionary](./Day_19/953_verifyingAnAlienDictionary.md)
-        -   [706. Design HashMap](./Day_19/706_designHashMap.md)
-        -   [347. Top K Frequent Elements](./Day_19/347_topKFrequentElements.md)
+        -   [953. Verifying an Alien Dictionary](./75-days-dsa-challenge/Day_19/953_verifyingAnAlienDictionary.md)
+        -   [706. Design HashMap](./75-days-dsa-challenge/Day_19/706_designHashMap.md)
+        -   [347. Top K Frequent Elements](./75-days-dsa-challenge/Day_19/347_topKFrequentElements.md)
 
     -   Day - 20 (Linked list - I)
 
-        -   [206. Reverse Linked List](./Day_20/206_reverseLinkedList.md)
-        -   [876. Middle of the Linked List](./Day_20/876_middleOfTheLinkedList.md)
-        -   [21. Merge Two Sorted Lists](./Day_20/21_mergeTwoSortedLists.md)
-        -   [19. Remove Nth Node From End of List](./Day_20/19_removeNthNodeFromEndOfList.md)
+        -   [206. Reverse Linked List](./75-days-dsa-challenge/Day_20/206_reverseLinkedList.md)
+        -   [876. Middle of the Linked List](./75-days-dsa-challenge/Day_20/876_middleOfTheLinkedList.md)
+        -   [21. Merge Two Sorted Lists](./75-days-dsa-challenge/Day_20/21_mergeTwoSortedLists.md)
+        -   [19. Remove Nth Node From End of List](./75-days-dsa-challenge/Day_20/19_removeNthNodeFromEndOfList.md)
 
     -   Day - 21 (Linked list - II)
 
-        -   [237. Delete Node in a Linked List](./Day_21/237_deleteNodeInALinkedList.md)
-        -   [445. Add Two Numbers II](./Day_21/445_addTwoNumbersII.md)
-        -   [160. Intersection of Two Linked Lists](./Day_21/160_intersectionOfTwoLinkedLists.md)
-        -   [234. Palindrome Linked List](./Day_21/234_palindromeLinkedList.md)
+        -   [237. Delete Node in a Linked List](./75-days-dsa-challenge/Day_21/237_deleteNodeInALinkedList.md)
+        -   [445. Add Two Numbers II](./75-days-dsa-challenge/Day_21/445_addTwoNumbersII.md)
+        -   [160. Intersection of Two Linked Lists](./75-days-dsa-challenge/Day_21/160_intersectionOfTwoLinkedLists.md)
+        -   [234. Palindrome Linked List](./75-days-dsa-challenge/Day_21/234_palindromeLinkedList.md)
 
     -   Day - 22 (Linked list - III)
 
-        -   [25. Reverse Nodes in k-Group](./Day_22/25_reverseNodesInKGroup.md)
-        -   [142. Linked List Cycle II](./Day_22/142_linkedListCycleII.md)
-        -   [61. Rotate List](./Day_22/61_rotateList.md)
+        -   [25. Reverse Nodes in k-Group](./75-days-dsa-challenge/Day_22/25_reverseNodesInKGroup.md)
+        -   [142. Linked List Cycle II](./75-days-dsa-challenge/Day_22/142_linkedListCycleII.md)
+        -   [61. Rotate List](./75-days-dsa-challenge/Day_22/61_rotateList.md)
 
     -   Day - 23 (Linked list - IV)
 
-        -   [430. Flatten a Multilevel Doubly Linked List](./Day_23/430_flattenAMultilevelDoublyLinkedList.md)
-        -   [138. Copy List with Random Pointer](./Day_23/138_copyListWithRandomPointer.md)
-        -   [287. Find the Duplicate Number](./Day_23/287_findTheDuplicateNumber.md)
+        -   [430. Flatten a Multilevel Doubly Linked List](./75-days-dsa-challenge/Day_23/430_flattenAMultilevelDoublyLinkedList.md)
+        -   [138. Copy List with Random Pointer](./75-days-dsa-challenge/Day_23/138_copyListWithRandomPointer.md)
+        -   [287. Find the Duplicate Number](./75-days-dsa-challenge/Day_23/287_findTheDuplicateNumber.md)
 
     -   Day - 24 (Stack - I)
 
-        -   [496. Next Greater Element I](./Day_24/496_nextGreaterElementI.md)
-        -   [503. Next Greater Element II](./Day_24/503_nextGreaterElementII.md)
-        -   [225. Implement Stack using Queues](./Day_24/225_implementStackUsingQueues.md)
-        -   [232. Implement Queue using Stacks](./Day_24/232_implementQueueUsingStacks.md)
+        -   [496. Next Greater Element I](./75-days-dsa-challenge/Day_24/496_nextGreaterElementI.md)
+        -   [503. Next Greater Element II](./75-days-dsa-challenge/Day_24/503_nextGreaterElementII.md)
+        -   [225. Implement Stack using Queues](./75-days-dsa-challenge/Day_24/225_implementStackUsingQueues.md)
+        -   [232. Implement Queue using Stacks](./75-days-dsa-challenge/Day_24/232_implementQueueUsingStacks.md)
 
     -   Day - 25 (Stack - II)
 
-        -   [20. Valid Parentheses](./Day_25/20_validParentheses.md)
-        -   [155. Min Stack](./Day_25/155_minStack.md)
-        -   [Help Classmates](./Day_25/000_helpClassmates.md)
-        -   [146. LRU Cache](./Day_25/146_lruCache.md)
+        -   [20. Valid Parentheses](./75-days-dsa-challenge/Day_25/20_validParentheses.md)
+        -   [155. Min Stack](./75-days-dsa-challenge/Day_25/155_minStack.md)
+        -   [Help Classmates](./75-days-dsa-challenge/Day_25/000_helpClassmates.md)
+        -   [146. LRU Cache](./75-days-dsa-challenge/Day_25/146_lruCache.md)
 
     -   Day - 26 (Stack - III)
 
-        -   [84. Largest Rectangle in Histogram](./Day_26/84_largestRectangleInHistogram.md)
-        -   [239. Sliding Window Maximum](./Day_26/239_slidingWindowMaximum.md)
-        -   [460. LFU Cache](./Day_26/460_lfuCache.md)
+        -   [84. Largest Rectangle in Histogram](./75-days-dsa-challenge/Day_26/84_largestRectangleInHistogram.md)
+        -   [239. Sliding Window Maximum](./75-days-dsa-challenge/Day_26/239_slidingWindowMaximum.md)
+        -   [460. LFU Cache](./75-days-dsa-challenge/Day_26/460_lfuCache.md)
 
     -   Day - 27 (Tree - I)
 
-        -   [543. Diameter of Binary Tree](./Day_27/543_diameterOfBinaryTree.md)
-        -   [101. Symmetric Tree](./Day_27/101_symmetricTree.md)
-        -   [226. Invert Binary Tree](./Day_27/226_invertBinaryTree.md)
-        -   [572. Subtree of Another Tree](./Day_27/572_subtreeOfAnotherTree.md)
+        -   [543. Diameter of Binary Tree](./75-days-dsa-challenge/Day_27/543_diameterOfBinaryTree.md)
+        -   [101. Symmetric Tree](./75-days-dsa-challenge/Day_27/101_symmetricTree.md)
+        -   [226. Invert Binary Tree](./75-days-dsa-challenge/Day_27/226_invertBinaryTree.md)
+        -   [572. Subtree of Another Tree](./75-days-dsa-challenge/Day_27/572_subtreeOfAnotherTree.md)
 
     -   Day - 28 (Tree - II)
 
-        -   [108. Convert Sorted Array to Binary Search Tree](./Day_28/108_convertSortedArrayToBinarySearchTree.md)
-        -   [617. Merge Two Binary Trees](./Day_28/617_mergeTwoBinaryTrees.md)
-        -   [104. Maximum Depth of Binary Tree](./Day_28/104_maximumDepthOfBinaryTree.md)
-        -   [257. Binary Tree Paths](./Day_28/257_binaryTreePaths.md)
+        -   [108. Convert Sorted Array to Binary Search Tree](./75-days-dsa-challenge/Day_28/108_convertSortedArrayToBinarySearchTree.md)
+        -   [617. Merge Two Binary Trees](./75-days-dsa-challenge/Day_28/617_mergeTwoBinaryTrees.md)
+        -   [104. Maximum Depth of Binary Tree](./75-days-dsa-challenge/Day_28/104_maximumDepthOfBinaryTree.md)
+        -   [257. Binary Tree Paths](./75-days-dsa-challenge/Day_28/257_binaryTreePaths.md)
 
     -   Day - 29 (Tree - III)
 
-        -   [100. Same Tree](./Day_29/100_sameTree.md)
-        -   [235. Lowest Common Ancestor of a Binary Search Tree](./Day_29/235_lowestCommonAncestorOfABinarySearchTree.md)
-        -   [112. Path Sum](./Day_29/112_pathSum.md)
-        -   [530. Minimum Absolute Difference in BST](./Day_29/530_minimumAbsoluteDifferenceInBST.md)
+        -   [100. Same Tree](./75-days-dsa-challenge/Day_29/100_sameTree.md)
+        -   [235. Lowest Common Ancestor of a Binary Search Tree](./75-days-dsa-challenge/Day_29/235_lowestCommonAncestorOfABinarySearchTree.md)
+        -   [112. Path Sum](./75-days-dsa-challenge/Day_29/112_pathSum.md)
+        -   [530. Minimum Absolute Difference in BST](./75-days-dsa-challenge/Day_29/530_minimumAbsoluteDifferenceInBST.md)
 
     -   Day - 30 (Tree - IV)
 
-        -   [404. Sum of Left Leaves](./Day_30/404_sumOfLeftLeaves.md)
-        -   [110. Balanced Binary Tree](./Day_30/110_balancedBinaryTree.md)
-        -   [662. Maximum Width of Binary Tree](./Day_30/662_maximumWidthOfBinaryTree.md)
-        -   [1448. Count Good Nodes in Binary Tree](./Day_30/1448_countGoodNodesInBinaryTree.md)
+        -   [404. Sum of Left Leaves](./75-days-dsa-challenge/Day_30/404_sumOfLeftLeaves.md)
+        -   [110. Balanced Binary Tree](./75-days-dsa-challenge/Day_30/110_balancedBinaryTree.md)
+        -   [662. Maximum Width of Binary Tree](./75-days-dsa-challenge/Day_30/662_maximumWidthOfBinaryTree.md)
+        -   [1448. Count Good Nodes in Binary Tree](./75-days-dsa-challenge/Day_30/1448_countGoodNodesInBinaryTree.md)
 
     -   Day - 31 (Tree - V)
 
-        -   [236. Lowest Common Ancestor of a Binary Tree](./Day_31/236_lowestCommonAncestorOfABinaryTree.md)
-        -   [199. Binary Tree Right Side View](./Day_31/199_binaryTreeRightSideView.md)
-        -   [863. All Nodes Distance K in Binary Tree](./Day_31/863_allNodesDistanceKInBinaryTree.md)
-        -   [297. Serialize and Deserialize Binary Tree](./Day_31/297_serializeAndDeserializeBinaryTree.md)
+        -   [236. Lowest Common Ancestor of a Binary Tree](./75-days-dsa-challenge/Day_31/236_lowestCommonAncestorOfABinaryTree.md)
+        -   [199. Binary Tree Right Side View](./75-days-dsa-challenge/Day_31/199_binaryTreeRightSideView.md)
+        -   [863. All Nodes Distance K in Binary Tree](./75-days-dsa-challenge/Day_31/863_allNodesDistanceKInBinaryTree.md)
+        -   [297. Serialize and Deserialize Binary Tree](./75-days-dsa-challenge/Day_31/297_serializeAndDeserializeBinaryTree.md)
 
     -   Day - 32 (Tree - VI)
 
-        -   [102. Binary Tree Level Order Traversal](./Day_32/102_binaryTreeLevelOrderTraversal.md)
-        -   [103. Binary Tree Zigzag Level Order Traversal](./Day_32/103_binaryTreeZigzagLevelOrderTraversal.md)
-        -   [173. Binary Search Tree Iterator](./Day_32/173_binarySearchTreeIterator.md)
-        -   [437. Path Sum III](./Day_32/437_pathSumIII.md)
+        -   [102. Binary Tree Level Order Traversal](./75-days-dsa-challenge/Day_32/102_binaryTreeLevelOrderTraversal.md)
+        -   [103. Binary Tree Zigzag Level Order Traversal](./75-days-dsa-challenge/Day_32/103_binaryTreeZigzagLevelOrderTraversal.md)
+        -   [173. Binary Search Tree Iterator](./75-days-dsa-challenge/Day_32/173_binarySearchTreeIterator.md)
+        -   [437. Path Sum III](./75-days-dsa-challenge/Day_32/437_pathSumIII.md)
 
     -   Day - 33 (Tree - VII)
 
-        -   [116. Populating Next Right Pointers in Each Node](./Day_33/116_populatingNextRightPointersInEachNode.md)
-        -   [114. Flatten Binary Tree to Linked List](./Day_33/114_flattenBinaryTreeToLinkedList.md)
-        -   [662. Maximum Width of Binary Tree](./Day_33/662_maximumWidthOfBinaryTree.md)
-        -   [889. Construct Binary Tree from Preorder and Postorder Traversal](./Day_33/889_constructBinaryTreeFromPreorderAndPostorderTraversal.md)
+        -   [116. Populating Next Right Pointers in Each Node](./75-days-dsa-challenge/Day_33/116_populatingNextRightPointersInEachNode.md)
+        -   [114. Flatten Binary Tree to Linked List](./75-days-dsa-challenge/Day_33/114_flattenBinaryTreeToLinkedList.md)
+        -   [662. Maximum Width of Binary Tree](./75-days-dsa-challenge/Day_33/662_maximumWidthOfBinaryTree.md)
+        -   [889. Construct Binary Tree from Preorder and Postorder Traversal](./75-days-dsa-challenge/Day_33/889_constructBinaryTreeFromPreorderAndPostorderTraversal.md)
 
     -   Day - 34(BST - I)
 
         -   [Binary Search Tree | Set 1 (Search and Insertion)](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
         -   [Binary Search Tree | Set 2 (Delete)](https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/)
         -   [Floor and Ceil from a BST](https://www.geeksforgeeks.org/floor-and-ceil-from-a-bst/)
-        -   [938. Range Sum of BST](./Day_34/938_rangeSumOfBST.md)
+        -   [938. Range Sum of BST](./75-days-dsa-challenge/Day_34/938_rangeSumOfBST.md)
 
     -   Day - 35(BST - II)
 
-        -   [108. Convert Sorted Array to Binary Search Tree](./Day_35/108_convertSortedArrayToBinarySearchTree.md)
-        -   [235. Lowest Common Ancestor of a Binary Search Tree](./Day_35/235_lowestCommonAncestorOfABinarySearchTree.md)
-        -   [530. Minimum Absolute Difference in BST](./Day_35/530_minimumAbsoluteDifferenceInBST.md)
-        -   [98. Validate Binary Search Tree](./Day_35/98_validateBinarySearchTree.md)
+        -   [108. Convert Sorted Array to Binary Search Tree](./75-days-dsa-challenge/Day_35/108_convertSortedArrayToBinarySearchTree.md)
+        -   [235. Lowest Common Ancestor of a Binary Search Tree](./75-days-dsa-challenge/Day_35/235_lowestCommonAncestorOfABinarySearchTree.md)
+        -   [530. Minimum Absolute Difference in BST](./75-days-dsa-challenge/Day_35/530_minimumAbsoluteDifferenceInBST.md)
+        -   [98. Validate Binary Search Tree](./75-days-dsa-challenge/Day_35/98_validateBinarySearchTree.md)
 
     -   Day - 36(BST - III)
 
-        -   [95. Unique Binary Search Trees II](./Day_36/95_uniqueBinarySearchTreesII.md)
-        -   [230. Kth Smallest Element in a BST](./Day_36/230_kthSmallestElementInABST.md)
-        -   [96. Unique Binary Search Trees](./Day_36/96_uniqueBinarySearchTrees.md)
-        -   [99. Recover Binary Search Tree](./Day_36/99_recoverBinarySearchTree.md)
+        -   [95. Unique Binary Search Trees II](./75-days-dsa-challenge/Day_36/95_uniqueBinarySearchTreesII.md)
+        -   [230. Kth Smallest Element in a BST](./75-days-dsa-challenge/Day_36/230_kthSmallestElementInABST.md)
+        -   [96. Unique Binary Search Trees](./75-days-dsa-challenge/Day_36/96_uniqueBinarySearchTrees.md)
+        -   [99. Recover Binary Search Tree](./75-days-dsa-challenge/Day_36/99_recoverBinarySearchTree.md)
 
     -   Day - 37 (Heap - I)
 
@@ -711,14 +711,14 @@
 
         -   [merge k sorted array](https://www.geeksforgeeks.org/merge-k-sorted-arrays/)
         -   [nearly sorted algorithm](https://www.geeksforgeeks.org/nearly-sorted-algorithm/)
-        -   [295. Find Median from Data Stream](./Day_38/295_findMedianFromDataStream.md)
-        -   [215. Kth Largest Element in an Array](./Day_38/215_kthLargestElementInAnArray.md)
+        -   [295. Find Median from Data Stream](./75-days-dsa-challenge/75-days-dsa-challenge/Day_38/295_findMedianFromDataStream.md)
+        -   [215. Kth Largest Element in an Array](./75-days-dsa-challenge/75-days-dsa-challenge/Day_38/215_kthLargestElementInAnArray.md)
 
     -   Day - 39 (Heap - III)
 
-        -   [347. Top K Frequent Elements](./Day_39/347_topKFrequentElements.md)
-        -   [218. The Skyline Problem](./Day_39/218_theSkylineProblem.md)
-        -   [23. Merge k Sorted Lists](./Day_39/23_mergeKSortedLists.md)
+        -   [347. Top K Frequent Elements](./75-days-dsa-challenge/Day_39/347_topKFrequentElements.md)
+        -   [218. The Skyline Problem](./75-days-dsa-challenge/Day_39/218_theSkylineProblem.md)
+        -   [23. Merge k Sorted Lists](./75-days-dsa-challenge/Day_39/23_mergeKSortedLists.md)
 
     -   Day - 40 (Heap - IV)
 
@@ -727,15 +727,15 @@
 
     -   Day - 41 (Greedy - I)
 
-        -   [N meetings in one room](./Day_41/nMeetingsInOneRoom.md)
-        -   [Activity Selection](./Day_41/activitySelection.md)
-        -   [Minimum number of Coins](./Day_41/minimumNumberOfCoins.md)
+        -   [N meetings in one room](./75-days-dsa-challenge/Day_41/nMeetingsInOneRoom.md)
+        -   [Activity Selection](./75-days-dsa-challenge/Day_41/activitySelection.md)
+        -   [Minimum number of Coins](./75-days-dsa-challenge/Day_41/minimumNumberOfCoins.md)
 
     -   Day - 42 (Greedy - II)
 
-        -   [Fractional Knapsack](./Day_42/fractionalKnapsack.md)
-        -   [Minimum Platforms](./Day_42/minimumPlatforms.md)
-        -   [Job Sequencing Problem](./Day_42/jobSequencingProblem.md)
+        -   [Fractional Knapsack](./75-days-dsa-challenge/Day_42/fractionalKnapsack.md)
+        -   [Minimum Platforms](./75-days-dsa-challenge/Day_42/minimumPlatforms.md)
+        -   [Job Sequencing Problem](./75-days-dsa-challenge/Day_42/jobSequencingProblem.md)
 
     -   Day - 43 (Backtracking - I)
 
@@ -745,7 +745,7 @@
 
     -   Day - 44 (Backtracking - II)
 
-        -   [17. Letter Combinations of a Phone Number](./Day_44/17_letterCombinationsOfAPhoneNumber.md)
+        -   [17. Letter Combinations of a Phone Number](./75-days-dsa-challenge/Day_44/17_letterCombinationsOfAPhoneNumber.md)
 
 -   6 Companies 30 Days
 
