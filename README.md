@@ -2,7 +2,7 @@
 
 🎉 **One-stop destination for all your technical interview Preparation** 🎉
 
-_I started this project on April 21, 2021 (Initial commit) as to document all my DSA preparation. I have been preparing for DSA since 2021 and solved 1000+ problems on various programming platforms. I have been asked by many people to share my code and approach. So I decided to make this repo public so that everyone can benefit from it._
+_I started this project on April 21, 2021 (Initial commit) to document all my DSA preparation. I have been preparing for DSA since 2021 and solved 1000+ problems on various programming platforms. I have been asked by many people to share my code and approach. So I decided to make this repo public so that everyone can benefit from it._
 
 _As its started as my personal repo, I have written explanation in my own way. I tried to explain as much as I can, also added multiple approaches to solve the problem with their time and space complexity. Still you can expect some mistakes(I tried my best to avoid them) and if you find any, please feel free to correct them. Also some series are not completed yet, you can contribute in them too. check [contribution.md](CONTRIBUTING.md) if you want to contribute and help to improve complete preparation._
 
