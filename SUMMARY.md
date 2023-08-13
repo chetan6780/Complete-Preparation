@@ -72,6 +72,7 @@
     -   [102. Binary Tree Level Order Traversal](./Leetcode/102_btLevelOrderTraversal.md) 🌟🌟
     -   [103. Binary Tree Zigzag Level Order Traversal](./Leetcode/103_btZigzagLevelOrderTraversal.md) 🌟🌟
     -   [104. Maximum Depth of Binary Tree](./Leetcode/104_maxDepthBinaryTree.md) 🌟
+    -   [105. Construct Binary Tree from Preorder and Inorder Traversal](./Leetcode/105_constuctBinaryTreeFromPreorderAndInorderTravesal.md) 🌟🌟
     -   [106. Construct Binary Tree from Inorder and Postorder Traversal](./Leetcode/106_constructBinaryTreeFromInorderAndPostorderTraversal.md) 🌟🌟
     -   [107. Binary Tree Level Order Traversal II](./Leetcode/107_btLevelOrderTraversalII.md) 🌟🌟
     -   [110. Balanced Binary Tree](./Leetcode/110_balancedBinaryTree.md) 🌟🌟
@@ -441,6 +442,12 @@
         -   [Check if two trees are identical or not](./SDE-Sheet/DAY_18/6_sameTree.md)
         -   [Zig Zag Traversal of Binary Tree](./SDE-Sheet/DAY_18/7_zigZagTraversal.md)
         -   [Boundary Traversal of Binary Tree](./SDE-Sheet/DAY_18/8_boundryTraversalOfBT.md)
+
+    -   Day - 19 (Binary Tree III)
+
+        -   [Binary Tree Maximum Path Sum](./SDE-Sheet/DAY_19/1_binaryTreeMaximumPathSum.md)
+        -   [Construct Binary Tree from Preorder and Inorder Traversal](./SDE-Sheet/DAY_19/2_constructBinaryTreeFromPreorderAndInorderTraversal.md)
+        -   [Construct Binary Tree from Inorder and Postorder Traversal](./SDE-Sheet/DAY_19/3_constructBinaryTreeFromInorderAndPostorderTraversal.md)
 
 -   [Object Oriented Programming 📝](./OOPs/README.md)
 

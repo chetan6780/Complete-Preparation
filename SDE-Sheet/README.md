@@ -214,6 +214,10 @@ Find complete [SDE-SHEET](https://takeuforward.org/interviews/strivers-sde-sheet
 
 ### Day - 19 (Binary Tree III)
 
-| Sn. | Problem                                                              |
-| --- | -------------------------------------------------------------------- |
-| 1   | [Binary Tree Maximum Path Sum](DAY_19/1_binaryTreeMaximumPathSum.md) |
+| Sn. | Problem                                                                                                                     |
+| --- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [Binary Tree Maximum Path Sum](DAY_19/1_binaryTreeMaximumPathSum.md)                                                        |
+| 2   | [Construct Binary Tree from Preorder and Inorder Traversal](DAY_19/2_constructBinaryTreeFromPreorderAndInorderTraversal.md) |
+| 3   | [Construct Binary Tree from Inorder and Postorder Traversal](DAY_19/3_constructBinaryTreeFromInorderAndPostorderTraversal.md) |
+
+
