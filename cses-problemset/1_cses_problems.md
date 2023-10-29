@@ -20,3 +20,7 @@
 
 -   For 1 ans is 1, for 2 to 4 there is no solution possible.
 -   For rest print all even numbers first and then all odd numbers.
+
+# 9. bit strings
+
+-  There are 2^n bit strings of length n.

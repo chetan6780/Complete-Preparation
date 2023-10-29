@@ -1,5 +1,7 @@
 # [Two knights](https://cses.fi/problemset/task/1072/)
 
+Your task is to count for `k=1,2,...,n` the number of ways two knights can be placed on a `k * k` chessboard so that they do not attack each other.
+
 ### Explanation
 
 -   For a n\*n board, there are `n^2` ways to place 1st knight.
