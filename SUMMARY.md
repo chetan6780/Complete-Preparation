@@ -270,7 +270,7 @@
     -   [1920. Build Array from Permutation](./Leetcode/1920_buildArrayFromPermutation.md) 🌟
     -   [1929. Concatenation of Array](./Leetcode/1929_ConcatenationOfArray.md) 🌟
     -   [1971. Find if Path Exists in Graph](./Leetcode/1971_findIfPathExistsInGraph.md) 🌟
-    -   [2265. Count Nodes Equal to Average of Subtree](./Leetcode/2265_countNodeEqualToAverageOfSubtree.md) 🌟🌟
+    -   [2265. Count Nodes Equal to Average of Subtree](./Leetcode/2200-2299/2265_countNodeEqualToAverageOfSubtree.md) 🌟🌟
 
 -   [SDE-Sheet 📄](./SDE-Sheet/README.md)
 

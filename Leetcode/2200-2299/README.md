@@ -2,7 +2,7 @@
 
 ---
 
-# [2265. Count Nodes Equal to Average of Subtree](./2265_countNodeEqualToAverageOfSubtree.md) 🌟🌟
+# [2265. Count Nodes Equal to Average of Subtree](2265_countNodeEqualToAverageOfSubtree.md) 🌟🌟
 
 ### Brute Force
 

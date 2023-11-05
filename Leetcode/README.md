@@ -32,5 +32,6 @@
 | 1700-1799 | [Leetcode Problem 1700-1799](./1700-1799.md) |
 | 1800-1899 | [Leetcode Problem 1800-1899](./1800-1899.md) |
 | 1900-1999 | [Leetcode Problem 1900-1999](./1900-1999.md) |
+| 2200-2299 | [Leetcode Problem 2200-2299](./2200-2299/README.md) |
 
 ---
