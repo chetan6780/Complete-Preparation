@@ -23,6 +23,7 @@
     -   [2. Add Two Numbers](./Leetcode/2_addWtoNumbers.md) 🌟🌟
     -   [3. Longest Substring Without Repeating Characters](./Leetcode/3_longestSubstringWithoutRepeatingCharacters.md) 🌟🌟
     -   [8. String to Integer (atoi)](./Leetcode/8_stringToInteger.md) 🌟🌟
+    -   [11. Container With Most Water](./Leetcode/11_containerWithMostWater.md) 🌟🌟
     -   [12. Integer to Roman](./Leetcode/12_integerToRoman.md) 🌟🌟
     -   [15. 3Sum](./Leetcode/15_3sum.md) 🌟🌟
     -   [18. 4Sum](./Leetcode/18_4sum.md) 🌟🌟
@@ -169,6 +170,7 @@
     -   [485. Max Consecutive Ones](./Leetcode/485_maxConsecutiveOnes.md) 🌟
     -   [492. Construct the Rectangle](./Leetcode/492_constructTheRectangle.md) 🌟
     -   [493. Reverse Pairs](./Leetcode/493_reversePairs.md) 🌟🌟🌟
+    -   [501. Find Mode in Binary Search Tree](./Leetcode/501_findModeInBST.md) 🌟
     -   [515. Find Largest Value in Each Tree Row](./Leetcode/515_findLargestValueInEachTreeRow.md) 🌟🌟
     -   [518. Coin Change 2](./Leetcode/518_coinChange2.md) 🌟🌟
     -   [523. Continuous Subarray Sum](./Leetcode/523_continuousSubarraySum.md) 🌟🌟
@@ -249,12 +251,14 @@
     -   [1480. Running Sum of 1d Array](./Leetcode/1480_runningSumArr.md) 🌟
     -   [1502. Can Make Arithmetic Progression From Sequence](./Leetcode/1502_canMakeArithmeticProgressionFromSequence.md) 🌟
     -   [1512. Number of Good Pairs](./Leetcode/1512_numberOfGoodPairs.md) 🌟
+    -   [1535. Find the Winner of an Array Game](./Leetcode/1535_findTheWinnerOfAnArrayGame.md) 🌟🌟
     -   [1572. Matrix Diagonal Sum](./Leetcode/1572_matrixDiagonalSum.md) 🌟
     -   [1578. Minimum Time to Make Rope Colorful](./Leetcode/1578_minimumTimeToMakeRopeColorful.md) 🌟🌟
     -   [1658. Minimum Operations to Reduce X to Zero](./Leetcode/1658_minimumOperationsToReduceXToZero.md)
     -   [1663. Smallest String With A Given Numeric Value](./Leetcode/1663_smallestStringWithAGivenNumericValue.md) 🌟🌟
     -   [1672. Richest Customer Wealth](./Leetcode/1672_richestCustomerWealth.md) 🌟
     -   [1675. Minimize Deviation in Array](./Leetcode/1675_minimizeDeviationInArray.md) 🌟🌟🌟
+    -   [1679. Max Number of K-Sum Pairs](./Leetcode/1679_maxNumberOfKSumPairs.md) 🌟🌟
     -   [1696. Jump Game VI](./Leetcode/1696_jumpGameVI.md) 🌟🌟
     -   [1710. Maximum Units on a Truck](./Leetcode/1710_maximumUnitsOnATruck.md) 🌟
     -   [1732. Find the Highest Altitude](./Leetcode/1732_findHighestAltitude.md) 🌟
@@ -266,6 +270,7 @@
     -   [1920. Build Array from Permutation](./Leetcode/1920_buildArrayFromPermutation.md) 🌟
     -   [1929. Concatenation of Array](./Leetcode/1929_ConcatenationOfArray.md) 🌟
     -   [1971. Find if Path Exists in Graph](./Leetcode/1971_findIfPathExistsInGraph.md) 🌟
+    -   [2265. Count Nodes Equal to Average of Subtree](./Leetcode/2265_countNodeEqualToAverageOfSubtree.md) 🌟🌟
 
 -   [SDE-Sheet 📄](./SDE-Sheet/README.md)
 
