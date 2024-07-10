@@ -6,3 +6,10 @@ int main()
     
     return 0;
 }
+
+class Solution {
+public:
+    int passThePillow(int n, int time) {
+        
+    }
+};
