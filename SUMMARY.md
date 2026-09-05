@@ -260,6 +260,7 @@
     - [Leetcode Problem 1800-1899](./Leetcode/1800-1899.md)
     - [Leetcode Problem 1900-1999](./Leetcode/1900-1999.md)
     - [Leetcode Problem 2200-2299](./Leetcode/2200-2299/README.md)
+    - [Leetcode Problem 3900-3999](./Leetcode/3900-3999.md)
 
     - [1. Two Sum](./Leetcode/1_twoSum.md) 🌟
     - [2. Add Two Numbers](./Leetcode/2_addWtoNumbers.md) 🌟🌟
@@ -515,6 +516,8 @@
     - [2265. Count Nodes Equal to Average of Subtree](./Leetcode/2200-2299/2265_countNodeEqualToAverageOfSubtree.md) 🌟🌟
     - [37. Sudoku Solver](./Leetcode/37_sudokuSolver.md) 🌟🌟🌟
     - [These questions are base on pattern of level order traversal.](./Leetcode/generalApproachToLevelOrder.md)
+    - [3903. Smallest Stable Index I](./Leetcode/3903_smallestStableIndexI.md) 🌟
+    - [3904. Smallest Stable Index II](./Leetcode/3904_smallestStableIndexII.md) 🌟🌟
 
 - [SDE-Sheet 📄](./SDE-Sheet/README.md)
     - Day - 1 (Arrays-I)
