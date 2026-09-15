@@ -698,6 +698,9 @@
     - [Computer Networks](./CS-fundamentals/CN.md)
     - [Operating System](./CS-fundamentals/OS.md)
 
+- [System Design 🏗️](./System-Design/README.md)
+    - [How Instagram Scaled Postgres to Billions of Users](./System-Design/instagram_scaling_postgres.md)
+
 - [Important Links 📌](./Important-links.md)
 
 - [75 Days DSA challenge 🔥](./75-days-dsa-challenge/README.md)
